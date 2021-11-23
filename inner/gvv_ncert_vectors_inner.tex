@@ -168,7 +168,7 @@ columns=fullflexible
 \title{
 	%\logo{
 %Computational Approach to School Geometry
-Vector Properties
+Points and Vectors
 %	}
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
@@ -288,238 +288,355 @@ Vector Properties
 This book provides a computational approach to school geometry based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
 \end{abstract}
 
-\section{Direction Vector}
+\section{Angle}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item  Find the slope of a line, which passes through the origin, and the mid-point of the line segment joining the points $\vec{P} = \myvec{0\\ – 4}$ and $\vec{B} = \myvec{8\\ 0}$.
+
+\item Find the angle between the two planes
+\label{prob:planes_angle}
+\begin{align}
+\myvec{2 & 1 & -2}\vec{x}&=5
+\\
+\myvec{3 &-6 & -2}\vec{x}&=7.
+\end{align}
+%
+\solution The angle between two planes is the same as the angle between their normal vectors.  This can be obtained from \eqref{eq:line_scalar_prod}.
+
+\item Find the angle between the two planes
+\begin{align}
+\myvec{2 & 2 & -2}\vec{x}&=5
+\\
+\myvec{3 &-6 & 2}\vec{x}&=7.
+\end{align}
+%
+\solution See Problem \eqref{prob:planes_angle}.
+%
+\item Find the angle between the line 
+%
+\begin{align}
+L: \quad \frac{x+1}{2} = \frac{y}{3} = \frac{z-3}{6} 
+\end{align}
+%
+and
+%
+the plane 
+\begin{align}
+P: \quad \myvec{10 & 2 & -11}\vec{x}=3
+\end{align}
+%
+\label{prob:plane_angle_line}
+%
+\solution The angle between the direction vector of $L$ and normal vector of $P$ is 
+%
+\begin{align}
+\cos \theta &= \frac{\abs{\myvec{10 & 2 & -11}\myvec{2\\3\\6}}}{\sqrt{225}\times \sqrt{49}} = \frac{8}{21}
+\end{align}
+%
+Thus, the desired angle is $90\degree -\theta$.
+\item Find angles between the lines
+\begin{align}
+\myvec{\sqrt{3} & 1}\vec{x} &= 1
+\\
+\myvec{1 & \sqrt{3}}\vec{x} &= 1
+\end{align}
+\\
+\solution
+\input{./solutions/line_plane/38/solution.tex}
+\item Find the angle between the vectors 
+$\vec{a}=\myvec{1\\1\\-1}$
+  and 
+$\vec{b}=\myvec{1\\-1\\1}$.
+%
+\\
 \solution 
-\input{./solutions/line_plane/24/solution.tex}
-\item The slope of a line is double of the slope of another line. If the tangent of the angle
-between them is $\frac{1}{3}$, find the slopes of the lines.
+\input{./solutions/line_exam/63/A1/latex/solution.tex}
+%
+\item Find the angle between the pair of lines given by 
+\begin{align}
+\vec{x} &= \myvec{3\\2\\-4} + \lambda_1\myvec{1 \\ 2 \\2}
+\\
+\vec{x} &= \myvec{5\\-2\\0} + \lambda_2\myvec{3 \\ 2 \\6}
+\end{align}
+%
+\\
 \solution 
-\input{./solutions/line_plane/25/solution.tex}
-\item Find a unit vector that makes an angle of $90\degree, 60\degree$ and $30\degree$ with the positive x, y and z axis respectively.
+\input{./solutions/line_plane/64/Latex/solution.tex}
+\item Find the angle between the pair of lines
+\begin{align}
+\frac{x+3}{3} = \frac{y-1}{5} &= \frac{z+3}{4}, 
+\\
+\frac{x+1}{1} = \frac{y-4}{1} &= \frac{z-5}{2} 
+\end{align}
+%
+\\
+\solution 
+\input{./solutions/line_exam/65/solution.tex}
+%
+\item Find the angle between two vectors $\vec{a}$ and $\vec{b}$ where 
+%
+\begin{align}
+\norm{\vec{a}} = 1,
+\norm{\vec{b}} = 2,
+\vec{a}^T\vec{b} = 1.
+\end{align}
+%
+\solution In Fig. \ref{fig:line_scalar_prod}, from the cosine formula, 
+%
+\begin{align}
+\cos \theta &= \frac{\norm{\vec{A}-\vec{B}}^2+\norm{\vec{B}-\vec{C}}^2-\norm{\vec{A}-\vec{C}}^2}{2\norm{\vec{A}-\vec{B}}\norm{\vec{B}-\vec{C}}}
+\end{align}
+Letting $\vec{a} = \vec{A}-\vec{B}, \vec{b} = \vec{B}-\vec{C}$, 
+\begin{align}
+\cos \theta &= \frac{\norm{\vec{a}}^2+\norm{\vec{b}}^2-\norm{\vec{a}+\vec{b}}^2}{2\norm{\vec{a}}\norm{\vec{b}}}
+\\
+&= \frac{\norm{\vec{a}}^2+\norm{\vec{b}}^2-\sbrak{\norm{\vec{a}}^2+\norm{\vec{b}}^2-2\vec{a}^T\vec{b}}}{2\norm{\vec{a}}\norm{\vec{b}}}
+\\
+\implies \cos \theta &=\frac{\vec{a}^T\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}}
+\end{align}
+%
+Thus, the angle $\theta$ between two vectors is given by 
+%
+\begin{align}
+\label{eq:line_scalar_prod}
+\cos \theta &= \frac{\vec{a}^T\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}}
+\\
+&=\frac{1}{2}
+\\
+\implies \theta &= 60\degree
+\end{align}
+%
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{./line/figs/line_scalar_prod.eps}
+\caption{}
+\label{fig:line_scalar_prod}
+\end{figure}
+%
+
+
+\item Find the angle between the lines 
+%
+\begin{align}
+\myvec{1 & – \sqrt{3}}\vec{x}  = 5
+\\
+\myvec{\sqrt{3} & –1}\vec{x}  = -6
+. 
+\end{align}
+%
+\solution The angle between the lines can also be expressed in terms of the normal vectors as
+%
+\begin{align}
+\cos \theta &= \frac{\vec{n}_1\vec{n}_2}{\norm{\vec{n}_1}\norm{\vec{n}_2}}
+\\
+&= \frac{\sqrt{3}}{2} \implies \theta = 30\degree
+\end{align}
+%
+\item Find the angle between the planes whose equations are
+$
+\myvec{2 & 2 & -3}\vec{x}=5
+$
+ and 
+$
+\myvec{3 & -3 & 5}\vec{x}=3
+$
+\\
+\solution
+\input{solutions/su2021/2/42/main.tex}
+\item Find the angle between the following pair of lines:
+\begin{align}
+    L_1: \quad \vec{x} &= \myvec{3\\1\\-2} + \lambda_1\myvec{1 \\ -1 \\-2} \label{aug/22/eq:1} \\
+    L_2: \quad \vec{x} &= \myvec{2\\-1\\-56} + \lambda_2\myvec{3 \\ -5 \\-4} \label{aug/22/eq:2}
+    \end{align}
+\solution
+\input{solutions/aug/22.tex}
+\item Find the angle between the following pair of lines:
+\begin{align}
+L_1: \quad \vec{x} &= \myvec{2\\-5\\1} + \lambda_1\myvec{3 \\ 2 \\6}
+\\
+L_2: \quad \vec{x} &= \myvec{7\\-6\\0} + \lambda_2\myvec{1 \\ 2 \\2}
+\end{align}
+\\
+\solution
+\input{./solutions/line_plane/73/solution.tex}
+\item If the coordinates of the points $\bm{A}, \bm{B}, \bm{C}, \bm{D}$ be \myvec{1\\2\\3}, \myvec{4\\5\\7}, \myvec{-4\\3\\-6}, \myvec{2\\9\\2}, then find the angle between the lines $AB$ and $CD$.  
 %
 \\
 \solution
-The direction vector is
-%
-\begin{align}
-\label{eq:line_dir_cos}
-\vec{x} &= \myvec{\cos 90\degree\\\cos 60\degree \\ \cos 30\degree} = \myvec{0 \\ \frac{1}{2}\\\frac{\sqrt{3}}{2}}
-\end{align}
-%
-$\because \norm{\vec{x}}=1$, it is the desired unit vector.
-\item Find the direction vectors and slopes of the lines passing through the points
-%
-\begin{enumerate}
-\item \myvec{3\\-2} and \myvec{-1\\4}.
-\item \myvec{3\\-2} and \myvec{7\\-2}.
-\item \myvec{3\\-2} and \myvec{3\\4}.
-\item Making an inclination of $60\degree$ with the positive direction of the x-axis.
+%\input{solutions/aug/2/32/latex4.tex}
 \end{enumerate}
-%
-\solution
-\begin{enumerate}
-\item If the direction vector is 
-\begin{align}
-\myvec{1\\m}, 
-\end{align}
-%
-the slope is $m$. Thus, the direction vector is
-\begin{align}
-\myvec{-1\\4} - \myvec{3\\-2} &= \myvec{-4\\6} = -\frac{1}{4} \myvec{-4\\6} 
-\\
-&=  \myvec{1\\-\frac{3}{2}} \implies m = -\frac{3}{2}
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{7\\-2} - \myvec{3\\-2} &= \myvec{4\\0} 
-\\
-&=  \myvec{1\\0} \implies m = 0
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{3\\4} - \myvec{3\\-2} &= \myvec{0\\6} 
-\\
-&=  \myvec{1\\ \infty} \implies m = \infty
-\end{align}
-%
-\item The slope is $m = \tan 60 \degree = \sqrt{3}$ and the  direction vector is
-\begin{align}
-\myvec{1\\\sqrt{3}}
-\end{align}
-\end{enumerate}
-\item If the angle between two lines is $\frac{\pi}{4}$ and the slope of one of the lines is $\frac{1}{4}$ find the slope of the other line.
-\\
-\solution The angle $\theta$ between two lines is given by 
-%
-\begin{align}
-\tan \theta &= \frac{m_1-m_2}{1+m_1m_2}
-\\
-\implies 1 &= \frac{m_1-\frac{1}{4}}{1+\frac{m_1}{4}}
-\\
-\text{or } m_1 &= \frac{5}{3} 
-\end{align}
-%
-%
-%\\
-%\solution 
-%%Using \eqref{eq:tri_geo_ex_orth}
-%\begin{align}
-%\cbrak{\myvec{-2\\ 6}-\myvec{4\\8}}^T \cbrak{\myvec{8\\ 12}-\myvec{x\\24}}=  0 
-%\end{align}
-%%
-%which can be used to obtain $x$.
-\item If the points
-$
-\vec{A} = \myvec{6\\1}, 
-\vec{B} = \myvec{8\\2}, 
-\vec{C} = \myvec{9\\4}, 
-\vec{D} = \myvec{p\\3}
-$
-are the vertices of a parallelogram, taken in order, find the value of $p$.
-\\
-\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
-\item Without using distance formula, show that points \myvec{– 2\\ – 1}, \myvec{4\\ 0}, \myvec{3\\ 3} and \myvec{–3\\ 2} are the vertices of a parallelogram.
-\\
-\solution
-%\input{./solutions/5/chapters/quadrilateral/docq4.tex}
-
-\item The two opposite vertices of a square are \myvec{-1\\2},  \myvec{3\\2}. Find the coordinates of the other two vertices.
-\\
-\solution
-%\input{./solutions/7/chapters/quad/solution1.tex}
-
-\item Find the direction vectors of the sides of a triangle with vertices
-$
-\vec{A} = \myvec{3\\5 \\-4},
-\vec{B} = \myvec{-1\\1 \\2}, \text{ and }
-\vec{C} = \myvec{-5\\ -5\\-2}
-$
-\\
-\solution
-%\input{solutions/aug/2/4.tex}
-\item Find a unit vector in the direction of 
-%
-\begin{align}
-\myvec{1\\1\\-2}.
-\end{align}
-%
-\solution
-%\input{solutions/aug/2/24.tex}
-
-%
-\item Find a unit vector in the direction of \myvec{2\\-1\\-2}.
-\\
-\solution
-%\input{solutions/aug/2/21.tex}
-
-%
-%
-
-
-
-\item Find a unit vector in the direction of the line passing through \myvec{-2\\4\\-5} and $\myvec{1\\2\\3}$.
-%
-\\
-\solution
-%\input{solutions/aug/2/22.tex}
-\end{enumerate}
-\section{Norm }
+\section{Orthogonality}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the unit normal vector of the plane 
+\item Find the values of $p$ so that the lines 
 \begin{align}
-\myvec{6 & -3 & -2}\vec{x}  = 1.
-\end{align}
-%
-\solution The normal vector is 
-%
-\begin{align}
-\vec{n} = \myvec{6 & -3 & -2}
+\frac{1-x}{3} = \frac{7y-14}{2p} &= \frac{z-3}{2}, 
 \\
-\because \norm{\vec{n}} = 7,
+\frac{7-7x}{3p} = \frac{y-5}{1} &= \frac{6-z}{5} 
 \end{align}
-%
-the unit normal vector is 
-%
-\begin{align}
-\frac{\vec{n}}{\norm{\vec{n}}} = \frac{1}{7}\myvec{6 & -3 & -2}
-\end{align}
-%
-%
-
-\item Find the condition for $\vec{x} = \myvec{x_1\\x_2}$ to be equidistant from the points $\myvec{7\\1}, \myvec{3\\5}$.
-\label{prob:line_perp_bisect}
-%
+are at right angles.
 \\
-\solution From the given information,
-%
+\solution
+\input{./solutions/line_plane/75/solution.tex}
+\item Show that the lines 
 \begin{align}
-\norm{\vec{x}-\myvec{7\\1}}^2&=\norm{\vec{x}-\myvec{3\\5}}^2
-\end{align}
-\begin{multline}
-\implies \norm{\vec{x}}^2 + \norm{\myvec{7\\1}}^2-2\myvec{7&1}\vec{x} 
-\\= 
- \norm{\vec{x}}^2 + \norm{\myvec{3\\5}}^2-2\myvec{3&5}\vec{x} 
-\end{multline}
-%
-which can be simplified to obtain
-\begin{align}
-\label{eq:line_p_bisect}
-\myvec{1 & -1}\vec{x} = 2
+\frac{x-5}{7} = \frac{y+2}{-5} &= \frac{z}{1}, 
+\\
+\frac{x}{1} = \frac{y}{2} &= \frac{z}{3} 
 \end{align}
 %
-which is the desired condition.  
-The following code plots Fig. \ref{fig:line_perp_bisect}clearly showing that the above equation 
-%\eqref{eq:line_p_bisect}
- is the perpendicular bisector of $AB$.
+are perpendicular to each other.
+\\
+\solution
+\input{./solutions/line_plane/76/solution.tex}
+\item The line through the points \myvec{-2\\6} and \myvec{4\\8} is perpendicular to the line through the points \myvec{8\\12} and $\myvec{x\\24}$.  Find the value of $x$.
+\\
+\solution
+%\input{solutions/su2021/2/36/main.tex}
+\item Show that the line joining the origin to the point \myvec{2\\1\\1} is perpendicular to the line determined by the points \myvec{3\\5\\-1}, \myvec{4\\3\\-1}.
+\\
+\solution
+%\input{solutions/su2021/2/37.tex}
+\item Are the points 
+\begin{align}
+\vec{A} = \myvec{3\\6 \\9},
+\vec{B} = \myvec{10\\20 \\30},
+\vec{C} = \myvec{25\\ -41\\5},
+\end{align}
+%
+the vertices of a right angled triangle?
+\\
+\solution
+%\input{solutions/july/2/6/Assignment4.tex}
+\item Show that the vectors 
+$
+\myvec{2\\-1 \\1},
+\myvec{1\\-3 \\-5},
+\myvec{3\\ -4\\-4}
+$
+form the vertices of a right angled triangle.
+\\
+\solution
+%\input{solutions/aug/2/3/Assignment-1.tex}
+\item Show that the points 
+\begin{align}
+\vec{A} = \myvec{2\\-1 \\1},
+\vec{B} = \myvec{1\\-3 \\-5},
+\vec{C} = \myvec{3\\ -4\\-4}
+\end{align}
+%
+are the vertices of a right angled triangle.
+\\
+\solution
+%\input{solutions/su2021/2/4/Assignment 8 (3).tex}
 
+
+\item In $\triangle ABC$, 
+$
+\vec{A} = \myvec{1\\2 \\3},
+\vec{B} = \myvec{-1\\0 \\0},
+\vec{C} = \myvec{0\\ 1\\2}.
+$
+Find $\angle B$.
+\\
+\solution
+%\input{solutions/su2021/2/5/main.tex}
+\item Without using the Pythagoras theorem, show that the points \myvec{4\\ 4}, \myvec{3\\ 5} and \myvec{–1\\ –1} are the vertices of a right angled triangle.
+\\
+\solution
+%\input{./solutions/triangle/18/solution.tex}
+\item Show that the points 
+\begin{align}
+\vec{A} = \myvec{2\\-1 \\1},
+\vec{B} = \myvec{1\\-3 \\-5},
+\vec{C} = \myvec{3\\ -4\\-4}
+\end{align}
+%
+are the vertices of a right angled triangle.
+\\
+\solution 
+The following code plots Fig. \ref{fig:triangle_3d}
 %
 \begin{lstlisting}
-codes/line/line_perp_bisect.py
+codes/triangle/triangle_3d.py
+\end{lstlisting}
+%
+%\begin{figure}[!ht]
+%\includegraphics[width=\columnwidth]{./triangle/figs/triangle_3d.eps}
+%\caption{}
+%\label{fig:triangle_3d}
+%\end{figure}
+%
+From the figure, it appears that $\triangle ABC$ is right angled at $\vec{C}$.  Since 
+\begin{align}
+\brak{\vec{A}-\vec{C}}^T\brak{\vec{B}-\vec{C}}&=0
+\end{align}
+%
+it is proved that the triangle is indeed right angled.
+\item Show that the points $\vec{A} = \myvec{1\\7}, \vec{B} = \myvec{4\\2}, \vec{C}=\myvec{-1\\-1},\vec{D}= \myvec{-4\\4} $  are the vertices of a square.
+\\
+\solution By inspection, 
+%
+\begin{align}
+\frac{\vec{A}+\vec{C}}{2}=\frac{\vec{B}+\vec{D}}{2} = \myvec{0\\3}
+\end{align}
+%
+Hence, the diagonals $AC$ and $BD$ bisect each other.
+%
+Also, 
+\begin{align}
+\brak{\vec{A}-\vec{C}}^T
+\brak{\vec{B}-\vec{D}} = 0
+\end{align}
+%
+$\implies AC \perp BD $.  Hence $ABCD$ is a square.
+\item Show that the points 
+$\vec{A} = \myvec{1\\2\\3},
+ \vec{B} = \myvec{-1\\-2\\-1},
+\vec{C} = \myvec{2\\3\\2},
+\vec{D} = \myvec{4\\7\\6}.
+$
+are the vertices of a parallelogram $ABCD$ but it is not a rectangle.
+%
+\\
+\solution Since the direction vectors
+%
+\begin{align}
+\vec{A}-\vec{B}&= \vec{D}-\vec{C}
+\\
+\vec{A}-\vec{D}&= \vec{B}-\vec{C}
+\end{align}
+%
+$AB \parallel CD$ and $AD \parallel BC$.  Hence $ABCD$ is a parallelogram.  However, 
+%
+\begin{align}
+\brak{\vec{A}-\vec{B}}^T\brak{ \vec{A}-\vec{D}}\ne 0
+\end{align}
+%
+Hence, it is not a rectangle.
+The following code plots Fig. \ref{fig:quad_3d}
+%
+\begin{lstlisting}
+codes/triangle/quad_3d.py
 \end{lstlisting}
 %
 \begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{./line/figs/line_perp_bisect.eps}
+\includegraphics[width=\columnwidth]{./triangle/figs/quad_3d.eps}
 \caption{}
-\label{fig:line_perp_bisect}
+\label{fig:quad_3d}
 \end{figure}
-\item Find a point on the $y$-axis which is equidistant from the points $\vec{A} = \myvec{6\\5}, \vec{B} = \myvec{-4\\3}$.
-\\
+%
+
+\item $ABCD$ is a rectangle formed by the points $\vec{A} = \myvec{-1\\-1}, \vec{B} = \myvec{-1\\4}, \vec{C} = \myvec{5\\4}, \vec{D} = \myvec{5\\-1}$. $ \vec{P}, \vec{Q}, \vec{R}, \vec{S}$ are the mid points of $AB, BC, CD, DA$ respectively.  Is the quadrilateral $PQRS$ a 
+\begin{enumerate}
+\item square?
+\item rectangle?
+\item rhombus?
+\end{enumerate}
 \solution
-%\input{solutions/july/25/main1.tex}
-\item Find the equation of set of points $\vec{P}$ such that
-\begin{align}
-PA^2+PB^2 =2k^2,
-\end{align}
-%
-\begin{align}
-\vec{A} = \myvec{3\\4 \\5},
-\vec{B} = \myvec{-1\\3 \\-7},
-\end{align}
-%
-respectively.
-%
-%
-\solution
-%\input{solutions/su2021/2/25.tex}   
-\item Find the equation of the set of points $\vec{P}$ such that its distances from the points
-$
-\vec{A}=\myvec{3\\4\\-5}, 
-\vec{B}=\myvec{-2\\1\\4}
-$
-are equal. 
-\\
-\solution
-%\input{solutions/su2021/2/29/main.tex}
+%\input{./solutions/quad/1/solution}
 \end{enumerate}
 \end{document}
 

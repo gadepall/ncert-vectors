@@ -285,12 +285,8 @@ Points and Vectors
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This book provides a computational approach to school geometry based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+This manual provides an introduction to vectors and their properties,  based on the NCERT textbooks from Class 6-12.  
 \end{abstract}
-Download python codes using 
-\begin{lstlisting}
-svn co https://github.com/gadepall/school/trunk/ncert/computation/codes
-\end{lstlisting}
 
 \section{Definitions}
 \subsection{$2\times 1$ vectors}
@@ -410,53 +406,19 @@ $.
 %
 \\
 \solution
+		\input{solutions/area/1.tex}
 %
-\begin{align}
-  \vec{A}-\vec{B} &= \myvec{1\\-1}-\myvec{-4\\6} = \myvec{5\\-7}
-  \\
-  \vec{A}-\vec{C} &= \myvec{-1\\11}
-\end{align}
-%
-Hence, the desired area is 
-\begin{align}
-  \frac{1}{2} \mydet{5 & -1\\-7 & 11 }
-  =\frac{1}{2}\brak{55 -7} = 24
-\end{align}
 \item Find the area of a triangle formed by the vertices $\vec{A}=\myvec{5\\2}, \vec{B}=\myvec{4\\7}, \vec{C}=\myvec{7\\-4}$.
 \\
 \solution  
+		\input{solutions/area/2.tex}
 %
-\begin{align}
-  \vec{A}-\vec{B} &= \myvec{1\\-5}
-  \\
-  \vec{A}-\vec{C} &= \myvec{-2\\6}
-\end{align}
-%
-Hence, the desired area is 
-\begin{align}
-  \frac{1}{2} \mydet{1 & -2\\-5 & 6 }
-    &=\frac{1}{2}\brak{6 -10} = 2
-\end{align}
-%
-after taking the absolute value.
 \item Find the area of a triangle formed by the points $\vec{P}=\myvec{-1.5\\3}, \vec{Q}=\myvec{6\\-2}, \vec{R}=\myvec{-3\\4}$.
 %
 \\
 \solution  
+		\input{solutions/area/3.tex}
 %
-\begin{align}
-  \vec{P}-\vec{Q} &= \myvec{-7.5\\5}
-  \\
-  \vec{P}-\vec{R} &= \myvec{1.5\\-1}
-\end{align}
-%
-Hence, the desired area is the absolute value of 
-\begin{align}
-  \frac{1}{2} \mydet{-7.5 & 1.5\\5 & -1 }
-    &=\frac{1}{2}\brak{7.5 -7.5} = 0
-\end{align}
-%
-This means that the points are on a straight line.
 \item Find the area of a triangle having the points
 %
 \begin{align}
@@ -468,25 +430,7 @@ This means that the points are on a straight line.
 as its vertices.
 \\
 \solution 
-%
-\begin{align}
-  \vec{A}-\vec{B} &= \myvec{0\\-1\\-2},
-  \vec{A}-\vec{C} &= \myvec{-1\\-2\\0}
-\end{align}
-and 
-\begin{align}
-  \mydet{-1 & -2 \\-2 & 0} &= -4 \\
-  \mydet{-2 & 0 \\0 & -1} &= 2 \\
-  \mydet{0 & -1 \\-1 & -2} &= -1 \\
-\end{align}
-From   \eqref{eq:cross3d}, 
-\begin{align}
-  \frac{1}{2}\brak{\vec{A} - \vec{B}} \times \brak{\vec{A} - \vec{C}} = \frac{1}{2}\myvec{-4\\2\\-1}
-\end{align}
-and from \eqref{eq:cross3d}, the area of the triangle is
-\begin{align}
-  \frac{1}{2}\norm{\myvec{-4\\2\\-1}} = \frac{1}{2}\sqrt{4^2+2^2+1^2} = \frac{1}{2}\sqrt{21}
-\end{align}
+		\input{solutions/area/4.tex}
 
 
 %

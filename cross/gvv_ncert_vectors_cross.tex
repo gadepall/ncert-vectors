@@ -168,7 +168,7 @@ columns=fullflexible
 \title{
 	%\logo{
 %Computational Approach to School Geometry
-Vector Properties
+Points and Vectors
 %	}
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
@@ -288,238 +288,170 @@ Vector Properties
 This book provides a computational approach to school geometry based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
 \end{abstract}
 
-\section{Direction Vector}
+\section{Cross}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item  Find the slope of a line, which passes through the origin, and the mid-point of the line segment joining the points $\vec{P} = \myvec{0\\ – 4}$ and $\vec{B} = \myvec{8\\ 0}$.
-\solution 
-\input{./solutions/line_plane/24/solution.tex}
-\item The slope of a line is double of the slope of another line. If the tangent of the angle
-between them is $\frac{1}{3}$, find the slopes of the lines.
-\solution 
-\input{./solutions/line_plane/25/solution.tex}
-\item Find a unit vector that makes an angle of $90\degree, 60\degree$ and $30\degree$ with the positive x, y and z axis respectively.
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+%\numberwithin{equation}{enumi}
 %
+%
+\item Find the area of a triangle having the points 
+$
+\vec{A} = \myvec{1\\1 \\1},
+\vec{B} = \myvec{1\\2 \\3}, \text{ and }
+\vec{C} = \myvec{2\\ 3\\1}
+$
+as its vertices.
 \\
 \solution
-The direction vector is
+%\input{solutions/su2021/2/7.tex}
 %
-\begin{align}
-\label{eq:line_dir_cos}
-\vec{x} &= \myvec{\cos 90\degree\\\cos 60\degree \\ \cos 30\degree} = \myvec{0 \\ \frac{1}{2}\\\frac{\sqrt{3}}{2}}
-\end{align}
+\item Find the area of a triangle with vertices
+$
+\vec{A} = \myvec{1\\1 \\2},
+\vec{B} = \myvec{2\\3 \\5}, \text{ and }
+\vec{C} = \myvec{1\\ 5\\5}
+$
+\\
+\solution
+%\input{solutions/su2021/2/8.tex}
 %
-$\because \norm{\vec{x}}=1$, it is the desired unit vector.
-\item Find the direction vectors and slopes of the lines passing through the points
-%
+\item Find the area of the triangle whose vertices are
 \begin{enumerate}
-\item \myvec{3\\-2} and \myvec{-1\\4}.
-\item \myvec{3\\-2} and \myvec{7\\-2}.
-\item \myvec{3\\-2} and \myvec{3\\4}.
-\item Making an inclination of $60\degree$ with the positive direction of the x-axis.
+\item \myvec{2\\3}, \myvec{-1\\0},  \myvec{2\\-4}
+\item  \myvec{-5\\-1},  \myvec{3\\-5},  \myvec{5\\2}
 \end{enumerate}
-%
 \solution
-\begin{enumerate}
-\item If the direction vector is 
-\begin{align}
-\myvec{1\\m}, 
-\end{align}
-%
-the slope is $m$. Thus, the direction vector is
-\begin{align}
-\myvec{-1\\4} - \myvec{3\\-2} &= \myvec{-4\\6} = -\frac{1}{4} \myvec{-4\\6} 
-\\
-&=  \myvec{1\\-\frac{3}{2}} \implies m = -\frac{3}{2}
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{7\\-2} - \myvec{3\\-2} &= \myvec{4\\0} 
-\\
-&=  \myvec{1\\0} \implies m = 0
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{3\\4} - \myvec{3\\-2} &= \myvec{0\\6} 
-\\
-&=  \myvec{1\\ \infty} \implies m = \infty
-\end{align}
-%
-\item The slope is $m = \tan 60 \degree = \sqrt{3}$ and the  direction vector is
-\begin{align}
-\myvec{1\\\sqrt{3}}
-\end{align}
-\end{enumerate}
-\item If the angle between two lines is $\frac{\pi}{4}$ and the slope of one of the lines is $\frac{1}{4}$ find the slope of the other line.
-\\
-\solution The angle $\theta$ between two lines is given by 
-%
-\begin{align}
-\tan \theta &= \frac{m_1-m_2}{1+m_1m_2}
-\\
-\implies 1 &= \frac{m_1-\frac{1}{4}}{1+\frac{m_1}{4}}
-\\
-\text{or } m_1 &= \frac{5}{3} 
-\end{align}
-%
-%
-%\\
-%\solution 
-%%Using \eqref{eq:tri_geo_ex_orth}
-%\begin{align}
-%\cbrak{\myvec{-2\\ 6}-\myvec{4\\8}}^T \cbrak{\myvec{8\\ 12}-\myvec{x\\24}}=  0 
-%\end{align}
-%%
-%which can be used to obtain $x$.
-\item If the points
-$
-\vec{A} = \myvec{6\\1}, 
-\vec{B} = \myvec{8\\2}, 
-\vec{C} = \myvec{9\\4}, 
-\vec{D} = \myvec{p\\3}
-$
-are the vertices of a parallelogram, taken in order, find the value of $p$.
-\\
-\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
-\item Without using distance formula, show that points \myvec{– 2\\ – 1}, \myvec{4\\ 0}, \myvec{3\\ 3} and \myvec{–3\\ 2} are the vertices of a parallelogram.
+%\input{./solutions/6/chapters/triangle/solution.tex}
+
+\item Find the area of the triangle formed by joining the mid points of the sides of a triangle whose vertices are  \myvec{0\\-1},  \myvec{2\\1},  \myvec{0\\3}.
 \\
 \solution
-%\input{./solutions/5/chapters/quadrilateral/docq4.tex}
-
-\item The two opposite vertices of a square are \myvec{-1\\2},  \myvec{3\\2}. Find the coordinates of the other two vertices.
+%\input{./solutions/7/chapters/triangle/solution.tex}
+\item Verify that the median of $\triangle ABC$ with vertices $\vec{A}=\myvec{4\\-6},  \vec{B}=\myvec{3\\-2}$ and  $\vec{C} =  \myvec{5\\2}$ divides it into two triangles of equal areas.
 \\
 \solution
-%\input{./solutions/7/chapters/quad/solution1.tex}
-
-\item Find the direction vectors of the sides of a triangle with vertices
-$
-\vec{A} = \myvec{3\\5 \\-4},
-\vec{B} = \myvec{-1\\1 \\2}, \text{ and }
-\vec{C} = \myvec{-5\\ -5\\-2}
-$
-\\
-\solution
-%\input{solutions/aug/2/4.tex}
-\item Find a unit vector in the direction of 
-%
-\begin{align}
-\myvec{1\\1\\-2}.
-\end{align}
-%
-\solution
-%\input{solutions/aug/2/24.tex}
-
-%
-\item Find a unit vector in the direction of \myvec{2\\-1\\-2}.
-\\
-\solution
-%\input{solutions/aug/2/21.tex}
-
-%
-%
-
-
-
-\item Find a unit vector in the direction of the line passing through \myvec{-2\\4\\-5} and $\myvec{1\\2\\3}$.
+%\input{./solutions/8/chapters/solution.tex}
+\item Find the area of a triangle whose vertices are 
+$\vec{A}=\myvec{1\\-1}, 
+\vec{B} = \myvec{-4\\6}$ and
+$ 
+\vec{C} = \myvec{-3\\-5}
+$.
 %
 \\
 \solution
-%\input{solutions/aug/2/22.tex}
-\end{enumerate}
-\section{Norm }
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item Find the unit normal vector of the plane 
-\begin{align}
-\myvec{6 & -3 & -2}\vec{x}  = 1.
-\end{align}
-%
-\solution The normal vector is 
-%
-\begin{align}
-\vec{n} = \myvec{6 & -3 & -2}
-\\
-\because \norm{\vec{n}} = 7,
-\end{align}
-%
-the unit normal vector is 
-%
-\begin{align}
-\frac{\vec{n}}{\norm{\vec{n}}} = \frac{1}{7}\myvec{6 & -3 & -2}
-\end{align}
-%
-%
-
-\item Find the condition for $\vec{x} = \myvec{x_1\\x_2}$ to be equidistant from the points $\myvec{7\\1}, \myvec{3\\5}$.
-\label{prob:line_perp_bisect}
-%
-\\
-\solution From the given information,
-%
-\begin{align}
-\norm{\vec{x}-\myvec{7\\1}}^2&=\norm{\vec{x}-\myvec{3\\5}}^2
-\end{align}
-\begin{multline}
-\implies \norm{\vec{x}}^2 + \norm{\myvec{7\\1}}^2-2\myvec{7&1}\vec{x} 
-\\= 
- \norm{\vec{x}}^2 + \norm{\myvec{3\\5}}^2-2\myvec{3&5}\vec{x} 
-\end{multline}
-%
-which can be simplified to obtain
-\begin{align}
-\label{eq:line_p_bisect}
-\myvec{1 & -1}\vec{x} = 2
-\end{align}
-%
-which is the desired condition.  
-The following code plots Fig. \ref{fig:line_perp_bisect}clearly showing that the above equation 
-%\eqref{eq:line_p_bisect}
- is the perpendicular bisector of $AB$.
-
+  Using Hero's formula, the following code computes the area of the  triangle as 24.
 %
 \begin{lstlisting}
-codes/line/line_perp_bisect.py
+codes/triangle/area_tri.py
 \end{lstlisting}
 %
-\begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{./line/figs/line_perp_bisect.eps}
-\caption{}
-\label{fig:line_perp_bisect}
-\end{figure}
-\item Find a point on the $y$-axis which is equidistant from the points $\vec{A} = \myvec{6\\5}, \vec{B} = \myvec{-4\\3}$.
-\\
-\solution
-%\input{solutions/july/25/main1.tex}
-\item Find the equation of set of points $\vec{P}$ such that
-\begin{align}
-PA^2+PB^2 =2k^2,
-\end{align}
+%
+\item Find the area of a triangle formed by the vertices $\vec{A}=\myvec{5\\2}, \vec{B}=\myvec{4\\7}, \vec{C}=\myvec{7\\-4}$.
+%\\
+\solution  The area of $\triangle ABC$ is also obtained  in terms of the  {\em magnitude} of the determinant of the matrix $\vec{M}$ in  \eqref{eq:tri_geo_ex_diff_mat} as
 %
 \begin{align}
-\vec{A} = \myvec{3\\4 \\5},
-\vec{B} = \myvec{-1\\3 \\-7},
+\frac{1}{2}\mydet{\vec{M}}
+\end{align}
+The computation is done in \textbf{area\_tri.py}
+\item Find the area of a triangle formed by the points $\vec{P}=\myvec{-1.5\\3}, \vec{Q}=\myvec{6\\-2}, \vec{R}=\myvec{-3\\4}$.
+\\
+\solution Another formula for the area of $\triangle ABC$  is
+%
+\begin{align}
+\frac{1}{2}\mydet{1 & 1 & 1\\ \vec{A} & \vec{B} & \vec{C} }
 \end{align}
 %
-respectively.
+\item Find the area of a triangle having the points
 %
+\begin{align}
+\vec{A} = \myvec{1\\1 \\1},
+\vec{B} = \myvec{1\\2 \\3},
+\vec{C} = \myvec{2\\ 3\\1}
+\end{align}
 %
-\solution
-%\input{solutions/su2021/2/25.tex}   
-\item Find the equation of the set of points $\vec{P}$ such that its distances from the points
-$
-\vec{A}=\myvec{3\\4\\-5}, 
-\vec{B}=\myvec{-2\\1\\4}
-$
-are equal. 
+as its vertices.
+\\
+\solution The area of a triangle using the {\em vector product} is obtained as
+\begin{align}
+\frac{1}{2}\norm{\brak{\vec{B}-\vec{A}}\times \brak{\vec{C}-\vec{A}}}
+\end{align}
+%
+For any two vectors $\vec{a}=\myvec{a_1\\a_2\\a_3}, \vec{b}=\myvec{b_1\\b_2\\b_3}$, 
+\begin{align}
+\label{eq:tri_cross_prod}
+\vec{a}\times \vec{b} = \myvec{0 & -a_3 & a_2 \\ a_3 & 0 & -a_1 \\ -a_2 & a_1 & 0}\myvec{b_1\\b_2\\b_3}
+\end{align}
+%
+The following code computes the area using the vector product.
+%
+\begin{lstlisting}
+codes/triangle/area_tri_vec.py
+\end{lstlisting}
+%
+\item Find the area of a parallelogram whose adjacent sides are given by the vectors \myvec{3\\1\\4} and \myvec{1\\-1\\1}.
+%
+\\
+\solution  The area is given by 
+%
+\begin{align}
+\frac{1}{2}\norm{\myvec{3\\1\\4} \times \myvec{1\\-1\\1}}
+\end{align}
+\item Draw a quadrilateral in the Cartesian plane, whose vertices are \myvec{– 4\\ 5}, \myvec{0\\ 7}, \myvec{5\\ – 5} and \myvec{– 4\\ –2}. Also, find its area.
 \\
 \solution
-%\input{solutions/su2021/2/29/main.tex}
+%\input{./solutions/3/chapters/quad/solution.tex}
+
+\item Find the area of a rhombus if its vertices are 
+\begin{align}
+\vec{P} &= \myvec{3\\0}, \vec{Q} =\myvec{4\\5},
+\\
+\vec{R} &= \myvec{-1\\4}, \vec{S} = \myvec{-2\\-1} 
+\end{align}
+taken in order.
+\\
+\solution
+%\input{./solutions/4/chapters/quadrilateral/solution.tex}
+
+\item  Find the area of the quadrilateral whose vertices, taken in order, are 
+ \myvec{-4\\2},  \myvec{-3\\-5},  \myvec{3\\-2},  \myvec{2\\3}. 
+\\
+\solution
+%\input{./solutions/6/chapters/quadrilateral/solution.tex}
+\item Find the area of a parallelogram whose adjacent sides are given by the vectors \myvec{3\\1\\4} and \myvec{1\\-1\\1}.
+\\
+\solution
+%\input{./solutions/quad/8/chapters/solution.tex}
+\item Find the area of a rectangle $ABCD$ with vertices
+$\vec{A} = \myvec{-1\\\frac{1}{2}\\ 4},
+ \vec{B} = \myvec{1\\\frac{1}{2}\\ 4},
+\vec{C} = \myvec{1\\-\frac{1}{2}\\ 4},
+\vec{D} = \myvec{-1\\-\frac{1}{2}\\ 4}.
+$
+\\
+\solution
+%\input{./solutions/quad/10/solution.tex}
+\item The two adjacent sides of a parallelogram are \myvec{2\\ -4 \\ -5} and  \myvec{1\\-2\\ -3}. Find the unit vector parallel to its diagonal.  Also, find its area.
+%
+\\
+\solution
+%\input{solutions/july/1/Assignment_3_Edited.tex}
+
+\item If $\vec{A} = \myvec{-5\\7}, \vec{B} = \myvec{-4\\-5}, \vec{C} = \myvec{-1\\-6}, \vec{D} = \myvec{4\\5}$, find the area of the quadrilateral $ABCD$.
+%
+\\
+\solution The area of  $ABCD$ is the sum of the areas of trianges ABD and CBD and is given by 
+\begin{multline}
+\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}}\times \brak{\vec{A}-\vec{D}}}
+\\
++
+\frac{1}{2}\norm{\brak{\vec{C}-\vec{B}}\times \brak{\vec{C}-\vec{D}}}
+\end{multline}
 \end{enumerate}
 \end{document}
 
