@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  24 NOV 2021 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  24 NOV 2021 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**gvv_ncert_vectors_norm.tex
-(./gvv_ncert_vectors_norm.tex
+**gvv_ncert_vectors_inner.tex
+(./gvv_ncert_vectors_inner.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -231,6 +231,14 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip54
 \thm@headsep=\skip55
 \dth@everypar=\toks27
+)
+(/usr/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
 )
 (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
@@ -520,8 +528,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box61
 )
-(./gvv_ncert_vectors_norm.aux)
-\openout1 = `gvv_ncert_vectors_norm.aux'.
+(./gvv_ncert_vectors_inner.aux)
+\openout1 = `gvv_ncert_vectors_inner.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
@@ -576,9 +584,9 @@ LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
 LaTeX Info: Redefining \nameref on input line 89.
 
-(./gvv_ncert_vectors_norm.out) (./gvv_ncert_vectors_norm.out)
+(./gvv_ncert_vectors_inner.out) (./gvv_ncert_vectors_inner.out)
 \@outlinefile=\write3
-\openout3 = `gvv_ncert_vectors_norm.out'.
+\openout3 = `gvv_ncert_vectors_inner.out'.
 
 \c@lstlisting=\count304
 
@@ -610,28 +618,28 @@ e
 \c@lemma=\count314
 \c@example=\count315
 \c@rem=\count316
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 247.
+(Font)              <14> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 247.
+(Font)              <9.79996> on input line 244.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 247.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 247
+(Font)              <7> on input line 244.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 247
+LaTeX Font Info:    Trying to load font information for U+msb on input line 244
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./gvv_ncert_vectors_norm.toc)
+(./gvv_ncert_vectors_inner.toc)
 \tf@toc=\write4
-\openout4 = `gvv_ncert_vectors_norm.toc'.
+\openout4 = `gvv_ncert_vectors_inner.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 296.
@@ -639,54 +647,84 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 296.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 296.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+LaTeX Warning: Reference `fig:line_scalar_prod' on page 1 undefined on input li
+ne 382.
+
+
+Overfull \hbox (10.29163pt too wide) in paragraph at lines 394--394
+[] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Underfull \hbox (badness 6173) in paragraph at lines 432--443
+\OT1/ptm/m/n/12 equa-tions are $[] \OT1/cmr/bx/n/12 x \OT1/cmr/m/n/12 = 5$ \OT1
+/ptm/m/n/12 and
+ []
 
-LaTeX Warning: Reference `fig:line_perp_bisect' on page 2 undefined on input li
-ne 481.
+[2]
 
-[2] (./gvv_ncert_vectors_norm.aux)
+LaTeX Warning: Reference `fig:triangle_3d' on page 3 undefined on input line 55
+7.
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 575--579
+[]\OT1/ptm/m/n/12 Show that the points $\OT1/cmr/bx/n/12 A \OT1/cmr/m/n/12 = []
+ \OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 B \OT1/cmr/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 592--603
+[]\OT1/ptm/m/n/12 Show that the points $\OT1/cmr/bx/n/12 A \OT1/cmr/m/n/12 = []
+ \OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 B \OT1/cmr/m/n/12 =
+ []
+
+
+LaTeX Warning: Reference `fig:quad_3d' on page 3 undefined on input line 616.
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 629--631
+[]$\OT1/ptm/m/n/12 . $\OT1/cmr/bx/n/12 P\OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 Q\O
+ML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 R\OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 S$ \OT1/
+ptm/m/n/12 are the mid points of
+ []
+
+[3] (./gvv_ncert_vectors_inner.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `gvv_ncert_vectors_norm.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_norm.out':
-(rerunfilecheck)             Before: 4C08D133CFF7010BC1C1309403AAF423;126
-(rerunfilecheck)             After:  A24A6C473A3F22E16D3950785F087E5A;197.
+Package rerunfilecheck Info: File `gvv_ncert_vectors_inner.out' has not changed
+.
+(rerunfilecheck)             Checksum: DD32FEC410D4761DA85260976D052155;176.
  ) 
 Here is how much of TeX's memory you used:
- 12714 strings out of 478994
- 186174 string characters out of 5864751
- 524791 words of memory out of 5000000
- 29959 multiletter control sequences out of 15000+600000
- 439864 words of font info for 100 fonts, out of 8000000 for 9000
+ 12845 strings out of 478994
+ 187677 string characters out of 5864751
+ 531287 words of memory out of 5000000
+ 30050 multiletter control sequences out of 15000+600000
+ 444466 words of font info for 115 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,15n,74p,514b,1165s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,74p,515b,1163s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/shar
-e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type
-1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
->
-Output written on gvv_ncert_vectors_norm.pdf (2 pages, 131033 bytes).
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
+hare/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/t
+ype1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb>
+Output written on gvv_ncert_vectors_inner.pdf (3 pages, 136044 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

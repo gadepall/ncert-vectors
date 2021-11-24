@@ -1,5 +1,0 @@
-\contentsline {section}{\numberline {1}Definitions}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}$2\times 1$ vectors}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}$3\times 1$ vectors}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Area of a Triangle}{2}{section.2}%
-\contentsline {section}{\numberline {3}Angle Between Vectors}{2}{section.3}%

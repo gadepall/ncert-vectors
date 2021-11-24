@@ -4,13 +4,13 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 % \usepackage{setspace}
-% \usepackage{gensymb}
+ \usepackage{gensymb}
 %\doublespacing
 %\singlespacing
 %\usepackage{silence}
 %Disable all warnings issued by latex starting with "You have..."
 %\usepackage{graphicx}
-%\usepackage{amssymb}
+\usepackage{amssymb}
 %\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
 %\usepackage{amsthm}
@@ -25,7 +25,7 @@
 % \usepackage{txfonts}
 % \usepackage{stfloats}
 % \usepackage{steinmetz}
-% \usepackage{bm}
+ \usepackage{bm}
 % \usepackage{cite}
 % \usepackage{cases}
 % \usepackage{subfig}
@@ -166,10 +166,7 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{
-	%\logo{
-%Computational Approach to School Geometry
-Points and Vectors
-%	}
+	Inner Product
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
@@ -285,7 +282,7 @@ Points and Vectors
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This book provides a computational approach to school geometry based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+This mnual provides an introduction to inner product applications in school geometry based on the NCERT textbooks from Class 6-12.  
 \end{abstract}
 
 \section{Angle}
@@ -343,7 +340,7 @@ Thus, the desired angle is $90\degree -\theta$.
 \end{align}
 \\
 \solution
-\input{./solutions/line_plane/38/solution.tex}
+%\input{./solutions/line_plane/38/solution.tex}
 \item Find the angle between the vectors 
 $\vec{a}=\myvec{1\\1\\-1}$
   and 
@@ -351,7 +348,7 @@ $\vec{b}=\myvec{1\\-1\\1}$.
 %
 \\
 \solution 
-\input{./solutions/line_exam/63/A1/latex/solution.tex}
+%\input{./solutions/line_exam/63/A1/latex/solution.tex}
 %
 \item Find the angle between the pair of lines given by 
 \begin{align}
@@ -362,7 +359,7 @@ $\vec{b}=\myvec{1\\-1\\1}$.
 %
 \\
 \solution 
-\input{./solutions/line_plane/64/Latex/solution.tex}
+%\input{./solutions/line_plane/64/Latex/solution.tex}
 \item Find the angle between the pair of lines
 \begin{align}
 \frac{x+3}{3} = \frac{y-1}{5} &= \frac{z+3}{4}, 
@@ -372,7 +369,7 @@ $\vec{b}=\myvec{1\\-1\\1}$.
 %
 \\
 \solution 
-\input{./solutions/line_exam/65/solution.tex}
+%\input{./solutions/line_exam/65/solution.tex}
 %
 \item Find the angle between two vectors $\vec{a}$ and $\vec{b}$ where 
 %
@@ -407,11 +404,11 @@ Thus, the angle $\theta$ between two vectors is given by
 \implies \theta &= 60\degree
 \end{align}
 %
-\begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{./line/figs/line_scalar_prod.eps}
-\caption{}
-\label{fig:line_scalar_prod}
-\end{figure}
+%\begin{figure}[!ht]
+%\includegraphics[width=\columnwidth]{./line/figs/line_scalar_prod.eps}
+%\caption{}
+%\label{fig:line_scalar_prod}
+%\end{figure}
 %
 
 
@@ -442,14 +439,14 @@ $
 $
 \\
 \solution
-\input{solutions/su2021/2/42/main.tex}
+%\input{solutions/su2021/2/42/main.tex}
 \item Find the angle between the following pair of lines:
 \begin{align}
     L_1: \quad \vec{x} &= \myvec{3\\1\\-2} + \lambda_1\myvec{1 \\ -1 \\-2} \label{aug/22/eq:1} \\
     L_2: \quad \vec{x} &= \myvec{2\\-1\\-56} + \lambda_2\myvec{3 \\ -5 \\-4} \label{aug/22/eq:2}
     \end{align}
 \solution
-\input{solutions/aug/22.tex}
+%\input{solutions/aug/22.tex}
 \item Find the angle between the following pair of lines:
 \begin{align}
 L_1: \quad \vec{x} &= \myvec{2\\-5\\1} + \lambda_1\myvec{3 \\ 2 \\6}
@@ -458,7 +455,7 @@ L_2: \quad \vec{x} &= \myvec{7\\-6\\0} + \lambda_2\myvec{1 \\ 2 \\2}
 \end{align}
 \\
 \solution
-\input{./solutions/line_plane/73/solution.tex}
+%\input{./solutions/line_plane/73/solution.tex}
 \item If the coordinates of the points $\bm{A}, \bm{B}, \bm{C}, \bm{D}$ be \myvec{1\\2\\3}, \myvec{4\\5\\7}, \myvec{-4\\3\\-6}, \myvec{2\\9\\2}, then find the angle between the lines $AB$ and $CD$.  
 %
 \\
@@ -479,7 +476,7 @@ L_2: \quad \vec{x} &= \myvec{7\\-6\\0} + \lambda_2\myvec{1 \\ 2 \\2}
 are at right angles.
 \\
 \solution
-\input{./solutions/line_plane/75/solution.tex}
+%\input{./solutions/line_plane/75/solution.tex}
 \item Show that the lines 
 \begin{align}
 \frac{x-5}{7} = \frac{y+2}{-5} &= \frac{z}{1}, 
@@ -490,7 +487,7 @@ are at right angles.
 are perpendicular to each other.
 \\
 \solution
-\input{./solutions/line_plane/76/solution.tex}
+%\input{./solutions/line_plane/76/solution.tex}
 \item The line through the points \myvec{-2\\6} and \myvec{4\\8} is perpendicular to the line through the points \myvec{8\\12} and $\myvec{x\\24}$.  Find the value of $x$.
 \\
 \solution
@@ -622,11 +619,11 @@ The following code plots Fig. \ref{fig:quad_3d}
 codes/triangle/quad_3d.py
 \end{lstlisting}
 %
-\begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{./triangle/figs/quad_3d.eps}
-\caption{}
-\label{fig:quad_3d}
-\end{figure}
+%\begin{figure}[!ht]
+%\includegraphics[width=\columnwidth]{./triangle/figs/quad_3d.eps}
+%\caption{}
+%\label{fig:quad_3d}
+%\end{figure}
 %
 
 \item $ABCD$ is a rectangle formed by the points $\vec{A} = \myvec{-1\\-1}, \vec{B} = \myvec{-1\\4}, \vec{C} = \myvec{5\\4}, \vec{D} = \myvec{5\\-1}$. $ \vec{P}, \vec{Q}, \vec{R}, \vec{S}$ are the mid points of $AB, BC, CD, DA$ respectively.  Is the quadrilateral $PQRS$ a 
