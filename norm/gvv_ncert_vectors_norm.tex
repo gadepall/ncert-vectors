@@ -293,6 +293,63 @@ This book provides a computational approach to school geometry based on the NCER
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\item  If 
+$
+\vec{a}=\myvec{1\\1\\1},
+\vec{b}=\myvec{2\\-1\\3},
+\vec{c}=\myvec{1\\-2\\1},
+$
+find a unit vector parallel to the vector $2\vec{a}-\vec{b}+3\vec{c}$.
+\\
+\solution 
+%\input./solutions/point_vector/12/solution.tex}
+
+\item Find a vector of magnitude 5 units, and parallel to the resultant of the vectors 
+$
+\vec{a}=\myvec{2\\3\\-1},
+\vec{b}=\myvec{1\\-2\\1},
+$
+\\
+\solution 
+%\input./solutions/point_vector/13/solution.tex}
+\item Show that the unit direction vector inclined equally to the coordinate axes is $\myvec{\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\\ \frac{1}{\sqrt{3}}}$.
+\\
+\solution 
+%\input./solutions/point_vector/14/Latex/solution.tex}
+\item Find a unit vector that makes an angle of $90\degree, 135\degree$ and $45\degree$ with the positive x, y and z axis respectively.
+\solution 
+%\input./solutions/point_vector/18/solution.tex}
+\item Show that the line through the points \myvec{4\\7\\8}, \myvec{2\\3\\4} is parallel to the line through the points   \myvec{-1\\-2\\1}, \myvec{1\\2\\5}.
+\\
+\solution 
+%\input./solutions/point_vector/21/solution.tex}
+\item Find a vector $\vec{x}$ in the direction of \myvec{1\\-2} such that $\norm{\vec{x}} = 7$.
+%
+\solution Let $\vec{x} = k\myvec{1\\-2}$.  Then 
+%
+\begin{align}
+\norm{\vec{x}} &= \abs{k}\norm{\myvec{1\\-2}}= 7
+\\
+\implies \abs{k} &= \frac{7}{\sqrt{5}}
+\\
+\text{or, } \vec{x} &= \frac{7}{\sqrt{5}}\myvec{1\\-2}
+\end{align}
+%
+\item Find the direction vector of $PQ$, where 
+\begin{align}
+\vec{P} = \myvec{2\\3\\0},
+\vec{Q} = \myvec{-1\\-2\\-4}
+\end{align}
+%
+\solution The direction vector of $PQ$ is 
+%
+\begin{align}
+\vec{P}-\vec{Q} = \myvec{3\\5\\4},
+\end{align}
+%
+%\\
+%\solution Choose $\vec{x} = \myvec{0\\y}$ and follow the approach in Problem \eqref{prob:line_perp_bisect}. Solve for $y$.
+
 \item  Find the slope of a line, which passes through the origin, and the mid-point of the line segment joining the points $\vec{P} = \myvec{0\\ – 4}$ and $\vec{B} = \myvec{8\\ 0}$.
 \solution 
 %\input{./solutions/line_plane/24/solution.tex}
@@ -435,6 +492,99 @@ $
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\item Find a point on the x-axis, which is equidistant from the points \myvec{7\\ 6} and \myvec{3\\ 4}.
+\\
+\solution 
+%\input./solutions/point_vector/22/solution.tex}
+\item Write down a unit vector in the xy-plane, makeing an angle of $30\degree$ with the positive direction of the x-axis.
+\\
+\solution 
+%\input./solutions/point_vector/25/solution.tex}
+
+\item Find the value of $x$ for which $x\myvec{1\\1\\1}$ is a unit vector.
+\\
+\solution
+%\input./solutions/point_vector/26/solution.tex}
+\item If
+\begin{align}
+\vec{a} = \myvec{1\\2}, \vec{b} = \myvec{2\\1},
+\end{align}
+verify if  
+\begin{enumerate}
+\item $\norm{\vec{a}}=\norm{\vec{b}}$
+
+\item $\vec{a}=\vec{b}$
+\end{enumerate}
+%
+\solution
+\begin{enumerate}
+\item $\norm{\vec{a}}=\norm{\vec{b}},\vec{a}\ne\vec{b}$.
+\end{enumerate}
+\item Find a unit vector in the  direction of \myvec{2\\3\\1}.
+%
+\\
+\solution The unit vector is given by 
+\begin{align}
+\frac{\myvec{2\\3\\1}}{\norm{\myvec{2\\3\\1}}} = \frac{1}{\sqrt{14}}\myvec{2\\3\\1}
+\end{align}
+\item Find the distance between the points
+%
+\begin{align}
+\vec{P} = \myvec{1\\-3\\4},
+\vec{Q} = \myvec{-4\\1\\2}
+\end{align}
+%
+\solution 
+\\
+%%\input./solutions/line/geometry/examples/54/chapters/solution.tex}
+%\input./solutions/point_vector/54/chapters/solution.tex}
+The distance is given by $\norm{\vec{P}-\vec{Q}}$
+\item Find $\norm{\vec{a}-\vec{b}}$, if 
+\begin{align}
+\norm{\vec{a}} = 2, 
+\norm{\vec{b}} = 3,
+\vec{a}^T\vec{b} = 4.
+\end{align}
+%
+\solution 
+%\input./solutions/point_vector/68/chapters/solution.tex}
+%
+%
+%
+\item If $\vec{a}$ is a unit vector and 
+%
+\begin{align}
+\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} = 8, 
+\end{align}
+%
+then find $\vec{x}$.
+%
+\\
+\solution 
+%
+\begin{align}
+\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} &= \norm{\vec{x}}^2-\norm{\vec{a}}^2
+\\
+\implies \norm{\vec{x}}^2 &= 9 \text{ or, } \norm{\vec{x}} = 3.
+\end{align}
+%
+\item Find the point on the $x$-axis which is equidistant from 
+\begin{align}
+\myvec{2\\-5}, \myvec{-2\\9},
+\end{align}
+\solution
+%\input./solutions/6/chapters/line/point_vector/solution.tex}
+\item Find the values of $y$ for which the distance between the points 
+\begin{align}
+\vec{P} = \myvec{2\\-3}, \vec{Q} = \myvec{10\\y}
+\end{align}
+is 10 units.
+\solution
+%\input./solutions/7/chapters/line/point_vec/solution.tex}
+\item A town B is located 36km east and 15 km north of the town A.  How would you find the distance from town A to town B without actually measuring it?
+\\
+\solution
+%\input./solutions/3/chapters/line/towns/solution.tex}
 \item Find the unit normal vector of the plane 
 \begin{align}
 \myvec{6 & -3 & -2}\vec{x}  = 1.
@@ -520,6 +670,137 @@ are equal.
 \\
 \solution
 %\input{solutions/su2021/2/29/main.tex}
+\end{enumerate}
+\section{Section}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+
+\item Draw a line segement of length 7.6 cm and divide it in the ratio $5:8$.
+\\
+\solution Let the end points of the line be 
+\begin{align}
+\vec{A} = \myvec{0\\0}, \vec{B} = \myvec{7.6\\0}
+\end{align}
+Using section formula, 
+%From \eqref{eq:tri_geo_ex_caorth_section},
+the point $\vec{C}$
+\begin{align}
+\label{eq:line_section_form}
+\vec{C} = \frac{k \vec{B} + \vec{A}}{k+1}
+\end{align}
+If $\vec{C}$ divides $AB$ in the ratio 
+\begin{align}
+ m = \frac{5}{8},
+\end{align}
+then,
+\begin{align}
+\label{eq:line_section_form_m}
+\frac{\norm{\vec{C}-\vec{A}}^2}{\norm{\vec{B}-\vec{C}}^2} &= m^2
+\\
+\implies \frac{\frac{k^2\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}}{\frac{\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}} &=m^2
+\\
+\implies k = m &
+\end{align}
+upon substituting from \eqref{eq:line_section_form_m} and simplifying. \eqref{eq:line_section_form} is known as the section formula.
+%
+The following code plots Fig. \ref{fig:section}
+\begin{lstlisting}
+codes/line/draw_section.py
+\end{lstlisting}
+		%\begin{figure}[!ht]
+		%\includegraphics[width=\columnwidth]{./line/figs/section.eps}
+		%\caption{}
+		%\label{fig:section}
+		%\end{figure}
+\item Find the coordinates of the point which divides the line segment joining the points \myvec{4\\-3} and \myvec{8\\5} in the ratio $3:1$ internally.
+\\
+\solution Using \eqref{eq:line_section_form},
+the desired point is 
+\begin{align}
+\vec{P} = \frac{3 \myvec{4\\-3} + \myvec{8\\5}}{4}
+\end{align}
+\item In what ratio does the point \myvec{-4\\6} divide the line segment joining the points 
+%
+\begin{align}
+\vec{A} = \myvec{-6\\10},
+\vec{B} = \myvec{3\\-8}
+\end{align}
+%
+\\
+\solution Use \eqref{eq:line_section_form}.
+\item Find the coordinates of the points of trisection of the line segement joining the points
+%
+\begin{align}
+\vec{A} = \myvec{2\\-2},
+\vec{B} = \myvec{-7\\4}
+\end{align}
+%
+\\
+\solution Using \eqref{eq:line_section_form}, the coordinates are
+%
+\begin{align}
+\label{eq:line_section_form_tri}
+\vec{P} &= \frac{2 \vec{A} + \vec{B}}{3}
+\\
+\vec{Q} &= \frac{ \vec{A} + 2\vec{B}}{3}
+\end{align}
+%
+\item Find the ratio in which the y-axis divides the line segment joining the points \myvec{5\\-6} and \myvec{-1\\-4}.
+\\
+\solution Let the corresponding point on the $y$-axis be$\myvec{0\\y}$. If the ratio be $k:1$,
+using \eqref{eq:line_section_form}, the coordinates are
+%
+\begin{align}
+\myvec{0\\y} &= k\myvec{5\\-6}+ \myvec{-1\\-4}
+\\
+\implies 0 &= 5k-1 \implies k = \frac{1}{5}
+\end{align}
+%
+
+\end{enumerate}
+\section{Projection}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the projection of the vector 
+\begin{align}
+\myvec{1\\3\\7}
+\end{align}
+on the vector
+\begin{align}
+\myvec{7\\-1\\8}
+\end{align}
+\\
+\solution 
+%\input./solutions/point_vector/24/solution.tex}
+\item Find the projection of the vector 
+\begin{align}
+\vec{a} = \myvec{2\\3\\2}
+\end{align}
+on the vector
+\begin{align}
+\vec{b}=\myvec{1\\2\\1}.
+\end{align}
+%
+\solution The projection of $\vec{a}$ on $\vec{b}$ is shown in Fig. \ref{fig:line_proj}. It has magnitude $\norm{\vec{a}}\cos \theta$ and is in the direction of $\vec{b}$.
+%
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=\columnwidth]{./line/figs/line_proj.eps}
+%\caption{}
+%\label{fig:line_proj}
+%\end{figure}
+%
+Thus, the projection is defined as 
+\begin{align}
+\brak{\norm{\vec{a}}\cos\theta} \frac{\vec{b}}{\norm{\vec{b}}}
+=  \frac{\brak{\vec{a}^T\vec{b}}\norm{\vec{a}}}{\norm{\vec{b}}}\vec{b}
+\end{align}
 \end{enumerate}
 \end{document}
 

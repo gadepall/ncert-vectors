@@ -54,7 +54,7 @@
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
-% \usepackage{multicol}
+ \usepackage{multicol}
 % \usepackage{chngcntr}
 %\usepackage{enumerate}
 
@@ -282,7 +282,7 @@ columns=fullflexible
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This mnual provides an introduction to inner product applications in school geometry based on the NCERT textbooks from Class 6-12.  
+This manual provides an introduction to inner product applications in school geometry based on the NCERT textbooks from Class 6-12.  
 \end{abstract}
 
 \section{Angle}
@@ -291,6 +291,77 @@ This mnual provides an introduction to inner product applications in school geom
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
+\item Find the angle between the vectors 
+\begin{align}
+\myvec{1\\-2\\3},
+\myvec{3\\-2\\1}
+\end{align}
+\\
+\solution 
+%\input./solutions/point_vector/23/solution.tex}
+
+\item Find the angle between the force $\vec{F} = \myvec{3\\4\\-5}$ and displacement $\vec{d} = \myvec{5\\4\\3}$.
+%
+\\
+\solution 
+%\input./solutions/point_vector/27/solution.tex}
+
+\item Let $\norm{\vec{a}} = 3, \norm{\vec{b}}= 4, \norm{\vec{c}} = 5$ such that each vector is perpendicular to the other two.  Find $\norm{\vec{a}+\vec{b}+\vec{c}}$.
+%
+\\
+\solution Given that 
+%
+\begin{align}
+\label{eq:line_pair_orth}
+ \vec{a}^T \vec{b} =  \vec{b}^T\vec{c}= \vec{c}^T\vec{a} = 0.
+\end{align}
+%
+Then, 
+%
+\begin{multline}
+\norm{\vec{a}+\vec{b}+\vec{c}}^2 = \norm{\vec{a}}^2+\norm{\vec{b}}^2+\norm{\vec{c}}^2
+\\
++ \vec{a}^T \vec{b} +  \vec{b}^T\vec{c}+ \vec{c}^T\vec{a}.
+\end{multline}
+%
+which reduces to 
+%
+\begin{align}
+\norm{\vec{a}+\vec{b}+\vec{c}}^2 = \norm{\vec{a}}^2+\norm{\vec{b}}^2+\norm{\vec{c}}^2
+\end{align}
+%
+using \eqref{eq:line_pair_orth}
+%
+\item Given 
+\begin{align}
+\label{eq:line_vec_sum_0}
+ \vec{a}+\vec{b}+\vec{c} = \vec{0}, 
+\end{align}
+evaluate 
+\begin{align}
+ \vec{a}^T\vec{b}+\vec{b}^T\vec{c}+\vec{c}^T\vec{a},
+\end{align}
+given that $\norm{ \vec{a}}=3, \norm{ \vec{b}}= 4$ and $\norm{ \vec{c}} = 2 $.
+%
+\\
+\solution Multiplying \eqref{eq:line_vec_sum_0} with $\vec{a}, \vec{b}, \vec{c}$,
+\begin{align}
+%\label{eq:line_vec_sum_0}
+\norm{ \vec{a}}^2+\vec{a}^T\vec{b}+\vec{a}^T\vec{c} &= 0
+\\
+\vec{a}^T\vec{b}+\norm{ \vec{b}}^2+\vec{b}^T\vec{c} &= 0
+\\
++\vec{c}^T\vec{a}+\vec{b}^T\vec{c}+\norm{ \vec{c}}^2 &= 0
+\end{align}
+%
+Adding all the above equations and rearranging,
+\begin{multline}
+%\label{eq:line_vec_sum_0}
+ \vec{a}^T\vec{b}+\vec{b}^T\vec{c}+\vec{c}^T\vec{a} = -\frac{\norm{ \vec{a}}^2+\norm{ \vec{b}}^2+\norm{ \vec{c}}^2}{2}
+\end{multline}
+\item Find the angle between the x-axis and the line joining the points \myvec{3\\–1} and \myvec{4\\–2}.
+\solution
+%\input./solutions/5/chapters/lines/docq9.tex}
 \item Find the angle between the two planes
 \label{prob:planes_angle}
 \begin{align}
@@ -467,6 +538,66 @@ L_2: \quad \vec{x} &= \myvec{7\\-6\\0} + \lambda_2\myvec{1 \\ 2 \\2}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\item Show that each of the given three vectors is a unit vector
+\begin{align}
+ \frac{1}{7}\myvec{2\\3\\6}, \frac{1}{7}\myvec{3\\-6\\2}, \frac{1}{7}\myvec{6\\2\\-3}.
+\end{align}
+Also,  show that they are mutually perpendicular to each other.
+\\
+\solution 
+%\input./solutions/point_vector/8/solution.tex}
+
+\item For 
+\begin{align}
+\vec{a} = \myvec{2\\2\\3}, \vec{b} = \myvec{-1\\2\\1}, \vec{c} = \myvec{3\\1\\0},
+\end{align}
+$\brak{\vec{a}+k\vec{b}}\perp\vec{c}$.  Find $\lambda$.
+\solution
+%\input./solutions/point_vector/9/solution.tex}
+
+\item Find ${\vec{a} \times \vec{b}}$ if 
+\begin{align}
+\vec{a}=\myvec{1\\-7\\7},
+\vec{b}=\myvec{3\\-2\\2}.
+\end{align}
+\\
+\solution 
+%\input./solutions/point_vector/10/solution.tex}
+\item The scalar product of \myvec{1\\1\\1} with a unit vector along the sum  of the vectors \myvec{2\\4\\-5} and \myvec{\lambda\\2\\3} is unity.  Find the value of $\lambda$.
+\item The value of 
+\begin{multline}
+\myvec{1\\0\\0}^T\brak{\myvec{0\\1\\0}\times \myvec{0\\0\\1}}
++\myvec{0\\1\\0}^T\brak{\myvec{1\\0\\0}\times \myvec{0\\0\\1}}
+\\
++\myvec{0\\0\\1}^T\brak{\myvec{1\\0\\0}\times \myvec{0\\1\\0}}
+\end{multline}
+%
+is 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item 0
+\item -1
+\item 1
+\item 3
+\end{multicols}
+\end{enumerate}
+\solution 
+%\input./solutions/point_vector/17/solution.tex}
+\item Show that the lines with direction vectors \myvec{12\\-3\\-4}, \myvec{4\\12\\3} and \myvec{3\\-4\\12} are mutually perpendicular.
+\item Show that the line through the points \myvec{1\\-1\\2}, \myvec{3\\4\\-2} is perpendicular to the line through the points   \myvec{0\\3\\2}, \myvec{3\\5\\6}.
+\\
+\solution 
+%\input./solutions/point_vector/20/solution.tex}
+\item If 
+$\vec{a}=\myvec{5\\-1\\-3}$
+  and 
+$\vec{b}=\myvec{1\\3\\-5}$,
+%
+then show that the vectors $\vec{a}+\vec{b}$ and $\vec{a}-\vec{b}$ are perpendicular.
+%
+\\
+\solution 
+%\input./solutions/point_vector/66/latex/solution.tex}
 \item Find the values of $p$ so that the lines 
 \begin{align}
 \frac{1-x}{3} = \frac{7y-14}{2p} &= \frac{z-3}{2}, 
@@ -634,6 +765,42 @@ codes/triangle/quad_3d.py
 \end{enumerate}
 \solution
 %\input{./solutions/quad/1/solution}
+\end{enumerate}
+
+\section{Application}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Let $\bm{\alpha} = \myvec{3\\-1\\0}, \bm{\beta} = \myvec{2\\1\\-3}$.  Find $\bm{\beta}_1, \bm{\beta}_2 $ such that $\bm{\beta}=\bm{\beta}_1+\bm{\beta}_2, \bm{\beta}_1 \parallel  \bm{\alpha} $ and $\bm{\beta}_2 \perp \bm{\alpha} $.
+%
+\label{prob:line_gram_schmidt}
+\\
+\solution Let $\beta_1 = k\alpha$.  Then, 
+%
+\begin{align}
+\bm{\beta} &= k\bm{\alpha}+\bm{\beta}_2
+\\
+\implies k &= \frac{\bm{\alpha}^T\bm{\beta}}{\norm{\bm{\alpha}}^2}
+\end{align}
+%
+and 
+%
+\begin{align}
+\bm{\beta}_2 &= \bm{\beta}-k\bm{\alpha}
+\end{align}
+%
+This process is known as {\em Gram-Schmidth orthogonalization}.
+
+\item A body constrained to move along the z-axis of a coordinate system is subject to a constant force
+\begin{align}
+\vec{F} = \myvec{-1\\2\\3}
+\end{align}
+%
+What is the work done by this force in moving the body a distance of 4 m along the z-axis ?
+\\
+\solution 
+%\input./solutions/point_vector/28/solution.tex}
 \end{enumerate}
 \end{document}
 
