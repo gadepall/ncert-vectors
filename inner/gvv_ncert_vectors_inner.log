@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  27 NOV 2021 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  28 NOV 2021 07:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,32 +741,32 @@ Underfull \hbox (badness 6173) in paragraph at lines 503--514
  []
 
 [2]
-Overfull \hbox (14.98041pt too wide) detected at line 573
+Overfull \hbox (14.98041pt too wide) detected at line 582
  []$[]   [][] [] \OT1/cmr/m/n/12 + [][] []$ 
  []
 
 [3]
 
-LaTeX Warning: Reference `fig:triangle_3d' on page 4 undefined on input line 68
-8.
+LaTeX Warning: Reference `fig:triangle_3d' on page 4 undefined on input line 69
+7.
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 706--710
+Underfull \hbox (badness 1803) in paragraph at lines 715--719
 []\OT1/ptm/m/n/12 Show that the points $\OT1/cmr/bx/n/12 A \OT1/cmr/m/n/12 = []
  \OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 B \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 723--734
+Underfull \hbox (badness 1609) in paragraph at lines 732--743
 []\OT1/ptm/m/n/12 Show that the points $\OT1/cmr/bx/n/12 A \OT1/cmr/m/n/12 = []
  \OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 B \OT1/cmr/m/n/12 =
  []
 
 
-LaTeX Warning: Reference `fig:quad_3d' on page 4 undefined on input line 747.
+LaTeX Warning: Reference `fig:quad_3d' on page 4 undefined on input line 756.
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 760--762
+Underfull \hbox (badness 1874) in paragraph at lines 769--771
 []$\OT1/ptm/m/n/12 . $\OT1/cmr/bx/n/12 P\OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 Q\O
 ML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 R\OML/cmm/m/it/12 ; \OT1/cmr/bx/n/12 S$ \OT1/
 ptm/m/n/12 are the mid points of
@@ -779,21 +779,18 @@ ptm/m/n/12 are the mid points of
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `gvv_ncert_vectors_inner.out' has changed.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_inner.out':
-(rerunfilecheck)             Before: C917F6704AE97480606FBE6745519430;68
-(rerunfilecheck)             After:  6856309AC3133F63C4AB10FC6A478299;274.
+Package rerunfilecheck Info: File `gvv_ncert_vectors_inner.out' has not changed
+.
+(rerunfilecheck)             Checksum: 6856309AC3133F63C4AB10FC6A478299;274.
  ) 
 Here is how much of TeX's memory you used:
- 13004 strings out of 478994
- 189942 string characters out of 5864751
- 541170 words of memory out of 5000000
- 30170 multiletter control sequences out of 15000+600000
- 444466 words of font info for 115 fonts, out of 8000000 for 9000
+ 13014 strings out of 478994
+ 190061 string characters out of 5864752
+ 541162 words of memory out of 5000000
+ 30173 multiletter control sequences out of 15000+600000
+ 445602 words of font info for 116 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,15n,74p,515b,1167s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -807,11 +804,11 @@ ts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb>
-Output written on gvv_ncert_vectors_inner.pdf (5 pages, 142197 bytes).
+pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_ncert_vectors_inner.pdf (5 pages, 152870 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 118 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 248 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 

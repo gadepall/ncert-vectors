@@ -2,3 +2,4 @@
 \contentsline {section}{\numberline {2}Norm }{3}{section.2}%
 \contentsline {section}{\numberline {3}Section}{4}{section.3}%
 \contentsline {section}{\numberline {4}Projection}{5}{section.4}%
+\contentsline {section}{\numberline {5}Applications}{5}{section.5}%

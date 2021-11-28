@@ -293,6 +293,25 @@ This book provides a computational approach to school geometry based on the NCER
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\item Find the slope of the line, which makes an angle of $30\degree$ of y-axis measured anticlockwise.
+
+
+\item Find the direction vectors and and y-intercepts  of the following lines 
+\begin{enumerate}
+\item $\myvec{1 & 7}\vec{x} = 0$.
+\item $\myvec{6 & 3}\vec{x} = 5$.
+\item $\myvec{0 & 1}\vec{x} = 0$.
+\end{enumerate}
+\item Find a unit vector in the direction of $\vec{A}+\vec{B}$, where 
+%
+\begin{align}
+\vec{A} = \myvec{2\\2\\-5}, \vec{B} = \myvec{2\\1\\3}.
+\end{align}
+%
+\solution
+%\input{solutions/aug/2/23.tex}
+%\end{enumerate}
+%
 \item  If 
 $
 \vec{a}=\myvec{1\\1\\1},
@@ -678,6 +697,28 @@ are equal.
 \numberwithin{equation}{enumi}
 
 
+\item Find $\vec{R}$ which divides the line joining the points 
+\begin{align}
+\vec{P} = 2\vec{a}+\vec{b}
+\\
+\vec{Q} = \vec{a}-\vec{b}
+\end{align}
+externally in the ratio $1:2$.
+\item If 
+\begin{align}
+\vec{P} = 3\vec{a}-2\vec{b}
+\\
+\vec{Q} = \vec{a}+\vec{b}
+\end{align}
+%
+find $\vec{R}$, which divides $PQ$ in the ratio $2:1$
+\begin{enumerate}
+\item internally,
+\item externally.
+\end{enumerate}
+%
+\solution
+%\input{solutions/sep/20.tex}
 \item Draw a line segement of length 7.6 cm and divide it in the ratio $5:8$.
 \\
 \solution Let the end points of the line be 
@@ -759,7 +800,41 @@ using \eqref{eq:line_section_form}, the coordinates are
 \implies 0 &= 5k-1 \implies k = \frac{1}{5}
 \end{align}
 %
+\item Find the coordinates of the point which divides the join of 
+\begin{align}
+\myvec{-1\\7},  \myvec{4\\-3}
+%\vec{P} = \myvec{2\\-3}, \vec{Q} = \myvec{10\\y}
+\end{align}
+%
+in the ratio $2:3$.
+\\
+\solution
+%\input{./solutions/1/chapters/line/point_line/solution.tex}
 
+\item Find the coordinates of the points of trisection of the line segment joining \myvec{4\\-1} and \myvec{-2\\-3}.
+\\
+\solution
+%\input{./solutions/2/chapters/line_ex/pts_on_a_line/solution.tex}
+\item Find the ratio in which the line segment joining the points \myvec{-3\\10} and \myvec{6\\-8} is divided by \myvec{-1\\6}.
+\\
+\solution
+%\input{./solutions/3/chapters/line/section/solution.tex}
+\item Find the ratio in whcih the line segment joining $\vec{A}=\myvec{1\\-5}, \vec{B}=\myvec{-4\\5}$ is divided by the $x$-axis.  Also find the coordinates of the point of division.
+\\
+\solution
+%\input{./solutions/4/chapters/line/point_on_line/solution.tex}
+\item If \myvec{1\\2}, \myvec{4\\y}, \myvec{x\\6} and \myvec{3\\5} are the vertices of a parallelogram taken in order, find $x$ and $y$.
+\\
+\solution
+%\input{./solutions/5/chapters/lines/docq10.tex}
+\item If $\vec{A}=\myvec{-2\\-2}, \vec{B}=\myvec{2\\-4}$ respectively, find the coordinates of $\vec{P}$ such that $AP = \frac{3}{7}AB$ and $\vec{P}$ lies on the line segment $AB$.
+\\
+\solution
+%\input{./solutions/6/chapters/line/point_line/solution.tex}
+\item Find the coordinates of the points which divide the line segment joining $\vec{A}=\myvec{-2\\2}, \vec{B}=\myvec{2\\8}$ into four equal parts.
+\\
+\solution
+%\input{./solutions/7/chapters/line/point_line/solution.tex}
 \end{enumerate}
 \section{Projection}
 \renewcommand{\theequation}{\theenumi}
@@ -802,6 +877,178 @@ Thus, the projection is defined as
 =  \frac{\brak{\vec{a}^T\vec{b}}\norm{\vec{a}}}{\norm{\vec{b}}}\vec{b}
 \end{align}
 \end{enumerate}
+\section{Applications}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the perpendicular distances of the following lines from the origin and angle between the perpendicular and the positive x-axis.
+\begin{enumerate}
+\item $\myvec{1 & -\sqrt{3}}\vec{x} = -8$.
+\item $\myvec{0 & 1}\vec{x} = 2$.
+\item $\myvec{1 & -1}\vec{x} = 4$.
+\end{enumerate}
+
+\item Find $\norm{\vec{a}}$ and $\norm{\vec{b}}$ if 
+\begin{align}
+\brak{\vec{a}+\vec{b}}^T\brak{\vec{a}-\vec{b}} &= 8
+\\
+\norm{\vec{a}}&=8\norm{\vec{b}}
+\end{align}
+\item Evaluate the product 
+\begin{align}
+\brak{3\vec{a}-5\vec{b}}^T\brak{2\vec{a}+7\vec{b}} 
+\end{align}
+\item Find $\norm{\vec{a}}$ and $\norm{\vec{b}}$, if
+\begin{align}
+\norm{\vec{a}} &= \norm{\vec{b}},
+\\
+\vec{a}^T\vec{b} = \frac{1}{2} 
+\end{align}
+and the angle between $\vec{a}$ and $\vec{b}$ is $60\degree$.
+\item Show that 
+\begin{align}
+\brak{\norm{\vec{a}}\vec{b}+\norm{\vec{b}}\vec{a}}\perp \brak{\norm{\vec{a}}\vec{b}-\norm{\vec{b}}\vec{a}}\\
+\end{align}
+\item If $\vec{a}^T\vec{a}=0$ and  $\vec{a}\vec{b}=0$, what can be concluded about the vector $\vec{b}$?
+\item If $\vec{a},\vec{b},\vec{c}$ are unit vectors such that 
+\begin{align}
+\vec{a}+\vec{b}+\vec{c} = 0,
+\end{align}
+find the value of 
+\begin{align}
+\vec{a}^T\vec{b}+\vec{b}^T\vec{c}+\vec{c}^T\vec{a}.
+\end{align}
+\item If $\vec{a} \ne \vec{0}, \lambda \ne 0$, then $\norm{\lambda \vec{a}} = 1$ if
+\begin{enumerate}
+\item $\lambda =1$
+\item $\lambda = -1$
+\item $\norm{\vec{a}}=\abs{\lambda}$
+\item $\norm{\vec{a}}=\frac{1}{\abs{\lambda}}$
+\end{enumerate}
+\item If a unit vector $\vec{a}$ makes angles $\frac{\pi}{3}$ with the x-axis and $\frac{\pi}{4}$ with the y-axis and an acute angle $\theta$ with the z-axis, find $\theta$ and $\vec{a}$.
+\item Show that 
+\begin{align}
+\brak{\vec{a}-\vec{b}}\times \brak{\vec{a}+\vec{b}} = 2\brak{\vec{a}\times\vec{b}}
+\end{align}
+\item If $\vec{a}^T\vec{b} = 0$ and $\vec{a}\times \vec{b}$ = 0, what can you conclude about $\vec{a}$ and $\vec{b}$?
+\item Find $\vec{x}$ if  $\vec{a}$ is a unit vector such that
+\begin{align}
+\brak{\vec{x}-\vec{a}}^T\brak{\vec{x}+\vec{a}} = 12.
+\end{align}
+\item If $\norm{\vec{a}} = 3, \norm{\vec{b}} =\frac{\sqrt{2}}{3}$, then $\vec{a}\times \vec{b}$ is a unit vector if the angle between $\vec{a}$ and $\vec{b}$ is 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item $\frac{\pi}{6}$
+\item $\frac{\pi}{4}$
+\item $\frac{\pi}{3}$
+\item $\frac{\pi}{2}$
+\end{multicols}
+\end{enumerate}
+\item Prove that 
+\begin{align}
+\brak{\vec{a}+\vec{b}}^T\brak{\vec{a}+\vec{b}} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2
+\\
+\iff \vec{a}&\perp\vec{b}.
+\end{align}
+\item If $\theta$ is the angle between two vectors $\vec{a}$ and $\vec{b}$, then $\vec{a}^T\vec{b} \ge $ only when 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item $0 < \theta < \frac{\pi}{2}$
+\item $0 \le \theta \le \frac{\pi}{2}$
+\item $0 < \theta < {\pi}$
+\item $0 \le \theta \le {\pi}$
+\end{multicols}
+\end{enumerate}
+\item Let $\vec{a}$ and $\vec{b}$ be two unit vectors and $\theta$ be the angle between them.  Then $\vec{a}+\vec{b}$ is a unit vector if 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item $\theta = \frac{\pi}{4}$
+\item $\theta = \frac{\pi}{3}$
+\item $\theta = \frac{\pi}{2}$
+\item $\theta = \frac{2\pi}{3}$
+\end{multicols}
+\end{enumerate}
+\item If $\theta$ is the angle between any two vectors $\vec{a}$ and $\vec{b}$, then 
+$\norm{\vec{a}^T\vec{b}} = \norm{\vec{a} \times \vec{b}}$ when $\theta$ is equal to 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item 0
+\item $\frac{\pi}{4}$
+\item $\frac{\pi}{2}$
+\item $\pi$.
+\end{multicols}
+\end{enumerate}
+\item A bullet fired at an angle of 30$\degree$ with the horizontal hits the ground 3.0 km away. By adjusting its angle of projection, can one hope to hit a target 5.0 km away ? Assume the muzzle speed to be fixed, and neglect air resistance.
+\item  A fighter plane flying horizontally at an altitude of 1.5 km with speed 720 km/h passes directly overhead an anti-aircraft gun. At what angle from the vertical should the gun be fired for the shell with muzzle speed 600 $m s^{-1}$ to hit the plane ? 
+At what minimum  altitude should the pilot fly the plane to avoid being hit ? (Take g = 10$ m s^{-2}$
+).
+\item Consider the collision depicted in Fig. \ref{fig:6.10} to be between two billiard balls with equal masses $m_1= m_2$.  The first ball is called the cue while the second ball is called the target. The billiard player wants to 'sink' the target ball in a corner pocket, which is at an angle $\theta_2=37\degree$.  Assume that the collosion
+is elastic and that friction and rotational motion are not important. Obtain $\theta_1$.
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{./line/figs/11-1/6/6.10.eps}
+%\caption{}
+%\label{fig:6.10}
+%\end{figure}
+\item Rain is falling vertically with a speed of 35 $m s^{-1}$
+. Winds starts blowing after sometime with a speed of 12 $m s^{-1}$ in
+east to west direction. In which direction should a boy waiting at a bus stop hold his umbrella ?
+%
+\\
+\solution 
+%\input{./solutions/1/chapters/line/Motion_plane/solution.tex}
+
+\item A motorboat is racing towards north at 25 km/h and the water current in that region is 10 km/h in the direction of 60$\degree$ east of south. Find the resultant velocity of the boat.
+\\
+\solution 
+%\input{./solutions/2/chapters/line_ex/motion_in_a_plane/solution.tex}
+\item Rain is falling vertically with a speed of 35 $m s^{-1}$
+. A woman rides a bicycle with a speed of 12 $ms^{-1}$ in east to west
+direction. What is the direction in which she should hold her umbrella ?
+\\
+\solution 
+%\input{./solutions/3/chapters/line/rain/solution.tex}
+\item  A hiker stands on the edge of a cliff 490 m above the ground and throws a stone horizontally with an initial speed of 15 $m s^{-1}$
+. Neglecting air resistance,
+find the time taken by the stone to reach the ground, and the speed with which it hits the ground. (Take g = 9.8 $m s^{-2}$
+).
+\\
+\solution 
+%\input{./solutions/4/chapters/line/motion/solution.tex}
+\item Rain is falling vertically with a speed of 30 $m s^{-1}$. A woman rides a bicycle with a speed  of 10 $m s^{-1}$ in the north to south direction. What is the direction in which she should
+hold her umbrella?
+\\
+\solution 
+%\input{./solutions/5/chapters/lines/docq12.tex}
+\item A man can swim with a speed of 4.0 km/h in still water. How long does he take to cross a river 1.0 km wide if the river flows steadily at 3.0 km/h and he makes his strokes normal to the river current? How far down the river does he go when he reaches the other bank ?
+\\
+\solution 
+%\input{./solutions/6/chapters/line/motion_plane/solution.tex}
+\item In a harbour, wind is blowing at the speed of 72 km/h and the flag on the mast of a boat anchored in the harbour flutters along the N-E direction. If the boat starts moving at a speed of 51 km/h to the north, what is the direction of the flag on the mast of the boat ?
+\\
+\solution 
+%\input{./solutions/7/chapters/line/motion/solution.tex}
+
+\item Find the intercepts cut off by the plane 
+$
+\myvec{2 & 1 & 1}\vec{x}=5.
+\end{enumerate}
+\section{Locus}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The sum of the perpendicular distances of a variable point $\vec{P}$ from the lines
+\end{enumerate}
+%
+\begin{align}
+\myvec{1 & 1}\vec{x} &= 0
+\\
+\myvec{3 & -2}\vec{x} &= -7
+\end{align}
+%
+is always 10.  Show that $\vec{P}$ must move on a line.
 \end{document}
 
 

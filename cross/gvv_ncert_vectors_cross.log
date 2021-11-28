@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  27 NOV 2021 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  28 NOV 2021 07:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,21 +592,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout4 = `gvv_ncert_vectors_cross.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 299.
+(Font)              <12> on input line 298.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 299.
+(Font)              <8> on input line 298.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 299.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(Font)              <6> on input line 298.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 
 LaTeX Warning: Reference `eq:tri_geo_ex_diff_mat' on page 2 undefined on input 
-line 399.
+line 414.
 
 [2] [3
 
@@ -622,14 +619,14 @@ Package rerunfilecheck Info: File `gvv_ncert_vectors_cross.out' has not changed
 (rerunfilecheck)             Checksum: EF8D0ADB3747CA083CF273D341AFCE45;68.
  ) 
 Here is how much of TeX's memory you used:
- 12154 strings out of 478994
- 179960 string characters out of 5864751
- 534139 words of memory out of 5000000
+ 12158 strings out of 478994
+ 179998 string characters out of 5864752
+ 538140 words of memory out of 5000000
  29424 multiletter control sequences out of 15000+600000
  438530 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,14n,74p,515b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.11.3} has been referenced but does not e
+pdfTeX warning (dest): name{equation.22.3} has been referenced but does not e
 xist, replaced by a fixed one
 
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
@@ -641,10 +638,10 @@ share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist
 rw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fo
 nts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_cross.pdf (3 pages, 107417 bytes).
+Output written on gvv_ncert_vectors_cross.pdf (3 pages, 108567 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 52 named destinations out of 1000 (max. 500000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 
