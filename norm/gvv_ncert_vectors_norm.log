@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  28 NOV 2021 07:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  29 NOV 2021 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -231,6 +231,14 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip54
 \thm@headsep=\skip55
 \dth@everypar=\toks27
+)
+(/usr/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
 )
 (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
@@ -515,10 +523,84 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 ))
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count302
+
+
+Package multicol Warning: May not work with the twocolumn option on input line 
+141.
+
+\mult@box=\box61
+\multicol@leftmargin=\dimen194
+\c@unbalance=\count303
+\c@collectmore=\count304
+\doublecol@number=\count305
+\multicoltolerance=\count306
+\multicolpretolerance=\count307
+\full@width=\dimen195
+\page@free=\dimen196
+\premulticols=\dimen197
+\postmulticols=\dimen198
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen199
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@gfirstbox=\box66
+\mult@firstbox=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count308
+\c@columnbadness=\count309
+\c@finalcolumnbadness=\count310
+\last@try=\dimen256
+\multicolovershoot=\dimen257
+\multicolundershoot=\dimen258
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count311
+) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count302
-\l__pdf_internal_box=\box61
+\l__color_backend_stack_int=\count312
+\l__pdf_internal_box=\box107
 )
 (./gvv_ncert_vectors_norm.aux)
 \openout1 = `gvv_ncert_vectors_norm.aux'.
@@ -556,8 +638,8 @@ Package gensymb Warning: Not defining \micro.
 
 (/home/user/texmf/tex/latex/tmeslatex/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen194
-\Gin@req@width=\dimen195
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
 )
 Package hyperref Info: Link coloring OFF on input line 89.
 
@@ -570,7 +652,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count303
+\c@section@level=\count313
 )
 LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
@@ -580,20 +662,20 @@ LaTeX Info: Redefining \nameref on input line 89.
 \@outlinefile=\write3
 \openout3 = `gvv_ncert_vectors_norm.out'.
 
-\c@lstlisting=\count304
+\c@lstlisting=\count314
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen196
-\scratchbox=\box62
-\nofMPsegments=\count306
-\nofMParguments=\count307
+\scratchcounter=\count315
+\scratchdimen=\dimen261
+\scratchbox=\box108
+\nofMPsegments=\count316
+\nofMParguments=\count317
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen197
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen262
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
 \everyMPtoPDFconversion=\toks35
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -604,12 +686,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@theorem=\count311
-\c@problem=\count312
-\c@proposition=\count313
-\c@lemma=\count314
-\c@example=\count315
-\c@rem=\count316
+\c@theorem=\count321
+\c@problem=\count322
+\c@proposition=\count323
+\c@lemma=\count324
+\c@example=\count325
+\c@rem=\count326
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14> on input line 247.
@@ -639,28 +721,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 296.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 296.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./solutions/1/3/sol.tex)
+(./solutions/1/4/sol.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2] [3]
 
 LaTeX Warning: Reference `fig:line_perp_bisect' on page 4 undefined on input li
-ne 641.
-
-
-LaTeX Warning: Reference `fig:section' on page 4 undefined on input line 734.
+ne 650.
 
 [4]
 
-LaTeX Warning: Reference `fig:line_proj' on page 5 undefined on input line 848.
+LaTeX Warning: Reference `eq:line_section_form_m' on page 5 undefined on input 
+line 748.
 
 
+LaTeX Warning: Reference `eq:line_section_form' on page 5 undefined on input li
+ne 748.
 
-LaTeX Warning: Reference `fig:6.10' on page 5 undefined on input line 873.
 
-[5] [6] (./gvv_ncert_vectors_norm.aux)
+LaTeX Warning: Reference `fig:section' on page 5 undefined on input line 750.
+
+
+LaTeX Warning: Reference `eq:line_section_form' on page 5 undefined on input li
+ne 761.
+
+
+LaTeX Warning: Reference `eq:line_section_form' on page 5 undefined on input li
+ne 774.
+
+
+LaTeX Warning: Reference `eq:line_section_form' on page 5 undefined on input li
+ne 783.
+
+
+LaTeX Warning: Reference `eq:line_section_form' on page 5 undefined on input li
+ne 795.
+
+[5]
+
+LaTeX Warning: Reference `fig:line_proj' on page 6 undefined on input line 864.
+
+
+[6]
+
+LaTeX Warning: Reference `fig:6.10' on page 7 undefined on input line 986.
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 1033--1037
+[]\OT1/ptm/m/n/12 Find the in-ter-cepts cut off by the plane
+ []
+
+[7] (./gvv_ncert_vectors_norm.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package rerunfilecheck Warning: File `gvv_ncert_vectors_norm.out' has changed.
@@ -668,15 +785,15 @@ Package rerunfilecheck Warning: File `gvv_ncert_vectors_norm.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_norm.out':
-(rerunfilecheck)             Before: A9E641B9D3378AC16821A778009B8509;275
-(rerunfilecheck)             After:  75416EF49C893C38129E43375D2D1EF7;471.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  364E4BDABD8479AE35781B50572CE036;539.
  ) 
 Here is how much of TeX's memory you used:
- 12816 strings out of 478994
- 187193 string characters out of 5864752
- 529981 words of memory out of 5000000
- 29967 multiletter control sequences out of 15000+600000
- 439864 words of font info for 100 fonts, out of 8000000 for 9000
+ 13120 strings out of 478994
+ 191056 string characters out of 5864752
+ 531905 words of memory out of 5000000
+ 30170 multiletter control sequences out of 15000+600000
+ 444466 words of font info for 115 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,15n,74p,514b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -691,10 +808,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fo
 nts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
 bi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_vectors_norm.pdf (6 pages, 158466 bytes).
+Output written on gvv_ncert_vectors_norm.pdf (7 pages, 168230 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 149 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  21 NOV 2021 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  29 NOV 2021 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -472,7 +472,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box60
 )
-No file gvv_ncert_vectors_defs.aux.
+(./gvv_ncert_vectors_defs.aux)
 \openout1 = `gvv_ncert_vectors_defs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -493,6 +493,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
+
 -- Lines per column: 50 (exact).
 Package hyperref Info: Link coloring OFF on input line 89.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -509,6 +510,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
 LaTeX Info: Redefining \nameref on input line 89.
+
+(./gvv_ncert_vectors_defs.out) (./gvv_ncert_vectors_defs.out)
 \@outlinefile=\write3
 \openout3 = `gvv_ncert_vectors_defs.out'.
 
@@ -549,83 +552,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9.79996> on input line 247.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 247.
+
+(./gvv_ncert_vectors_defs.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `gvv_ncert_vectors_defs.toc'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 296.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 296.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 296.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 296.
+(hyperref)                removing `math shift' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 296.
+(hyperref)                removing `\times' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 296.
+(hyperref)                removing `math shift' on input line 292.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 363.
+(hyperref)                removing `math shift' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 363.
+(hyperref)                removing `\times' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 363.
+(hyperref)                removing `math shift' on input line 370.
 
-(./solutions/area/1.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]) (./solutions/area/2.tex) (./solutions/area/3.tex) (./solutions/area/4.tex
-
-LaTeX Warning: Reference `eq:cross3d' on page 2 undefined on input line 13.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Reference `eq:cross3d' on page 2 undefined on input line 17.
-
-) [2]
-
-LaTeX Warning: Reference `eq:cross3d' on page 3 undefined on input line 462.
-
-
-LaTeX Warning: Reference `eq:cross3d' on page 3 undefined on input line 466.
-
-[3
-
-] (./gvv_ncert_vectors_defs.aux)
-
-LaTeX Warning: There were undefined references.
-
+] [2]
+(./gvv_ncert_vectors_defs.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
-Package rerunfilecheck Warning: File `gvv_ncert_vectors_defs.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_defs.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  098C3D6E8FD09E08F5C14227EAFC4890;614.
+(rerunfilecheck)             Checksum: 098C3D6E8FD09E08F5C14227EAFC4890;614.
  ) 
 Here is how much of TeX's memory you used:
- 11660 strings out of 478994
- 170804 string characters out of 5864751
- 520202 words of memory out of 5000000
- 28903 multiletter control sequences out of 15000+600000
+ 11376 strings out of 478994
+ 168577 string characters out of 5864752
+ 505739 words of memory out of 5000000
+ 28649 multiletter control sequences out of 15000+600000
  438530 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,26n,74p,514b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,26n,74p,514b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -637,10 +620,10 @@ s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on gvv_ncert_vectors_defs.pdf (3 pages, 125586 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (2 pages, 124395 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 84 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
