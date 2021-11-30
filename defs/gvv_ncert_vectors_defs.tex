@@ -364,11 +364,21 @@ Thus,
 \begin{align}
     \frac{\vec{m}}{\norm{\vec{m}}}
 \end{align}
-  
+\item If the direction vector of a line is expressed as 
+	\begin{align}
+    \vec{m} = \myvec{1\\m},
+\end{align}
+ the $m$ is defined to be the {\em} slope of the line. 
   \item The {\em normal vector} to $\vec{m}$ is defined by 
   \begin{align}
     \label{eq:normal_vec}
     \vec{m}^{\top}  \vec{n} = 0
+  \end{align}
+\item  The standard basis vectors are defined as 
+
+  \begin{align}
+  \vec{e}_1&= \myvec{1\\0}, 
+  \vec{e}_2&= \myvec{0\\1} 
   \end{align}
 \end{enumerate}
 \subsection{$3\times 1$ vectors}
@@ -398,14 +408,48 @@ and
 \begin{align}
   \vec{A} \times \vec{B} = -  \vec{B} \times \vec{A} 
 \end{align}
-\item The area of a triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
-\begin{align}
-  \label{eq:area3d}
- \frac{1}{2} \norm{\brak{\vec{A} - \vec{B}} \times \brak{\vec{A} - \vec{C}}}
-\end{align}
 
 \end{enumerate}
-
+\subsection{Geometry}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+%
+\item (Affine Transformation) Let $\vec{A},\vec{C}$, be opposite sides of a square. The other two points can be obtained as  
+\begin{align}
+  \label{eq:square_points}
+  \vec{B} = \frac{\norm{\vec{A}-\vec{C}}}{\sqrt{2}} \vec{P}\vec{e}_1+\vec{A}
+  \\
+  \vec{D} = \frac{\norm{\vec{A}-\vec{C}}}{\sqrt{2}} \vec{P}\vec{e}_2+\vec{A}
+\end{align}
+where 
+\begin{align}
+	\vec{P} = \myvec{\cos \brak{\theta-\frac{\pi}{4}} & \sin  \brak{\theta-\frac{\pi}{4}} \\ \sin \brak{\theta-\frac{\pi}{4}} & \cos \brak{\theta-\frac{\pi}{4}}}
+\end{align}
+and 
+\begin{align}
+	\cos\theta = \frac{\brak{\vec{C}-\vec{A}}^{\top}\vec{e}_1}{\norm{\vec{A}-\vec{C}}\norm{\vec{e}_1}}
+\end{align}
+and 
+%\item The area of a triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
+%\begin{align}
+%  \label{eq:area3d}
+% \frac{1}{2} \norm{\brak{\vec{A} - \vec{B}} \times \brak{\vec{A} - \vec{C}}}
+%\end{align}
+%
+%\item Points $\vec{A}, \vec{B}, \vec{C}$ are on a line if 
+%\begin{align}
+%  \label{eq:line_rank}
+%  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} }  = 1
+%\end{align}
+%\item Points $\vec{A}, \vec{B}, \vec{C}, \vec{D}$ form a paralelogram if 
+%\begin{align}
+%  \label{eq:parallelgm_rank}
+%  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} \\ \vec{D}  }  = 1, 
+%  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} }  = 2
+%\end{align}
+\end{enumerate}
 \section{Area of a Triangle}
 %\section{Examples}
 \renewcommand{\theequation}{\theenumi}

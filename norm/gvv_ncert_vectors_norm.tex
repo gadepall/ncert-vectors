@@ -138,6 +138,7 @@ columns=fullflexible
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\cmyvec}[1]{\ensuremath{\begin{pmatrix*}[r]#1\end{pmatrix*}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 %\numberwithin{equation}{section}
 \numberwithin{equation}{subsection}
@@ -293,67 +294,14 @@ This book provides a computational approach to school geometry based on the NCER
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the direction vector of the line, which makes an angle of $30\degree$ with the y-axis measured anticlockwise.
-
-
-\item Find the direction vectors and and y-intercepts  of the following lines 
-\begin{enumerate}
-\item $\myvec{1 & 7}\vec{x} = 0$.
-\item $\myvec{6 & 3}\vec{x} = 5$.
-\item $\myvec{0 & 1}\vec{x} = 0$.
-\end{enumerate}
-\item Find a unit vector in the direction of $\vec{A}+\vec{B}$, where 
-%
-\begin{align}
-\vec{A} = \myvec{2\\2\\-5}, \vec{B} = \myvec{2\\1\\3}.
-\end{align}
-%
-\solution
-\input{solutions/1/3/sol.tex}
-%\end{enumerate}
-%
-\item  If 
-$
-\vec{a}=\myvec{1\\1\\1},
-\vec{b}=\myvec{2\\-1\\3},
-\vec{c}=\myvec{1\\-2\\1},
-$
-find a unit vector parallel to the vector $2\vec{a}-\vec{b}+3\vec{c}$.
-\\
-\solution 
-\input{solutions/1/4/sol.tex}
-
-\item Find a vector of magnitude 5 units, and parallel to the resultant of the vectors 
-$
-\vec{a}=\myvec{2\\3\\-1},
-\vec{b}=\myvec{1\\-2\\1},
-$
-\\
-\solution 
-%\input./solutions/point_vector/13/solution.tex}
-\item Show that the unit direction vector inclined equally to the coordinate axes is $\myvec{\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\\ \frac{1}{\sqrt{3}}}$.
-\\
-\solution 
-%\input./solutions/point_vector/14/Latex/solution.tex}
-\item Find a unit vector that makes an angle of $90\degree, 135\degree$ and $45\degree$ with the positive x, y and z axis respectively.
-\solution 
-%\input./solutions/point_vector/18/solution.tex}
 \item Show that the line through the points \myvec{4\\7\\8}, \myvec{2\\3\\4} is parallel to the line through the points   \myvec{-1\\-2\\1}, \myvec{1\\2\\5}.
 \\
 \solution 
-%\input./solutions/point_vector/21/solution.tex}
-\item Find a vector $\vec{x}$ in the direction of \myvec{1\\-2} such that $\norm{\vec{x}} = 7$.
-%
-\solution Let $\vec{x} = k\myvec{1\\-2}$.  Then 
-%
-\begin{align}
-\norm{\vec{x}} &= \abs{k}\norm{\myvec{1\\-2}}= 7
+\input{solutions/1/1/sol.tex}
+\item  Find the slope of a line, which passes through the origin, and the mid-point of the line segment joining the points $\vec{P} = \myvec{0\\ – 4}$ and $\vec{B} = \myvec{8\\ 0}$.
 \\
-\implies \abs{k} &= \frac{7}{\sqrt{5}}
-\\
-\text{or, } \vec{x} &= \frac{7}{\sqrt{5}}\myvec{1\\-2}
-\end{align}
-%
+	\solution 
+\input{solutions/1/2/sol.tex}
 \item Find the direction vector of $PQ$, where 
 \begin{align}
 \vec{P} = \myvec{2\\3\\0},
@@ -366,28 +314,6 @@ $
 \vec{P}-\vec{Q} = \myvec{3\\5\\4},
 \end{align}
 %
-%\\
-%\solution Choose $\vec{x} = \myvec{0\\y}$ and follow the approach in Problem \eqref{prob:line_perp_bisect}. Solve for $y$.
-
-\item  Find the slope of a line, which passes through the origin, and the mid-point of the line segment joining the points $\vec{P} = \myvec{0\\ – 4}$ and $\vec{B} = \myvec{8\\ 0}$.
-\solution 
-%\input{./solutions/line_plane/24/solution.tex}
-\item The slope of a line is double of the slope of another line. If the tangent of the angle
-between them is $\frac{1}{3}$, find the slopes of the lines.
-\solution 
-%\input{./solutions/line_plane/25/solution.tex}
-\item Find a unit vector that makes an angle of $90\degree, 60\degree$ and $30\degree$ with the positive x, y and z axis respectively.
-%
-\\
-\solution
-The direction vector is
-%
-\begin{align}
-\label{eq:line_dir_cos}
-\vec{x} &= \myvec{\cos 90\degree\\\cos 60\degree \\ \cos 30\degree} = \myvec{0 \\ \frac{1}{2}\\\frac{\sqrt{3}}{2}}
-\end{align}
-%
-$\because \norm{\vec{x}}=1$, it is the desired unit vector.
 \item Find the direction vectors and slopes of the lines passing through the points
 %
 \begin{enumerate}
@@ -398,77 +324,16 @@ $\because \norm{\vec{x}}=1$, it is the desired unit vector.
 \end{enumerate}
 %
 \solution
-\begin{enumerate}
-\item If the direction vector is 
-\begin{align}
-\myvec{1\\m}, 
-\end{align}
-%
-the slope is $m$. Thus, the direction vector is
-\begin{align}
-\myvec{-1\\4} - \myvec{3\\-2} &= \myvec{-4\\6} = -\frac{1}{4} \myvec{-4\\6} 
-\\
-&=  \myvec{1\\-\frac{3}{2}} \implies m = -\frac{3}{2}
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{7\\-2} - \myvec{3\\-2} &= \myvec{4\\0} 
-\\
-&=  \myvec{1\\0} \implies m = 0
-\end{align}
-%
-\item The direction vector is
-\begin{align}
-\myvec{3\\4} - \myvec{3\\-2} &= \myvec{0\\6} 
-\\
-&=  \myvec{1\\ \infty} \implies m = \infty
-\end{align}
-%
-\item The slope is $m = \tan 60 \degree = \sqrt{3}$ and the  direction vector is
-\begin{align}
-\myvec{1\\\sqrt{3}}
-\end{align}
-\end{enumerate}
-\item If the angle between two lines is $\frac{\pi}{4}$ and the slope of one of the lines is $\frac{1}{4}$ find the slope of the other line.
-\\
-\solution The angle $\theta$ between two lines is given by 
-%
-\begin{align}
-\tan \theta &= \frac{m_1-m_2}{1+m_1m_2}
-\\
-\implies 1 &= \frac{m_1-\frac{1}{4}}{1+\frac{m_1}{4}}
-\\
-\text{or } m_1 &= \frac{5}{3} 
-\end{align}
-%
-%
-%\\
-%\solution 
-%%Using \eqref{eq:tri_geo_ex_orth}
-%\begin{align}
-%\cbrak{\myvec{-2\\ 6}-\myvec{4\\8}}^T \cbrak{\myvec{8\\ 12}-\myvec{x\\24}}=  0 
-%\end{align}
-%%
-%which can be used to obtain $x$.
-\item If the points
-$
-\vec{A} = \myvec{6\\1}, 
-\vec{B} = \myvec{8\\2}, 
-\vec{C} = \myvec{9\\4}, 
-\vec{D} = \myvec{p\\3}
-$
-are the vertices of a parallelogram, taken in order, find the value of $p$.
-\\
-\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
+\input{solutions/1/3/sol.tex}
 \item Without using distance formula, show that points \myvec{– 2\\ – 1}, \myvec{4\\ 0}, \myvec{3\\ 3} and \myvec{–3\\ 2} are the vertices of a parallelogram.
 \\
 \solution
+\input{solutions/1/4/sol.tex}
 %\input{./solutions/5/chapters/quadrilateral/docq4.tex}
-
 \item The two opposite vertices of a square are \myvec{-1\\2},  \myvec{3\\2}. Find the coordinates of the other two vertices.
 \\
 \solution
+\input{solutions/1/5/sol.tex}
 %\input{./solutions/7/chapters/quad/solution1.tex}
 
 \item Find the direction vectors of the sides of a triangle with vertices
@@ -480,6 +345,51 @@ $
 \\
 \solution
 %\input{solutions/aug/2/4.tex}
+\item Find the direction vector of the line, which makes an angle of $30\degree$ with the y-axis measured anticlockwise.
+
+
+\item Find the direction vectors and and y-intercepts  of the following lines 
+\begin{enumerate}
+\item $\myvec{1 & 7}\vec{x} = 0$.
+\item $\myvec{6 & 3}\vec{x} = 5$.
+\item $\myvec{0 & 1}\vec{x} = 0$.
+\end{enumerate}
+\end{enumerate}
+\section{Norm }
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Find a unit vector in the direction of $\vec{A}+\vec{B}$, where 
+%
+\begin{align}
+\vec{A} = \myvec{2\\2\\-5}, \vec{B} = \myvec{2\\1\\3}.
+\end{align}
+%
+\solution
+\input{solutions/2/1/sol.tex}
+%\end{enumerate}
+%
+\item  If 
+$
+\vec{a}=\myvec{1\\1\\1},
+\vec{b}=\myvec{2\\-1\\3},
+\vec{c}=\myvec{1\\-2\\1},
+$
+find a unit vector parallel to the vector $2\vec{a}-\vec{b}+3\vec{c}$.
+\\
+\solution 
+\input{solutions/2/2/sol.tex}
+
+\item Find a vector of magnitude 5 units, and parallel to the resultant of the vectors 
+$
+\vec{a}=\myvec{2\\3\\-1},
+\vec{b}=\myvec{1\\-2\\1}
+$.
+\\
+\solution 
+\input{solutions/2/3/sol.tex}
 \item Find a unit vector in the direction of 
 %
 \begin{align}
@@ -505,12 +415,31 @@ $
 \\
 \solution
 %\input{solutions/aug/2/22.tex}
-\end{enumerate}
-\section{Norm }
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
+\item Find a unit vector that makes an angle of $90\degree, 60\degree$ and $30\degree$ with the positive x, y and z axis respectively.
+%
+\\
+\solution
+The direction vector is
+%
+\begin{align}
+\label{eq:line_dir_cos}
+\vec{x} &= \myvec{\cos 90\degree\\\cos 60\degree \\ \cos 30\degree} = \myvec{0 \\ \frac{1}{2}\\\frac{\sqrt{3}}{2}}
+\end{align}
+%
+$\because \norm{\vec{x}}=1$, it is the desired unit vector.
+\item Find a vector $\vec{x}$ in the direction of \myvec{1\\-2} such that $\norm{\vec{x}} = 7$.
+\\
+	%
+\solution Let $\vec{x} = k\myvec{1\\-2}$.  Then 
+%
+\begin{align}
+\norm{\vec{x}} &= \abs{k}\norm{\myvec{1\\-2}}= 7
+\\
+\implies \abs{k} &= \frac{7}{\sqrt{5}}
+\\
+\text{or, } \vec{x} &= \frac{7}{\sqrt{5}}\myvec{1\\-2}
+\end{align}
+%
 \item Find a point on the x-axis, which is equidistant from the points \myvec{7\\ 6} and \myvec{3\\ 4}.
 \\
 \solution 
@@ -696,6 +625,17 @@ are equal.
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
+
+\item If the points
+$
+\vec{A} = \myvec{6\\1}, 
+\vec{B} = \myvec{8\\2}, 
+\vec{C} = \myvec{9\\4}, 
+\vec{D} = \myvec{p\\3}
+$
+are the vertices of a parallelogram, taken in order, find the value of $p$.
+\\
+\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
 
 \item Find $\vec{R}$ which divides the line joining the points 
 \begin{align}
