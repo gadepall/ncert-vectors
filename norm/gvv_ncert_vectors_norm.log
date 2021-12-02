@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  1 DEC 2021 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  2 DEC 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -731,22 +731,22 @@ File: ./solutions/1/5/q4.pdf Graphic file (type pdf)
 <use ./solutions/1/5/q4.pdf>
 Package pdftex.def Info: ./solutions/1/5/q4.pdf  used on input line 12.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-) (./solutions/1/7/sol.tex) [2 <./solutions/1/5/q4.pdf>]
-
-LaTeX Warning: Reference `fig:section' on page 3 undefined on input line 388.
-
-[3] (./solutions/2/1/sol.tex) (./solutions/2/2/sol.tex [4])
-(./solutions/2/3/sol.tex) [5]
+) (./solutions/1/7/sol.tex) [2 <./solutions/1/5/q4.pdf>] (./solutions/2/1/sol.t
+ex)
+(./solutions/2/2/sol.tex) (./solutions/2/3/sol.tex) (./solutions/2/4/sol.tex)
+(./solutions/2/5/sol.tex) (./solutions/2/6/sol.tex) [3]
+(./solutions/3/1/sol.tex [4]) (./solutions/3/2/sol.tex)
+(./solutions/3/3/sol.tex) [5]
 
 LaTeX Warning: Reference `fig:line_perp_bisect' on page 6 undefined on input li
-ne 714.
+ne 672.
 
 [6]
 
-LaTeX Warning: Reference `fig:6.10' on page 7 undefined on input line 821.
+LaTeX Warning: Reference `fig:6.10' on page 7 undefined on input line 779.
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 868--872
+Underfull \hbox (badness 2005) in paragraph at lines 826--830
 []\OT1/ptm/m/n/12 Find the in-ter-cepts cut off by the plane
  []
 
@@ -754,37 +754,33 @@ Underfull \hbox (badness 2005) in paragraph at lines 868--872
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `gvv_ncert_vectors_norm.out' has not changed.
 
 (rerunfilecheck)             Checksum: FDA5920301063EEAFF014D10836D7BBA;421.
  ) 
 Here is how much of TeX's memory you used:
- 13131 strings out of 478994
- 191604 string characters out of 5864751
- 535349 words of memory out of 5000000
- 30191 multiletter control sequences out of 15000+600000
+ 13155 strings out of 478994
+ 192066 string characters out of 5864752
+ 537301 words of memory out of 5000000
+ 30195 multiletter control sequences out of 15000+600000
  444466 words of font info for 115 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,15n,74p,514b,1184s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,74p,514b,1185s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
-bi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gvv_ncert_vectors_norm.pdf (7 pages, 173866 bytes).
+c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf
+-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb>
+Output written on gvv_ncert_vectors_norm.pdf (7 pages, 158644 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 197 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 199 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

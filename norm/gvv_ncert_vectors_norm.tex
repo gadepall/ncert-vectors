@@ -339,7 +339,6 @@ $
 \\
 \solution
 \input{solutions/1/7/sol.tex}
-%\input{solutions/aug/2/4.tex}
 \item Find the direction vector of the line, which makes an angle of $30\degree$ with the y-axis measured anticlockwise.
 
 
@@ -359,63 +358,26 @@ $
 
 \item Draw a line segement of length 7.6 cm and divide it in the ratio $5:8$.
 \\
-\solution Let the end points of the line be 
-\begin{align}
-\vec{A} = \myvec{0\\0}, \vec{B} = \myvec{7.6\\0}
-\end{align}
-Using section formula, 
-%From \eqref{eq:tri_geo_ex_caorth_section},
-the point $\vec{C}$
-\begin{align}
-\label{eq:line_section_form}
-\vec{C} = \frac{k \vec{B} + \vec{A}}{k+1}
-\end{align}
-If $\vec{C}$ divides $AB$ in the ratio 
-\begin{align}
- m = \frac{5}{8},
-\end{align}
-then,
-\begin{align}
-\label{eq:line_section_form_m}
-\frac{\norm{\vec{C}-\vec{A}}^2}{\norm{\vec{B}-\vec{C}}^2} &= m^2
-\\
-\implies \frac{\frac{k^2\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}}{\frac{\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}} &=m^2
-\\
-\implies k = m &
-\end{align}
-upon substituting from \eqref{eq:line_section_form_m} and simplifying. \eqref{eq:line_section_form} is known as the section formula.
-%
-The following code plots Fig. \ref{fig:section}
-\begin{lstlisting}
-codes/line/draw_section.py
-\end{lstlisting}
-		%\begin{figure}[!ht]
-		%\includegraphics[width=\columnwidth]{./line/figs/section.eps}
-		%\caption{}
-		%\label{fig:section}
-		%\end{figure}
+\solution 
+\input{solutions/2/1/sol.tex}
 \item Find the coordinates of the point which divides the line segment joining the points \myvec{4\\-3} and \myvec{8\\5} in the ratio $3:1$ internally.
 \\
-\solution Using \eqref{eq:line_section_form},
-the desired point is 
-\begin{align}
-\vec{P} = \frac{3 \myvec{4\\-3} + \myvec{8\\5}}{4}
-\end{align}
+\solution 
+\input{solutions/2/2/sol.tex}
 \item Find the coordinates of the point which divides the join of 
 \begin{align}
 \myvec{-1\\7},  \myvec{4\\-3}
-%\vec{P} = \myvec{2\\-3}, \vec{Q} = \myvec{10\\y}
 \end{align}
 %
 in the ratio $2:3$.
 \\
 \solution
-%\input{./solutions/1/chapters/line/point_line/solution.tex}
+\input{solutions/2/3/sol.tex}
 
 \item Find the coordinates of the points of trisection of the line segment joining \myvec{4\\-1} and \myvec{-2\\-3}.
 \\
 \solution
-%\input{./solutions/2/chapters/line_ex/pts_on_a_line/solution.tex}
+\input{solutions/2/4/sol.tex}
 \item In what ratio does the point \myvec{-4\\6} divide the line segment joining the points 
 %
 \begin{align}
@@ -424,7 +386,8 @@ in the ratio $2:3$.
 \end{align}
 %
 \\
-\solution Use \eqref{eq:line_section_form}.
+\solution 
+\input{solutions/2/5/sol.tex}
 \item Find the coordinates of the points of trisection of the line segement joining the points
 %
 \begin{align}
@@ -433,14 +396,9 @@ in the ratio $2:3$.
 \end{align}
 %
 \\
-\solution Using \eqref{eq:line_section_form}, the coordinates are
-%
-\begin{align}
-\label{eq:line_section_form_tri}
-\vec{P} &= \frac{2 \vec{A} + \vec{B}}{3}
-\\
-\vec{Q} &= \frac{ \vec{A} + 2\vec{B}}{3}
-\end{align}
+\solution 
+\input{solutions/2/6/sol.tex}
+
 %
 \item Find the ratio in which the y-axis divides the line segment joining the points \myvec{5\\-6} and \myvec{-1\\-4}.
 \\
@@ -563,7 +521,7 @@ $
 find a unit vector parallel to the vector $2\vec{a}-\vec{b}+3\vec{c}$.
 \\
 \solution 
-\input{solutions/2/2/sol.tex}
+\input{solutions/3/2/sol.tex}
 
 \item Find a vector of magnitude 5 units, and parallel to the resultant of the vectors 
 $
@@ -572,7 +530,7 @@ $
 $.
 \\
 \solution 
-\input{solutions/2/3/sol.tex}
+\input{solutions/3/3/sol.tex}
 \item Find a unit vector in the direction of 
 %
 \begin{align}
