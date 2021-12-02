@@ -511,6 +511,27 @@ $
 \frac{1}{2}\norm{\brak{\vec{C}-\vec{B}}\times \brak{\vec{C}-\vec{D}}}
 \end{multline}
 \end{enumerate}
+\section{Application}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item If $\vec{a}^T\vec{b} = 0$ and $\vec{a}\times \vec{b}$ = 0, what can you conclude about $\vec{a}$ and $\vec{b}$?
+\item Show that 
+\begin{align}
+\brak{\vec{a}-\vec{b}}\times \brak{\vec{a}+\vec{b}} = 2\brak{\vec{a}\times\vec{b}}
+\end{align}
+\item If $\norm{\vec{a}} = 3, \norm{\vec{b}} =\frac{\sqrt{2}}{3}$, then $\vec{a}\times \vec{b}$ is a unit vector if the angle between $\vec{a}$ and $\vec{b}$ is 
+\begin{enumerate}[itemsep = 2pt]
+\begin{multicols}{2}
+\item $\frac{\pi}{6}$
+\item $\frac{\pi}{4}$
+\item $\frac{\pi}{3}$
+\item $\frac{\pi}{2}$
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
 \end{document}
 
 

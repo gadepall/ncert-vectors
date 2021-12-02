@@ -324,17 +324,11 @@ This book provides a computational approach to school geometry based on the NCER
 \end{enumerate}
 %
 \solution
-\input{solutions/1/3/sol.tex}
+\input{solutions/1/4/sol.tex}
 \item Without using distance formula, show that points \myvec{– 2\\ – 1}, \myvec{4\\ 0}, \myvec{3\\ 3} and \myvec{–3\\ 2} are the vertices of a parallelogram.
 \\
 \solution
-\input{solutions/1/4/sol.tex}
-%\input{./solutions/5/chapters/quadrilateral/docq4.tex}
-\item The two opposite vertices of a square are \myvec{-1\\2},  \myvec{3\\2}. Find the coordinates of the other two vertices.
-\\
-\solution
 \input{solutions/1/5/sol.tex}
-%\input{./solutions/7/chapters/quad/solution1.tex}
 
 \item Find the direction vectors of the sides of a triangle with vertices
 $
@@ -344,6 +338,7 @@ $
 $
 \\
 \solution
+\input{solutions/1/7/sol.tex}
 %\input{solutions/aug/2/4.tex}
 \item Find the direction vector of the line, which makes an angle of $30\degree$ with the y-axis measured anticlockwise.
 
@@ -355,12 +350,200 @@ $
 \item $\myvec{0 & 1}\vec{x} = 0$.
 \end{enumerate}
 \end{enumerate}
-\section{Norm }
+\section{Section Formula}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
+
+\item Draw a line segement of length 7.6 cm and divide it in the ratio $5:8$.
+\\
+\solution Let the end points of the line be 
+\begin{align}
+\vec{A} = \myvec{0\\0}, \vec{B} = \myvec{7.6\\0}
+\end{align}
+Using section formula, 
+%From \eqref{eq:tri_geo_ex_caorth_section},
+the point $\vec{C}$
+\begin{align}
+\label{eq:line_section_form}
+\vec{C} = \frac{k \vec{B} + \vec{A}}{k+1}
+\end{align}
+If $\vec{C}$ divides $AB$ in the ratio 
+\begin{align}
+ m = \frac{5}{8},
+\end{align}
+then,
+\begin{align}
+\label{eq:line_section_form_m}
+\frac{\norm{\vec{C}-\vec{A}}^2}{\norm{\vec{B}-\vec{C}}^2} &= m^2
+\\
+\implies \frac{\frac{k^2\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}}{\frac{\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}} &=m^2
+\\
+\implies k = m &
+\end{align}
+upon substituting from \eqref{eq:line_section_form_m} and simplifying. \eqref{eq:line_section_form} is known as the section formula.
+%
+The following code plots Fig. \ref{fig:section}
+\begin{lstlisting}
+codes/line/draw_section.py
+\end{lstlisting}
+		%\begin{figure}[!ht]
+		%\includegraphics[width=\columnwidth]{./line/figs/section.eps}
+		%\caption{}
+		%\label{fig:section}
+		%\end{figure}
+\item Find the coordinates of the point which divides the line segment joining the points \myvec{4\\-3} and \myvec{8\\5} in the ratio $3:1$ internally.
+\\
+\solution Using \eqref{eq:line_section_form},
+the desired point is 
+\begin{align}
+\vec{P} = \frac{3 \myvec{4\\-3} + \myvec{8\\5}}{4}
+\end{align}
+\item Find the coordinates of the point which divides the join of 
+\begin{align}
+\myvec{-1\\7},  \myvec{4\\-3}
+%\vec{P} = \myvec{2\\-3}, \vec{Q} = \myvec{10\\y}
+\end{align}
+%
+in the ratio $2:3$.
+\\
+\solution
+%\input{./solutions/1/chapters/line/point_line/solution.tex}
+
+\item Find the coordinates of the points of trisection of the line segment joining \myvec{4\\-1} and \myvec{-2\\-3}.
+\\
+\solution
+%\input{./solutions/2/chapters/line_ex/pts_on_a_line/solution.tex}
+\item In what ratio does the point \myvec{-4\\6} divide the line segment joining the points 
+%
+\begin{align}
+\vec{A} = \myvec{-6\\10},
+\vec{B} = \myvec{3\\-8}
+\end{align}
+%
+\\
+\solution Use \eqref{eq:line_section_form}.
+\item Find the coordinates of the points of trisection of the line segement joining the points
+%
+\begin{align}
+\vec{A} = \myvec{2\\-2},
+\vec{B} = \myvec{-7\\4}
+\end{align}
+%
+\\
+\solution Using \eqref{eq:line_section_form}, the coordinates are
+%
+\begin{align}
+\label{eq:line_section_form_tri}
+\vec{P} &= \frac{2 \vec{A} + \vec{B}}{3}
+\\
+\vec{Q} &= \frac{ \vec{A} + 2\vec{B}}{3}
+\end{align}
+%
+\item Find the ratio in which the y-axis divides the line segment joining the points \myvec{5\\-6} and \myvec{-1\\-4}.
+\\
+\solution Let the corresponding point on the $y$-axis be$\myvec{0\\y}$. If the ratio be $k:1$,
+using \eqref{eq:line_section_form}, the coordinates are
+%
+\begin{align}
+\myvec{0\\y} &= k\myvec{5\\-6}+ \myvec{-1\\-4}
+\\
+\implies 0 &= 5k-1 \implies k = \frac{1}{5}
+\end{align}
+%
+\item Find the ratio in which the line segment joining the points \myvec{-3\\10} and \myvec{6\\-8} is divided by \myvec{-1\\6}.
+\\
+\solution
+%\input{./solutions/3/chapters/line/section/solution.tex}
+\item Find the ratio in whcih the line segment joining $\vec{A}=\myvec{1\\-5}, \vec{B}=\myvec{-4\\5}$ is divided by the $x$-axis.  Also find the coordinates of the point of division.
+\\
+\solution
+%\input{./solutions/4/chapters/line/point_on_line/solution.tex}
+\item If $\vec{A}=\myvec{-2\\-2}, \vec{B}=\myvec{2\\-4}$ respectively, find the coordinates of $\vec{P}$ such that $AP = \frac{3}{7}AB$ and $\vec{P}$ lies on the line segment $AB$.
+\\
+\solution
+%\input{./solutions/6/chapters/line/point_line/solution.tex}
+\item Find the coordinates of the points which divide the line segment joining $\vec{A}=\myvec{-2\\2}, \vec{B}=\myvec{2\\8}$ into four equal parts.
+\\
+\solution
+%\input{./solutions/7/chapters/line/point_line/solution.tex}
+\item If the points
+$
+\vec{A} = \myvec{6\\1}, 
+\vec{B} = \myvec{8\\2}, 
+\vec{C} = \myvec{9\\4}, 
+\vec{D} = \myvec{p\\3}
+$
+are the vertices of a parallelogram, taken in order, find the value of $p$.
+\\
+\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
+
+\item If \myvec{1\\2}, \myvec{4\\y}, \myvec{x\\6} and \myvec{3\\5} are the vertices of a parallelogram taken in order, find $x$ and $y$.
+\\
+\solution
+%\input{./solutions/5/chapters/lines/docq10.tex}
+\item If 
+\begin{align}
+\vec{P} = 3\vec{a}-2\vec{b}
+\\
+\vec{Q} = \vec{a}+\vec{b}
+\end{align}
+%
+find $\vec{R}$, which divides $PQ$ in the ratio $2:1$
+\begin{enumerate}
+\item internally,
+\item externally.
+\end{enumerate}
+%
+\solution
+%\input{solutions/sep/20.tex}
+\item Find $\vec{R}$ which divides the line joining the points 
+\begin{align}
+\vec{P} = 2\vec{a}+\vec{b}
+\\
+\vec{Q} = \vec{a}-\vec{b}
+\end{align}
+externally in the ratio $1:2$.
+\end{enumerate}
+\section{Norm }
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item If
+\begin{align}
+\vec{a} = \myvec{1\\2}, \vec{b} = \myvec{2\\1},
+\end{align}
+verify if  
+\begin{enumerate}
+\item $\norm{\vec{a}}=\norm{\vec{b}}$
+
+\item $\vec{a}=\vec{b}$
+\end{enumerate}
+%
+\solution
+\begin{enumerate}
+\item $\norm{\vec{a}}=\norm{\vec{b}},\vec{a}\ne\vec{b}$.
+\end{enumerate}
+\item Find the distance between the points
+%
+\begin{align}
+\vec{P} = \myvec{1\\-3\\4},
+\vec{Q} = \myvec{-4\\1\\2}
+\end{align}
+%
+\solution 
+\\
+%%\input./solutions/line/geometry/examples/54/chapters/solution.tex}
+%\input./solutions/point_vector/54/chapters/solution.tex}
+The distance is given by $\norm{\vec{P}-\vec{Q}}$
+
+\item A town B is located 36km east and 15 km north of the town A.  How would you find the distance from town A to town B without actually measuring it?
+\\
+\solution
+%\input./solutions/3/chapters/line/towns/solution.tex}
 \item Find a unit vector in the direction of $\vec{A}+\vec{B}$, where 
 %
 \begin{align}
@@ -368,7 +551,7 @@ $
 \end{align}
 %
 \solution
-\input{solutions/2/1/sol.tex}
+\input{solutions/3/1/sol.tex}
 %\end{enumerate}
 %
 \item  If 
@@ -453,21 +636,6 @@ $\because \norm{\vec{x}}=1$, it is the desired unit vector.
 \\
 \solution
 %\input./solutions/point_vector/26/solution.tex}
-\item If
-\begin{align}
-\vec{a} = \myvec{1\\2}, \vec{b} = \myvec{2\\1},
-\end{align}
-verify if  
-\begin{enumerate}
-\item $\norm{\vec{a}}=\norm{\vec{b}}$
-
-\item $\vec{a}=\vec{b}$
-\end{enumerate}
-%
-\solution
-\begin{enumerate}
-\item $\norm{\vec{a}}=\norm{\vec{b}},\vec{a}\ne\vec{b}$.
-\end{enumerate}
 \item Find a unit vector in the  direction of \myvec{2\\3\\1}.
 %
 \\
@@ -475,18 +643,6 @@ verify if
 \begin{align}
 \frac{\myvec{2\\3\\1}}{\norm{\myvec{2\\3\\1}}} = \frac{1}{\sqrt{14}}\myvec{2\\3\\1}
 \end{align}
-\item Find the distance between the points
-%
-\begin{align}
-\vec{P} = \myvec{1\\-3\\4},
-\vec{Q} = \myvec{-4\\1\\2}
-\end{align}
-%
-\solution 
-\\
-%%\input./solutions/line/geometry/examples/54/chapters/solution.tex}
-%\input./solutions/point_vector/54/chapters/solution.tex}
-The distance is given by $\norm{\vec{P}-\vec{Q}}$
 \item Find $\norm{\vec{a}-\vec{b}}$, if 
 \begin{align}
 \norm{\vec{a}} = 2, 
@@ -498,23 +654,6 @@ The distance is given by $\norm{\vec{P}-\vec{Q}}$
 %\input./solutions/point_vector/68/chapters/solution.tex}
 %
 %
-%
-\item If $\vec{a}$ is a unit vector and 
-%
-\begin{align}
-\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} = 8, 
-\end{align}
-%
-then find $\vec{x}$.
-%
-\\
-\solution 
-%
-\begin{align}
-\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} &= \norm{\vec{x}}^2-\norm{\vec{a}}^2
-\\
-\implies \norm{\vec{x}}^2 &= 9 \text{ or, } \norm{\vec{x}} = 3.
-\end{align}
 %
 \item Find the point on the $x$-axis which is equidistant from 
 \begin{align}
@@ -529,10 +668,6 @@ then find $\vec{x}$.
 is 10 units.
 \solution
 %\input./solutions/7/chapters/line/point_vec/solution.tex}
-\item A town B is located 36km east and 15 km north of the town A.  How would you find the distance from town A to town B without actually measuring it?
-\\
-\solution
-%\input./solutions/3/chapters/line/towns/solution.tex}
 \item Find the unit normal vector of the plane 
 \begin{align}
 \myvec{6 & -3 & -2}\vec{x}  = 1.
@@ -619,216 +754,29 @@ are equal.
 \solution
 %\input{solutions/su2021/2/29/main.tex}
 \end{enumerate}
-\section{Section}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-
-
-\item If the points
-$
-\vec{A} = \myvec{6\\1}, 
-\vec{B} = \myvec{8\\2}, 
-\vec{C} = \myvec{9\\4}, 
-\vec{D} = \myvec{p\\3}
-$
-are the vertices of a parallelogram, taken in order, find the value of $p$.
-\\
-\solution In the parallelogram $ABCD$, $AC$ and $BD$ bisect each other.  This can be used to find $p$.
-
-\item Find $\vec{R}$ which divides the line joining the points 
-\begin{align}
-\vec{P} = 2\vec{a}+\vec{b}
-\\
-\vec{Q} = \vec{a}-\vec{b}
-\end{align}
-externally in the ratio $1:2$.
-\item If 
-\begin{align}
-\vec{P} = 3\vec{a}-2\vec{b}
-\\
-\vec{Q} = \vec{a}+\vec{b}
-\end{align}
-%
-find $\vec{R}$, which divides $PQ$ in the ratio $2:1$
-\begin{enumerate}
-\item internally,
-\item externally.
-\end{enumerate}
-%
-\solution
-%\input{solutions/sep/20.tex}
-\item Draw a line segement of length 7.6 cm and divide it in the ratio $5:8$.
-\\
-\solution Let the end points of the line be 
-\begin{align}
-\vec{A} = \myvec{0\\0}, \vec{B} = \myvec{7.6\\0}
-\end{align}
-Using section formula, 
-%From \eqref{eq:tri_geo_ex_caorth_section},
-the point $\vec{C}$
-\begin{align}
-\label{eq:line_section_form}
-\vec{C} = \frac{k \vec{B} + \vec{A}}{k+1}
-\end{align}
-If $\vec{C}$ divides $AB$ in the ratio 
-\begin{align}
- m = \frac{5}{8},
-\end{align}
-then,
-\begin{align}
-\label{eq:line_section_form_m}
-\frac{\norm{\vec{C}-\vec{A}}^2}{\norm{\vec{B}-\vec{C}}^2} &= m^2
-\\
-\implies \frac{\frac{k^2\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}}{\frac{\norm{\vec{B}-\vec{A}}^2}{\brak{k+1}^2}} &=m^2
-\\
-\implies k = m &
-\end{align}
-upon substituting from \eqref{eq:line_section_form_m} and simplifying. \eqref{eq:line_section_form} is known as the section formula.
-%
-The following code plots Fig. \ref{fig:section}
-\begin{lstlisting}
-codes/line/draw_section.py
-\end{lstlisting}
-		%\begin{figure}[!ht]
-		%\includegraphics[width=\columnwidth]{./line/figs/section.eps}
-		%\caption{}
-		%\label{fig:section}
-		%\end{figure}
-\item Find the coordinates of the point which divides the line segment joining the points \myvec{4\\-3} and \myvec{8\\5} in the ratio $3:1$ internally.
-\\
-\solution Using \eqref{eq:line_section_form},
-the desired point is 
-\begin{align}
-\vec{P} = \frac{3 \myvec{4\\-3} + \myvec{8\\5}}{4}
-\end{align}
-\item In what ratio does the point \myvec{-4\\6} divide the line segment joining the points 
-%
-\begin{align}
-\vec{A} = \myvec{-6\\10},
-\vec{B} = \myvec{3\\-8}
-\end{align}
-%
-\\
-\solution Use \eqref{eq:line_section_form}.
-\item Find the coordinates of the points of trisection of the line segement joining the points
-%
-\begin{align}
-\vec{A} = \myvec{2\\-2},
-\vec{B} = \myvec{-7\\4}
-\end{align}
-%
-\\
-\solution Using \eqref{eq:line_section_form}, the coordinates are
-%
-\begin{align}
-\label{eq:line_section_form_tri}
-\vec{P} &= \frac{2 \vec{A} + \vec{B}}{3}
-\\
-\vec{Q} &= \frac{ \vec{A} + 2\vec{B}}{3}
-\end{align}
-%
-\item Find the ratio in which the y-axis divides the line segment joining the points \myvec{5\\-6} and \myvec{-1\\-4}.
-\\
-\solution Let the corresponding point on the $y$-axis be$\myvec{0\\y}$. If the ratio be $k:1$,
-using \eqref{eq:line_section_form}, the coordinates are
-%
-\begin{align}
-\myvec{0\\y} &= k\myvec{5\\-6}+ \myvec{-1\\-4}
-\\
-\implies 0 &= 5k-1 \implies k = \frac{1}{5}
-\end{align}
-%
-\item Find the coordinates of the point which divides the join of 
-\begin{align}
-\myvec{-1\\7},  \myvec{4\\-3}
-%\vec{P} = \myvec{2\\-3}, \vec{Q} = \myvec{10\\y}
-\end{align}
-%
-in the ratio $2:3$.
-\\
-\solution
-%\input{./solutions/1/chapters/line/point_line/solution.tex}
-
-\item Find the coordinates of the points of trisection of the line segment joining \myvec{4\\-1} and \myvec{-2\\-3}.
-\\
-\solution
-%\input{./solutions/2/chapters/line_ex/pts_on_a_line/solution.tex}
-\item Find the ratio in which the line segment joining the points \myvec{-3\\10} and \myvec{6\\-8} is divided by \myvec{-1\\6}.
-\\
-\solution
-%\input{./solutions/3/chapters/line/section/solution.tex}
-\item Find the ratio in whcih the line segment joining $\vec{A}=\myvec{1\\-5}, \vec{B}=\myvec{-4\\5}$ is divided by the $x$-axis.  Also find the coordinates of the point of division.
-\\
-\solution
-%\input{./solutions/4/chapters/line/point_on_line/solution.tex}
-\item If \myvec{1\\2}, \myvec{4\\y}, \myvec{x\\6} and \myvec{3\\5} are the vertices of a parallelogram taken in order, find $x$ and $y$.
-\\
-\solution
-%\input{./solutions/5/chapters/lines/docq10.tex}
-\item If $\vec{A}=\myvec{-2\\-2}, \vec{B}=\myvec{2\\-4}$ respectively, find the coordinates of $\vec{P}$ such that $AP = \frac{3}{7}AB$ and $\vec{P}$ lies on the line segment $AB$.
-\\
-\solution
-%\input{./solutions/6/chapters/line/point_line/solution.tex}
-\item Find the coordinates of the points which divide the line segment joining $\vec{A}=\myvec{-2\\2}, \vec{B}=\myvec{2\\8}$ into four equal parts.
-\\
-\solution
-%\input{./solutions/7/chapters/line/point_line/solution.tex}
-\end{enumerate}
-\section{Projection}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item Find the projection of the vector 
-\begin{align}
-\myvec{1\\3\\7}
-\end{align}
-on the vector
-\begin{align}
-\myvec{7\\-1\\8}
-\end{align}
-\\
-\solution 
-%\input./solutions/point_vector/24/solution.tex}
-\item Find the projection of the vector 
-\begin{align}
-\vec{a} = \myvec{2\\3\\2}
-\end{align}
-on the vector
-\begin{align}
-\vec{b}=\myvec{1\\2\\1}.
-\end{align}
-%
-\solution The projection of $\vec{a}$ on $\vec{b}$ is shown in Fig. \ref{fig:line_proj}. It has magnitude $\norm{\vec{a}}\cos \theta$ and is in the direction of $\vec{b}$.
-%
-%
-%\begin{figure}
-%\centering
-%\includegraphics[width=\columnwidth]{./line/figs/line_proj.eps}
-%\caption{}
-%\label{fig:line_proj}
-%\end{figure}
-%
-Thus, the projection is defined as 
-\begin{align}
-\brak{\norm{\vec{a}}\cos\theta} \frac{\vec{b}}{\norm{\vec{b}}}
-=  \frac{\brak{\vec{a}^T\vec{b}}\norm{\vec{a}}}{\norm{\vec{b}}}\vec{b}
-\end{align}
-\end{enumerate}
 \section{Applications}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the perpendicular distances of the following lines from the origin and angle between the perpendicular and the positive x-axis.
-\begin{enumerate}
-\item $\myvec{1 & -\sqrt{3}}\vec{x} = -8$.
-\item $\myvec{0 & 1}\vec{x} = 2$.
-\item $\myvec{1 & -1}\vec{x} = 4$.
-\end{enumerate}
 
+\item If $\vec{a}$ is a unit vector and 
+%
+\begin{align}
+\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} = 8, 
+\end{align}
+%
+then find $\vec{x}$.
+%
+\\
+\solution 
+%
+\begin{align}
+\brak{\vec{x}-\vec{a}}\brak{\vec{x}+\vec{a}} &= \norm{\vec{x}}^2-\norm{\vec{a}}^2
+\\
+\implies \norm{\vec{x}}^2 &= 9 \text{ or, } \norm{\vec{x}} = 3.
+\end{align}
+%
 \item Find $\norm{\vec{a}}$ and $\norm{\vec{b}}$ if 
 \begin{align}
 \brak{\vec{a}+\vec{b}}^T\brak{\vec{a}-\vec{b}} &= 8
@@ -839,18 +787,7 @@ Thus, the projection is defined as
 \begin{align}
 \brak{3\vec{a}-5\vec{b}}^T\brak{2\vec{a}+7\vec{b}} 
 \end{align}
-\item Find $\norm{\vec{a}}$ and $\norm{\vec{b}}$, if
-\begin{align}
-\norm{\vec{a}} &= \norm{\vec{b}},
-\\
-\vec{a}^T\vec{b} = \frac{1}{2} 
-\end{align}
-and the angle between $\vec{a}$ and $\vec{b}$ is $60\degree$.
-\item Show that 
-\begin{align}
-\brak{\norm{\vec{a}}\vec{b}+\norm{\vec{b}}\vec{a}}\perp \brak{\norm{\vec{a}}\vec{b}-\norm{\vec{b}}\vec{a}}\\
-\end{align}
-\item If $\vec{a}^T\vec{a}=0$ and  $\vec{a}\vec{b}=0$, what can be concluded about the vector $\vec{b}$?
+\item If $\vec{a}^T\vec{a}=0$ and  $\vec{a}^{\top}\vec{b}=0$, what can be concluded about the vector $\vec{b}$?
 \item If $\vec{a},\vec{b},\vec{c}$ are unit vectors such that 
 \begin{align}
 \vec{a}+\vec{b}+\vec{c} = 0,
@@ -867,58 +804,16 @@ find the value of
 \item $\norm{\vec{a}}=\frac{1}{\abs{\lambda}}$
 \end{enumerate}
 \item If a unit vector $\vec{a}$ makes angles $\frac{\pi}{3}$ with the x-axis and $\frac{\pi}{4}$ with the y-axis and an acute angle $\theta$ with the z-axis, find $\theta$ and $\vec{a}$.
-\item Show that 
-\begin{align}
-\brak{\vec{a}-\vec{b}}\times \brak{\vec{a}+\vec{b}} = 2\brak{\vec{a}\times\vec{b}}
-\end{align}
-\item If $\vec{a}^T\vec{b} = 0$ and $\vec{a}\times \vec{b}$ = 0, what can you conclude about $\vec{a}$ and $\vec{b}$?
 \item Find $\vec{x}$ if  $\vec{a}$ is a unit vector such that
 \begin{align}
 \brak{\vec{x}-\vec{a}}^T\brak{\vec{x}+\vec{a}} = 12.
 \end{align}
-\item If $\norm{\vec{a}} = 3, \norm{\vec{b}} =\frac{\sqrt{2}}{3}$, then $\vec{a}\times \vec{b}$ is a unit vector if the angle between $\vec{a}$ and $\vec{b}$ is 
-\begin{enumerate}[itemsep = 2pt]
-\begin{multicols}{2}
-\item $\frac{\pi}{6}$
-\item $\frac{\pi}{4}$
-\item $\frac{\pi}{3}$
-\item $\frac{\pi}{2}$
-\end{multicols}
-\end{enumerate}
 \item Prove that 
 \begin{align}
 \brak{\vec{a}+\vec{b}}^T\brak{\vec{a}+\vec{b}} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2
 \\
 \iff \vec{a}&\perp\vec{b}.
 \end{align}
-\item If $\theta$ is the angle between two vectors $\vec{a}$ and $\vec{b}$, then $\vec{a}^T\vec{b} \ge $ only when 
-\begin{enumerate}[itemsep = 2pt]
-\begin{multicols}{2}
-\item $0 < \theta < \frac{\pi}{2}$
-\item $0 \le \theta \le \frac{\pi}{2}$
-\item $0 < \theta < {\pi}$
-\item $0 \le \theta \le {\pi}$
-\end{multicols}
-\end{enumerate}
-\item Let $\vec{a}$ and $\vec{b}$ be two unit vectors and $\theta$ be the angle between them.  Then $\vec{a}+\vec{b}$ is a unit vector if 
-\begin{enumerate}[itemsep = 2pt]
-\begin{multicols}{2}
-\item $\theta = \frac{\pi}{4}$
-\item $\theta = \frac{\pi}{3}$
-\item $\theta = \frac{\pi}{2}$
-\item $\theta = \frac{2\pi}{3}$
-\end{multicols}
-\end{enumerate}
-\item If $\theta$ is the angle between any two vectors $\vec{a}$ and $\vec{b}$, then 
-$\norm{\vec{a}^T\vec{b}} = \norm{\vec{a} \times \vec{b}}$ when $\theta$ is equal to 
-\begin{enumerate}[itemsep = 2pt]
-\begin{multicols}{2}
-\item 0
-\item $\frac{\pi}{4}$
-\item $\frac{\pi}{2}$
-\item $\pi$.
-\end{multicols}
-\end{enumerate}
 \item A bullet fired at an angle of 30$\degree$ with the horizontal hits the ground 3.0 km away. By adjusting its angle of projection, can one hope to hit a target 5.0 km away ? Assume the muzzle speed to be fixed, and neglect air resistance.
 \item  A fighter plane flying horizontally at an altitude of 1.5 km with speed 720 km/h passes directly overhead an anti-aircraft gun. At what angle from the vertical should the gun be fired for the shell with muzzle speed 600 $m s^{-1}$ to hit the plane ? 
 At what minimum  altitude should the pilot fly the plane to avoid being hit ? (Take g = 10$ m s^{-2}$
@@ -974,21 +869,6 @@ hold her umbrella?
 $
 \myvec{2 & 1 & 1}\vec{x}=5.
 $
-\end{enumerate}
-\section{Locus}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item The sum of the perpendicular distances of a variable point $\vec{P}$ from the lines
-%
-\begin{align}
-\myvec{1 & 1}\vec{x} &= 0
-\\
-\myvec{3 & -2}\vec{x} &= -7
-\end{align}
-%
-is always 10.  Show that $\vec{P}$ must move on a line.
 \end{enumerate}
 \end{document}
 
