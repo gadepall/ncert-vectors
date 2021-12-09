@@ -11,3 +11,4 @@
 \contentsline {section}{\numberline {3}Class 10}{6}{section.3}%
 \contentsline {section}{\numberline {4}Class 12}{7}{section.4}%
 \contentsline {section}{\numberline {5}JEE}{8}{section.5}%
+\contentsline {section}{\numberline {6}JNTU}{9}{section.6}%

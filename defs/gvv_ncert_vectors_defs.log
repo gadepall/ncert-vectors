@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  9 DEC 2021 10:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  9 DEC 2021 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,110 +633,80 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 423.
+(hyperref)                removing `math shift' on input line 425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 423.
+(hyperref)                removing `\times' on input line 425.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 423.
+(hyperref)                removing `math shift' on input line 425.
 
 [2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 744--750
+Underfull \hbox (badness 6893) in paragraph at lines 763--769
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 750--754
+Underfull \hbox (badness 2913) in paragraph at lines 769--773
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 965--971
+Underfull \hbox (badness 10000) in paragraph at lines 967--973
 \OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
  []
 
 [6]
-Underfull \hbox (badness 3965) in paragraph at lines 1036--1040
+Underfull \hbox (badness 3965) in paragraph at lines 1038--1042
 \OT1/ptm/m/n/12 From the above equa-tions, [] and
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
-
- []
-
+[7]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 1122.
+(Font)              <9> on input line 1140.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1122.
+(Font)              <5> on input line 1140.
 
-Underfull \hbox (badness 4036) in paragraph at lines 1103--1126
+Underfull \hbox (badness 4036) in paragraph at lines 1121--1144
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 1130--1131
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
 
 [8] [9] (./gvv_ncert_vectors_defs.aux)
+Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
-Package rerunfilecheck Warning: File `gvv_ncert_vectors_defs.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_defs.out':
-(rerunfilecheck)             Before: 1CE52213B217A39511ADB28211621EBB;1596
-(rerunfilecheck)             After:  4AB0A3B6CDEFAFBAD9D313F3690697C9;1532.
+(rerunfilecheck)             Checksum: 1CE52213B217A39511ADB28211621EBB;1596.
  ) 
 Here is how much of TeX's memory you used:
- 12358 strings out of 478994
- 179645 string characters out of 5864751
- 518048 words of memory out of 5000000
- 29335 multiletter control sequences out of 15000+600000
+ 12370 strings out of 478994
+ 179808 string characters out of 5864751
+ 518211 words of memory out of 5000000
+ 29338 multiletter control sequences out of 15000+600000
  449823 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,26n,74p,514b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.6} has been referenced but does not exist
-, replaced by a fixed one
-
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
-/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
-/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (9 pages, 186408 bytes).
+ 71i,26n,74p,514b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
+sr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_ncert_vectors_defs.pdf (9 pages, 187544 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 308 named destinations out of 1000 (max. 500000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 317 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
