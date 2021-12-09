@@ -1,5 +1,13 @@
 \contentsline {section}{\numberline {1}Definitions}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}$2\times 1$ vectors}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}$3\times 1$ vectors}{1}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Area of a Triangle}{2}{section.2}%
-\contentsline {section}{\numberline {3}Angle Between Vectors}{2}{section.3}%
+\contentsline {subsection}{\numberline {1.2}$3\times 1$ vectors}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Eigenvalues and Eigenvectors}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Determinants}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Rank of a Matrix}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Inverse of a Matrix}{3}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Geometry}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Two Dimensions}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Three Dimensions}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Class 10}{6}{section.3}%
+\contentsline {section}{\numberline {4}Class 12}{7}{section.4}%
+\contentsline {section}{\numberline {5}JEE}{8}{section.5}%

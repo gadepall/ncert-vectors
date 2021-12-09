@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  29 NOV 2021 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  9 DEC 2021 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -108,17 +108,37 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen161
 \c@IEEEbiography=\count193
 \@IEEEtranrubishbin=\box48
-) (/home/user/texmf/tex/latex/tmeslatex/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+(/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
+Package: amssymb 2002/01/22 v2.2d
+
+(/home/user/texmf/tex/latex/tmeslatex/amsfonts.sty
+Package: amsfonts 2001/10/25 v2.2f
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 123.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+(/home/user/texmf/tex/latex/tmeslatex/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
+LaTeX Font Info:    Trying to load font information for OMX+cmex on input line 
+126.
+(/usr/share/texmf-dist/tex/latex/base/omxcmex.fd
+File: omxcmex.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \ex@=\dimen162
 ))
 (/home/user/texmf/tex/latex/tmeslatex/amsbsy.sty
@@ -183,34 +203,42 @@ Package amsmath Warning: Unable to redefine math accent \mathring.
 \dotsspace@=\muskip16
 \c@parentequation=\count267
 \dspbrk@lvl=\count268
-\tag@help=\toks17
+\tag@help=\toks18
 \row@=\count269
 \column@=\count270
 \maxfields@=\count271
-\andhelp@=\toks18
+\andhelp@=\toks19
 \eqnshift@=\dimen165
 \alignsep@=\dimen166
 \tagshift@=\dimen167
 \tagwidth@=\dimen168
 \totwidth@=\dimen169
 \lineht@=\dimen170
-\@envbody=\toks19
+\@envbody=\toks20
 \multlinegap=\skip51
 \multlinetaggap=\skip52
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 ) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
 \thm@preskip=\skip53
 \thm@postskip=\skip54
 \thm@headsep=\skip55
-\dth@everypar=\toks26
+\dth@everypar=\toks27
+)
+(/usr/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 209.
 )
 (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
@@ -228,14 +256,14 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LT@rows=\count274
 \c@LT@tables=\count275
 \c@LT@chunks=\count276
-\LT@p@ftn=\toks27
+\LT@p@ftn=\toks28
 )
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks28
+\enitkv@toks@=\toks29
 \labelindent=\skip60
 \enit@outerparindent=\dimen172
-\enit@toks=\toks29
+\enit@toks=\toks30
 \enit@inbox=\box55
 \enit@count@id=\count277
 \enitdp@description=\count278
@@ -262,7 +290,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks30
+\KV@toks@=\toks31
 )
 (/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
@@ -384,7 +412,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count289
 \lst@gtempboxa=\box56
-\lst@token=\toks31
+\lst@token=\toks32
 \lst@length=\count290
 \lst@currlwidth=\dimen177
 \lst@column=\count291
@@ -422,7 +450,7 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen181
 \ar@mcellbox=\box58
 \extrarowheight=\dimen182
-\NC@list=\toks32
+\NC@list=\toks33
 \extratabsurround=\skip62
 \backup@length=\skip63
 \ar@cellbox=\box59
@@ -495,6 +523,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 
 -- Lines per column: 50 (exact).
+LaTeX Info: Redefining \celsius on input line 89.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 89.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 89.
+Package gensymb Info: Using \Omega for \ohm on input line 89.
+
+Package gensymb Warning: Not defining \micro.
+
 Package hyperref Info: Link coloring OFF on input line 89.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -524,12 +563,12 @@ LaTeX Info: Redefining \nameref on input line 89.
 \scratchbox=\box61
 \nofMPsegments=\count305
 \nofMParguments=\count306
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks34
 \MPscratchCnt=\count307
 \MPscratchDim=\dimen187
 \MPnumerator=\count308
 \makeMPintoPDFobject=\count309
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -552,7 +591,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9.79996> on input line 247.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 247.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 247
+.
 
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 247
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 (./gvv_ncert_vectors_defs.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 2.
@@ -577,53 +627,116 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 292.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 370.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 370.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] [2]
-(./gvv_ncert_vectors_defs.aux)
+]
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 423.
 
-Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
-(rerunfilecheck)             Checksum: 098C3D6E8FD09E08F5C14227EAFC4890;614.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 423.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 423.
+
+[2] [3]
+Underfull \hbox (badness 6893) in paragraph at lines 744--750
+\OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 750--754
+[]\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 965--971
+\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
+ []
+
+[6]
+Underfull \hbox (badness 3965) in paragraph at lines 1036--1040
+\OT1/ptm/m/n/12 From the above equa-tions, [] and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 1122.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1122.
+
+Underfull \hbox (badness 4036) in paragraph at lines 1103--1126
+[]\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1131
+
+ []
+
+[8] [9] (./gvv_ncert_vectors_defs.aux)
+
+Package rerunfilecheck Warning: File `gvv_ncert_vectors_defs.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_defs.out':
+(rerunfilecheck)             Before: 1CE52213B217A39511ADB28211621EBB;1596
+(rerunfilecheck)             After:  4AB0A3B6CDEFAFBAD9D313F3690697C9;1532.
  ) 
 Here is how much of TeX's memory you used:
- 11376 strings out of 478994
- 168577 string characters out of 5864752
- 505739 words of memory out of 5000000
- 28649 multiletter control sequences out of 15000+600000
- 438530 words of font info for 89 fonts, out of 8000000 for 9000
+ 12358 strings out of 478994
+ 179645 string characters out of 5864751
+ 518048 words of memory out of 5000000
+ 29335 multiletter control sequences out of 15000+600000
+ 449823 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 71i,26n,74p,514b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on gvv_ncert_vectors_defs.pdf (2 pages, 124395 bytes).
+ 71i,26n,74p,514b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.6} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
+/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_ncert_vectors_defs.pdf (9 pages, 186408 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 575 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 308 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

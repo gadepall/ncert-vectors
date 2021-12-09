@@ -4,13 +4,13 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 % \usepackage{setspace}
-% \usepackage{gensymb}
+ \usepackage{gensymb}
 %\doublespacing
 %\singlespacing
 %\usepackage{silence}
 %Disable all warnings issued by latex starting with "You have..."
 %\usepackage{graphicx}
-%\usepackage{amssymb}
+\usepackage{amssymb}
 %\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
 %\usepackage{amsthm}
@@ -25,7 +25,7 @@
 % \usepackage{txfonts}
 % \usepackage{stfloats}
 % \usepackage{steinmetz}
-% \usepackage{bm}
+ \usepackage{bm}
 % \usepackage{cite}
 % \usepackage{cases}
 % \usepackage{subfig}
@@ -285,7 +285,7 @@ Points and Vectors
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This manual provides an introduction to vectors and their properties,  based on the NCERT textbooks from Class 6-12.  
+This manual provides an introduction to vectors and their properties,  based on the CBSE question papers, year 2020,  from Class 10 and 12.  
 \end{abstract}
 
 \section{Definitions}
@@ -348,11 +348,44 @@ Thus,
   \\
   &= \abs{\lambda} \norm{\vec{A}}
 \end{align}
-
+\item The distance betwen the points $\vec{A}$ and $\vec{B}$ is given by 
+\begin{align}
+  \label{eq:norm2d_dist}
+\norm{\vec{A}-\vec{B}} 
+\end{align}
+\item Let $\vec{x}$ be equidistant from the points $\vec{A}$ and $\vec{B}$.  Then 
+\begin{align}
+	\norm{\vec{x}-\vec{A}} &=
+\norm{\vec{A}-\vec{B}} 
+\\
+	\implies \norm{\vec{x}-\vec{A}}^2 &=
+\norm{\vec{x}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{multline}
+%  \label{eq:norm2d_dist}
+	\brak{\vec{x}-\vec{A}}^{\top} \brak{\vec{x}-\vec{A}}=
+	\brak{\vec{x}-\vec{B}}^{\top} 
+\brak{\vec{x}-\vec{B}}
+\\
+	\implies	\norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{A} + \norm{\vec{A}}^2
+	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
+\end{multline}
+which can be simplified to obtain
+  \begin{align}
+	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
+	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
+  \label{eq:norm2d_equidist}
+  \end{align}
   \item The angle between two vectors is given by 
   \begin{align}
     \label{eq:angle2d}
     \theta = \cos^{-1}\frac{\vec{A}^{\top} \vec{B}}{\norm{A}\norm{B}}
+  \end{align}
+  \item If two vectors are orthogonal (perpendicular), 
+  \begin{align}
+    \label{eq:angle2d_orth}
+\vec{A}^{\top} \vec{B} = 0
   \end{align}
 
   \item The {\em direction vector} of the line joining two points $\vec{A},\vec{B}$ is given by 
@@ -373,6 +406,12 @@ Thus,
   \begin{align}
     \label{eq:normal_vec}
     \vec{m}^{\top}  \vec{n} = 0
+  \end{align}
+  \item The point $\vec{P}$ that divides the line segment $AB$ in the ratio $k:1$  is given by 
+
+  \begin{align}
+	  \vec{P}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \label{eq:section_formula}
   \end{align}
 \item  The standard basis vectors are defined as 
 
@@ -410,11 +449,443 @@ and
 \end{align}
 
 \end{enumerate}
-\subsection{Geometry}
+\subsection{Eigenvalues and Eigenvectors}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
+\item The eigenvalue $\lambda$ and the eigenvector $\vec{x}$  for a matrix $\vec{A}$ are defined as, 
+\begin{align}
+  \vec{A} \vec{x} = \lambda \vec{x}
+\end{align}
+\item The eigenvalues are calculated by solving the
+equation
+\begin{align}
+  \label{eq:chareq}
+f\brak{\lambda} = \mydet{\lambda \vec{I}- \vec{A} } =0
+\end{align}
+The above equation is known as the characteristic equation.
+\item According to the Cayley-Hamilton theorem,
+\begin{align}
+	\label{eq:cayley}
+  f(\lambda) = 0 \implies f\brak{\vec{A}} = 0
+\end{align}
+\item The trace of a square  matrix is defined to be the sum of the diagonal elements.
+\begin{align}
+	\label{eq:trace}
+	\text{tr}\brak{\vec{A}}=\sum_{i=1}^{N}a_{ii}.
+\end{align}
+	where $a_{ii}$ is the $i$th diagonal element of the matrix $\vec{A}$. 	
+\item The trace of a matrix is equal to the sum of the eigenvalues
+\begin{align}
+	\label{eq:trace_eig}
+	\text{tr}\brak{\vec{A}}=\sum_{i=1}^{N}\lambda_i
+\end{align}
+
+
+\end{enumerate}
+\subsection{Determinants}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Let 
+\begin{align}
+	\vec{A} = \myvec{a_1 & b_1 & c_1  \\ a_2 & b_2 & c_2  \\ a_3 & b_3 & c_3}.
+\end{align}
+be a $3 \times 3$ matrix. 
+Then, 
+\begin{multline}
+	\mydet{\vec{A}} = a_1 \myvec{ b_2 & c_2 \\  b_3 & c_3} - a_2\myvec{ b_1 & c_1 \\  b_3 & c_3 }  \\ + a_3\myvec{a_1 & b_1 \\ a_2 & b_2 }.
+\end{multline}
+\item Let $\lambda_1,\lambda_2, \dots, \lambda_n$ be the eigenvalues of a matrix $\vec{A}$.  Then,   the product of the eigenvalues is equal to the determinant of $\vec{A}$.
+\begin{align}
+	\mydet{\vec{A}} = \prod_{i=1}^{n}\lambda_i
+\end{align}
+%
+\item 
+\begin{align}
+	\mydet{\vec{A}\vec{B}} = \mydet{\vec{A}}\mydet{\vec{B}}
+\end{align}
+\item If $\vec{A}$ be an $n \times n$ matrix, 
+\begin{align}
+	\mydet{k\vec{A}} = k^n\mydet{\vec{A}}
+\end{align}
+
+\end{enumerate}
+\subsection{Rank of a Matrix}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The rank of a matrix is defined as the number of linearly independent rows.  This is also known as the row rank.
+\item Row rank = Column rank.
+\item The rank of a matrix is obtained as the number of nonzero rows obtained after row reduction.
+\item An $n \times n$ matrix is invertible if and only if its rank is $n$.
+\end{enumerate}
+\subsection{Inverse of a Matrix}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item For a $2 \times 2$ matrix 
+\begin{align}
+	\vec{A} = \myvec{a_1 & b_1  \\ a_2 & b_2 },
+\end{align}
+the inverse is given by 
+\begin{align}
+	\vec{A}^{-1} = \frac{1}{\mydet{\vec{A}}}\myvec{b_2 & -b_1  \\ -a_2 & a_1 },
+\end{align}
+\item For higher order matrices, the inverse should be calculated using row operations.
+\end{enumerate}
+\section{Geometry}
+\subsection{Two Dimensions}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The equation of a line  is given by  
+\begin{align}
+	\label{eq:normal_line}
+   \vec{n}^{\top}\vec{x} = c
+\end{align}
+		where $\vec{n}$ is the normal vector of the line.
+	\item The equation of a line with normal vector $\vec{n}$ and passing through a point $\vec{A}$ 
+		is given by 
+\begin{align}
+	\label{eq:normal_line_pt}
+	\vec{n}^{\top}\brak{\vec{x}-\vec{A}} =0 
+\end{align}
+\item The parametric equation of a line  is given by  
+\begin{align}
+	\label{eq:dir_line}
+	\vec{x} = \vec{A} + \lambda \vec{m}
+\end{align}
+		where $\vec{m}$ is the direction vector of the line and $\vec{A}$ is any point on the line.
+	\item The distance from a point $\vec{P}$ to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:line_dist_2d}
+	d = \frac{\abs{   \vec{n}^{\top}\vec{P}-c }}{\norm{\vec{n}}}	
+\end{align}
+		\solution Without loss of generality, let $\vec{A}$ be the foot of the perpendicular from $\vec{P}$ to the line in 
+	\eqref{eq:dir_line}.  The equation of the normal to 
+	\eqref{eq:normal_line} can then be expressed as 
+\begin{align}
+	\label{eq:dir_line_normal_dist}
+	\vec{x} &= \vec{A} + \lambda \vec{n}
+	\\
+	\implies 
+	\vec{P}- \vec{A} &=  \lambda \vec{n}
+	\label{eq:dir_line_normal_dist_pa}
+\end{align}
+$\because \vec{P}$ lies on 
+		\eqref{eq:dir_line_normal_dist}.
+From the above, the desired distance can be expressed as 
+\begin{align}
+d = 	\norm{\vec{P}- \vec{A}}= \abs{\lambda} \norm{\vec{n}}
+	\label{eq:dir_line_normal_dist_pa_d}
+\end{align}
+From 
+	\eqref{eq:dir_line_normal_dist_pa},
+\begin{align}
+	\vec{n}^{\top}
+	\brak{\vec{P}- \vec{A}} &=  \lambda \vec{n}^{\top}\vec{n} = \lambda\norm{\vec{n}}^2
+	\\
+	\implies \abs{\lambda}&= \frac{\abs{\vec{n}^{\top}
+	\brak{\vec{P}- \vec{A}}}}{\norm{\vec{n}}^2} 
+\end{align}
+	Substituting the above in \eqref{eq:dir_line_normal_dist_pa_d} and using 
+	the fact that 
+\begin{align}
+   \vec{n}^{\top}\vec{A} = c
+\end{align}
+from 	\eqref{eq:normal_line}, yields 
+	\eqref{eq:line_dist_2d}.
+
+	\item The distance from the origin to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:dist_line_2d_orig}
+	d = \frac{\abs{   c }}{\norm{\vec{n}}}	
+\end{align}
+\item The distance between the parallel lines 
+\begin{align}
+	\label{eq:parallel_lines}
+	\begin{split}
+		\vec{n}^{\top}\vec{x} &= c_1
+		\\
+		\vec{n}^{\top}\vec{x} &= c_2
+	\end{split}
+\end{align}
+is given by 
+\begin{align}
+	\label{eq:dist_lines_2d}
+	d = \frac{\abs{   c_1-c_2 }}{\norm{\vec{n}}}	
+\end{align}
+\item The equation of the line perpendicular to 
+	\eqref{eq:normal_line}
+		and passing through the point $\vec{P}$ is given by 
+\begin{align}
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  = 0
+\end{align}
+\item The foot of the perpendicular from $\vec{P}$ to the line in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:normal_line_foot}
+	\myvec{ \vec{m} & \vec{n}}^{\top}\vec{x}= \myvec{\vec{m}^{\top}\vec{P}\\ c }  
+\end{align}
+% 
+\solution From
+	\eqref{eq:normal_line} and 
+	\eqref{eq:normal_line_pt} 
+the foot of the perpendicular satisfies the equations 
+\begin{align}
+	\vec{n}^{\top}\vec{x} &= c
+	\\
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P} }&=0 
+\end{align}
+where $\vec{m}$ is the direction vector of the given line.  Combining the above into a matrix equation results in 
+	\eqref{eq:normal_line_foot}.
+\end{enumerate}
+ 
+\subsection{Three Dimensions}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The equation of a line  is given by  
+	\eqref{eq:dir_line}
+	\item The equation of a plane is given by
+	\eqref{eq:normal_line}
+	\item The distance from the origin to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+	\eqref{eq:dist_line_2d_orig}
+\item The equation of the line perpendicular to 
+	\eqref{eq:normal_line}
+		and passing through the point $\vec{P}$ is given by 
+\begin{align}
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  = 0
+\end{align}
+\item The foot of the perpendicular from $\vec{P}$ to the line in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\myvec{ \vec{m} & \vec{n}}^{\top}\vec{x}= \myvec{\vec{m}^{\top}\vec{P}\\ c }  
+\end{align}
+% 
+\item The distance from a point $\vec{P}$  to the line in 
+	\eqref{eq:dir_line} is given by 
+\begin{align}
+	\label{dist_3d_def_final}
+		d = \norm{\vec{A} -\vec{P}}^2 - \frac{\cbrak{\vec{m}^{\top}\brak{\vec{A}-\vec{P} 
+	}}^2}{\norm{\vec{m}}^2}
+%	d =\norm{\vec{A}  -\vec{P}
+% -\frac{\vec{m}^{\top}\brak{\vec{A} 
+%			-\vec{P}}}
+%			{ \norm{\vec{m}}^2}
+%	\vec{m}}
+		\end{align}
+		\solution 
+\begin{align}
+	\label{dist_3d_def}
+	d\brak{\lambda } &=\norm{\vec{A} + \lambda \vec{m}-\vec{P}}
+	\\
+\implies 	d^2\brak{\lambda } &=\norm{\vec{A} + \lambda \vec{m}-\vec{P}}^2
+\end{align}
+which can be simplified to obtain 
+	\begin{multline}
+d^2\brak{\lambda } =\lambda^2 \norm{\vec{m}}^2+2\lambda \vec{m}^{\top}\brak{\vec{A} 
+		-\vec{P}}
+		\\
+		+\norm{\vec{A} -\vec{P}}^2
+	\end{multline}
+which is of the form 
+\begin{align}
+	\label{dist_3d_def_quad}
+	d^2\brak{\lambda } &=a \lambda^2 + 2b\lambda +c
+	\\
+	&=a \cbrak{\brak{\lambda+ \frac{b}{a}}^2 +\sbrak{\frac{c}{a}-\brak{\frac{b}{a}}^2 }}
+\end{align}
+with 
+\begin{align}
+	\label{dist_3d_def_quad_abc}
+	a = \norm{\vec{m}}^2, b = \vec{m}^{\top}\brak{\vec{A} 
+		-\vec{P}}, c = 
+		\norm{\vec{A} -\vec{P}}^2
+\end{align}
+which can be expressed as 
+%		\begin{multline}
+%			d^2\brak{\lambda } =\norm{\vec{m}}^2\brak{\lambda + \frac{\vec{m}^{\top}\brak{\vec{A}-\vec{P} }}{\vec{m}}^2}}^2 +2\lambda \vec{m}^{\top}\brak{\vec{A} 
+%			-\vec{P}}
+%			\\
+%			+\norm{\vec{A} -\vec{P}}^2
+%		\end{multline}
+		From the above, $d^2\brak{\lambda}$ is smallest when upon substituting from 
+	\eqref{dist_3d_def_quad_abc}
+\begin{align}
+	\label{dist_3d_def_quad_small}
+	\lambda+ \frac{b}{2a} &= 0 \implies \lambda = - \frac{b}{2a}
+	&= -\frac{\vec{m}^{\top}\brak{\vec{A} 
+			-\vec{P}}}
+			{ \norm{\vec{m}}^2}
+	%		\label{dist_3d_lam}
+\end{align}
+and consequently, 
+\begin{align}
+	d_{\min}\brak{\lambda } &=a \brak{\frac{c}{a}-\brak{\frac{b}{a}}^2 } 
+	\\
+	&=c - \frac{b^2}{a }
+\end{align}
+yielding
+	\eqref{dist_3d_def_final} after substituting from 
+	\eqref{dist_3d_def_quad_abc}.
+%From 	\eqref{dist_3d_def} and \eqref{dist_3d_lam}, 
+%	\eqref{dist_3d_def} is obtained.
+\item The distance between the parallel planes 
+	\eqref{eq:parallel_lines}
+	is given by 
+	\eqref{eq:dist_lines_2d}.
+\item The plane 
+		\begin{align}
+		\vec{n}^{\top}
+			-\vec{x} = c
+			\label{eq:plain_contain}
+		\end{align}
+		contains the line 
+		\begin{align}
+			\vec{x} = \vec{A}+\lambda \vec{m}
+			\label{eq:line_contain}
+		\end{align}
+		if 
+		\begin{align}
+		\vec{m}^{\top}\vec{n} = 0
+			\label{eq:line_plain_contain}
+		\end{align}
+		\solution Any point on the line 
+			\eqref{eq:line_contain}
+			should also satisfy 
+			\eqref{eq:plain_contain}.  Hence, 
+		\begin{align}
+			\vec{n}^{\top}\brak{\vec{A}+\lambda \vec{m}} &= \vec{n}^{\top}\vec{A}=c
+		\end{align}
+		which can be simplified to obtain
+			\eqref{eq:line_plain_contain}
+		\item Let a plane pass through the points $\vec{A},\vec{B}$ and be perpendicular to the plane 
+		\begin{align}
+		\vec{n}^{\top}\vec{x} =c 
+			\label{eq:plane_3d_2pt_perp_given}
+		\end{align}
+		Then the equation of this plane is given by 
+		\begin{align}
+		\vec{p}^{\top}\vec{x} = 1
+			\label{eq:plane_3d_2pt}
+		\end{align}
+		where
+		\begin{align}
+			\vec{p} = 		\myvec{\vec{A} & \vec{B} & \vec{n}}^{-\top}  \myvec{1 \\ 1 \\ 0}
+			\label{eq:plane_3d_2pt_perp_norm}
+		\end{align}
+	\solution From the given information, 
+		\begin{align}
+			\vec{p}^{\top}\vec{A} &=d 
+			\\
+			\vec{p}^{\top}\vec{B} &=d 
+			\\
+			\vec{p}^{\top}\vec{n} &= 0
+			\label{eq:plane_3d_2pt_perp_system}
+		\end{align}
+		$\because$ the normal vectors to the two planes will also be perpendicular.  The system of equations in 
+			\eqref{eq:plane_3d_2pt_perp_system}
+			can be expressed as the matrix equation
+		\begin{align}
+			\myvec{\vec{A} & \vec{B} & \vec{n}}^{\top}\vec{p} = d\myvec{1 \\ 1 \\ 0}
+			\label{eq:plane_3d_2pt_perp_system_temp}
+		\end{align}
+		which yields 
+			\eqref{eq:plane_3d_2pt_perp_norm}
+			upon normalising with $d$.
+		\item The intersection of the line represented by 
+	\eqref{eq:dir_line}
+	with the plane represented by 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:dir_line_plane_isect}
+	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\vec{m}
+\end{align}
+\solution From 
+	\eqref{eq:dir_line}
+	and 
+	\eqref{eq:normal_line},
+\begin{align}
+	\vec{x} &= \vec{A} + \lambda \vec{m}
+	\\
+	\vec{n}^{\top}\vec{x} &= c
+	\\
+	\implies 
+	\vec{n}^{\top}\brak{\vec{A} + \lambda \vec{m}}&= c
+	\label{eq:dir_line_plane_inter}
+\end{align}
+which can be simplified to obtain
+\begin{align}
+	\vec{n}^{\top}\vec{A} + \lambda 	\vec{n}^{\top}\vec{m}&= c
+	\\
+	\implies \lambda &= \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\end{align}
+Substituting the above in 
+	\eqref{eq:dir_line_plane_inter}
+	yields
+	\eqref{eq:dir_line_plane_isect}.
+\item The foot of the perpendicular from the point $\vec{P}$ to the line  represented by 
+	\eqref{eq:dir_line}
+	is given by 
+\begin{align}
+	\label{eq:plane_line_foot_ans}
+	\vec{x} &= \vec{A} + \frac{ \vec{m}^{\top}\brak{\vec{P} - \vec{A}}}{\norm{\vec{m}}^2}
+\vec{m}
+\end{align}
+\solution  Let the equation of the line be 
+\begin{align}
+	\label{eq:dir_line_foot}
+	\vec{x} &= \vec{A} + \lambda \vec{m}
+\end{align}
+	The equation of the plane perpendicular to the given line passing through $\vec{P}$ is given by
+\begin{align}
+	\label{eq:plane_line_foot}
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  &= 0
+	\\
+	\implies \vec{m}^{\top}\vec{x}  &= \vec{m}^{\top}\vec{P}
+\end{align}
+The desired foot of the perpendicular is the intersection of 
+	\eqref{eq:dir_line_foot} with 
+	\eqref{eq:plane_line_foot}
+	which can be obtained from 
+	\eqref{eq:dir_line_plane_isect}
+	as 
+	\eqref{eq:plane_line_foot_ans}
+\item The foot of the perpendicular from a point $\vec{P}$ to a plane is $\vec{Q}$.  The equation of the plane is given by 
+\begin{align}
+	\label{eq:plane_foot_perp}
+	\brak{\vec{P}-\vec{Q}}^{\top}\brak{\vec{x}-\vec{Q}} = 0
+\end{align}
+	\solution  The normal vector to the plane is given by 
+\begin{align}
+	\vec{n}= \vec{P}-\vec{Q} 
+\end{align}
+	Hence, the equation of the plane is
+	\eqref{eq:plane_foot_perp}.
+	
+%\renewcommand{\theequation}{\theenumi}
+%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+%\numberwithin{equation}{enumi}
 %
 \item (Affine Transformation) Let $\vec{A},\vec{C}$, be opposite sides of a square. The other two points can be obtained as  
 \begin{align}
@@ -431,7 +902,7 @@ and
 \begin{align}
 	\cos\theta = \frac{\brak{\vec{C}-\vec{A}}^{\top}\vec{e}_1}{\norm{\vec{A}-\vec{C}}\norm{\vec{e}_1}}
 \end{align}
-and 
+%\end{enumerate}
 %\item The area of a triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
 %\begin{align}
 %  \label{eq:area3d}
@@ -450,88 +921,361 @@ and
 %  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} }  = 2
 %\end{align}
 \end{enumerate}
-\section{Area of a Triangle}
-%\section{Examples}
+\section{Class 10}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the area of a triangle whose vertices are 
-$\vec{A}=\myvec{1\\-1}, 
-\vec{B} = \myvec{-4\\6}$ and
-$ 
-\vec{C} = \myvec{-3\\-5}
-$.
-%
+\item  Find the distance between the points $\myvec{m \\ -n}$ and $\myvec{-m \\ n}$
+	\\
+		\solution Letting 
+		\begin{align}
+			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
+			\\
+			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
+			\\
+			\implies \norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
+			\\
+			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
 \\
-\solution
-	%	\input{solutions/area/1.tex}
-%
-\item Find the area of a triangle formed by the vertices $\vec{A}=\myvec{5\\2}, \vec{B}=\myvec{4\\7}, \vec{C}=\myvec{7\\-4}$.
+			&			= 2 \sqrt{m^2+n^2}
+		\end{align}
+	\item Find a point on the $x-$axis which is equidistant from $\myvec{ -4 \\ 0}$ and $\myvec{10 \\ 0}$
 \\
-\solution  
-		%\input{solutions/area/2.tex}
-%
-\item Find the area of a triangle formed by the points $\vec{P}=\myvec{-1.5\\3}, \vec{Q}=\myvec{6\\-2}, \vec{R}=\myvec{-3\\4}$.
-%
+\solution Letting the given points be $\vec{A},\vec{B}$. 
+		\begin{align}
+	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
+	  \\
+	  &= \myvec{ -14 \\ 0},
+	  \\
+			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -84,
+  \end{align}
+  \eqref{eq:norm2d_equidist}, can be expressed as 
+  \begin{align}
+	  \myvec{ -14 & 0}\vec{x} 
+	  &=  84
+	  \\
+	  \implies 
+	  \myvec{ -14 & 0}\myvec{x \\ 0} 
+	  &=  -84
+	  \\
+	  \text{or, } x = 6
+  \end{align}
+  Hence, the desired point is $\myvec{ 6 \\ 0}$.
+  \item Find the centre of a circle whose end points of a diameter are $\myvec{ -6 \\ 3}$ and $\myvec{6 \\ 4}$.
+	  \\
+		\solution 
+Using section formula, 
+	  from \eqref{eq:section_formula},
+		the desired point is given by 
+  \begin{align}
+	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
+	  \\
+	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
+	  \\
+	  &=\frac{1}{2}\myvec{0 \\ 7}
+  \end{align}
+  \item $AOBC$  is a rectangle whose three vertices are $A = \myvec{0\\-3}, O = \myvec{0\\0}, B = \myvec{4\\0}$.  Find the length of its diagonal. 
+	  \\
+		\solution The fourth point is given by 
+  \begin{align}
+	 OC =  \vec{C}&=\myvec{4 \\ -3}
+  \end{align}
+  The length of the diagonal is 
+		\begin{align}
+			\norm{\vec{C}} &= 
+			 \sqrt{\myvec{4 & -3}\myvec{4 \\ -3}} 
 \\
-\solution  
-		%\input{solutions/area/3.tex}
-%
-\item Find the area of a triangle having the points
-%
+			&			=  \sqrt{25} = 5
+		\end{align}
+	\item  Find the ratio in which the $y$-axis divides the line segment joining the points $\myvec{6 \\ -4}, \myvec{-2 \\ -7} $.  Also find the point of intersection.
+		\\
+		\solution  Let the desired point on the $y$-axis be  
+		\begin{align}
+\vec{P} = \myvec{0 & y}
+		\end{align}
+Using section formula, 
+	  from \eqref{eq:section_formula},
+		\begin{align}
+			\vec{P} &= \myvec{0 & y}= \frac{1}{k+1}\sbrak{\myvec{6 \\ -4}+ k\myvec{-2 \\ -7} }
+			\\
+			&	\implies 6 - 2k = 0 \text{ or, }k = 3
+		\end{align}
+		Also, 
+		\begin{align}
+			y &= \frac{-4-7k}{k+1}
+			\\
+			&=-\frac{25}{4}
+		\end{align}
+		Thus, the desired point is  $ -\frac{25}{4}
+\myvec{0 \\ 1 }$.
+	\item   Show that the points $\myvec{7 \\ 10}, \myvec{-2 \\ 5} $ and $\myvec{3 \\ -4}$ are vertices of an isoscles right triangle.
+		\\
+		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
+Then, the direction vectors of $AB, BC$ and $CA$ are
+		\begin{align}
+			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
+			\\
+			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
+			\\
+			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
+		\end{align}
+		From the above,  we find that 
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
+			\\
+			&=0
+			\\
+			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
+\\
+			&=-106
+			\\
+			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
+\\
+			&=-106
+		\end{align}
+		From  the above equations, 
+    \eqref{eq:angle2d} and 
+    \eqref{eq:angle2d_orth},
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
+			\\
+			\angle BCA = 
+			\angle CAB  
+		\end{align}
+		Thus, the triangle is right angled and isosceles.
+\end{enumerate}
+\section{Class 12}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+	\item The area of a triangle 		 formed by vertices O, A and B, where $\overrightarrow{OA}=\hat{i} + 2\hat{j} + 3 \hat{k} $ and $\overrightarrow{OB}=-3\hat{i} - 2\hat{j} +  \hat{k} $ is \\
+ \begin{enumerate}
+     \item $ 3\sqrt{5} $ sq.units\\
+    \item$ 5\sqrt{5} $ sq.units\\
+    \item$ 6\sqrt{5} $ sq.units\\
+    \item$ 4 $ sq.units
+\end{enumerate}
+\item  The coordinates of the foot of the perpendicular drawn from the point $ \left(2,-3,4 \right) $ on the y-axis is 
+\begin{enumerate}
+    \item $\left(2,3,4\right)$
+    \item $\left(-2,-3,-4\right)$
+    \item $\left(0,-3,0\right)$
+    \item $\left(2,0,4\right)$
+\end{enumerate}
+\item  The angle between the vectors $ \hat{i} - \hat{j} $ and $ \hat{j} - \hat{k} $ is
+\begin{enumerate}
+    \item $\frac{-\pi}{3}$
+    \item 0
+    \item $\frac{\pi}{3}$
+    \item $\frac{2\pi}{3}$
+\end{enumerate}
+\item  If A is a non-singular square matrix of order 3 such that $ A^2 =3A $, then value of  $\begin{vmatrix}A \end{vmatrix}$ is
+\begin{enumerate}
+    \item -3
+     \item 3
+     \item 9
+     \item 27
+\end{enumerate}
+\item  If $\begin{vmatrix}\overrightarrow{a} \end{vmatrix} = 4 $ and  $ -3\leq \lambda \leq 2 $ then $\begin{vmatrix}\lambda \overrightarrow{a} \end{vmatrix} $ lies in
+\begin{enumerate}
+    \item $\left[0,12\right]$
+    \item $\left[2,3\right]$
+    \item $\left[8,12\right]$
+    \item $\left[-12,8\right]$
+\end{enumerate}
+\item  If $\begin{vmatrix} 2x & -9 \\ -2 & x \end{vmatrix}$ = $\begin{vmatrix} -4 & 8 \\ 1 & -2 \end{vmatrix}$ , then value of x is -------------
+\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
+\item  The distance between parallel planes 2x+y-2z-6=0 and 4x+2y-4z=0 is ------------------ units.
+\begin{center}
+        OR
+    \end{center}
+    If P(1,0,-3) is the foot of the perpendicular from the origin to the plane, then the Cartesian equation of the plane is .................... 
+    
+\item  Find the coordinates of the point where the line $\frac{x-1}{3}$ = $\frac{y+4}{7}$ = $\frac{z+4}{2}$ cuts the xy-plane.
+\item  Find a vector $\overrightarrow{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.
+ 
+    
+\item    Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.
+\item If $A=\begin{bmatrix}-3 & 2 \\ 1 & -1 \end{bmatrix} $ and $ I=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$, Find scalar k so that $A^2 + I = kA$.
+\item Show that the plane $x-5y-2z=1$ contains the line $\frac{x-5}{3}=y=2-z$. 
+\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table 
+%\end{center}
+In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
+Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.
+	\begin{table}[!ht]
+		\centering
+%\begin{center}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+% \begin{tabularx}{\linewidth} {lX}
+ Item & Machine Time & Craftsman Time & Profit(in INR) \\ 
+ \hline
+ Pedestal Lamp & 1.5 hours & 3 hours & 30\\  
+ \hline
+ Wooden shades & 3 hours & 1 hour & 20 \\
+ \hline
+%  \end{tabularx}
+\end{tabular}
+}
+	\caption{}
+	\label{table}
+\end{table}
+\item Find the equation of the plane passing through the points $(1,0,-2)$ , $(3,-1,0)$ and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.  
+    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+    
+    \item   Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3). 
+\item If $A=\begin{bmatrix}5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6 \end{bmatrix} $, Find $A^{-1}$ and use it to solve the following system of the equations: \\
+\begin{center}
+        $5x-y+4z=5 $\\
+        $2x+3y+5z=2 $\\
+        $5x-2y+6z=-1 $
+    \end{center}
+    
+\item If x,y,z are different and $\begin{vmatrix}x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 \end{vmatrix} =0 $, then using properties of determinants show that $1+xyz=0.$  
+\end{enumerate}
+\section{JEE}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the locus of $\vec{z}$ if 
 \begin{align}
-\vec{A} = \myvec{1\\1 \\1},
-\vec{B} = \myvec{1\\2 \\3},
-\vec{C} = \myvec{2\\ 3\\1}
+	\vec{e}_1^{\top}\brak{\frac{\vec{z}-\vec{e}_1}{2\vec{z}+\vec{e}_2}} = 1
 \end{align}
-%
-as its vertices.
-\\
-\solution 
-		%\input{solutions/area/4.tex}
-
-
-%
+\item Let $\alpha$ be a root of the equation
+\begin{align}
+	x^2+x+1 = 0
+\end{align}
+and the matrix 
+\begin{align}
+	\vec{A} = 	\frac{1}{\sqrt{3}}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha}^4 
+\end{align}
+		Find $\vec{A}^31$
+	\item The line 
+\begin{align}
+	\myvec{m & -1}\vec{x} = -4
+\end{align}
+is a tangent to the parabolas
+\begin{align}
+	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} - 4 \myvec{1 & 0}\vec{x}&= 0
+	\\
+	\vec{x}^{\top}\myvec{1 & 0 \\ 0  & 0}\vec{x} - 2 \myvec{0 & b}\vec{x}&= 0
+\end{align}
+Find the value of $b$.
+\item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
+	12, then find the length of its latus rectum.
+\item Find the area of the region, enclosed by the circle 
+\begin{align}
+	\vec{x}^{\top}\vec{x} = 2
+\end{align}
+which is not common to the region bounded by the parabola 
+\begin{align}
+	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} -  \myvec{1 & 0}\vec{x}= 0
+\end{align}
+and the straight line
+\begin{align}
+\myvec{1 & -1 }\vec{x}  = 0.
+\end{align}
+\item Let $P$ be a plane passing through the points 
+\begin{align}
+	\myvec{2 \\  1 \\ 0 }, 	\myvec{4 \\  1 \\ 1 }, 	\myvec{5 \\  0 \\ 1 }
+\end{align}
+and 
+\begin{align}
+	\vec{R} = 	\myvec{2 \\  1 \\ 6 }
+\end{align}
+		be any point.  Find the image of $\vec{R}$ in the plane $\vec{P}$.
+	\item A vector 
+\begin{align}
+	\vec{a} = 	\myvec{\alpha \\  2 \\ \beta }
+\end{align}
+lies in the plane of the vectors 
+\begin{align}
+	\vec{b} = 	\myvec{1\\  1 \\ 0}, 
+	\vec{b} = 	\myvec{1\\  -1 \\ 4}
+\end{align}
+		If $\vec{a}$ bisects the angle between $\vec{b}, \vec{c}$, find a condition on $\vec{a}$.
+	\item If the system of linear equations 
+\begin{align}
+	2x + 2ay + az & = 1
+	\\
+	2x + 3by + bz & = 1
+	\\
+	2x + 4cy + cz & = 1
+\end{align}
+where $a, b, c \in \mathbb{R}$ are nonzero and distinct; has a nonzero solution, find a condition on $a,b,c$.
+\item Let 
+\begin{align}
+	\vec{A} = 	\myvec{1\\   0}, 
+	\vec{B} = 	\myvec{6\\ 2 },
+	\vec{C} = 	\myvec{\frac{3}{2}\\[1em] 6}
+\end{align}
+be the vertices of a triangle.  If $\vec{P}$ is a point inside the triangle $ABC$ such that the triangles $APC,APB$ and $BPC$ have equal areas, then find the length of the line segment $PQ$, where  
+\begin{align}
+	\vec{P} = 	\myvec{-\frac{7}{6}\\[1em] -\frac{1}{3} } 
+\end{align}
 
 \end{enumerate}
-
-\section{Angle Between Vectors}
-%\section{Examples}
+\section{JNTU}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the angle between the vectors 
+\item Find the value of $k$ such that the rank of the matrix
 \begin{align}
-\myvec{1\\-2\\3},
-\myvec{3\\-2\\1}
+	\myvec{1 & 2 & 3\\2 & k & 7 \\ 3 & 6 & 10} 
 \end{align}
-\\
-\solution 
-Let 
+is 2.
+\item Find the LU decoomposition of 
 \begin{align}
-\vec{a}=\myvec{
-1\\
--2\\
-3
-},
-\vec{b} = \myvec{
-3\\
--2\\
-1
-}
+	\vec{A} = 	\myvec{1 &  3\\ 4 & -1} 
 \end{align}
-Angle between the vectors is given by,
+\item If a square matrix $\vec{A}$ has an eigenvalue $\lambda $, then what is the eigenvalue of the matrix $k\vec{A}$, where $k \ne 0$ is a scalar.
+\item If a matrix 
 \begin{align}
-    \theta      &=\cos^{-1}\left(\frac{\vec{a}^T\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}}\right)\\
-    \norm{\vec{a}}&=\sqrt{1^2+(-2)^2+3^2}=\sqrt{14} \\
-    \norm{\vec{b}}&=\sqrt{3^2+(-2)^2+1^2}=\sqrt{14}\\
-    \vec{a}^T\vec{b}&=(1)(3)+(-2)(-2)+(3)(1)=10\\
-    \theta&=\cos^{-1}\left(\frac{10}{(\sqrt{14})(\sqrt{14)}}\right)\\
-    &=\cos^{-1}\left(\frac{10}{14}\right)\\
+	\vec{A} = 	\myvec{-1 & 0 & 0\\2 & -3 & 0 \\ 1 & 4 & 2}
 \end{align}
-%
+then what are the eigenvalues of $\vec{A}^2$?
+\item Factorize the matrix 
+\begin{align}
+		\myvec{2 & -3 & 1\\3 & 4 & 2 \\ 2 & -3 & 4}
+\end{align}
+by the LU decomposition method.
+\item For what values of $\lambda$ and $\mu$ do the system of equations
+\begin{align}
+	x+y+z &= 6
+	\\
+	x+2y+3z &= 10
+	\\
+	x+2y+\lambda z = \mu
+\end{align}
+have
+		\begin{enumerate}
+			\item no solution
+			\item unique solution
+			\item more than one solution
+				\end{enumerate}
+			\item Find the value of $k$ for which the system of equations
+\begin{align}
+	\brak{k+1}x+y &= 4k
+	\\
+	kx+\brak{k-3}y &= 3k-1
+\end{align}
+has infinitely many solutions.
+\item Verify Cayley-Hamilton Theorem for the matrix 
+\begin{align}
+	\vec{A} = 	\myvec{1 & 2 & 0\\-1 & -1 & 2 \\ 1 & 2 & 1}
+\end{align}
+		and obtain $\vec{A}^{-1}$ and $\vec{A}^{3}$.
+	\item Reduce the quadratic form 
+\begin{align}
+	3x^2+3y^2+3z^2-2yz+2zx+2xy
+\end{align}
+to its canonical form.
+
 \end{enumerate}
 \end{document}
 
