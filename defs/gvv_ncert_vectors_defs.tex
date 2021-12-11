@@ -345,7 +345,7 @@ is defined as
 \end{align}
 Thus, 
 \begin{align}
-%  \label{eq:norm2d}
+  \label{eq:norm2d_const}
   \norm{\lambda \vec{A}} &\equiv \mydet{\lambda\overrightarrow{A}}
   \\
   &= \abs{\lambda} \norm{\vec{A}}
@@ -512,6 +512,7 @@ Then,
 \end{align}
 \item If $\vec{A}$ be an $n \times n$ matrix, 
 \begin{align}
+	\label{eq:det_kord}
 	\mydet{k\vec{A}} = k^n\mydet{\vec{A}}
 \end{align}
 
@@ -1075,45 +1076,195 @@ Then, the direction vectors of $AB, BC$ and $CA$ are
 		\begin{align}
 			\frac{1}{2}\norm{\myvec{8 \\ -10 \\ 4}} = 3 \sqrt{5}
 		\end{align}
-\item  The coordinates of the foot of the perpendicular drawn from the point $ \left(2,-3,4 \right) $ on the y-axis is 
-\begin{enumerate}
-    \item $\left(2,3,4\right)$
-    \item $\left(-2,-3,-4\right)$
-    \item $\left(0,-3,0\right)$
-    \item $\left(2,0,4\right)$
-\end{enumerate}
-\item  The angle between the vectors $ \hat{i} - \hat{j} $ and $ \hat{j} - \hat{k} $ is
-\begin{enumerate}
-    \item $\frac{-\pi}{3}$
-    \item 0
-    \item $\frac{\pi}{3}$
-    \item $\frac{2\pi}{3}$
-\end{enumerate}
-\item  If A is a non-singular square matrix of order 3 such that $ A^2 =3A $, then value of  $\begin{vmatrix}A \end{vmatrix}$ is
-\begin{enumerate}
-    \item -3
-     \item 3
-     \item 9
-     \item 27
-\end{enumerate}
-\item  If $\begin{vmatrix}\overrightarrow{a} \end{vmatrix} = 4 $ and  $ -3\leq \lambda \leq 2 $ then $\begin{vmatrix}\lambda \overrightarrow{a} \end{vmatrix} $ lies in
-\begin{enumerate}
-    \item $\left[0,12\right]$
-    \item $\left[2,3\right]$
-    \item $\left[8,12\right]$
-    \item $\left[-12,8\right]$
-\end{enumerate}
-\item  If $\begin{vmatrix} 2x & -9 \\ -2 & x \end{vmatrix}$ = $\begin{vmatrix} -4 & 8 \\ 1 & -2 \end{vmatrix}$ , then value of x is -------------
-\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
-\item  The distance between parallel planes 2x+y-2z-6=0 and 4x+2y-4z=0 is ------------------ units.
-\begin{center}
-        OR
-    \end{center}
-    If P(1,0,-3) is the foot of the perpendicular from the origin to the plane, then the Cartesian equation of the plane is .................... 
-    
+	\item  Find the coordinates of the foot of the perpendicular drawn from the point $ \myvec{2 \\-3 \\4 } $ on the y-axis.
+		\\
+\solution By definition of $y$-axis, the desired coordinates are 
+		\begin{align}
+			\myvec{0 \\ -3 \\ 0} 
+		\end{align}
+	Alternatively, the equation of the $y$-axis can be written as	
+		\begin{align}
+			\vec{x} = \lambda 	\myvec{0 \\ 1 \\ 0} 
+		\end{align}
+		The equation of the plane perpendicular to the $y$-axis and passing through the origin is
+		\begin{align}
+ 	\myvec{0 \\ 1 \\ 0} \vec{x} = 0
+		\end{align}
+	From \eqref{eq:plane_line_foot_ans},  the desired point is given by 
+\begin{align}
+	\vec{x} &=   \myvec{0 & 1 & 0}\myvec{2 \\-3 \\4 } 
+ \myvec{0 \\ 1 \\ 0} 
+ \\
+	&=
+ \myvec{0 \\ -3 \\ 0} 
+		\end{align}
+	\item  Find the angle between the vectors $ \myvec{1 \\ -1 \\ 0} $ and $ \myvec{0 \\ 1 \\ -1} $ 
+\\
+\solution $\because$
+%
+  \begin{align}
+	  \myvec{1 & -1 & 0} \myvec{0 \\ 1 \\ -1} &= -1,
+	  \norm{\myvec{1 \\ -1 \\ 0}}=\norm{\myvec{0 \\ 1 \\ -1}} &= \sqrt{2}
+  \end{align}
+		From 
+    \eqref{eq:angle2d}, the angle between the given vectors is 
+  \begin{align}
+ \cos^{-1}\frac{-1}{\sqrt{2} \times 
+\sqrt{2}
+	  } &= 
+ \cos^{-1}\frac{-1}{2
+	  } 
+	  \\
+	  &= \frac{2\pi}{3}
+  \end{align}
+\item  If A is a non-singular square matrix of order 3 such that $ \vec{A}^2 =3\vec{ A}$, then find the value of  $\mydet{\vec{A}}$ 
+	\\
+	\solution 
+  \begin{align}
+	  \mydet {\vec{A}^2} &=\mydet{3\vec{ A}}
+	  \\
+	  \implies 
+	  \mydet {\vec{A}} ^2&=3^3\mydet{\vec{ A}}
+  \end{align}
+  from 
+	\eqref{eq:det_kord}
+	yielding 
+  \begin{align}
+	  \mydet {\vec{A}} &=27
+  \end{align}
+  after simplification.
+\item  If $\norm{\vec{a}}
+	 = 4 $ and  $ -3\leq \lambda \leq 2 $ then find the range of values that $\norm{\lambda \vec{a}}$ can satisfy.
+	 \\
+	 \solution  From 
+  \eqref{eq:norm2d_const}, 
+\begin{align}
+  \norm{\lambda \vec{a}} 
+  &= \abs{\lambda} \norm{\vec{A}}
+  \\
+	&= 4\abs{\lambda} 
+\end{align}
+$\because$
+\begin{align}
+	0 \leq \abs{\lambda} \leq 3,  
+\\
+	0 \leq 4\abs{\lambda} \leq 12
+\end{align}
+
+\item  If 
+%
+\begin{align}
+	\mydet{ 2x & -9 \\ -2 & x } = \mydet{ -4 & 8 \\ 1 & -2} 
+\end{align}
+then find the value of $x$. 
+\\
+\solution
+Exapanding the above determinants,
+\begin{align}
+	2x^2 - 18 &= 0
+	\\
+	\implies x &= \pm 3
+\end{align}
+\item  Find the distance between parallel planes 
+	\begin{align}
+		2x+y-2z-6&=0 
+		\\
+		4x+2y-4z&=0 
+\end{align}
+\solution The above planes have parameters
+	\begin{align}
+		\vec{n} = \myvec{2 & 1 & -2}, c_1=6, c_2 = 0
+\end{align}
+Using 	\eqref{eq:parallel_lines},  the distance is obtained as
+
+\begin{align}
+	d &= \frac{\abs{c_1-c_2}}{\norm{\vec{n}}} 
+\\
+	&= \frac{6}{3} = 2
+\end{align}
+\item 
+    If 
+	\begin{align}
+		\vec{P} = \myvec{1 \\ 0 \\-3}
+\end{align}
+    is the foot of the perpendicular from the origin to the plane, then find the equation of the plane.  
+    \\
+    \solution Let the equation of the plane be 
+	\begin{align}
+		\vec{n}^{\top}\vec{x} = c
+\end{align}
+Since $\vec{P}$ is a point on the plane, it satisfies the above equation and 
+	\begin{align}
+		\vec{n}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot}
+\end{align}
+The normal vector to the plane is $OP$.  Hence, 
+	\begin{align}
+		\vec{n} = \vec{P} 
+\end{align}
+		Substituting the above in \eqref{eq:cbse_12_foot},
+	\begin{align}
+		\vec{P}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot_sub}
+\end{align}
+and the desired equation of the plane is 
+	\begin{align}
+		\vec{P}^{\top}\vec{x} &= 		\vec{P}^{\top}\vec{P}
+		\\
+		\myvec{1 & 0 &-3}\vec{x} &= 	10	
+		\label{eq:cbse_12_foot_ans}
+\end{align}
+   after substituting numerical values. 
 \item  Find the coordinates of the point where the line $\frac{x-1}{3}$ = $\frac{y+4}{7}$ = $\frac{z+4}{2}$ cuts the xy-plane.
-\item  Find a vector $\overrightarrow{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.
+	\\
+	\solution 
+	The given line can be expressed as 
+	\begin{align}
+		\vec{x} = \myvec{1 \\ -4 \\ -4} + \lambda \myvec{3 \\ 7 \\ 2}
+		\label{eq:cbse_12_line_plane}
+\end{align}
+and the $xy$- plane is 
+	\begin{align}
+		\myvec{0 & 0 &1}\vec{x}  = 0
+		\label{eq:cbse_12_line_plane_eq}
+\end{align}
+From 
+	\eqref{eq:dir_line_plane_isect},
+\begin{align}
+	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\vec{m}
+	\\
+	&= \myvec{1 \\ -4 \\ -4} + \frac{0 - \myvec{0 & 0 &1}\myvec{1 \\ -4 \\ -4}}{\myvec{0 & 0 &1}\myvec{3 \\ 7 \\ 2}}\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{1 \\ -4 \\ -4}+2\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{7 \\ 10 \\ 0}
+\end{align}
+
+\item  Find a vector $\vec{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.
+	\\
+	\solution 
+    From \eqref{eq:angle2d}, 
+  \begin{align}
+	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}} = 
+	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}} = 
+	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}} = \cos \theta
+  \end{align}
+  which can be expressed as the system of equations
+  \begin{align}
+	  {\vec{e}_1^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  {\vec{e}_2^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  {\vec{e}_3^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+  \end{align}
+  which can be combined to obtain the matrix equation
+  \begin{align}
+	  \myvec{\vec{e}_1&\vec{e}_2&\vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
+	  \\
+	  \implies \frac{\vec{r}}{\norm{\vec{r}}}&= \cos \theta \myvec{1\\1\\1}
+
+  \end{align}
  
+\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
     
 \item    Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.
 \item If $A=\begin{bmatrix}-3 & 2 \\ 1 & -1 \end{bmatrix} $ and $ I=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$, Find scalar k so that $A^2 + I = kA$.
@@ -1152,7 +1303,7 @@ Assuming that all items manufactured are sold, how should the manufacturer sched
         $5x-2y+6z=-1 $
     \end{center}
     
-\item If x,y,z are different and $\begin{vmatrix}x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 \end{vmatrix} =0 $, then using properties of determinants show that $1+xyz=0.$  
+\item If x,y,z are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
 \end{enumerate}
 \section{JEE}
 \renewcommand{\theequation}{\theenumi}

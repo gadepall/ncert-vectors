@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  9 DEC 2021 13:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  10 DEC 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,50 +644,58 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 425.
 
 [2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 763--769
+Underfull \hbox (badness 6893) in paragraph at lines 764--770
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 769--773
+Underfull \hbox (badness 2913) in paragraph at lines 770--774
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 967--973
+Underfull \hbox (badness 10000) in paragraph at lines 968--974
 \OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
  []
 
 [6]
-Underfull \hbox (badness 3965) in paragraph at lines 1038--1042
+Underfull \hbox (badness 3965) in paragraph at lines 1039--1043
 \OT1/ptm/m/n/12 From the above equa-tions, [] and
  []
 
-[7]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 1140.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1140.
 
-Underfull \hbox (badness 4036) in paragraph at lines 1121--1144
+Overfull \hbox (19.67986pt too wide) in paragraph at lines 1108--1108
+[] 
+ []
+
+[7] [8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 1270.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1270.
+
+Underfull \hbox (badness 4036) in paragraph at lines 1251--1274
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1279
 
  []
 
-[8] [9] (./gvv_ncert_vectors_defs.aux)
+[9] [10] (./gvv_ncert_vectors_defs.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
 (rerunfilecheck)             Checksum: 1CE52213B217A39511ADB28211621EBB;1596.
  ) 
 Here is how much of TeX's memory you used:
- 12370 strings out of 478994
- 179808 string characters out of 5864751
- 518211 words of memory out of 5000000
- 29338 multiletter control sequences out of 15000+600000
+ 12399 strings out of 478994
+ 180276 string characters out of 5864751
+ 519430 words of memory out of 5000000
+ 29345 multiletter control sequences out of 15000+600000
  449823 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  71i,26n,74p,514b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -703,10 +711,10 @@ s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 sr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (9 pages, 187544 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (10 pages, 191489 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 317 named destinations out of 1000 (max. 500000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 339 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
