@@ -20,6 +20,7 @@
 %\restoresymbol{TXF}{iint}
 %\usepackage{wasysym}
 \usepackage{amsthm}
+%\usepackage{pifont}
 %\usepackage{iithtlc}
 % \usepackage{mathrsfs}
 % \usepackage{txfonts}
@@ -35,8 +36,8 @@
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
 \usepackage{enumitem}
-% \usepackage{mathtools}
-% \usepackage{tikz}
+ \usepackage{mathtools}
+ \usepackage{tikz}
 % \usepackage{circuitikz}
 % \usepackage{verbatim}
 %\usepackage{tfrupee}
@@ -104,7 +105,8 @@ columns=fullflexible
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
-
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 \bibliographystyle{IEEEtran}
 %\bibliographystyle{ieeetr}
 
@@ -1246,29 +1248,176 @@ From
 	\solution 
     From \eqref{eq:angle2d}, 
   \begin{align}
-	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}} = 
-	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}} = 
-	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}} = \cos \theta
+	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}}} = \cos \theta
   \end{align}
   which can be expressed as the system of equations
   \begin{align}
 	  {\vec{e}_1^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
 	  {\vec{e}_2^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
 	  {\vec{e}_3^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
   \end{align}
   which can be combined to obtain the matrix equation
   \begin{align}
-	  \myvec{\vec{e}_1&\vec{e}_2&\vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
+	  \myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
 	  \\
 	  \implies \frac{\vec{r}}{\norm{\vec{r}}}&= \cos \theta \myvec{1\\1\\1}
-
+	  \label{eq:equal_incline_unit}
   \end{align}
- 
-\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
-    
-\item    Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.
-\item If $A=\begin{bmatrix}-3 & 2 \\ 1 & -1 \end{bmatrix} $ and $ I=\begin{bmatrix}1 & 0 \\ 0 & 1 \end{bmatrix}$, Find scalar k so that $A^2 + I = kA$.
+  \begin{align}
+	  \because 	\myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3} = \vec{I}
+  \end{align}
+  From 
+	  \eqref{eq:equal_incline_unit}
+  \begin{align}
+	  \norm {\cos \theta \myvec{1\\1\\1}} &= 1
+	  \\
+	  \implies\cos \theta  = \frac{1}{\sqrt{3}}
+	  \label{eq:equal_incline_unit_cos}
+  \end{align}
+ From  
+	  \eqref{eq:equal_incline_unit_cos} and 
+	  \eqref{eq:equal_incline_unit_cos},
+
+  \begin{align}
+	  \vec{r} &=  3\sqrt{3}\times \frac{1}{\sqrt{3}}\myvec{1\\1\\1}
+	  \\
+		  &=3\myvec{1\\1\\1}
+	  \label{eq:equal_incline_unit_ans}
+  \end{align}
+%    
+\item    Find the angle between unit vectors $\vec{a}$ and $\vec{b}$ so that $\sqrt{3}$ $\vec{a}$ - $\vec{b}$ is also a unit vector.
+	\\
+	\solution From the given information, 
+  \begin{align}
+	  \norm{	\sqrt{3}\vec{a} - \vec{b}} &= 1
+	  \\
+	  \implies \norm{	\sqrt{3}\vec{a} - \vec{b}}^2 &= 1
+	  \label{eq:norm_unit}
+  \end{align}
+  which can be expressed as 
+  \begin{align}
+	  \brak{	\sqrt{3}\vec{a} - \vec{b}}^{\top} \brak{	\sqrt{3}\vec{a} - \vec{b}}&= 1
+	  \\
+	  \implies  3 \norm{\vec{a}}^2  + \norm{\vec{b}}^2 - 2 \sqrt{3} \vec{a}^{\top}\vec{b} &= 1
+	  \label{eq:norm_unit_mid}
+  \end{align}
+  and simplified to obtain 
+  \begin{align}
+	\vec{a}^{\top}\vec{b}  =  \frac{\sqrt{3}}{2} 
+	  \label{eq:norm_unit_mid_angle}
+  \end{align}
+  Thus the desired angle  is 
+  \begin{align}
+\cos^{-1}   \frac{\sqrt{3}}{2} = 30 \degree
+	  \label{eq:norm_unit_mid_angle_ans}
+  \end{align}
+\item If $\vec{A}=\myvec{-3 & 2 \\ 1 & -1 } $ and $ \vec{I}=\myvec{1 & 0 \\ 0 & 1 }$, Find scalar k so that $\vec{A}^2 + \vec{I} = k\vec{A}$.
+	\\
+	\solution Using the Cayley-Hamilton theorem, 
+  \begin{align}
+	  \lambda^2 - k \lambda + 1 = 0
+	  \label{eq:cayley_applic}
+  \end{align}
+From 	\eqref{eq:trace}, 
+  \begin{align}
+	   k  = \text{tr}\brak{\vec{A}} = -3-1 = -4
+	  \label{eq:cayley_sol}
+  \end{align}
 \item Show that the plane $x-5y-2z=1$ contains the line $\frac{x-5}{3}=y=2-z$. 
+	\\
+	\solution The plane and line can be expressed in vector form as
+  \begin{align}
+	  \label{eq:line_plane_contain_plane}
+	  \myvec{1 & -5 & -2}\vec{x}=1 
+	  \\
+	  \vec{x} = \myvec{5 \\ 0 \\ 2} + \lambda \myvec{3 \\ 1 \\ -1}
+	  \label{eq:line_plane_containline}
+  \end{align}
+  $\because$
+  \begin{align}
+	  \myvec{1 & -5 & -2}\myvec{3 \\ 1 \\ -1} = 0
+	  \label{eq:line_plane_containline_sol}
+  \end{align}
+from 			\eqref{eq:line_plain_contain}, the given plain contains the given line.
+\item Find the equation of the plane passing through the points 
+\begin{align}
+	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
+  \end{align}
+	 and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.  
+\\
+\solution Let the equation of the desired plane be 
+\begin{align}
+	\vec{n}^{\top}\vec{x} = 1
+	\\
+	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
+  \end{align}
+  From the given information, 
+\begin{align}
+	\vec{n}^{\top}\vec{x} &= 1
+	\\
+\implies
+\begin{split}
+	\myvec{1 &0 &-2} \vec{n} &=1 
+	\\
+	\myvec{3 & -1 &0}\vec{n} &=1
+	\\
+	\myvec{2 & -1 & 1}\vec{n} &=0
+	\end{split}
+	\label{eq:plane_pt_perp}
+  \end{align}
+From 
+	\eqref{eq:plane_pt_perp},
+	we obtain  the matrix equation
+\begin{align}
+	\myvec{1 &0 &-2\\ 3 & -1 &0 \\ 2 & -1 & 1} \vec{n} &= \myvec{1 \\ 1 \\ 0}
+  \end{align}
+Forming the augmented matrix, and choosing the pivot,
+\begin{align}
+	\myvec{\circled{1} &0 &-2 & \vrule &  1\\ 3 & -1 &0 & \vrule &1\\ 2 & -1 & 1 & \vrule &0} 
+	\\
+	\xleftrightarrow[]{}
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & \circled{1} &-6 & \vrule &2\\ 0 & -1 & 5 & \vrule &-2} 
+	\\
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & 1 &-6 & \vrule &2\\ 0 & 0 & \circled{1} & \vrule &0} 
+  \end{align}
+  yielding 
+\begin{align}
+\vec{n} =\myvec{1 \\ 2 \\ 0} 
+  \end{align}
+  Thus, the equation of the desired plane is 
+\begin{align}
+\myvec{1 & 2 & 0} \vec{n} = 1
+  \end{align}
+\item If $\vec{A}=\myvec{5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6 } $, Find $\vec{A}^{-1}$ and use it to solve the following system of the equations: 
+\begin{align}
+	5x-y+4z&=5 \\
+	2x+3y+5z&=2 \\
+	5x-2y+6z&=-1 
+    \end{align}
+   \solution Forming the augmented matrix and pivoting,  
+\begin{align}
+	\myvec{\circled{5} & -1 & 4 & \vrule & 1 & 0 & 0\\ 2 & 3 & 5 & \vrule & 0 & 1 & 0\\ 5 & -2 & 6 & \vrule & 0 & 0 & 1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{5 & -1 & 4 & \vrule & 1 & 0 & 0\\ 0 & \circled{17} & 17 & \vrule & -2 & 5 & 0\\ 0 & 1 & -2 & \vrule & 1 & 0 & -1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{17 & 0 & 17 & \vrule & 5 & -4 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
+	\\
+	\xleftrightarrow [3R_2\leftarrow R_2 - R_3]{3R_1\leftarrow R_1 - R_3}
+	\\
+	\myvec{17 & 0 & 0 & \vrule & -14 & 1 & -17\\ 0 & 17 & 0 & \vrule & -21 & 10 & -17\\ 0 & 0 & 17 & \vrule & 19 & -5 & 17}
+    \end{align}
+    resulting in 
+\begin{align}
+	\vec{A}^{-1} = \frac{1}{17}\myvec{ -14 & 1 & -17\\  -21 & 10 & -17\\  19 & -5 & 17}
+    \end{align}
+\item If x,y,z are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
+\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
 \item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table 
 %\end{center}
 In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
@@ -1292,18 +1441,9 @@ Assuming that all items manufactured are sold, how should the manufacturer sched
 	\caption{}
 	\label{table}
 \end{table}
-\item Find the equation of the plane passing through the points $(1,0,-2)$ , $(3,-1,0)$ and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.  
     \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
     
     \item   Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3). 
-\item If $A=\begin{bmatrix}5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6 \end{bmatrix} $, Find $A^{-1}$ and use it to solve the following system of the equations: \\
-\begin{center}
-        $5x-y+4z=5 $\\
-        $2x+3y+5z=2 $\\
-        $5x-2y+6z=-1 $
-    \end{center}
-    
-\item If x,y,z are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
 \end{enumerate}
 \section{JEE}
 \renewcommand{\theequation}{\theenumi}
