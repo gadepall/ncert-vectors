@@ -62,6 +62,7 @@
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
+\DeclareMathOperator*{\equals}{=}
 %\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
@@ -1416,7 +1417,25 @@ Forming the augmented matrix, and choosing the pivot,
 \begin{align}
 	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
     \end{align}
-\item If x,y,z are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
+\item If $x,y,z$ are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
+	\\
+	\solution The given determinant can be expressed as 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1}  
+	\\
+	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
+	\label{eq:det_xyz}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+    Since
+\begin{align}
+	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3} 
+	\\
+	= xyz  
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}  
+	\label{eq:det_xyz}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
 \item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
 \item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table 
 %\end{center}

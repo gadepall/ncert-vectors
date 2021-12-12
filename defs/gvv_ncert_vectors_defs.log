@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  12 DEC 2021 06:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  12 DEC 2021 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,34 +788,34 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 (./gvv_ncert_vectors_defs.aux)
 \openout1 = `gvv_ncert_vectors_defs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 90.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 90.
+LaTeX Info: Redefining \celsius on input line 91.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 91.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 90.
-Package gensymb Info: Using \Omega for \ohm on input line 90.
+LaTeX Info: Redefining \ohm on input line 91.
+Package gensymb Info: Using \Omega for \ohm on input line 91.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -841,7 +841,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 90.
+Package hyperref Info: Link coloring OFF on input line 91.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -854,9 +854,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count330
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 91.
+LaTeX Info: Redefining \pageref on input line 91.
+LaTeX Info: Redefining \nameref on input line 91.
 
 (./gvv_ncert_vectors_defs.out) (./gvv_ncert_vectors_defs.out)
 \@outlinefile=\write4
@@ -869,20 +869,20 @@ LaTeX Info: Redefining \nameref on input line 90.
 \c@lemma=\count335
 \c@example=\count336
 \c@rem=\count337
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 249.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 250.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 249.
+(Font)              <14> on input line 250.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 249.
+(Font)              <9.79996> on input line 250.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 249.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 249
+(Font)              <7> on input line 250.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 250
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 249
+LaTeX Font Info:    Trying to load font information for U+msb on input line 250
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -902,15 +902,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 294.
+(hyperref)                removing `\times' on input line 295.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `math shift' on input line 295.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -918,61 +918,64 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 427.
+(hyperref)                removing `\times' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
+(hyperref)                removing `math shift' on input line 428.
 
 [2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 766--772
+Underfull \hbox (badness 6893) in paragraph at lines 767--773
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 772--776
+Underfull \hbox (badness 2913) in paragraph at lines 773--777
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 970--976
+Underfull \hbox (badness 10000) in paragraph at lines 971--977
 \OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
  []
 
 [6]
-Underfull \hbox (badness 3965) in paragraph at lines 1041--1045
+Underfull \hbox (badness 3965) in paragraph at lines 1042--1046
 \OT1/ptm/m/n/12 From the above equa-tions, [] and
  []
 
 
-Overfull \hbox (19.67986pt too wide) in paragraph at lines 1110--1110
+Overfull \hbox (19.67986pt too wide) in paragraph at lines 1111--1111
 [] 
  []
 
 [7] [8] [9]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 1440.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1440.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 4036) in paragraph at lines 1421--1444
+ [10]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 1457.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1457.
+
+Underfull \hbox (badness 4036) in paragraph at lines 1438--1461
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
 
-[10] [11] [12] (./gvv_ncert_vectors_defs.aux)
+[11] [12] (./gvv_ncert_vectors_defs.aux)
 Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
 (rerunfilecheck)             Checksum: 1CE52213B217A39511ADB28211621EBB;1596.
  ) 
 Here is how much of TeX's memory you used:
- 23264 strings out of 478994
- 409879 string characters out of 5864752
- 734921 words of memory out of 5000000
- 39946 multiletter control sequences out of 15000+600000
+ 23271 strings out of 478994
+ 409957 string characters out of 5864752
+ 737934 words of memory out of 5000000
+ 39948 multiletter control sequences out of 15000+600000
  449823 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  113i,26n,116p,514b,875s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -989,10 +992,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (12 pages, 207048 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (12 pages, 208005 bytes).
 PDF statistics:
- 698 PDF objects out of 1000 (max. 8388607)
- 662 compressed objects within 7 object streams
- 383 named destinations out of 1000 (max. 500000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 668 compressed objects within 7 object streams
+ 388 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
