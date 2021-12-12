@@ -1406,15 +1406,15 @@ Forming the augmented matrix, and choosing the pivot,
 	\myvec{5 & -1 & 4 & \vrule & 1 & 0 & 0\\ 0 & \circled{17} & 17 & \vrule & -2 & 5 & 0\\ 0 & 1 & -2 & \vrule & 1 & 0 & -1}
 	\\
 	\xleftrightarrow []{}
-	\myvec{17 & 0 & 17 & \vrule & 5 & -4 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
+	\myvec{17 & 0 & 17 & \vrule & 3 & 1 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
 	\\
-	\xleftrightarrow [3R_2\leftarrow R_2 - R_3]{3R_1\leftarrow R_1 - R_3}
+	\xleftrightarrow [R_2\leftarrow 3R_2 - R_3]{R_1\leftarrow 3R_1 - R_3}
 	\\
-	\myvec{17 & 0 & 0 & \vrule & -14 & 1 & -17\\ 0 & 17 & 0 & \vrule & -21 & 10 & -17\\ 0 & 0 & 17 & \vrule & 19 & -5 & 17}
+	\myvec{51 & 0 & 0 & \vrule & 28 & -2& -17\\ 0 & 51 & 0 & \vrule & 13 & 10 & -17\\ 0 & 0 & 51 & \vrule & -19 & 5 & 17}
     \end{align}
     resulting in 
 \begin{align}
-	\vec{A}^{-1} = \frac{1}{17}\myvec{ -14 & 1 & -17\\  -21 & 10 & -17\\  19 & -5 & 17}
+	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
     \end{align}
 \item If x,y,z are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
 \item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
