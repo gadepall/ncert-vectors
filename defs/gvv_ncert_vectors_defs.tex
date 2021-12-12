@@ -1417,33 +1417,108 @@ Forming the augmented matrix, and choosing the pivot,
 \begin{align}
 	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
     \end{align}
-\item If $x,y,z$ are different and $\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 $, then using properties of determinants show that $1+xyz=0.$  
+\item If $x,y,z$ are different and 
+\begin{align}
+	\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 
+	\label{eq:det_xyz_given}
+    \end{align}
+	then using properties of determinants show that $1+xyz=0.$  
 	\\
 	\solution The given determinant can be expressed as 
 \begin{align}
 	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1}  
-	\\
-	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
+	+\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
 	\label{eq:det_xyz}
 %\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
     \end{align}
     Since
 \begin{align}
 	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3} 
-	\\
 	= xyz  
 	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}  
-	\label{eq:det_xyz}
+	\label{eq:det_xyz_2}
 %\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
     \end{align}
-\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................
-\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table 
-%\end{center}
-In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
-Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.
+    and 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1} 
+	= 
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_12}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+	\eqref{eq:det_xyz} can be expressed as
+\begin{align}
+	\brak{1+xyz}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_onefac}
+    \end{align}
+    The above determinant can be simplified as
+\begin{align}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\\
+\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+	\mydet{1 & x & x^2 \\ 0 & x-y & x^2-y^2 \\ 0 & x-z & x^2-z^2}, 
+	\\
+	=
+	\brak{x-y}	\brak{x-z}\mydet{1 & x & x^2 \\ 0 & 1 & x+y \\ 0 & 1 & x+z}, 
+	\\
+	=
+	\brak{x-y}\brak{y-z}	\brak{z-x}
+    \end{align}
+	and \eqref{eq:det_xyz_given} can be obtained from 
+	\eqref{eq:det_xyz_onefac} as
+\begin{align}
+	\brak{1+xyz}
+	\brak{x-y}\brak{y-z}	\brak{z-x} = 0
+    \end{align}
+    Since 
+\begin{align}
+	x \ne y \ne z, 
+	\brak{1+xyz} = 0
+    \end{align}
+    \item   Find the area of the triangle $ABC$, coordinates of whose vertices are 
+\begin{align}
+	\vec{A} = \myvec{2 \\0}, \vec{B} = \myvec{4 \\5} \text{ and } \vec{C} = \myvec{6 \\3}. 
+    \end{align}
+    \\
+    \solution Since 
+\begin{align}
+	\vec{A}-\vec{B} &= \myvec{-2 \\-5},
+	\\
+	\vec{A}-\vec{C} &= \myvec{-4 \\-3},
+    \end{align}
+    the desired area is  the magnitude of 
+\begin{align}
+ \mydet{2 & 4\\5 & 3} 
+    \end{align}
+    Thus the desired area is 14 units.
+\item  The corner points of the feasible region of an LPP are 
+\begin{align}
+	\myvec{0\\0},\myvec{0\\8},\myvec{2\\7},\myvec{5\\4} \text{ and } \myvec{6\\0}. 
+    \end{align}
+	Find the point at which the maximum profit $P=3x+2y$ occurs. 
+	\\
+	\solution The profit can be expressed as
+\begin{align}
+	P=\myvec{3  & 2} \vec{x}
+    \end{align}
+    and the respective values at each of the above points are given by 
+\begin{align}
+	\myvec{3  & 2}\myvec{0\\0} &= 0,
+	\\
+	\myvec{3  & 2}\myvec{0\\8} & = 16
+	\\
+	\myvec{3  & 2}\myvec{2\\7} &= 20
+	\\
+	\myvec{3  & 2}\myvec{5\\4} &= 23
+	\\
+	\myvec{3  & 2} \myvec{6\\0} &= 18 
+    \end{align}
+    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
+\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table. 
 	\begin{table}[!ht]
 		\centering
-%\begin{center}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -1460,9 +1535,26 @@ Assuming that all items manufactured are sold, how should the manufacturer sched
 	\caption{}
 	\label{table}
 \end{table}
+
+In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
+Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.
+\\
+\solution Let $x$ be the number of lamps and $y$ be the number of wooden shades produced.  From the given information, the problem can be formulated as
+\begin{align}
+	P = \max_{x,y}30x+20y
+	\\
+1.5x+3y \le 42
+\\
+3x+y \le 24
+\end{align}
+which can be expressed in vector form as
+\begin{align}
+	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
+	\\
+	\myvec{1 &2 \\ 3 & 1} \preceq \myvec{28 \\ 24}
+\end{align}
     \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
     
-    \item   Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3). 
 \end{enumerate}
 \section{JEE}
 \renewcommand{\theequation}{\theenumi}

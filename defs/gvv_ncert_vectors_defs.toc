@@ -10,5 +10,5 @@
 \contentsline {subsection}{\numberline {2.2}Three Dimensions}{4}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Class 10}{6}{section.3}%
 \contentsline {section}{\numberline {4}Class 12}{7}{section.4}%
-\contentsline {section}{\numberline {5}JEE}{11}{section.5}%
-\contentsline {section}{\numberline {6}JNTU}{12}{section.6}%
+\contentsline {section}{\numberline {5}JEE}{12}{section.5}%
+\contentsline {section}{\numberline {6}JNTU}{13}{section.6}%
