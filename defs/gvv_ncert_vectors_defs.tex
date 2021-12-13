@@ -1551,9 +1551,24 @@ which can be expressed in vector form as
 \begin{align}
 	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
 	\\
-	\myvec{1 &2 \\ 3 & 1} \preceq \myvec{28 \\ 24}
+	\myvec{1 &2 \\ 3 & 1} \vec{x}\preceq \myvec{28 \\ 24}
 \end{align}
-    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+The feasible region is a quadrilateral with vertices
+\begin{align}
+\myvec{0 \\ 0},
+\myvec{8 \\ 0},
+\myvec{0 \\ 14},
+\myvec{4 \\ 12}
+\end{align}
+with respective profit
+\begin{align}
+	\myvec{30 &20}\myvec{0 \\ 0} &= 0 \\
+	\myvec{30 &20}\myvec{8 \\ 0} &= 240 \\
+	\myvec{30 &20}\myvec{0 \\ 14} &= 280 \\
+	\myvec{30 &20}\myvec{4 \\ 12} &= 360
+\end{align}
+Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
+%    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
     
 \end{enumerate}
 \section{JEE}
