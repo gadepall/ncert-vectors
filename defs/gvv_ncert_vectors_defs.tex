@@ -1092,7 +1092,7 @@ Row reducing the coefficient matrix in,
 	yields
 	\eqref{eq:matrix_hp_end}.
 For the given system to have a nontrivial solution,  the rank of the coefficient matrix should be 2.  Hence, from 
-	\eqref{eq:matrix_hp}
+	\eqref{eq:matrix_hp_end},
 \begin{align}
 	-bc - ab + 2ac  &= 0
 	\\
@@ -1170,15 +1170,24 @@ Thus,
 \end{align}
 	\item The line 
 \begin{align}
-	\myvec{m & -1}\vec{x} = -4
+	y = mx+4
 \end{align}
-is a tangent to the parabolas
+is  tangent to both the parabolas
 \begin{align}
+	y^2&=4x
+	\\
+x^2=2by
+\end{align}
+Find the value of $b$.
+\\
+\solution The given equations can be expressed as
+\begin{align}
+	\myvec{m & -1}\vec{x} &= -4
+	\\
 	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} - 4 \myvec{1 & 0}\vec{x}&= 0
 	\\
 	\vec{x}^{\top}\myvec{1 & 0 \\ 0  & 0}\vec{x} - 2 \myvec{0 & b}\vec{x}&= 0
 \end{align}
-Find the value of $b$.
 \item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
 	12, then find the length of its latus rectum.
 \item Find the area of the region, enclosed by the circle 
@@ -2382,6 +2391,7 @@ where
 \label{eq:tangent_roots}
 \end{multline}
 }
+\\
 \solution 
 Substituting \eqref{eq:conic_tangent}
 in \eqref{eq:conic_quad_form}, 
@@ -2397,19 +2407,26 @@ in \eqref{eq:conic_quad_form},
 \end{align}
 Solving the above quadratic in \eqref{eq:conic_intercept}
 yields \eqref{eq:tangent_roots}.
+\item  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
+  \begin{align}
+  \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} = 0
+  \label{eq:conic_tangent_mq}
+  \end{align}
+\\
 \solution
 In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
   in \eqref{eq:tangent_roots}
-  \begin{align}
+  \begin{multline}
   \sbrak{
   \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
   }^2 -\brak{\vec{m}^T\vec{V}\vec{m}}
+  \\
   \brak
   {
   \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
   } = 0                                                                                             
   \label{eq:conic_tangent_disc}
-  \end{align}                    
+  \end{multline}                    
   $\because \vec{q}$ is the point of contact, $\vec{q}$ satisfies \eqref{eq:conic_quad_form}
   and 
   \begin{align}
@@ -2422,14 +2439,15 @@ In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence,
   \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}+\vec{u}^T\vec{q}+f = 0
   \label{eq:conic_tangent_final}
   \end{align}
-  \solution The normal vector is obtained from \eqref{eq:conic_tangent_mq} and \eqref{eq:line_dir_norm}
+  \solution The normal vector is obtained from \eqref{eq:conic_tangent_mq} 
+and \eqref{eq:normal_line}
   as
   %
   \begin{align}
   \label{eq:conic_normal_vec}
   \vec{n} = \vec{V}\vec{q}+\vec{u}
   \end{align}  
-  From \eqref{eq:conic_normal_vec} and \eqref{eq:line_norm_eq}, the equation of the tangent is\begin{align}
+  From \eqref{eq:conic_normal_vec} and \eqref{eq:normal_line_pt}, the equation of the tangent is\begin{align}
     \brak{\vec{V}\vec{q}+\vec{u}}^T\brak{\vec{x}-\vec{q}} &=0
     \\
     \implies \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}-\vec{q}^T\vec{V}\vec{q}-\vec{u}^T\vec{q} &= 0
@@ -2458,11 +2476,12 @@ In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence,
 \end{align}
 Substituting \eqref{eq:conic_normal_vec_q}
 in \eqref{eq:conic_tangent_qquad},
-\begin{align}
+\begin{multline}
 \brak{\kappa \vec{n}-\vec{u}}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} 
-%\\
-+ 2\vec{u}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} +f &= 0
 \\
++ 2\vec{u}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} +f = 0
+\end{multline}
+\begin{align}
 \implies 
 \kappa^2 \vec{n}^T\vec{V}^{-1}\vec{n} - \vec{u}^T\vec{V}^{-1}\vec{u} + f &=0
  \\
@@ -2476,7 +2495,7 @@ yields \eqref{eq:conic_tangent_qk}.
 \begin{align}
 \label{eq:conic_tangent_q_eigen}
 \begin{pmatrix}
-\vec{u+\kappa \vec{n}}^T \\ \vec{V}
+	\vec{\vec{u}^{\top}+\kappa \vec{n}}^{\top} \\ \vec{V}
 \end{pmatrix}
 \vec{q} &= 
 \begin{pmatrix}
@@ -2502,9 +2521,9 @@ From \eqref{eq:conic_normal_vec},
 \implies \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{V} \vec{q}+\vec{p}_1^T\vec{u}
 \\
 \text{or, } \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{u},  \quad \because \vec{p}_1^T \vec{V} = 0, 
-%\\
-\quad 
-\brak{\text{ from } \eqref{eq:conic_zero_eigen}}
+\\
+%\quad 
+	&\brak{\text{ from } \eqref{eq:conic_zero_eigen}}
 %\label{eq:conic_normal_vec_q}
 \end{align}
 yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zero_eigen_normal},
@@ -2513,7 +2532,7 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \\
 \implies \kappa \vec{q}^T\vec{n} &= -f-\vec{q}^T\vec{u} \quad \text{from } \eqref{eq:conic_tangent_qquad},
 \\
-\text{or, } \brak{\kappa \vec{n}+\vec{u}}\vec{q} &= -f
+	\text{or, } \brak{\kappa \vec{n}+\vec{u}}^{\top}\vec{q} &= -f
 \label{eq:conic_zero_eigen_normal_fq}
 \end{align}
 \eqref{eq:conic_zero_eigen_normal} can be expressed as
@@ -2527,7 +2546,7 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   \label{eq:asymp_quad_form}
   \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+\vec{u}^{\top}\vec{V}^{-1}\vec{u}=0, \quad \abs{\vec{V}} < 0
   \end{align}
-  such that 
+%  such that 
   % \begin{align} 
   % %\label{eq:quad_form_asymp_cond}
   % %K =  \vec{u}^{\top}\vec{V}^{-1}\vec{u}

@@ -9,9 +9,9 @@
 \contentsline {subsection}{\numberline {5.4}Determinants}{12}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Rank of a Matrix}{12}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Inverse of a Matrix}{12}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Linear Forms}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Two Dimensions}{12}{subsection.6.1}%
+\contentsline {section}{\numberline {6}Linear Forms}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Two Dimensions}{13}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Three Dimensions}{13}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Quadratic Forms}{15}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conic Sections}{15}{subsection.7.1}%
+\contentsline {section}{\numberline {7}Quadratic Forms}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conic Sections}{16}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Tangent and Normal}{18}{subsection.7.2}%
