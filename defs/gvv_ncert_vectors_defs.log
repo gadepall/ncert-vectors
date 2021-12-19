@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  18 DEC 2021 05:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  19 DEC 2021 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,160 +896,145 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (./gvv_ncert_vectors_defs.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 6.
 )
 \tf@toc=\write5
 \openout5 = `gvv_ncert_vectors_defs.toc'.
 
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 295.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 295.
+Underfull \hbox (badness 10000) in paragraph at lines 335--341
+\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Underfull \hbox (badness 3965) in paragraph at lines 406--410
+\OT1/ptm/m/n/12 From the above equa-tions, [] and
+ []
+
+[2]
+Overfull \hbox (19.67986pt too wide) in paragraph at lines 475--475
+[] 
+ []
+
+[3] [4] [5]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 875.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 875.
+
+Underfull \hbox (badness 4036) in paragraph at lines 860--879
+[]\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
+ []
+
+[6]
+Underfull \hbox (badness 2096) in paragraph at lines 910--913
+\OT1/ptm/m/n/12 Thus, the man-u-fac-turer should pro-duce 4
+ []
+
+[7]
+
+LaTeX Warning: Reference `eq:matrix_hp' on page 8 undefined on input line 1095.
+
+
+
+Overfull \hbox (0.52661pt too wide) in paragraph at lines 1131--1131
+[] 
+ []
+
+[8]
+Underfull \vbox (badness 1728) has occurred while \output is active []
+
+ [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
+(hyperref)                removing `math shift' on input line 1256.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 428.
+(hyperref)                removing `\times' on input line 1256.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 428.
+(hyperref)                removing `math shift' on input line 1256.
 
-[2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 755--761
+[10]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1389.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 1389.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1389.
+
+[11] [12] [13]
+Underfull \hbox (badness 6893) in paragraph at lines 1716--1722
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 761--765
+Underfull \hbox (badness 2913) in paragraph at lines 1722--1726
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
-[4] [5] [6] [7]
-Underfull \hbox (badness 5460) in paragraph at lines 1246--1272
+[14] [15] [16]
+Underfull \hbox (badness 5460) in paragraph at lines 2207--2233
 []\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
  []
 
-[8]
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1423
-.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1423
-.
-
-
-Overfull \hbox (59.96948pt too wide) detected at line 1423
- []$[] \OMS/cmsy/m/n/12 ^^F []$ []  
+[17]
+Overfull \hbox (28.28334pt too wide) in paragraph at lines 2412--2412
+[] 
  []
 
+[18]
 
-Overfull \hbox (54.37991pt too wide) in paragraph at lines 1433--1433
+LaTeX Warning: Reference `eq:conic_tangent_mq' on page 19 undefined on input li
+ne 2419.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_mq' on page 19 undefined on input li
+ne 2425.
+
+
+LaTeX Warning: Reference `eq:line_dir_norm' on page 19 undefined on input line 
+2425.
+
+
+LaTeX Warning: Reference `eq:line_norm_eq' on page 19 undefined on input line 2
+432.
+
+
+Overfull \hbox (18.52472pt too wide) in paragraph at lines 2470--2470
 [] 
  []
 
 
-Overfull \hbox (28.28334pt too wide) in paragraph at lines 1448--1448
-[] 
- []
-
-
-LaTeX Warning: Reference `eq:conic_tangent_mq' on page 9 undefined on input lin
-e 1455.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_mq' on page 9 undefined on input lin
-e 1461.
-
-
-LaTeX Warning: Reference `eq:line_dir_norm' on page 9 undefined on input line 1
-461.
-
-
-LaTeX Warning: Reference `eq:line_norm_eq' on page 9 undefined on input line 14
-68.
-
-
-Overfull \hbox (18.52472pt too wide) in paragraph at lines 1506--1506
-[] 
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 1506--1511
+Underfull \hbox (badness 10000) in paragraph at lines 2470--2475
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
 
-Overfull \hbox (16.87749pt too wide) in paragraph at lines 1545--1545
+Overfull \hbox (16.87749pt too wide) in paragraph at lines 2509--2509
 [] 
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 1591--1597
+Underfull \hbox (badness 7522) in paragraph at lines 2555--2561
 \OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 1682--1688
-\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
- []
-
-[11]
-Underfull \hbox (badness 3965) in paragraph at lines 1753--1757
-\OT1/ptm/m/n/12 From the above equa-tions, [] and
- []
-
-
-Overfull \hbox (19.67986pt too wide) in paragraph at lines 1822--1822
-[] 
- []
-
-[12] [13] [14] [15]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 2222.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2222.
-
-Underfull \hbox (badness 4036) in paragraph at lines 2207--2226
-[]\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
- []
-
-
-Underfull \hbox (badness 2096) in paragraph at lines 2257--2260
-\OT1/ptm/m/n/12 Thus, the man-u-fac-turer should pro-duce 4
- []
-
-[16] [17]
-
-LaTeX Warning: Reference `eq:matrix_hp' on page 18 undefined on input line 2442
-.
-
-
-Overfull \hbox (0.52661pt too wide) in paragraph at lines 2478--2478
-[] 
- []
-
-[18] [19] [20
+[19] [20
 
 ] (./gvv_ncert_vectors_defs.aux)
 
@@ -1057,35 +1042,38 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
-(rerunfilecheck)             Checksum: AB83D96C9096D0DA824D8D2066D0EA67;2026.
+(rerunfilecheck)             Checksum: 0154632470E284559A012761C08AAD7F;2026.
  ) 
 Here is how much of TeX's memory you used:
- 23587 strings out of 478994
- 414868 string characters out of 5864751
- 749450 words of memory out of 5000000
+ 23590 strings out of 478994
+ 414863 string characters out of 5864752
+ 745584 words of memory out of 5000000
  40056 multiletter control sequences out of 15000+600000
- 449823 words of font info for 130 fonts, out of 8000000 for 9000
+ 450901 words of font info for 131 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  113i,26n,116p,514b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw
-/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (20 pages, 267969 bytes).
+c/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
+fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_ncert_vectors_defs.pdf (20 pages, 300219 bytes).
 PDF statistics:
- 1129 PDF objects out of 1200 (max. 8388607)
- 1058 compressed objects within 11 object streams
- 592 named destinations out of 1000 (max. 500000)
+ 1147 PDF objects out of 1200 (max. 8388607)
+ 1072 compressed objects within 11 object streams
+ 594 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -171,7 +171,7 @@ columns=fullflexible
 \title{
 	%\logo{
 %Computational Approach to School Geometry
-Points and Vectors
+	Matrix Analysis
 %	}
 }
 \author{ G V V Sharma$^{*}$% <-this % stops a space
@@ -288,9 +288,970 @@ Points and Vectors
 %\IEEEpeerreviewmaketitle
 
 \begin{abstract}
-This manual provides an introduction to vectors and their properties,  based on the CBSE question papers, year 2020,  from Class 10 and 12.  
+This manual provides an introduction to vectors and their properties,  based on the question papers, year 2020,  from Class 10 and 12, CBSE; JEE and JNTU.  
 \end{abstract}
 
+\section{Class 10}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item  Find the distance between the points $\myvec{m \\ -n}$ and $\myvec{-m \\ n}$
+	\\
+		\solution Letting 
+		\begin{align}
+			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
+			\\
+			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
+			\\
+			\implies \norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
+			\\
+			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
+\\
+			&			= 2 \sqrt{m^2+n^2}
+		\end{align}
+	\item Find a point on the $x-$axis which is equidistant from $\myvec{ -4 \\ 0}$ and $\myvec{10 \\ 0}$
+\\
+\solution Letting the given points be $\vec{A},\vec{B}$. 
+		\begin{align}
+	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
+	  \\
+	  &= \myvec{ -14 \\ 0},
+	  \\
+			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -42,
+  \end{align}
+  \eqref{eq:norm2d_equidist}, can be expressed as 
+  \begin{align}
+	  \myvec{ -14 & 0}\vec{x} 
+	  &=  42
+	  \\
+	  \implies 
+	  \myvec{ -14 & 0}\myvec{x \\ 0} 
+	  &=  -42
+	  \\
+	  \text{or, } x =3 
+  \end{align}
+  Hence, the desired point is $\myvec{ 3 \\ 0}$.
+  \item Find the centre of a circle whose end points of a diameter are $\myvec{ -6 \\ 3}$ and $\myvec{6 \\ 4}$.
+	  \\
+		\solution 
+Using section formula, 
+	  from \eqref{eq:section_formula},
+		the desired point is given by 
+  \begin{align}
+	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
+	  \\
+	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
+	  \\
+	  &=\frac{1}{2}\myvec{0 \\ 7}
+  \end{align}
+  \item $AOBC$  is a rectangle whose three vertices are $A = \myvec{0\\-3}, O = \myvec{0\\0}, B = \myvec{4\\0}$.  Find the length of its diagonal. 
+	  \\
+		\solution The fourth point is given by 
+  \begin{align}
+	 OC =  \vec{C}&=\myvec{4 \\ -3}
+  \end{align}
+  The length of the diagonal is 
+		\begin{align}
+			\norm{\vec{C}} &= 
+			 \sqrt{\myvec{4 & -3}\myvec{4 \\ -3}} 
+\\
+			&			=  \sqrt{25} = 5
+		\end{align}
+	\item  Find the ratio in which the $y$-axis divides the line segment joining the points $\myvec{6 \\ -4}, \myvec{-2 \\ -7} $.  Also find the point of intersection.
+		\\
+		\solution  Let the desired point on the $y$-axis be  
+		\begin{align}
+\vec{P} = \myvec{0 & y}
+		\end{align}
+Using section formula, 
+	  from \eqref{eq:section_formula},
+		\begin{align}
+			\vec{P} &= \myvec{0 & y}= \frac{1}{k+1}\sbrak{\myvec{6 \\ -4}+ k\myvec{-2 \\ -7} }
+			\\
+			&	\implies 6 - 2k = 0 \text{ or, }k = 3
+		\end{align}
+		Also, 
+		\begin{align}
+			y &= \frac{-4-7k}{k+1}
+			\\
+			&=-\frac{25}{4}
+		\end{align}
+		Thus, the desired point is  $ -\frac{25}{4}
+\myvec{0 \\ 1 }$.
+	\item   Show that the points $\myvec{7 \\ 10}, \myvec{-2 \\ 5} $ and $\myvec{3 \\ -4}$ are vertices of an isoscles right triangle.
+		\\
+		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
+Then, the direction vectors of $AB, BC$ and $CA$ are
+		\begin{align}
+			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
+			\\
+			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
+			\\
+			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
+		\end{align}
+		From the above,  we find that 
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
+			\\
+			&=0
+			\\
+			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
+\\
+			&=-106
+			\\
+			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
+\\
+			&=-106
+		\end{align}
+		From  the above equations, 
+    \eqref{eq:angle2d} and 
+    \eqref{eq:angle2d_orth},
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
+			\\
+			\angle BCA = 
+			\angle CAB  
+		\end{align}
+		Thus, the triangle is right angled and isosceles.
+\end{enumerate}
+\section{Class 12}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+	\item Find the area of a triangle formed by vertices O, A and B, where 
+		\begin{align}
+			\vec{A} = \myvec{1 \\ 2 \\ 3},
+			\vec{B}  = \myvec{-3 \\ -2 \\ 1},
+		\end{align}
+\solution $\because $
+		\begin{align}
+			\myvec{2 & -2 \\ 3 & 1 } &= 8,
+\\
+			\myvec{3 & 1 \\ 1 & -3 } &= -10,
+			\\
+			\myvec{1 & -3 \\ 2 & -2 } &= 4,
+		\end{align}
+		\begin{align}
+			\vec{A}  \times 
+			\vec{B}  = \myvec{8 \\ -10 \\ 4},
+		\end{align}
+		and the  desired area can be obtained from 
+  \eqref{eq:cross3d} and 
+  \eqref{eq:area3d} as
+		\begin{align}
+			\frac{1}{2}\norm{\myvec{8 \\ -10 \\ 4}} = 3 \sqrt{5}
+		\end{align}
+	\item  Find the coordinates of the foot of the perpendicular drawn from the point $ \myvec{2 \\-3 \\4 } $ on the y-axis.
+		\\
+\solution By definition of $y$-axis, the desired coordinates are 
+		\begin{align}
+			\myvec{0 \\ -3 \\ 0} 
+		\end{align}
+	Alternatively, the equation of the $y$-axis can be written as	
+		\begin{align}
+			\vec{x} = \lambda 	\myvec{0 \\ 1 \\ 0} 
+		\end{align}
+		The equation of the plane perpendicular to the $y$-axis and passing through the origin is
+		\begin{align}
+ 	\myvec{0 \\ 1 \\ 0} \vec{x} = 0
+		\end{align}
+	From \eqref{eq:plane_line_foot_ans},  the desired point is given by 
+\begin{align}
+	\vec{x} &=   \myvec{0 & 1 & 0}\myvec{2 \\-3 \\4 } 
+ \myvec{0 \\ 1 \\ 0} 
+ \\
+	&=
+ \myvec{0 \\ -3 \\ 0} 
+		\end{align}
+	\item  Find the angle between the vectors $ \myvec{1 \\ -1 \\ 0} $ and $ \myvec{0 \\ 1 \\ -1} $ 
+\\
+\solution $\because$
+%
+  \begin{align}
+	  \myvec{1 & -1 & 0} \myvec{0 \\ 1 \\ -1} &= -1,
+	  \norm{\myvec{1 \\ -1 \\ 0}}=\norm{\myvec{0 \\ 1 \\ -1}} &= \sqrt{2}
+  \end{align}
+		From 
+    \eqref{eq:angle2d}, the angle between the given vectors is 
+  \begin{align}
+ \cos^{-1}\frac{-1}{\sqrt{2} \times 
+\sqrt{2}
+	  } &= 
+ \cos^{-1}\frac{-1}{2
+	  } 
+	  \\
+	  &= \frac{2\pi}{3}
+  \end{align}
+\item  If A is a non-singular square matrix of order 3 such that $ \vec{A}^2 =3\vec{ A}$, then find the value of  $\mydet{\vec{A}}$ 
+	\\
+	\solution 
+  \begin{align}
+	  \mydet {\vec{A}^2} &=\mydet{3\vec{ A}}
+	  \\
+	  \implies 
+	  \mydet {\vec{A}} ^2&=3^3\mydet{\vec{ A}}
+  \end{align}
+  from 
+	\eqref{eq:det_kord}
+	yielding 
+  \begin{align}
+	  \mydet {\vec{A}} &=27
+  \end{align}
+  after simplification.
+\item  If $\norm{\vec{a}}
+	 = 4 $ and  $ -3\leq \lambda \leq 2 $ then find the range of values that $\norm{\lambda \vec{a}}$ can satisfy.
+	 \\
+	 \solution  From 
+  \eqref{eq:norm2d_const}, 
+\begin{align}
+  \norm{\lambda \vec{a}} 
+  &= \abs{\lambda} \norm{\vec{A}}
+  \\
+	&= 4\abs{\lambda} 
+\end{align}
+$\because$
+\begin{align}
+	0 \leq \abs{\lambda} \leq 3,  
+\\
+	0 \leq 4\abs{\lambda} \leq 12
+\end{align}
+
+\item  If 
+%
+\begin{align}
+	\mydet{ 2x & -9 \\ -2 & x } = \mydet{ -4 & 8 \\ 1 & -2} 
+\end{align}
+then find the value of $x$. 
+\\
+\solution
+Exapanding the above determinants,
+\begin{align}
+	2x^2 - 18 &= 0
+	\\
+	\implies x &= \pm 3
+\end{align}
+\item  Find the distance between parallel planes 
+	\begin{align}
+		2x+y-2z-6&=0 
+		\\
+		4x+2y-4z&=0 
+\end{align}
+\solution The above planes have parameters
+	\begin{align}
+		\vec{n} = \myvec{2 & 1 & -2}, c_1=6, c_2 = 0
+\end{align}
+Using 	\eqref{eq:parallel_lines},  the distance is obtained as
+
+\begin{align}
+	d &= \frac{\abs{c_1-c_2}}{\norm{\vec{n}}} 
+\\
+	&= \frac{6}{3} = 2
+\end{align}
+\item 
+    If 
+	\begin{align}
+		\vec{P} = \myvec{1 \\ 0 \\-3}
+\end{align}
+    is the foot of the perpendicular from the origin to the plane, then find the equation of the plane.  
+    \\
+    \solution Let the equation of the plane be 
+	\begin{align}
+		\vec{n}^{\top}\vec{x} = c
+\end{align}
+Since $\vec{P}$ is a point on the plane, it satisfies the above equation and 
+	\begin{align}
+		\vec{n}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot}
+\end{align}
+The normal vector to the plane is $OP$.  Hence, 
+	\begin{align}
+		\vec{n} = \vec{P} 
+\end{align}
+		Substituting the above in \eqref{eq:cbse_12_foot},
+	\begin{align}
+		\vec{P}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot_sub}
+\end{align}
+and the desired equation of the plane is 
+	\begin{align}
+		\vec{P}^{\top}\vec{x} &= 		\vec{P}^{\top}\vec{P}
+		\\
+		\myvec{1 & 0 &-3}\vec{x} &= 	10	
+		\label{eq:cbse_12_foot_ans}
+\end{align}
+   after substituting numerical values. 
+\item  Find the coordinates of the point where the line $\frac{x-1}{3}$ = $\frac{y+4}{7}$ = $\frac{z+4}{2}$ cuts the xy-plane.
+	\\
+	\solution 
+	The given line can be expressed as 
+	\begin{align}
+		\vec{x} = \myvec{1 \\ -4 \\ -4} + \lambda \myvec{3 \\ 7 \\ 2}
+		\label{eq:cbse_12_line_plane}
+\end{align}
+and the $xy$- plane is 
+	\begin{align}
+		\myvec{0 & 0 &1}\vec{x}  = 0
+		\label{eq:cbse_12_line_plane_eq}
+\end{align}
+From 
+	\eqref{eq:dir_line_plane_isect},
+\begin{align}
+	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\vec{m}
+	\\
+	&= \myvec{1 \\ -4 \\ -4} + \frac{0 - \myvec{0 & 0 &1}\myvec{1 \\ -4 \\ -4}}{\myvec{0 & 0 &1}\myvec{3 \\ 7 \\ 2}}\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{1 \\ -4 \\ -4}+2\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{7 \\ 10 \\ 0}
+\end{align}
+
+\item  Find a vector $\vec{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.
+	\\
+	\solution 
+    From \eqref{eq:angle2d}, 
+  \begin{align}
+	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}}} = \cos \theta
+  \end{align}
+  which can be expressed as the system of equations
+  \begin{align}
+	  {\vec{e}_1^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
+	  {\vec{e}_2^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
+	  {\vec{e}_3^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+  \end{align}
+  which can be combined to obtain the matrix equation
+  \begin{align}
+	  \myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
+	  \\
+	  \implies \frac{\vec{r}}{\norm{\vec{r}}}&= \cos \theta \myvec{1\\1\\1}
+	  \label{eq:equal_incline_unit}
+  \end{align}
+  \begin{align}
+	  \because 	\myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3} = \vec{I}
+  \end{align}
+  From 
+	  \eqref{eq:equal_incline_unit}
+  \begin{align}
+	  \norm {\cos \theta \myvec{1\\1\\1}} &= 1
+	  \\
+	  \implies\cos \theta  = \frac{1}{\sqrt{3}}
+	  \label{eq:equal_incline_unit_cos}
+  \end{align}
+ From  
+	  \eqref{eq:equal_incline_unit_cos} and 
+	  \eqref{eq:equal_incline_unit_cos},
+
+  \begin{align}
+	  \vec{r} &=  3\sqrt{3}\times \frac{1}{\sqrt{3}}\myvec{1\\1\\1}
+	  \\
+		  &=3\myvec{1\\1\\1}
+	  \label{eq:equal_incline_unit_ans}
+  \end{align}
+%    
+\item    Find the angle between unit vectors $\vec{a}$ and $\vec{b}$ so that $\sqrt{3}$ $\vec{a}$ - $\vec{b}$ is also a unit vector.
+	\\
+	\solution From the given information, 
+  \begin{align}
+	  \norm{	\sqrt{3}\vec{a} - \vec{b}} &= 1
+	  \\
+	  \implies \norm{	\sqrt{3}\vec{a} - \vec{b}}^2 &= 1
+	  \label{eq:norm_unit}
+  \end{align}
+  which can be expressed as 
+  \begin{align}
+	  \brak{	\sqrt{3}\vec{a} - \vec{b}}^{\top} \brak{	\sqrt{3}\vec{a} - \vec{b}}&= 1
+	  \\
+	  \implies  3 \norm{\vec{a}}^2  + \norm{\vec{b}}^2 - 2 \sqrt{3} \vec{a}^{\top}\vec{b} &= 1
+	  \label{eq:norm_unit_mid}
+  \end{align}
+  and simplified to obtain 
+  \begin{align}
+	\vec{a}^{\top}\vec{b}  =  \frac{\sqrt{3}}{2} 
+	  \label{eq:norm_unit_mid_angle}
+  \end{align}
+  Thus the desired angle  is 
+  \begin{align}
+\cos^{-1}   \frac{\sqrt{3}}{2} = 30 \degree
+	  \label{eq:norm_unit_mid_angle_ans}
+  \end{align}
+\item If $\vec{A}=\myvec{-3 & 2 \\ 1 & -1 } $ and $ \vec{I}=\myvec{1 & 0 \\ 0 & 1 }$, Find scalar k so that $\vec{A}^2 + \vec{I} = k\vec{A}$.
+	\\
+	\solution Using the Cayley-Hamilton theorem, 
+  \begin{align}
+	  \lambda^2 - k \lambda + 1 = 0
+	  \label{eq:cayley_applic}
+  \end{align}
+From 	\eqref{eq:trace}, 
+  \begin{align}
+	   k  = \text{tr}\brak{\vec{A}} = -3-1 = -4
+	  \label{eq:cayley_sol}
+  \end{align}
+\item Show that the plane $x-5y-2z=1$ contains the line $\frac{x-5}{3}=y=2-z$. 
+	\\
+	\solution The plane and line can be expressed in vector form as
+  \begin{align}
+	  \label{eq:line_plane_contain_plane}
+	  \myvec{1 & -5 & -2}\vec{x}=1 
+	  \\
+	  \vec{x} = \myvec{5 \\ 0 \\ 2} + \lambda \myvec{3 \\ 1 \\ -1}
+	  \label{eq:line_plane_containline}
+  \end{align}
+  $\because$
+  \begin{align}
+	  \myvec{1 & -5 & -2}\myvec{3 \\ 1 \\ -1} = 0
+	  \label{eq:line_plane_containline_sol}
+  \end{align}
+from 			\eqref{eq:line_plain_contain}, the given plain contains the given line.
+\item Find the equation of the plane passing through the points 
+\begin{align}
+	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
+  \end{align}
+	 and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.  
+\\
+\solution Let the equation of the desired plane be 
+\begin{align}
+	\vec{n}^{\top}\vec{x} = 1
+	\\
+	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
+  \end{align}
+  From the given information, 
+\begin{align}
+	\vec{n}^{\top}\vec{x} &= 1
+	\\
+\implies
+\begin{split}
+	\myvec{1 &0 &-2} \vec{n} &=1 
+	\\
+	\myvec{3 & -1 &0}\vec{n} &=1
+	\\
+	\myvec{2 & -1 & 1}\vec{n} &=0
+	\end{split}
+	\label{eq:plane_pt_perp}
+  \end{align}
+From 
+	\eqref{eq:plane_pt_perp},
+	we obtain  the matrix equation
+\begin{align}
+	\myvec{1 &0 &-2\\ 3 & -1 &0 \\ 2 & -1 & 1} \vec{n} &= \myvec{1 \\ 1 \\ 0}
+  \end{align}
+Forming the augmented matrix, and choosing the pivot,
+\begin{align}
+	\myvec{\circled{1} &0 &-2 & \vrule &  1\\ 3 & -1 &0 & \vrule &1\\ 2 & -1 & 1 & \vrule &0} 
+	\\
+	\xleftrightarrow[]{}
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & \circled{1} &-6 & \vrule &2\\ 0 & -1 & 5 & \vrule &-2} 
+	\\
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & 1 &-6 & \vrule &2\\ 0 & 0 & \circled{1} & \vrule &0} 
+  \end{align}
+  yielding 
+\begin{align}
+\vec{n} =\myvec{1 \\ 2 \\ 0} 
+  \end{align}
+  Thus, the equation of the desired plane is 
+\begin{align}
+\myvec{1 & 2 & 0} \vec{n} = 1
+  \end{align}
+\item If $\vec{A}=\myvec{5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6 } $, Find $\vec{A}^{-1}$ and use it to solve the following system of the equations: 
+\begin{align}
+	5x-y+4z&=5 \\
+	2x+3y+5z&=2 \\
+	5x-2y+6z&=-1 
+    \end{align}
+   \solution Forming the augmented matrix and pivoting,  
+\begin{align}
+	\myvec{\circled{5} & -1 & 4 & \vrule & 1 & 0 & 0\\ 2 & 3 & 5 & \vrule & 0 & 1 & 0\\ 5 & -2 & 6 & \vrule & 0 & 0 & 1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{5 & -1 & 4 & \vrule & 1 & 0 & 0\\ 0 & \circled{17} & 17 & \vrule & -2 & 5 & 0\\ 0 & 1 & -2 & \vrule & 1 & 0 & -1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{17 & 0 & 17 & \vrule & 3 & 1 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
+	\\
+	\xleftrightarrow [R_2\leftarrow 3R_2 - R_3]{R_1\leftarrow 3R_1 - R_3}
+	\\
+	\myvec{51 & 0 & 0 & \vrule & 28 & -2& -17\\ 0 & 51 & 0 & \vrule & 13 & 10 & -17\\ 0 & 0 & 51 & \vrule & -19 & 5 & 17}
+    \end{align}
+    resulting in 
+\begin{align}
+	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
+    \end{align}
+\item If $x,y,z$ are different and 
+\begin{align}
+	\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 
+	\label{eq:det_xyz_given}
+    \end{align}
+	then using properties of determinants show that $1+xyz=0.$  
+	\\
+	\solution The given determinant can be expressed as 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1}  
+	+\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
+	\label{eq:det_xyz}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+    Since
+\begin{align}
+	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3} 
+	= xyz  
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}  
+	\label{eq:det_xyz_2}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+    and 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1} 
+	= 
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_12}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+	\eqref{eq:det_xyz} can be expressed as
+\begin{align}
+	\brak{1+xyz}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_onefac}
+    \end{align}
+    The above determinant can be simplified as
+\begin{align}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\\
+\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+	\mydet{1 & x & x^2 \\ 0 & x-y & x^2-y^2 \\ 0 & x-z & x^2-z^2}, 
+	\\
+	=
+	\brak{x-y}	\brak{x-z}\mydet{1 & x & x^2 \\ 0 & 1 & x+y \\ 0 & 1 & x+z}, 
+	\\
+	=
+	\brak{x-y}\brak{y-z}	\brak{z-x}
+    \end{align}
+	and \eqref{eq:det_xyz_given} can be obtained from 
+	\eqref{eq:det_xyz_onefac} as
+\begin{align}
+	\brak{1+xyz}
+	\brak{x-y}\brak{y-z}	\brak{z-x} = 0
+    \end{align}
+    Since 
+\begin{align}
+	x \ne y \ne z, 
+	\brak{1+xyz} = 0
+    \end{align}
+    \item   Find the area of the triangle $ABC$, coordinates of whose vertices are 
+\begin{align}
+	\vec{A} = \myvec{2 \\0}, \vec{B} = \myvec{4 \\5} \text{ and } \vec{C} = \myvec{6 \\3}. 
+    \end{align}
+    \\
+    \solution Since 
+\begin{align}
+	\vec{A}-\vec{B} &= \myvec{-2 \\-5},
+	\\
+	\vec{A}-\vec{C} &= \myvec{-4 \\-3},
+    \end{align}
+    the desired area is  the magnitude of 
+\begin{align}
+ \mydet{2 & 4\\5 & 3} 
+    \end{align}
+    Thus the desired area is 14 units.
+\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table. 
+	\begin{table}[!ht]
+		\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+% \begin{tabularx}{\linewidth} {lX}
+ Item & Machine Time & Craftsman Time & Profit(in INR) \\ 
+ \hline
+ Pedestal Lamp & 1.5 hours & 3 hours & 30\\  
+ \hline
+ Wooden shades & 3 hours & 1 hour & 20 \\
+ \hline
+%  \end{tabularx}
+\end{tabular}
+}
+	\caption{}
+	\label{table}
+\end{table}
+
+In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
+Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.
+\\
+\solution Let $x$ be the number of lamps and $y$ be the number of wooden shades produced.  From the given information, the problem can be formulated as
+\begin{align}
+	P = \max_{x,y}30x+20y
+	\\
+1.5x+3y \le 42
+\\
+3x+y \le 24
+\end{align}
+which can be expressed in vector form as
+\begin{align}
+	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
+	\\
+	\myvec{1 &2 \\ 3 & 1} \vec{x}\preceq \myvec{28 \\ 24}
+\end{align}
+The feasible region is a quadrilateral with vertices
+\begin{align}
+\myvec{0 \\ 0},
+\myvec{8 \\ 0},
+\myvec{0 \\ 14},
+\myvec{4 \\ 12}
+\end{align}
+with respective profit
+\begin{align}
+	\myvec{30 &20}\myvec{0 \\ 0} &= 0 \\
+	\myvec{30 &20}\myvec{8 \\ 0} &= 240 \\
+	\myvec{30 &20}\myvec{0 \\ 14} &= 280 \\
+	\myvec{30 &20}\myvec{4 \\ 12} &= 360
+\end{align}
+Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
+%    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+    
+\item  The corner points of the feasible region of an LPP are 
+\begin{align}
+	\myvec{0\\0},\myvec{0\\8},\myvec{2\\7},\myvec{5\\4} \text{ and } \myvec{6\\0}. 
+    \end{align}
+	Find the point at which the maximum profit $P=3x+2y$ occurs. 
+	\\
+	\solution The profit can be expressed as
+\begin{align}
+	P=\myvec{3  & 2} \vec{x}
+    \end{align}
+    and the respective values at each of the above points are given by 
+\begin{align}
+	\myvec{3  & 2}\myvec{0\\0} &= 0,
+	\\
+	\myvec{3  & 2}\myvec{0\\8} & = 16
+	\\
+	\myvec{3  & 2}\myvec{2\\7} &= 20
+	\\
+	\myvec{3  & 2}\myvec{5\\4} &= 23
+	\\
+	\myvec{3  & 2} \myvec{6\\0} &= 18 
+    \end{align}
+    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
+\end{enumerate}
+\section{JEE}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Let $\alpha$ be a root of the equation
+\begin{align}
+	x^2+x+1 = 0
+\end{align}
+and the matrix 
+\begin{align}
+	\vec{A} = 	\frac{1}{\sqrt{3}}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} 
+\end{align}
+		Find $\vec{A}^{31}$.
+		\\
+		\solution Since 
+\begin{align}
+	\vec{A}^2 &= 	\frac{1}{3}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} \myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}}
+	\\
+	&= 	\myvec{1 & 0 & 0\\ 0 & 0 & 1 \\ 0 & 1 & 0 } = \vec{E},
+	\label{eq:elementary}
+\end{align}
+		where $\vec{E}$ is an elementary matrix that interchanges the 2nd and 3rd row,
+\begin{align}
+	\vec{E}^2 = 	\vec{I}.
+	\label{eq:elementary_2}
+\end{align}
+Thus, from 
+	\eqref{eq:elementary} and
+	\eqref{eq:elementary_2},
+\begin{align}
+	\vec{A}^{31} &= 	\vec{A}\brak{\vec{A}^2}^{15} = \vec{A}\brak{\vec{E}^2}^{15}
+	\\
+	&=\vec{A}\brak{\vec{I}}^{15} = \vec{A}
+\end{align}
+	\item A vector 
+\begin{align}
+	\vec{a} = 	\myvec{\alpha \\  2 \\ \beta }
+	\label{eq:plane_bisect_given}
+\end{align}
+lies in the plane of the vectors 
+\begin{align}
+	\vec{b} = 	\myvec{1\\  1 \\ 0}, 
+	\vec{c} = 	\myvec{1\\  -1 \\ 4}
+\end{align}
+		If $\vec{a}$ bisects the angle between $\vec{b}, \vec{c}$, find $\vec{a}$.
+		\\
+		\solution From the given information, 
+\begin{align}
+	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{a}}\norm{\vec{c}}}
+	\\
+\implies	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{c}}}
+	\label{eq:plane_bisect}
+\end{align}
+Since 
+\begin{align}
+	\norm{\vec{b}} = \sqrt{2},
+		\norm{\vec{c}} =3\sqrt{2}
+\end{align}
+from 	\eqref{eq:plane_bisect},
+\begin{align}
+3	{\vec{a}^{\top}\vec{b}} &=	{\vec{a}^{\top}\vec{c}}
+\\
+	\implies \vec{a}^{\top}\brak{3\vec{b}-\vec{c}} &= 0
+\\
+	\text{or, }\myvec{1 & 2 & -2}\vec{a} &= 0
+	\label{eq:plane_bisect_bc}
+\end{align}
+Also, since $\vec{a}, \vec{b}, \vec{c}$ lie on the same plane, 
+\begin{align}
+	\vec{a}^{\top}\brak{\vec{b}\times \vec{c}} &= 0
+	\\
+	\implies \myvec{2 & -2 & -1}\vec{a} &=0
+	\label{eq:plane_bisect_cross}
+\end{align}
+From 
+	\eqref{eq:plane_bisect_bc} and 
+	\eqref{eq:plane_bisect_cross}
+
+\begin{align}
+	\myvec{1 & 2 & -2 \\
+	2 & -2 & -1}\vec{a} &=0
+\end{align}
+Row reducing the above coefficient matrix, 
+\begin{align}
+	\myvec{1 & 2 & -2 \\ 2 & -2 & -1}
+	\\
+	\text{(pivoting) }	\myvec{\circled{1} & 2 & -2 \\ 0 & 2  & -1}
+	\\
+	\xleftrightarrow[]{R_1\leftarrow R_1 - R_2}	\myvec{1 & 0 & -1 \\ 0 & 2  & -1}
+\end{align}
+Thus, 
+\begin{align}
+	\vec{a} = k\myvec{2 \\ 1 \\ 2}
+\end{align}
+where $k$ is some constant.  Comparing the above with 
+	\eqref{eq:plane_bisect_given},
+\begin{align}
+	k = 2 \implies 
+	\vec{a} = \myvec{4 \\ 2 \\ 4}
+\end{align}
+	\item If the system of linear equations 
+\begin{align}
+	2x + 2ay + az & = 0
+	\\
+	2x + 3by + bz & = 0
+	\\
+	2x + 4cy + cz & = 0
+\end{align}
+where $a, b, c \in \mathbb{R}$ are nonzero and distinct; has a nonzero solution, find the relation between $a,b,c$.
+\\
+\solution The given system of equations can be expressed as the matrix equation
+\begin{align}
+	\myvec{2 & 2a & a 
+	\\
+	2 & 3b & b
+	\\
+	2 & 4c & c} \vec{x} = \vec{0}
+\end{align}
+\begin{figure*}[!hb]
+	\centering
+		\hrule
+\begin{align}
+	\label{eq:matrix_hp_begin}
+	\myvec{2 & 2a & a 
+	\\
+	2 & 3b & b
+	\\
+	2 & 4c & c} 
+\xleftrightarrow[R_2\leftarrow R_2 - R_1]{R_3\leftarrow R_3 - R_1}
+	\myvec{2 & 2a & a 
+	\\
+	0 & \circled{3b-2a} & b-a
+	\\
+	0 & 4c-2a & c-a} 
+	\\
+	\text{pivoting }
+	\myvec{2\brak{3b-2a} & 0 & a\brak{3b-2a}-2a\brak{b-a} 
+	\\
+	0 & \circled{3b-2a} & b-a
+	\\
+	0 & 0 & \brak{3b-2a}\brak{c-a}-\brak{b-a}{4c-2a} }
+	\\
+	= 
+	\myvec{2\brak{3b-2a} & 0 & ab
+	\\
+	0 & {3b-2a} & b-a
+	\\
+	0 & 0 & -bc - ab + 2ac }
+	\label{eq:matrix_hp_end}
+\end{align}
+\end{figure*}
+Row reducing the coefficient matrix in, 
+	\eqref{eq:matrix_hp_begin}
+	yields
+	\eqref{eq:matrix_hp_end}.
+For the given system to have a nontrivial solution,  the rank of the coefficient matrix should be 2.  Hence, from 
+	\eqref{eq:matrix_hp}
+\begin{align}
+	-bc - ab + 2ac  &= 0
+	\\
+	\implies ab + bc &= 2ac
+	\\
+	\text{or, }\frac{1}{a}+\frac{1}{c} = 
+\frac{2}{b}
+\end{align}
+Thus, $a,b,c$ are in H.P.
+\item Let $P$ be a plane passing through the points 
+\begin{align}
+	\myvec{2 \\  1 \\ 0 }, 	\myvec{4 \\  1 \\ 1 }, 	\myvec{5 \\  0 \\ 1 }
+\end{align}
+and 
+\begin{align}
+	\vec{R} = 	\myvec{2 \\  1 \\ 6 }
+\end{align}
+		be any point.  Find the image of $\vec{R}$ in the plane $\vec{P}$.
+		\\
+		\solution From 
+	\eqref{eq:plane_3pt}, the normal vector of the plane is given by 
+\begin{align}
+	\myvec{2 &  1 & 0 \\ 4 &  1 & 1 \\ 5 &  0 & 1 }\vec{n} = \myvec{1 \\ 1\\ 1}
+\end{align}
+which can be solved by row reducing the augmented matrix as follows
+\begin{align}
+	\myvec{\circled{2} &  1 & 0  & 1 \\ 4 &  1 & 1 & 1\\ 5 &  0 & 1 & 1}
+	\\
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{2 &  1 & 0  & 1 \\ 0 &  \circled{1} & -1 & 1\\ 0 &  -5 & 2 & -3}
+	\\
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{2 &  0 & 1  & 0 \\ 0 &  {1} & -1 & 1\\ 0 &  0 & \circled{3} & -2}
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{6 &  0 & 0  & 2 \\ 0 &  3 & 0 & 1\\ 0 &  0 & {3} & -2}
+\end{align}
+yielding
+\begin{align}
+	\vec{n} = \frac{1}{3}\myvec{1 \\ 1 \\ -2}
+\end{align}
+Thus, the equation of the desired plane can be expressed as 
+\begin{align}
+	\myvec{1 \\ 1 \\ -2} \vec{x} = 3
+\end{align}
+			From \eqref{eq:image_pt_plane}, the desired image is then obtained as 
+\begin{align}
+	\vec{Q} &=
+	\myvec{2 \\  1 \\ 6 }   + 2\frac{3 - \myvec{1 & 1 & -2}\myvec{2 \\  1 \\ 6 }}{6}\myvec{1 \\ 1 \\ -2}
+	\\
+	&=  \myvec{6 \\ 5 \\ -2}
+		\end{align}
+\item Let 
+\begin{align}
+	\vec{A} = 	\myvec{1\\   0}, 
+	\vec{B} = 	\myvec{6\\ 2 },
+	\vec{C} = 	\myvec{\frac{3}{2}\\[0.5em] 6}
+\end{align}
+be the vertices of a triangle.  If $\vec{P}$ is a point inside the triangle $ABC$ such that the triangles $APC,APB$ and $BPC$ have equal areas, then find the length of the line segment $PQ$, where  
+\begin{align}
+	\vec{Q} = 	\myvec{-\frac{7}{6}\\[0.5em] -\frac{1}{3} } 
+\end{align}
+\\
+\solution 
+The point $\vec{P}$ is the median of the given triangle.  Hence, 
+\begin{align}
+	\vec{P} &= 	\frac{\vec{A}+\vec{B}+\vec{C}}{3}
+	\\
+	&= \myvec{\frac{17}{6} \\[0.5em] \frac{8}{3}}
+\end{align}
+Thus, 
+\begin{align}
+	\vec{P}-\vec{Q} &= 	\myvec{4\\3}
+	\\
+	\implies PQ &= 5
+\end{align}
+	\item The line 
+\begin{align}
+	\myvec{m & -1}\vec{x} = -4
+\end{align}
+is a tangent to the parabolas
+\begin{align}
+	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} - 4 \myvec{1 & 0}\vec{x}&= 0
+	\\
+	\vec{x}^{\top}\myvec{1 & 0 \\ 0  & 0}\vec{x} - 2 \myvec{0 & b}\vec{x}&= 0
+\end{align}
+Find the value of $b$.
+\item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
+	12, then find the length of its latus rectum.
+\item Find the area of the region, enclosed by the circle 
+\begin{align}
+	\vec{x}^{\top}\vec{x} = 2
+\end{align}
+which is not common to the region bounded by the parabola 
+\begin{align}
+	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} -  \myvec{1 & 0}\vec{x}= 0
+\end{align}
+and the straight line
+\begin{align}
+\myvec{1 & -1 }\vec{x}  = 0.
+\end{align}
+\end{enumerate}
+\section{JNTU}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the value of $k$ such that the rank of the matrix
+\begin{align}
+	\myvec{1 & 2 & 3\\2 & k & 7 \\ 3 & 6 & 10} 
+\end{align}
+is 2.
+\item Find the LU decoomposition of 
+\begin{align}
+	\vec{A} = 	\myvec{1 &  3\\ 4 & -1} 
+\end{align}
+\item If a square matrix $\vec{A}$ has an eigenvalue $\lambda $, then what is the eigenvalue of the matrix $k\vec{A}$, where $k \ne 0$ is a scalar.
+\item If a matrix 
+\begin{align}
+	\vec{A} = 	\myvec{-1 & 0 & 0\\2 & -3 & 0 \\ 1 & 4 & 2}
+\end{align}
+then what are the eigenvalues of $\vec{A}^2$?
+\item Factorize the matrix 
+\begin{align}
+		\myvec{2 & -3 & 1\\3 & 4 & 2 \\ 2 & -3 & 4}
+\end{align}
+by the LU decomposition method.
+\item For what values of $\lambda$ and $\mu$ do the system of equations
+\begin{align}
+	x+y+z &= 6
+	\\
+	x+2y+3z &= 10
+	\\
+	x+2y+\lambda z = \mu
+\end{align}
+have
+		\begin{enumerate}
+			\item no solution
+			\item unique solution
+			\item more than one solution
+				\end{enumerate}
+			\item Find the value of $k$ for which the system of equations
+\begin{align}
+	\brak{k+1}x+y &= 4k
+	\\
+	kx+\brak{k-3}y &= 3k-1
+\end{align}
+has infinitely many solutions.
+\item Verify Cayley-Hamilton Theorem for the matrix 
+\begin{align}
+	\vec{A} = 	\myvec{1 & 2 & 0\\-1 & -1 & 2 \\ 1 & 2 & 1}
+\end{align}
+		and obtain $\vec{A}^{-1}$ and $\vec{A}^{3}$.
+	\item Reduce the quadratic form 
+\begin{align}
+	3x^2+3y^2+3z^2-2yz+2zx+2xy
+\end{align}
+to its canonical form.
+
+\end{enumerate}
 \section{Definitions}
 \subsection{$2\times 1$ vectors}
 \renewcommand{\theequation}{\theenumi}
@@ -1397,6 +2358,7 @@ with the conic section in \eqref{eq:conic_quad_form} are given by
 \end{align}
 %
 where
+{\tiny
 \begin{multline}
 \mu_i = \frac{1}
 {
@@ -1405,7 +2367,6 @@ where
 \lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
 \\
 \pm
-{\scriptsize
 \rbrak{\sqrt{
 \sbrak{
 \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
@@ -1418,16 +2379,19 @@ where
 \brak{\vec{m}^T\vec{V}\vec{m}}
 }
 }
-}
 \label{eq:tangent_roots}
 \end{multline}
+}
 \solution 
 Substituting \eqref{eq:conic_tangent}
 in \eqref{eq:conic_quad_form}, 
 \begin{align}
-\brak{\vec{q} + \mu \vec{m}}^T\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^T\brak{\vec{q} + \mu \vec{m}}+f &= 0
+\brak{\vec{q} + \mu \vec{m}}^T\vec{V}\brak{\vec{q} + \mu \vec{m}}  
+\\
++ 2 \vec{u}^T\brak{\vec{q} + \mu \vec{m}}+f &= 0
 \\
 \implies \mu^2\vec{m}^T\vec{V}\vec{m} + 2 \mu\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} 
+\\
 + \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f &= 0
 \label{eq:conic_intercept}
 \end{align}
@@ -1637,967 +2601,6 @@ Thus, the angle between the asymptotes is obtained from \eqref{eq:quad_form_pair
 \label{eq:hyper_conj_quad_form}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+2\vec{u}^{\top}\vec{V}^{-1}\vec{u}-f=0
 \end{align}
-\end{enumerate}
-\section{Class 10}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item  Find the distance between the points $\myvec{m \\ -n}$ and $\myvec{-m \\ n}$
-	\\
-		\solution Letting 
-		\begin{align}
-			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
-			\\
-			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
-			\\
-			\implies \norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
-			\\
-			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
-\\
-			&			= 2 \sqrt{m^2+n^2}
-		\end{align}
-	\item Find a point on the $x-$axis which is equidistant from $\myvec{ -4 \\ 0}$ and $\myvec{10 \\ 0}$
-\\
-\solution Letting the given points be $\vec{A},\vec{B}$. 
-		\begin{align}
-	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
-	  \\
-	  &= \myvec{ -14 \\ 0},
-	  \\
-			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -42,
-  \end{align}
-  \eqref{eq:norm2d_equidist}, can be expressed as 
-  \begin{align}
-	  \myvec{ -14 & 0}\vec{x} 
-	  &=  42
-	  \\
-	  \implies 
-	  \myvec{ -14 & 0}\myvec{x \\ 0} 
-	  &=  -42
-	  \\
-	  \text{or, } x =3 
-  \end{align}
-  Hence, the desired point is $\myvec{ 3 \\ 0}$.
-  \item Find the centre of a circle whose end points of a diameter are $\myvec{ -6 \\ 3}$ and $\myvec{6 \\ 4}$.
-	  \\
-		\solution 
-Using section formula, 
-	  from \eqref{eq:section_formula},
-		the desired point is given by 
-  \begin{align}
-	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
-	  \\
-	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
-	  \\
-	  &=\frac{1}{2}\myvec{0 \\ 7}
-  \end{align}
-  \item $AOBC$  is a rectangle whose three vertices are $A = \myvec{0\\-3}, O = \myvec{0\\0}, B = \myvec{4\\0}$.  Find the length of its diagonal. 
-	  \\
-		\solution The fourth point is given by 
-  \begin{align}
-	 OC =  \vec{C}&=\myvec{4 \\ -3}
-  \end{align}
-  The length of the diagonal is 
-		\begin{align}
-			\norm{\vec{C}} &= 
-			 \sqrt{\myvec{4 & -3}\myvec{4 \\ -3}} 
-\\
-			&			=  \sqrt{25} = 5
-		\end{align}
-	\item  Find the ratio in which the $y$-axis divides the line segment joining the points $\myvec{6 \\ -4}, \myvec{-2 \\ -7} $.  Also find the point of intersection.
-		\\
-		\solution  Let the desired point on the $y$-axis be  
-		\begin{align}
-\vec{P} = \myvec{0 & y}
-		\end{align}
-Using section formula, 
-	  from \eqref{eq:section_formula},
-		\begin{align}
-			\vec{P} &= \myvec{0 & y}= \frac{1}{k+1}\sbrak{\myvec{6 \\ -4}+ k\myvec{-2 \\ -7} }
-			\\
-			&	\implies 6 - 2k = 0 \text{ or, }k = 3
-		\end{align}
-		Also, 
-		\begin{align}
-			y &= \frac{-4-7k}{k+1}
-			\\
-			&=-\frac{25}{4}
-		\end{align}
-		Thus, the desired point is  $ -\frac{25}{4}
-\myvec{0 \\ 1 }$.
-	\item   Show that the points $\myvec{7 \\ 10}, \myvec{-2 \\ 5} $ and $\myvec{3 \\ -4}$ are vertices of an isoscles right triangle.
-		\\
-		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
-Then, the direction vectors of $AB, BC$ and $CA$ are
-		\begin{align}
-			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
-			\\
-			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
-			\\
-			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
-		\end{align}
-		From the above,  we find that 
-		\begin{align}
-			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
-			\\
-			&=0
-			\\
-			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
-\\
-			&=-106
-			\\
-			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
-\\
-			&=-106
-		\end{align}
-		From  the above equations, 
-    \eqref{eq:angle2d} and 
-    \eqref{eq:angle2d_orth},
-		\begin{align}
-			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
-			\\
-			\angle BCA = 
-			\angle CAB  
-		\end{align}
-		Thus, the triangle is right angled and isosceles.
-\end{enumerate}
-\section{Class 12}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-	\item Find the area of a triangle formed by vertices O, A and B, where 
-		\begin{align}
-			\vec{A} = \myvec{1 \\ 2 \\ 3},
-			\vec{B}  = \myvec{-3 \\ -2 \\ 1},
-		\end{align}
-\solution $\because $
-		\begin{align}
-			\myvec{2 & -2 \\ 3 & 1 } &= 8,
-\\
-			\myvec{3 & 1 \\ 1 & -3 } &= -10,
-			\\
-			\myvec{1 & -3 \\ 2 & -2 } &= 4,
-		\end{align}
-		\begin{align}
-			\vec{A}  \times 
-			\vec{B}  = \myvec{8 \\ -10 \\ 4},
-		\end{align}
-		and the  desired area can be obtained from 
-  \eqref{eq:cross3d} and 
-  \eqref{eq:area3d} as
-		\begin{align}
-			\frac{1}{2}\norm{\myvec{8 \\ -10 \\ 4}} = 3 \sqrt{5}
-		\end{align}
-	\item  Find the coordinates of the foot of the perpendicular drawn from the point $ \myvec{2 \\-3 \\4 } $ on the y-axis.
-		\\
-\solution By definition of $y$-axis, the desired coordinates are 
-		\begin{align}
-			\myvec{0 \\ -3 \\ 0} 
-		\end{align}
-	Alternatively, the equation of the $y$-axis can be written as	
-		\begin{align}
-			\vec{x} = \lambda 	\myvec{0 \\ 1 \\ 0} 
-		\end{align}
-		The equation of the plane perpendicular to the $y$-axis and passing through the origin is
-		\begin{align}
- 	\myvec{0 \\ 1 \\ 0} \vec{x} = 0
-		\end{align}
-	From \eqref{eq:plane_line_foot_ans},  the desired point is given by 
-\begin{align}
-	\vec{x} &=   \myvec{0 & 1 & 0}\myvec{2 \\-3 \\4 } 
- \myvec{0 \\ 1 \\ 0} 
- \\
-	&=
- \myvec{0 \\ -3 \\ 0} 
-		\end{align}
-	\item  Find the angle between the vectors $ \myvec{1 \\ -1 \\ 0} $ and $ \myvec{0 \\ 1 \\ -1} $ 
-\\
-\solution $\because$
-%
-  \begin{align}
-	  \myvec{1 & -1 & 0} \myvec{0 \\ 1 \\ -1} &= -1,
-	  \norm{\myvec{1 \\ -1 \\ 0}}=\norm{\myvec{0 \\ 1 \\ -1}} &= \sqrt{2}
-  \end{align}
-		From 
-    \eqref{eq:angle2d}, the angle between the given vectors is 
-  \begin{align}
- \cos^{-1}\frac{-1}{\sqrt{2} \times 
-\sqrt{2}
-	  } &= 
- \cos^{-1}\frac{-1}{2
-	  } 
-	  \\
-	  &= \frac{2\pi}{3}
-  \end{align}
-\item  If A is a non-singular square matrix of order 3 such that $ \vec{A}^2 =3\vec{ A}$, then find the value of  $\mydet{\vec{A}}$ 
-	\\
-	\solution 
-  \begin{align}
-	  \mydet {\vec{A}^2} &=\mydet{3\vec{ A}}
-	  \\
-	  \implies 
-	  \mydet {\vec{A}} ^2&=3^3\mydet{\vec{ A}}
-  \end{align}
-  from 
-	\eqref{eq:det_kord}
-	yielding 
-  \begin{align}
-	  \mydet {\vec{A}} &=27
-  \end{align}
-  after simplification.
-\item  If $\norm{\vec{a}}
-	 = 4 $ and  $ -3\leq \lambda \leq 2 $ then find the range of values that $\norm{\lambda \vec{a}}$ can satisfy.
-	 \\
-	 \solution  From 
-  \eqref{eq:norm2d_const}, 
-\begin{align}
-  \norm{\lambda \vec{a}} 
-  &= \abs{\lambda} \norm{\vec{A}}
-  \\
-	&= 4\abs{\lambda} 
-\end{align}
-$\because$
-\begin{align}
-	0 \leq \abs{\lambda} \leq 3,  
-\\
-	0 \leq 4\abs{\lambda} \leq 12
-\end{align}
-
-\item  If 
-%
-\begin{align}
-	\mydet{ 2x & -9 \\ -2 & x } = \mydet{ -4 & 8 \\ 1 & -2} 
-\end{align}
-then find the value of $x$. 
-\\
-\solution
-Exapanding the above determinants,
-\begin{align}
-	2x^2 - 18 &= 0
-	\\
-	\implies x &= \pm 3
-\end{align}
-\item  Find the distance between parallel planes 
-	\begin{align}
-		2x+y-2z-6&=0 
-		\\
-		4x+2y-4z&=0 
-\end{align}
-\solution The above planes have parameters
-	\begin{align}
-		\vec{n} = \myvec{2 & 1 & -2}, c_1=6, c_2 = 0
-\end{align}
-Using 	\eqref{eq:parallel_lines},  the distance is obtained as
-
-\begin{align}
-	d &= \frac{\abs{c_1-c_2}}{\norm{\vec{n}}} 
-\\
-	&= \frac{6}{3} = 2
-\end{align}
-\item 
-    If 
-	\begin{align}
-		\vec{P} = \myvec{1 \\ 0 \\-3}
-\end{align}
-    is the foot of the perpendicular from the origin to the plane, then find the equation of the plane.  
-    \\
-    \solution Let the equation of the plane be 
-	\begin{align}
-		\vec{n}^{\top}\vec{x} = c
-\end{align}
-Since $\vec{P}$ is a point on the plane, it satisfies the above equation and 
-	\begin{align}
-		\vec{n}^{\top}\vec{P} = c
-		\label{eq:cbse_12_foot}
-\end{align}
-The normal vector to the plane is $OP$.  Hence, 
-	\begin{align}
-		\vec{n} = \vec{P} 
-\end{align}
-		Substituting the above in \eqref{eq:cbse_12_foot},
-	\begin{align}
-		\vec{P}^{\top}\vec{P} = c
-		\label{eq:cbse_12_foot_sub}
-\end{align}
-and the desired equation of the plane is 
-	\begin{align}
-		\vec{P}^{\top}\vec{x} &= 		\vec{P}^{\top}\vec{P}
-		\\
-		\myvec{1 & 0 &-3}\vec{x} &= 	10	
-		\label{eq:cbse_12_foot_ans}
-\end{align}
-   after substituting numerical values. 
-\item  Find the coordinates of the point where the line $\frac{x-1}{3}$ = $\frac{y+4}{7}$ = $\frac{z+4}{2}$ cuts the xy-plane.
-	\\
-	\solution 
-	The given line can be expressed as 
-	\begin{align}
-		\vec{x} = \myvec{1 \\ -4 \\ -4} + \lambda \myvec{3 \\ 7 \\ 2}
-		\label{eq:cbse_12_line_plane}
-\end{align}
-and the $xy$- plane is 
-	\begin{align}
-		\myvec{0 & 0 &1}\vec{x}  = 0
-		\label{eq:cbse_12_line_plane_eq}
-\end{align}
-From 
-	\eqref{eq:dir_line_plane_isect},
-\begin{align}
-	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
-\vec{m}
-	\\
-	&= \myvec{1 \\ -4 \\ -4} + \frac{0 - \myvec{0 & 0 &1}\myvec{1 \\ -4 \\ -4}}{\myvec{0 & 0 &1}\myvec{3 \\ 7 \\ 2}}\myvec{3 \\ 7 \\ 2}
-	\\
-	&=\myvec{1 \\ -4 \\ -4}+2\myvec{3 \\ 7 \\ 2}
-	\\
-	&=\myvec{7 \\ 10 \\ 0}
-\end{align}
-
-\item  Find a vector $\vec{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.
-	\\
-	\solution 
-    From \eqref{eq:angle2d}, 
-  \begin{align}
-	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}}} = 
-	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}}} = 
-	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}}} = \cos \theta
-  \end{align}
-  which can be expressed as the system of equations
-  \begin{align}
-	  {\vec{e}_1^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
-	  \\
-	  {\vec{e}_2^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
-	  \\
-	  {\vec{e}_3^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
-  \end{align}
-  which can be combined to obtain the matrix equation
-  \begin{align}
-	  \myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
-	  \\
-	  \implies \frac{\vec{r}}{\norm{\vec{r}}}&= \cos \theta \myvec{1\\1\\1}
-	  \label{eq:equal_incline_unit}
-  \end{align}
-  \begin{align}
-	  \because 	\myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3} = \vec{I}
-  \end{align}
-  From 
-	  \eqref{eq:equal_incline_unit}
-  \begin{align}
-	  \norm {\cos \theta \myvec{1\\1\\1}} &= 1
-	  \\
-	  \implies\cos \theta  = \frac{1}{\sqrt{3}}
-	  \label{eq:equal_incline_unit_cos}
-  \end{align}
- From  
-	  \eqref{eq:equal_incline_unit_cos} and 
-	  \eqref{eq:equal_incline_unit_cos},
-
-  \begin{align}
-	  \vec{r} &=  3\sqrt{3}\times \frac{1}{\sqrt{3}}\myvec{1\\1\\1}
-	  \\
-		  &=3\myvec{1\\1\\1}
-	  \label{eq:equal_incline_unit_ans}
-  \end{align}
-%    
-\item    Find the angle between unit vectors $\vec{a}$ and $\vec{b}$ so that $\sqrt{3}$ $\vec{a}$ - $\vec{b}$ is also a unit vector.
-	\\
-	\solution From the given information, 
-  \begin{align}
-	  \norm{	\sqrt{3}\vec{a} - \vec{b}} &= 1
-	  \\
-	  \implies \norm{	\sqrt{3}\vec{a} - \vec{b}}^2 &= 1
-	  \label{eq:norm_unit}
-  \end{align}
-  which can be expressed as 
-  \begin{align}
-	  \brak{	\sqrt{3}\vec{a} - \vec{b}}^{\top} \brak{	\sqrt{3}\vec{a} - \vec{b}}&= 1
-	  \\
-	  \implies  3 \norm{\vec{a}}^2  + \norm{\vec{b}}^2 - 2 \sqrt{3} \vec{a}^{\top}\vec{b} &= 1
-	  \label{eq:norm_unit_mid}
-  \end{align}
-  and simplified to obtain 
-  \begin{align}
-	\vec{a}^{\top}\vec{b}  =  \frac{\sqrt{3}}{2} 
-	  \label{eq:norm_unit_mid_angle}
-  \end{align}
-  Thus the desired angle  is 
-  \begin{align}
-\cos^{-1}   \frac{\sqrt{3}}{2} = 30 \degree
-	  \label{eq:norm_unit_mid_angle_ans}
-  \end{align}
-\item If $\vec{A}=\myvec{-3 & 2 \\ 1 & -1 } $ and $ \vec{I}=\myvec{1 & 0 \\ 0 & 1 }$, Find scalar k so that $\vec{A}^2 + \vec{I} = k\vec{A}$.
-	\\
-	\solution Using the Cayley-Hamilton theorem, 
-  \begin{align}
-	  \lambda^2 - k \lambda + 1 = 0
-	  \label{eq:cayley_applic}
-  \end{align}
-From 	\eqref{eq:trace}, 
-  \begin{align}
-	   k  = \text{tr}\brak{\vec{A}} = -3-1 = -4
-	  \label{eq:cayley_sol}
-  \end{align}
-\item Show that the plane $x-5y-2z=1$ contains the line $\frac{x-5}{3}=y=2-z$. 
-	\\
-	\solution The plane and line can be expressed in vector form as
-  \begin{align}
-	  \label{eq:line_plane_contain_plane}
-	  \myvec{1 & -5 & -2}\vec{x}=1 
-	  \\
-	  \vec{x} = \myvec{5 \\ 0 \\ 2} + \lambda \myvec{3 \\ 1 \\ -1}
-	  \label{eq:line_plane_containline}
-  \end{align}
-  $\because$
-  \begin{align}
-	  \myvec{1 & -5 & -2}\myvec{3 \\ 1 \\ -1} = 0
-	  \label{eq:line_plane_containline_sol}
-  \end{align}
-from 			\eqref{eq:line_plain_contain}, the given plain contains the given line.
-\item Find the equation of the plane passing through the points 
-\begin{align}
-	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
-  \end{align}
-	 and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.  
-\\
-\solution Let the equation of the desired plane be 
-\begin{align}
-	\vec{n}^{\top}\vec{x} = 1
-	\\
-	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
-  \end{align}
-  From the given information, 
-\begin{align}
-	\vec{n}^{\top}\vec{x} &= 1
-	\\
-\implies
-\begin{split}
-	\myvec{1 &0 &-2} \vec{n} &=1 
-	\\
-	\myvec{3 & -1 &0}\vec{n} &=1
-	\\
-	\myvec{2 & -1 & 1}\vec{n} &=0
-	\end{split}
-	\label{eq:plane_pt_perp}
-  \end{align}
-From 
-	\eqref{eq:plane_pt_perp},
-	we obtain  the matrix equation
-\begin{align}
-	\myvec{1 &0 &-2\\ 3 & -1 &0 \\ 2 & -1 & 1} \vec{n} &= \myvec{1 \\ 1 \\ 0}
-  \end{align}
-Forming the augmented matrix, and choosing the pivot,
-\begin{align}
-	\myvec{\circled{1} &0 &-2 & \vrule &  1\\ 3 & -1 &0 & \vrule &1\\ 2 & -1 & 1 & \vrule &0} 
-	\\
-	\xleftrightarrow[]{}
-	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & \circled{1} &-6 & \vrule &2\\ 0 & -1 & 5 & \vrule &-2} 
-	\\
-	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & 1 &-6 & \vrule &2\\ 0 & 0 & \circled{1} & \vrule &0} 
-  \end{align}
-  yielding 
-\begin{align}
-\vec{n} =\myvec{1 \\ 2 \\ 0} 
-  \end{align}
-  Thus, the equation of the desired plane is 
-\begin{align}
-\myvec{1 & 2 & 0} \vec{n} = 1
-  \end{align}
-\item If $\vec{A}=\myvec{5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6 } $, Find $\vec{A}^{-1}$ and use it to solve the following system of the equations: 
-\begin{align}
-	5x-y+4z&=5 \\
-	2x+3y+5z&=2 \\
-	5x-2y+6z&=-1 
-    \end{align}
-   \solution Forming the augmented matrix and pivoting,  
-\begin{align}
-	\myvec{\circled{5} & -1 & 4 & \vrule & 1 & 0 & 0\\ 2 & 3 & 5 & \vrule & 0 & 1 & 0\\ 5 & -2 & 6 & \vrule & 0 & 0 & 1}
-	\\
-	\xleftrightarrow []{}
-	\myvec{5 & -1 & 4 & \vrule & 1 & 0 & 0\\ 0 & \circled{17} & 17 & \vrule & -2 & 5 & 0\\ 0 & 1 & -2 & \vrule & 1 & 0 & -1}
-	\\
-	\xleftrightarrow []{}
-	\myvec{17 & 0 & 17 & \vrule & 3 & 1 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
-	\\
-	\xleftrightarrow [R_2\leftarrow 3R_2 - R_3]{R_1\leftarrow 3R_1 - R_3}
-	\\
-	\myvec{51 & 0 & 0 & \vrule & 28 & -2& -17\\ 0 & 51 & 0 & \vrule & 13 & 10 & -17\\ 0 & 0 & 51 & \vrule & -19 & 5 & 17}
-    \end{align}
-    resulting in 
-\begin{align}
-	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
-    \end{align}
-\item If $x,y,z$ are different and 
-\begin{align}
-	\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 
-	\label{eq:det_xyz_given}
-    \end{align}
-	then using properties of determinants show that $1+xyz=0.$  
-	\\
-	\solution The given determinant can be expressed as 
-\begin{align}
-	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1}  
-	+\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
-	\label{eq:det_xyz}
-%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
-    \end{align}
-    Since
-\begin{align}
-	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3} 
-	= xyz  
-	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}  
-	\label{eq:det_xyz_2}
-%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
-    \end{align}
-    and 
-\begin{align}
-	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1} 
-	= 
-	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
-	\label{eq:det_xyz_12}
-%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
-    \end{align}
-	\eqref{eq:det_xyz} can be expressed as
-\begin{align}
-	\brak{1+xyz}
-	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
-	\label{eq:det_xyz_onefac}
-    \end{align}
-    The above determinant can be simplified as
-\begin{align}
-	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
-	\\
-\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
-	\mydet{1 & x & x^2 \\ 0 & x-y & x^2-y^2 \\ 0 & x-z & x^2-z^2}, 
-	\\
-	=
-	\brak{x-y}	\brak{x-z}\mydet{1 & x & x^2 \\ 0 & 1 & x+y \\ 0 & 1 & x+z}, 
-	\\
-	=
-	\brak{x-y}\brak{y-z}	\brak{z-x}
-    \end{align}
-	and \eqref{eq:det_xyz_given} can be obtained from 
-	\eqref{eq:det_xyz_onefac} as
-\begin{align}
-	\brak{1+xyz}
-	\brak{x-y}\brak{y-z}	\brak{z-x} = 0
-    \end{align}
-    Since 
-\begin{align}
-	x \ne y \ne z, 
-	\brak{1+xyz} = 0
-    \end{align}
-    \item   Find the area of the triangle $ABC$, coordinates of whose vertices are 
-\begin{align}
-	\vec{A} = \myvec{2 \\0}, \vec{B} = \myvec{4 \\5} \text{ and } \vec{C} = \myvec{6 \\3}. 
-    \end{align}
-    \\
-    \solution Since 
-\begin{align}
-	\vec{A}-\vec{B} &= \myvec{-2 \\-5},
-	\\
-	\vec{A}-\vec{C} &= \myvec{-4 \\-3},
-    \end{align}
-    the desired area is  the magnitude of 
-\begin{align}
- \mydet{2 & 4\\5 & 3} 
-    \end{align}
-    Thus the desired area is 14 units.
-\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table. 
-	\begin{table}[!ht]
-		\centering
-\resizebox{\columnwidth}{!}{
-\begin{tabular}{|c|c|c|c|}
-\hline
-% \begin{tabularx}{\linewidth} {lX}
- Item & Machine Time & Craftsman Time & Profit(in INR) \\ 
- \hline
- Pedestal Lamp & 1.5 hours & 3 hours & 30\\  
- \hline
- Wooden shades & 3 hours & 1 hour & 20 \\
- \hline
-%  \end{tabularx}
-\end{tabular}
-}
-	\caption{}
-	\label{table}
-\end{table}
-
-In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.
-Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.
-\\
-\solution Let $x$ be the number of lamps and $y$ be the number of wooden shades produced.  From the given information, the problem can be formulated as
-\begin{align}
-	P = \max_{x,y}30x+20y
-	\\
-1.5x+3y \le 42
-\\
-3x+y \le 24
-\end{align}
-which can be expressed in vector form as
-\begin{align}
-	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
-	\\
-	\myvec{1 &2 \\ 3 & 1} \vec{x}\preceq \myvec{28 \\ 24}
-\end{align}
-The feasible region is a quadrilateral with vertices
-\begin{align}
-\myvec{0 \\ 0},
-\myvec{8 \\ 0},
-\myvec{0 \\ 14},
-\myvec{4 \\ 12}
-\end{align}
-with respective profit
-\begin{align}
-	\myvec{30 &20}\myvec{0 \\ 0} &= 0 \\
-	\myvec{30 &20}\myvec{8 \\ 0} &= 240 \\
-	\myvec{30 &20}\myvec{0 \\ 14} &= 280 \\
-	\myvec{30 &20}\myvec{4 \\ 12} &= 360
-\end{align}
-Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
-%    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
-    
-\item  The corner points of the feasible region of an LPP are 
-\begin{align}
-	\myvec{0\\0},\myvec{0\\8},\myvec{2\\7},\myvec{5\\4} \text{ and } \myvec{6\\0}. 
-    \end{align}
-	Find the point at which the maximum profit $P=3x+2y$ occurs. 
-	\\
-	\solution The profit can be expressed as
-\begin{align}
-	P=\myvec{3  & 2} \vec{x}
-    \end{align}
-    and the respective values at each of the above points are given by 
-\begin{align}
-	\myvec{3  & 2}\myvec{0\\0} &= 0,
-	\\
-	\myvec{3  & 2}\myvec{0\\8} & = 16
-	\\
-	\myvec{3  & 2}\myvec{2\\7} &= 20
-	\\
-	\myvec{3  & 2}\myvec{5\\4} &= 23
-	\\
-	\myvec{3  & 2} \myvec{6\\0} &= 18 
-    \end{align}
-    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
-\end{enumerate}
-\section{JEE}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item Let $\alpha$ be a root of the equation
-\begin{align}
-	x^2+x+1 = 0
-\end{align}
-and the matrix 
-\begin{align}
-	\vec{A} = 	\frac{1}{\sqrt{3}}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} 
-\end{align}
-		Find $\vec{A}^{31}$.
-		\\
-		\solution Since 
-\begin{align}
-	\vec{A}^2 &= 	\frac{1}{3}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} \myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}}
-	\\
-	&= 	\myvec{1 & 0 & 0\\ 0 & 0 & 1 \\ 0 & 1 & 0 } = \vec{E},
-	\label{eq:elementary}
-\end{align}
-		where $\vec{E}$ is an elementary matrix that interchanges the 2nd and 3rd row,
-\begin{align}
-	\vec{E}^2 = 	\vec{I}.
-	\label{eq:elementary_2}
-\end{align}
-Thus, from 
-	\eqref{eq:elementary} and
-	\eqref{eq:elementary_2},
-\begin{align}
-	\vec{A}^{31} &= 	\vec{A}\brak{\vec{A}^2}^{15} = \vec{A}\brak{\vec{E}^2}^{15}
-	\\
-	&=\vec{A}\brak{\vec{I}}^{15} = \vec{A}
-\end{align}
-	\item A vector 
-\begin{align}
-	\vec{a} = 	\myvec{\alpha \\  2 \\ \beta }
-	\label{eq:plane_bisect_given}
-\end{align}
-lies in the plane of the vectors 
-\begin{align}
-	\vec{b} = 	\myvec{1\\  1 \\ 0}, 
-	\vec{c} = 	\myvec{1\\  -1 \\ 4}
-\end{align}
-		If $\vec{a}$ bisects the angle between $\vec{b}, \vec{c}$, find $\vec{a}$.
-		\\
-		\solution From the given information, 
-\begin{align}
-	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{a}}\norm{\vec{c}}}
-	\\
-\implies	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{c}}}
-	\label{eq:plane_bisect}
-\end{align}
-Since 
-\begin{align}
-	\norm{\vec{b}} = \sqrt{2},
-		\norm{\vec{c}} =3\sqrt{2}
-\end{align}
-from 	\eqref{eq:plane_bisect},
-\begin{align}
-3	{\vec{a}^{\top}\vec{b}} &=	{\vec{a}^{\top}\vec{c}}
-\\
-	\implies \vec{a}^{\top}\brak{3\vec{b}-\vec{c}} &= 0
-\\
-	\text{or, }\myvec{1 & 2 & -2}\vec{a} &= 0
-	\label{eq:plane_bisect_bc}
-\end{align}
-Also, since $\vec{a}, \vec{b}, \vec{c}$ lie on the same plane, 
-\begin{align}
-	\vec{a}^{\top}\brak{\vec{b}\times \vec{c}} &= 0
-	\\
-	\implies \myvec{2 & -2 & -1}\vec{a} &=0
-	\label{eq:plane_bisect_cross}
-\end{align}
-From 
-	\eqref{eq:plane_bisect_bc} and 
-	\eqref{eq:plane_bisect_cross}
-
-\begin{align}
-	\myvec{1 & 2 & -2 \\
-	2 & -2 & -1}\vec{a} &=0
-\end{align}
-Row reducing the above coefficient matrix, 
-\begin{align}
-	\myvec{1 & 2 & -2 \\ 2 & -2 & -1}
-	\\
-	\text{(pivoting) }	\myvec{\circled{1} & 2 & -2 \\ 0 & 2  & -1}
-	\\
-	\xleftrightarrow[]{R_1\leftarrow R_1 - R_2}	\myvec{1 & 0 & -1 \\ 0 & 2  & -1}
-\end{align}
-Thus, 
-\begin{align}
-	\vec{a} = k\myvec{2 \\ 1 \\ 2}
-\end{align}
-where $k$ is some constant.  Comparing the above with 
-	\eqref{eq:plane_bisect_given},
-\begin{align}
-	k = 2 \implies 
-	\vec{a} = \myvec{4 \\ 2 \\ 4}
-\end{align}
-	\item If the system of linear equations 
-\begin{align}
-	2x + 2ay + az & = 0
-	\\
-	2x + 3by + bz & = 0
-	\\
-	2x + 4cy + cz & = 0
-\end{align}
-where $a, b, c \in \mathbb{R}$ are nonzero and distinct; has a nonzero solution, find the relation between $a,b,c$.
-\\
-\solution The given system of equations can be expressed as the matrix equation
-\begin{align}
-	\myvec{2 & 2a & a 
-	\\
-	2 & 3b & b
-	\\
-	2 & 4c & c} \vec{x} = \vec{0}
-\end{align}
-\begin{figure*}[!hb]
-	\centering
-		\hrule
-\begin{align}
-	\label{eq:matrix_hp_begin}
-	\myvec{2 & 2a & a 
-	\\
-	2 & 3b & b
-	\\
-	2 & 4c & c} 
-\xleftrightarrow[R_2\leftarrow R_2 - R_1]{R_3\leftarrow R_3 - R_1}
-	\myvec{2 & 2a & a 
-	\\
-	0 & \circled{3b-2a} & b-a
-	\\
-	0 & 4c-2a & c-a} 
-	\\
-	\text{pivoting }
-	\myvec{2\brak{3b-2a} & 0 & a\brak{3b-2a}-2a\brak{b-a} 
-	\\
-	0 & \circled{3b-2a} & b-a
-	\\
-	0 & 0 & \brak{3b-2a}\brak{c-a}-\brak{b-a}{4c-2a} }
-	\\
-	= 
-	\myvec{2\brak{3b-2a} & 0 & ab
-	\\
-	0 & {3b-2a} & b-a
-	\\
-	0 & 0 & -bc - ab + 2ac }
-	\label{eq:matrix_hp_end}
-\end{align}
-\end{figure*}
-Row reducing the coefficient matrix in, 
-	\eqref{eq:matrix_hp_begin}
-	yields
-	\eqref{eq:matrix_hp_end}.
-For the given system to have a nontrivial solution,  the rank of the coefficient matrix should be 2.  Hence, from 
-	\eqref{eq:matrix_hp}
-\begin{align}
-	-bc - ab + 2ac  &= 0
-	\\
-	\implies ab + bc &= 2ac
-	\\
-	\text{or, }\frac{1}{a}+\frac{1}{c} = 
-\frac{2}{b}
-\end{align}
-Thus, $a,b,c$ are in H.P.
-\item Let $P$ be a plane passing through the points 
-\begin{align}
-	\myvec{2 \\  1 \\ 0 }, 	\myvec{4 \\  1 \\ 1 }, 	\myvec{5 \\  0 \\ 1 }
-\end{align}
-and 
-\begin{align}
-	\vec{R} = 	\myvec{2 \\  1 \\ 6 }
-\end{align}
-		be any point.  Find the image of $\vec{R}$ in the plane $\vec{P}$.
-		\\
-		\solution From 
-	\eqref{eq:plane_3pt}, the normal vector of the plane is given by 
-\begin{align}
-	\myvec{2 &  1 & 0 \\ 4 &  1 & 1 \\ 5 &  0 & 1 }\vec{n} = \myvec{1 \\ 1\\ 1}
-\end{align}
-which can be solved by row reducing the augmented matrix as follows
-\begin{align}
-	\myvec{\circled{2} &  1 & 0  & 1 \\ 4 &  1 & 1 & 1\\ 5 &  0 & 1 & 1}
-	\\
-	\xleftrightarrow[]{	\text{pivoting }}
-	\myvec{2 &  1 & 0  & 1 \\ 0 &  \circled{1} & -1 & 1\\ 0 &  -5 & 2 & -3}
-	\\
-	\xleftrightarrow[]{	\text{pivoting }}
-	\myvec{2 &  0 & 1  & 0 \\ 0 &  {1} & -1 & 1\\ 0 &  0 & \circled{3} & -2}
-	\xleftrightarrow[]{	\text{pivoting }}
-	\myvec{6 &  0 & 0  & 2 \\ 0 &  3 & 0 & 1\\ 0 &  0 & {3} & -2}
-\end{align}
-yielding
-\begin{align}
-	\vec{n} = \frac{1}{3}\myvec{1 \\ 1 \\ -2}
-\end{align}
-Thus, the equation of the desired plane can be expressed as 
-\begin{align}
-	\myvec{1 \\ 1 \\ -2} \vec{x} = 3
-\end{align}
-			From \eqref{eq:image_pt_plane}, the desired image is then obtained as 
-\begin{align}
-	\vec{Q} &=
-	\myvec{2 \\  1 \\ 6 }   + 2\frac{3 - \myvec{1 & 1 & -2}\myvec{2 \\  1 \\ 6 }}{6}\myvec{1 \\ 1 \\ -2}
-	\\
-	&=  \myvec{6 \\ 5 \\ -2}
-		\end{align}
-\item Let 
-\begin{align}
-	\vec{A} = 	\myvec{1\\   0}, 
-	\vec{B} = 	\myvec{6\\ 2 },
-	\vec{C} = 	\myvec{\frac{3}{2}\\[0.5em] 6}
-\end{align}
-be the vertices of a triangle.  If $\vec{P}$ is a point inside the triangle $ABC$ such that the triangles $APC,APB$ and $BPC$ have equal areas, then find the length of the line segment $PQ$, where  
-\begin{align}
-	\vec{Q} = 	\myvec{-\frac{7}{6}\\[0.5em] -\frac{1}{3} } 
-\end{align}
-\\
-\solution 
-The point $\vec{P}$ is the median of the given triangle.  Hence, 
-\begin{align}
-	\vec{P} &= 	\frac{\vec{A}+\vec{B}+\vec{C}}{3}
-	\\
-	&= \myvec{\frac{17}{6} \\[0.5em] \frac{8}{3}}
-\end{align}
-Thus, 
-\begin{align}
-	\vec{P}-\vec{Q} &= 	\myvec{4\\3}
-	\\
-	\implies PQ &= 5
-\end{align}
-	\item The line 
-\begin{align}
-	\myvec{m & -1}\vec{x} = -4
-\end{align}
-is a tangent to the parabolas
-\begin{align}
-	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} - 4 \myvec{1 & 0}\vec{x}&= 0
-	\\
-	\vec{x}^{\top}\myvec{1 & 0 \\ 0  & 0}\vec{x} - 2 \myvec{0 & b}\vec{x}&= 0
-\end{align}
-Find the value of $b$.
-\item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
-	12, then find the length of its latus rectum.
-\item Find the area of the region, enclosed by the circle 
-\begin{align}
-	\vec{x}^{\top}\vec{x} = 2
-\end{align}
-which is not common to the region bounded by the parabola 
-\begin{align}
-	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} -  \myvec{1 & 0}\vec{x}= 0
-\end{align}
-and the straight line
-\begin{align}
-\myvec{1 & -1 }\vec{x}  = 0.
-\end{align}
-\end{enumerate}
-\section{JNTU}
-\renewcommand{\theequation}{\theenumi}
-%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item Find the value of $k$ such that the rank of the matrix
-\begin{align}
-	\myvec{1 & 2 & 3\\2 & k & 7 \\ 3 & 6 & 10} 
-\end{align}
-is 2.
-\item Find the LU decoomposition of 
-\begin{align}
-	\vec{A} = 	\myvec{1 &  3\\ 4 & -1} 
-\end{align}
-\item If a square matrix $\vec{A}$ has an eigenvalue $\lambda $, then what is the eigenvalue of the matrix $k\vec{A}$, where $k \ne 0$ is a scalar.
-\item If a matrix 
-\begin{align}
-	\vec{A} = 	\myvec{-1 & 0 & 0\\2 & -3 & 0 \\ 1 & 4 & 2}
-\end{align}
-then what are the eigenvalues of $\vec{A}^2$?
-\item Factorize the matrix 
-\begin{align}
-		\myvec{2 & -3 & 1\\3 & 4 & 2 \\ 2 & -3 & 4}
-\end{align}
-by the LU decomposition method.
-\item For what values of $\lambda$ and $\mu$ do the system of equations
-\begin{align}
-	x+y+z &= 6
-	\\
-	x+2y+3z &= 10
-	\\
-	x+2y+\lambda z = \mu
-\end{align}
-have
-		\begin{enumerate}
-			\item no solution
-			\item unique solution
-			\item more than one solution
-				\end{enumerate}
-			\item Find the value of $k$ for which the system of equations
-\begin{align}
-	\brak{k+1}x+y &= 4k
-	\\
-	kx+\brak{k-3}y &= 3k-1
-\end{align}
-has infinitely many solutions.
-\item Verify Cayley-Hamilton Theorem for the matrix 
-\begin{align}
-	\vec{A} = 	\myvec{1 & 2 & 0\\-1 & -1 & 2 \\ 1 & 2 & 1}
-\end{align}
-		and obtain $\vec{A}^{-1}$ and $\vec{A}^{3}$.
-	\item Reduce the quadratic form 
-\begin{align}
-	3x^2+3y^2+3z^2-2yz+2zx+2xy
-\end{align}
-to its canonical form.
-
 \end{enumerate}
 \end{document}
 
