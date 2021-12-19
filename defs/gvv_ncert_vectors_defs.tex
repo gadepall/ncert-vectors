@@ -24,7 +24,7 @@
 %\usepackage{iithtlc}
 % \usepackage{mathrsfs}
 % \usepackage{txfonts}
-% \usepackage{stfloats}
+ \usepackage{stfloats}
 % \usepackage{steinmetz}
  \usepackage{bm}
 % \usepackage{cite}
@@ -545,7 +545,7 @@ the inverse is given by
 \end{align}
 \item For higher order matrices, the inverse should be calculated using row operations.
 \end{enumerate}
-\section{Geometry}
+\section{Linear Forms}
 \subsection{Two Dimensions}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
@@ -689,19 +689,6 @@ where $\vec{m}$ is the direction vector of the given line.  Combining the above 
 	\eqref{eq:normal_line}
 	is given by 
 	\eqref{eq:dist_line_2d_orig}
-\item The equation of the line perpendicular to 
-	\eqref{eq:normal_line}
-		and passing through the point $\vec{P}$ is given by 
-\begin{align}
-	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  = 0
-\end{align}
-\item The foot of the perpendicular from $\vec{P}$ to the line in 
-	\eqref{eq:normal_line}
-	is given by 
-\begin{align}
-	\myvec{ \vec{m} & \vec{n}}^{\top}\vec{x}= \myvec{\vec{m}^{\top}\vec{P}\\ c }  
-\end{align}
-% 
 \item The distance from a point $\vec{P}$  to the line in 
 	\eqref{eq:dir_line} is given by 
 \begin{align}
@@ -754,6 +741,7 @@ which can be expressed as
 \begin{align}
 	\label{dist_3d_def_quad_small}
 	\lambda+ \frac{b}{2a} &= 0 \implies \lambda = - \frac{b}{2a}
+	\\
 	&= -\frac{\vec{m}^{\top}\brak{\vec{A} 
 			-\vec{P}}}
 			{ \norm{\vec{m}}^2}
@@ -777,7 +765,7 @@ yielding
 \item The plane 
 		\begin{align}
 		\vec{n}^{\top}
-			-\vec{x} = c
+			\vec{x} = c
 			\label{eq:plain_contain}
 		\end{align}
 		contains the line 
@@ -799,6 +787,39 @@ yielding
 		\end{align}
 		which can be simplified to obtain
 			\eqref{eq:line_plain_contain}
+		\item The foot of the perpendicular from a point $\vec{P}$ to the plane 
+		\begin{align}
+			\vec{n}^{\top}\vec{x} =c
+		\end{align}
+		is given by 
+		\\
+		\solution The equation of the line perpendicular to the given plane and passing through $\vec{P}$ is 
+		\begin{align}
+			\vec{x} = \vec{P} + \lambda 	\vec{n}
+		\end{align}
+		From 
+	\eqref{eq:dir_line_plane_isect}, the intersection of the above line with the given plane is 
+\begin{align}
+	\vec{x} &= \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+\vec{n}
+	\label{eq:foot_perp_pt_plane}
+\end{align}
+\item The image of a point $\vec{P}$ with respect to the plane 
+		\begin{align}
+			\vec{n}^{\top}\vec{x} =c
+		\end{align}
+		is given by 
+		\begin{align}
+			\vec{R} &=
+	  \vec{P} + 2\frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+			\label{eq:image_pt_plane}
+		\end{align}
+		\solution Let $\vec{R}$ be the desired image.  Then, subtituting the expression for the  foot of the perpendicular from $\vec{P}$ to the given plane using 
+	\eqref{eq:foot_perp_pt_plane},
+		\begin{align}
+			\frac{\vec{P}+\vec{R}}{2} &=
+	  \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+		\end{align}
 		\item Let a plane pass through the points $\vec{A},\vec{B}$ and be perpendicular to the plane 
 		\begin{align}
 		\vec{n}^{\top}\vec{x} =c 
@@ -904,7 +925,25 @@ The desired foot of the perpendicular is the intersection of
 \end{align}
 	Hence, the equation of the plane is
 	\eqref{eq:plane_foot_perp}.
-	
+\item Let $\vec{A}, \vec{B}, \vec{C}$ be  points on a plane.  The equation of the plane is then given by 	
+\begin{align}
+	\myvec{	\vec{A} & \vec{B}& \vec{C}}^{\top} \vec{n}= \myvec{1\\1\\1}
+	\label{eq:plane_3pt}
+\end{align}
+\solution Let the equation of the plane be 
+\begin{align}
+	\vec{n}^{\top}	\vec{x} &= 1
+\end{align}
+Then 
+\begin{align}
+	\vec{n}^{\top}	\vec{A} &= 1
+	\\
+	\vec{n}^{\top}	\vec{B} &= 1
+	\\
+	\vec{n}^{\top}	\vec{C} &= 1
+\end{align}
+which can be combined to obtain 
+	\eqref{eq:plane_3pt}.
 %\renewcommand{\theequation}{\theenumi}
 %%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 %\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
@@ -925,7 +964,679 @@ and
 \begin{align}
 	\cos\theta = \frac{\brak{\vec{C}-\vec{A}}^{\top}\vec{e}_1}{\norm{\vec{A}-\vec{C}}\norm{\vec{e}_1}}
 \end{align}
-%\end{enumerate}
+\end{enumerate}
+\section{Quadratic Forms}
+\subsection{Conic Sections}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Let $\vec{P}$ be a point such that the ratio of its distance from a fixed point $\vec{F}$ and the distance ($d$) from a fixed line 
+$L: \vec{n}^{\top}\vec{x}=c$ is constant, given by 
+\begin{align}
+\label{conics/30/def}
+\frac{\norm{\vec{P}-\vec{F}}}{d} = e    
+\end{align}
+The locus of $\vec{P}$ such is known as a conic section. The line $L$ is known as the directrix and the point $\vec{F}$ is the focus. $e$ is defined to be 
+the eccentricity of the conic.  
+\begin{enumerate}
+    \item For $e = 1$, the conic is a parabola
+    \item For $e < 1$, the conic is an ellipse
+    \item For $e > 1$, the conic is a hyperbola
+\end{enumerate}
+\item The equation of  a conic with directrix $\vec{n}^{\top}\vec{x} = c$, eccentricity $e$ and focus $\vec{F}$ is given by 
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+    \end{align}
+where     
+\begin{align}
+  \label{eq:conic_quad_form_v}
+\vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
+\\
+\label{eq:conic_quad_form_u}
+\vec{u} &= ce^2\vec{n}-\norm{\vec{n}}^2\vec{F}, 
+\\
+\label{eq:conic_quad_form_f}
+f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
+%\\
+    \end{align}
+    \solution  From \eqref{conics/30/def} and \eqref{eq:line_dist_2d},  for any point $\vec{x}$ on the conic,
+		\begin{align}	
+			\norm{\vec{x}-\vec{F}}^2=e^2 \frac{\brak{{\vec{n}^{\top}\vec{x} - c}}^2}{\norm{\vec{n}}^2}\label{conics/30/eq:1} \\
+			\implies \norm{\vec{n}}^2\brak{\vec{x}-\vec{F}}^{\top}\brak{\vec{x}-\vec{F}}=e^2\brak{\vec{n}^{\top}\vec{x} - c}^2
+    \end{align}
+    yielding
+\begin{multline}
+\norm{\vec{n}}^2\brak{\vec{x}^{\top}\vec{x}-2\vec{F}^{\top}\vec{x}+\norm{\vec{F}}^2}
+	\\
+	=e^2\brak{c^2+\brak{\vec{n}^{\top}\vec{x} }^2-2c\vec{n}^{\top}\vec{x}} 
+	\\
+=e^2\brak{c^2+\brak{\vec{x}^{\top}\vec{n}\vec{n}^{\top}\vec{x} }-2c\vec{n}^{\top}\vec{x}}
+% t\vec{x}^{\top}\vec{x}-(\vec{n}^{\top}\vec{x} )^2-2t\vec{F}^{\top}\vec{x}+2c\vec{n}^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
+% t\vec{x}^{\top}\vec{I}\vec{x}-\vec{n}^{\top}\vec{x} \vec{n}^{\top}\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
+% \vec{x}^{\top}(t\vec{I}-\vec{n}\vec{n}^{\top})\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}+t\norm{\vec{F}}^2-c^2=0
+\end{multline}
+%
+which can be expressed as \eqref{eq:conic_quad_form} after simplification.
+\item \eqref{eq:conic_quad_form} represents 
+	\begin{enumerate}
+		\item a parabola for $\mydet{\vec{V}} = 0 $,
+		\item ellipse for $\mydet{\vec{V}} > 0 $ and 
+		\item hyperbola for $\mydet{\vec{V}} < 0 $.
+	\end{enumerate}
+			In general
+\eqref{eq:conic_quad_form}  represents a conic  if and only if
+\begin{align}
+\mydet{
+\vec{V}&\vec{u}
+\\
+\vec{u}^{\top}&f
+}
+\ne  0
+\label{eq:quad_forms_pair_det}
+\end{align}
+%
+else, it represents a pair of straight lines.
+\item The conic in     \eqref{eq:conic_quad_form} can be expressed in standard form (centre/vertex at the origin, major axis - $x$ axis) as
+  \begin{align}
+    %\begin{aligned}
+    \label{eq:conic_simp_temp_nonparab}
+    \vec{y}^{\top}\vec{D}\vec{y} &=  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f  &  \abs{V} &\ne 0
+    \\
+    \vec{y}^{\top}\vec{D}\vec{y} &=  -2\eta\vec{e}_1^{\top}\vec{y}   & \abs{V} &= 0
+    \label{eq:conic_simp_temp_parab}
+    %\end{aligned}
+    \end{align}
+
+    where
+    \begin{align}
+      %\begin{split}
+      \label{eq:conic_parmas_eig_def}
+      \vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+      \\
+      \vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+      \\
+      \vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
+      \label{eq:eigevecP}
+      \\
+      \label{eq:eta}
+       \eta &=\vec{u}^{\top}\vec{p}_1
+       \\
+       \vec{e}_1 &=\myvec{1 \\ 0}
+      \end{align}
+      \solution Using 
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+\end{align}
+%such that 
+\eqref{eq:conic_quad_form} can be expressed as
+
+%\item  
+%Substituting \eqref{eq:conic_affine} in \eqref{eq:conic_quad_form}
+\begin{multline}
+\brak{\vec{P}\vec{y}+\vec{c}}^T\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^T\brak{\vec{P}\vec{y}+\vec{c}}+ f
+	\\
+	= 0, 
+\end{multline}
+yielding 
+\begin{multline}
+\vec{y}^T\vec{P}^T\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y}
+\\
++  \vec{c}^T\vec{V}\vec{c} + 2\vec{u}^T\vec{c} + f= 0
+\label{eq:conic_simp_one}
+\end{multline}
+%
+From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
+\begin{multline}
+\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\label{eq:conic_simp}
+\end{multline}
+When $\vec{V}^{-1}$ exists,
+\begin{align}
+%\begin{split}
+\vec{V}\vec{c}+\vec{u} &= \vec{0}, \quad \text{or}, \vec{c} = -\vec{V}^{-1}\vec{u},
+\label{eq:conic_parmas_c_def}
+\end{align}
+%
+%%From \eqref{eq:conic_parmas_k_def} and 
+%%
+and substituting \eqref{eq:conic_parmas_c_def}
+in \eqref{eq:conic_simp}
+yields \eqref{eq:conic_simp_temp_nonparab}. 
+%\item  
+When $\abs{\vec{V}} = 0, \lambda_1 = 0$ and 
+\begin{align}
+\vec{V}\vec{p}_1 = 0, 
+\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
+\label{eq:conic_parab_eig_prop} 
+\end{align}
+where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
+%
+\begin{align}
+\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
+\label{eq:eig_matrix}
+\end{align}
+Substituting \eqref{eq:eig_matrix}
+in \eqref{eq:conic_simp},
+\begin{multline}
+	\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{c}^T\vec{V}+\vec{u}^T}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\\
+\implies \vec{y}^T\vec{D}\vec{y}
+\\
++2\myvec{\brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_1  \brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\\
+\implies \vec{y}^T\vec{D}\vec{y}
+\\
++2\myvec{\vec{u}^T\vec{p}_1 & \brak{\lambda_2\vec{c}^T+\vec{u}^T}\vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\text{ from } \eqref{eq:conic_parab_eig_prop}     \nonumber \\
+\\
+\implies \lambda_2y_2^2+2\brak{\vec{u}^T\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^T\vec{p}_2
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\label{eq:conic_parab_foc_len_temp} 
+\end{multline}
+which is the equation of a parabola. 
+Thus, \eqref{eq:conic_parab_foc_len_temp} 
+can be expressed as \eqref{eq:conic_simp_temp_parab} by choosing
+\begin{align}
+%\label{eq:eta}
+\eta = \vec{u}^T\vec{p}_1
+\end{align}
+%Choosing 
+%\begin{align}
+%\vec{u} + \lambda_2\vec{c} = 0,
+%\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f = 0,
+%\end{align}
+% the above equation becomes
+%\begin{align}
+%y_2^2= -\frac{2\vec{u}^T\vec{p}_1}{ \lambda_2} \brak{y_1
+%+  \frac{\vec{u}^T\vec{V}\vec{u} - 2\lambda_2\vec{u}^T\vec{u} + f\lambda_2^2}{2\vec{u}^T\vec{p}_1\lambda_2^2}}
+%\\
+%or \eta = 2\vec{u}^T\vec{p}_1
+%%\label{eq:conic_simp_parab_new}
+%\end{align}
+and $\vec{c}$ in \eqref{eq:conic_simp} such that
+\begin{align}
+\label{eq:conic_parab_one}
+\vec{P}^{T}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
+\\
+\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f&= 0
+\label{eq:conic_parab_two}
+\end{align}
+%we obtain  \eqref{eq:conic_simp_temp_parab}.
+Multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
+\begin{align}
+\label{eq:conic_parab_one_eig}
+\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\vec{p}_1,
+\end{align}
+which, upon substituting in \eqref{eq:conic_parab_two}
+results in 
+\begin{align}
+\eta\vec{c}^T\vec{p}_1 + \vec{u}^T\vec{c} + f&= 0
+\label{eq:conic_parab_two_eig}
+\end{align}
+\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.
+
+\item The centre/vertex of the conic is given by 
+  \begin{align}
+    %\begin{aligned}[t]
+    \label{eq:conic_nonparab_c}
+    \vec{c} &= - \vec{V}^{-1}\vec{u} & \abs{V} &\ne 0
+    \\
+    \myvec{ \vec{u}^{\top}+\eta\vec{p}_1^{\top} \\ \vec{V}}\vec{c} &= \myvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
+    %\end{cases}
+    %\end{aligned}
+    \label{eq:conic_parab_c}
+    \end{align}      
+    \solution From \eqref{eq:conic_affine},
+\begin{align}
+\label{eq:conic_affine_inv}
+\vec{y} = \vec{P}^{\top}\brak{\vec{x}-\vec{c}}
+\end{align}
+For the standard conic, $\vec{y} = \vec{0} $ is the centre/vertex and in \eqref{eq:conic_affine_inv}, 
+\begin{align}
+\label{eq:conic_centre}
+\vec{y} = \vec{0} \implies \vec{x}=\vec{c}
+\end{align}
+\item The focal length of the parabola in \eqref{eq:conic_simp_temp_parab} is given by 
+  \begin{align}
+    \mydet{\frac{2\eta}{\lambda_2}} 
+    %= \mydet{\frac{2\vec{u}^T\vec{p}_1}{\lambda_2}}.
+    \label{eq:conic_parab_foc_len} 
+    \end{align}    
+    where $\lambda_2$ is the nonzero eigenvalue of $\vec{V}$ and $\eta$ is defined in \eqref{eq:eta}.
+    % \begin{align}
+    %   \eta = \vec{u}^T\vec{p}_1
+    %   \end{align}
+    \item For $\mydet{V} \ne 0$, the lengths of the semi-major and semi-minor axes of the conic in \eqref{eq:conic_quad_form} are given by 
+  \begin{align} 
+    \label{eq:ellipse_axes}
+  %  \begin{aligned}[t]
+    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
+    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_2}}. \quad \brak{\text{ellipse}}
+    \\
+%
+       \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
+       \sqrt{\frac{f-\vec{u}^{\top}\vec{V}^{-1}\vec{u}}{\lambda_2}}, \quad \brak{\text{hyperbola }}
+%
+  %\end{aligned}
+  \label{eq:hyper_axes}
+\end{align} 
+\solution For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
+  \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes \begin{align} \lambda_1y_1^2 +\lambda_2y_2^2 = 
+  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f \end{align} yielding        \eqref{eq:ellipse_axes}.  Similarly, \eqref{eq:hyper_axes} can be obtained for 
+  \begin{align} 
+    \label{eq:conic_hyper_cond}
+    \abs{\vec{V}} 
+    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
+    \item The equation of the minor and major  axes are respectively given by 
+  \begin{align}
+\vec{p}_i^{\top}\brak{\vec{x}-\vec{c}} = 0, i = 1,2
+  \end{align}
+  \item The eccentricity, directrices and foci of \eqref{eq:conic_quad_form} are given by 
+  \eqref{eq:conic_quad_form_e} -
+  \eqref{eq:conic_quad_form_F} 
+  \begin{figure*}[!hb]
+	  \centering
+	  \hrule
+\begin{align}
+  \label{eq:conic_quad_form_e} 
+  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
+\\
+\label{eq:conic_quad_form_nc} 
+  \vec{n}&= \sqrt{\lambda_2}\vec{p}_1,  
+  \\
+	c &= 
+  \begin{cases}
+    \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
+    \\
+    \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
+  \end{cases}
+  \\
+  \label{eq:conic_quad_form_F} 
+  \vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
+\end{align}  
+  \end{figure*}
+\solution 
+From \eqref{eq:conic_quad_form_v},
+  \begin{multline}
+    \vec{V}^{\top} \vec{V}=\brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}^{\top}
+	  \\
+	  \brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}
+    \\
+    \implies \vec{V}^{2} = \norm{\vec{n}}^4\vec{I}+e^4\vec{n}\vec{n}^{\top}\vec{n}\vec{n}^{\top}
+	  \\
+	  -2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+    = \norm{\vec{n}}^4\vec{I} + e^4\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+	%  \\
+	  - 2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+    = \norm{\vec{n}}^4\vec{I} + e^2\brak{e^2 - 2}\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+    = \norm{\vec{n}}^4\vec{I} + \brak{e^2 - 2}\norm{\vec{n}}^2\brak{\norm{\vec{n}}^2\vec{I}- \vec{V}}
+    \end{multline}
+%    
+which can be expressed as
+\begin{align}
+  \vec{V}^{2} + \brak{e^2 - 2}\norm{\vec{n}}^2\vec{V} - \brak{e^2 - 1}\norm{\vec{n}}^4\vec{I}=0
+  \label{eq:conic_quad_form_e_cayley}
+\end{align}
+Using the Cayley-Hamilton theorem, \eqref{eq:conic_quad_form_e_cayley} results in the characteristic equation, 
+\begin{align}
+  \lambda^{2} - \brak{2-e^2}\norm{\vec{n}}^2\lambda + \brak{1-e^2 }\norm{\vec{n}}^4=0
+\end{align}
+which can be expressed as
+\begin{multline}
+\brak{\frac{\lambda}{\norm{\vec{n}}^2}}^2 - \brak{2-e^2 }\brak{\frac{\lambda}{\norm{\vec{n}}^2}} 
+	\\
+	+ \brak{1-e^2 } = 0
+\end{multline}
+\begin{align}
+  \implies \frac{\lambda}{\norm{\vec{n}}^2} = 1-e^2, 1
+  \\
+  \text{or, }\lambda_2 = \norm{\vec{n}}^2, \lambda_1 = \brak{1-e^2}\lambda_2 
+  \label{eq:conic_quad_form_lam_cayley}
+\end{align}
+From   \eqref{eq:conic_quad_form_lam_cayley}, the eccentricity of \eqref{eq:conic_quad_form} is given by 
+\eqref{eq:conic_quad_form_e}.   
+%
+% By inspection, we find that 
+% \begin{align}
+%   \frac{\lambda}}{\norm{\vec{n}}^2} = 1
+%   \label{eq:conic_quad_form_lam2_cayley}
+% \end{align}
+%satisfies \eqref{eq:conic_quad_form_lam_cayley}.
+Multiplying both sides of    \eqref{eq:conic_quad_form_v} by $\vec{n}$,
+\begin{align}
+\vec{V} \vec{n}&=\norm{\vec{n}}^2\vec{n}-e^2\vec{n}\vec{n}^{\top}\vec{n} 
+\\
+&=\norm{\vec{n}}^2\brak{1-e^2}\vec{n} 
+ \\
+% &=\frac{\lambda_1}{\lambda_2}\norm{\vec{n}}^2\vec{n} 
+% \end{align}
+% upon substituting from \eqref{eq:conic_quad_form_e}  and simplifying.  From the above, it is obvious that $\vec{n}$ is an eigenvector
+% of $\vec{V}$.  Choosing 
+% \begin{align}
+%   \lambda_2 = \norm{\vec{n}}^2,
+%   \label{eq:eigevecn_lam2}
+% \end{align}  
+% we obtain 
+% \begin{align}
+  &=\lambda_1 \vec{n} 
+  \label{eq:eigevecn}
+\end{align}  
+from \eqref{eq:conic_quad_form_lam_cayley}
+Thus,  $\lambda_1$ is the corresponding eigenvalue for $\vec{n}$.  From       \eqref{eq:eigevecP},   \eqref{eq:conic_quad_form_lam_cayley} and \eqref{eq:eigevecn}, 
+\begin{align}
+   \vec{n}&= \norm{\vec{n}}\vec{p}_1  = \sqrt{\lambda_2}\vec{p}_1 
+\end{align}  
+From \eqref{eq:conic_quad_form_u} and \eqref{eq:conic_quad_form_lam_cayley},
+\begin{align}
+%   \label{eq:conic_quad_form_v}
+% \vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
+% \\
+%\label{eq:conic_quad_form_u}
+\vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
+ \\
+ \implies \norm{\vec{F}}^2  &= \frac{\brak{ce^2\vec{n}-\vec{u}}^{\top}\brak{ce^2\vec{n}-\vec{u}}}{\lambda_2^2}
+ \\
+ \implies \lambda_2^2\norm{\vec{F}}^2  &= c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2
+ \label{eq:conic_quad_form_u_temp}
+% f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
+% %\\
+    \end{align}
+    Also, \eqref{eq:conic_quad_form_f} can be expressed as
+    \begin{align}
+    \lambda_2\norm{\vec{F}}^2 &= f+c^2e^2
+    \label{eq:conic_quad_form_f_temp}
+\end{align}
+From  \eqref{eq:conic_quad_form_u_temp} and     \eqref{eq:conic_quad_form_f_temp},
+\begin{align}
+c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2 = \lambda_2\brak{f+c^2e^2}
+\end{align}
+\begin{multline}
+\implies \lambda_2e^2\brak{e^2-1}c^2-2ce^2\vec{u}^{\top}\vec{n}
+	\\
+	+\norm{\vec{u}}^2 - \lambda_2 f = 0
+\end{multline}
+yielding
+  \eqref{eq:conic_quad_form_F}. 
+%\begin{align}
+%\text{or, } c = 
+%\begin{cases}
+%  \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
+%  \\
+%  \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
+%\end{cases}
+%\end{align}
+\end{enumerate}
+\subsection{Tangent and Normal}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The points of intersection of the line 
+\begin{align}
+L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbb{R}
+\label{eq:conic_tangent}
+\end{align}
+with the conic section in \eqref{eq:conic_quad_form} are given by
+\begin{align}
+\vec{x}_i = \vec{q} + \mu_i \vec{m}
+\end{align}
+%
+where
+\begin{multline}
+\mu_i = \frac{1}
+{
+\vec{m}^T\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
+\\
+\pm
+{\scriptsize
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+}
+\label{eq:tangent_roots}
+\end{multline}
+\solution 
+Substituting \eqref{eq:conic_tangent}
+in \eqref{eq:conic_quad_form}, 
+\begin{align}
+\brak{\vec{q} + \mu \vec{m}}^T\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^T\brak{\vec{q} + \mu \vec{m}}+f &= 0
+\\
+\implies \mu^2\vec{m}^T\vec{V}\vec{m} + 2 \mu\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} 
++ \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f &= 0
+\label{eq:conic_intercept}
+\end{align}
+Solving the above quadratic in \eqref{eq:conic_intercept}
+yields \eqref{eq:tangent_roots}.
+\solution
+In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
+  in \eqref{eq:tangent_roots}
+  \begin{align}
+  \sbrak{
+  \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
+  }^2 -\brak{\vec{m}^T\vec{V}\vec{m}}
+  \brak
+  {
+  \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
+  } = 0                                                                                             
+  \label{eq:conic_tangent_disc}
+  \end{align}                    
+  $\because \vec{q}$ is the point of contact, $\vec{q}$ satisfies \eqref{eq:conic_quad_form}
+  and 
+  \begin{align}
+  \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f = 0
+  \label{eq:conic_tangent_qquad}
+  \end{align}
+  Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
+  \item Given the point of contact $\vec{q}$, the equation of a tangent to \eqref{eq:conic_quad_form} is 
+  \begin{align}
+  \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}+\vec{u}^T\vec{q}+f = 0
+  \label{eq:conic_tangent_final}
+  \end{align}
+  \solution The normal vector is obtained from \eqref{eq:conic_tangent_mq} and \eqref{eq:line_dir_norm}
+  as
+  %
+  \begin{align}
+  \label{eq:conic_normal_vec}
+  \vec{n} = \vec{V}\vec{q}+\vec{u}
+  \end{align}  
+  From \eqref{eq:conic_normal_vec} and \eqref{eq:line_norm_eq}, the equation of the tangent is\begin{align}
+    \brak{\vec{V}\vec{q}+\vec{u}}^T\brak{\vec{x}-\vec{q}} &=0
+    \\
+    \implies \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}-\vec{q}^T\vec{V}\vec{q}-\vec{u}^T\vec{q} &= 0
+    \end{align}
+    which, upon substituting from \eqref{eq:conic_tangent_qquad} and simplifying yields \eqref{eq:conic_tangent}.
+    \item   If $\vec{V}^{-1}$ exists, given the normal vector $\vec{n}$, the tangent points of contact to \eqref{eq:conic_quad_form} are given by
+\begin{align}
+  \begin{split}
+\vec{q}_i &= \vec{V}^{-1}\brak{\kappa_i \vec{n}-\vec{u}}, i = 1,2
+\\
+\text{where }\kappa_i &= \pm \sqrt{
+\frac{
+\vec{u}^T\vec{V}^{-1}\vec{u}-f
+}
+{
+\vec{n}^T\vec{V}^{-1}\vec{n}
+}
+}
+  \end{split}
+\label{eq:conic_tangent_qk}
+\end{align}
+\solution From \eqref{eq:conic_normal_vec},
+\begin{align}
+\label{eq:conic_normal_vec_q}
+ \vec{q} = \vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}}, \quad \kappa \in \mathbb{R}
+\end{align}
+Substituting \eqref{eq:conic_normal_vec_q}
+in \eqref{eq:conic_tangent_qquad},
+\begin{align}
+\brak{\kappa \vec{n}-\vec{u}}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} 
+%\\
++ 2\vec{u}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} +f &= 0
+\\
+\implies 
+\kappa^2 \vec{n}^T\vec{V}^{-1}\vec{n} - \vec{u}^T\vec{V}^{-1}\vec{u} + f &=0
+ \\
+ \text{or, } \kappa = \pm \sqrt{\frac{\vec{u}^T\vec{V}^{-1}\vec{u}-f}{\vec{n}^T\vec{V}^{-1}\vec{n}}} &\label{eq:conic_normal_k}
+\end{align}
+%
+%yileding 
+Substituting \eqref{eq:conic_normal_k} in \eqref{eq:conic_normal_vec_q}
+yields \eqref{eq:conic_tangent_qk}.
+\item If $\vec{V}$ is not invertible,  given the normal vector $\vec{n}$, the point of contact to \eqref{eq:conic_quad_form} is given by the matrix equation
+\begin{align}
+\label{eq:conic_tangent_q_eigen}
+\begin{pmatrix}
+\vec{u+\kappa \vec{n}}^T \\ \vec{V}
+\end{pmatrix}
+\vec{q} &= 
+\begin{pmatrix}
+-f
+\\
+\kappa\vec{n}-\vec{u}
+\end{pmatrix}
+\\
+\text{where }  \kappa = \frac{\vec{p}_1^T\vec{u}}{\vec{p}_1^T\vec{n}}, \quad \vec{V}\vec{p}_1 &= 0
+\label{eq:conic_tangent_qk_eigen}
+\end{align}
+\solution 
+  If $\vec{V}$ is non-invertible, it has a zero eigenvalue.  If the corresponding eigenvector is $\vec{p}_1$, then,
+\begin{align}
+\vec{V}\vec{p}_1 = 0
+\label{eq:conic_zero_eigen}
+\end{align}
+From \eqref{eq:conic_normal_vec},
+\begin{align}
+\label{eq:conic_zero_eigen_normal}
+\kappa \vec{n} &= \vec{V} \vec{q}+\vec{u}, \quad \kappa \in \mathbb{R}
+\\
+\implies \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{V} \vec{q}+\vec{p}_1^T\vec{u}
+\\
+\text{or, } \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{u},  \quad \because \vec{p}_1^T \vec{V} = 0, 
+%\\
+\quad 
+\brak{\text{ from } \eqref{eq:conic_zero_eigen}}
+%\label{eq:conic_normal_vec_q}
+\end{align}
+yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zero_eigen_normal},
+\begin{align}
+\kappa \vec{q}^T\vec{n} &= \vec{q}^T\vec{V} \vec{q}+\vec{q}^T\vec{u}
+\\
+\implies \kappa \vec{q}^T\vec{n} &= -f-\vec{q}^T\vec{u} \quad \text{from } \eqref{eq:conic_tangent_qquad},
+\\
+\text{or, } \brak{\kappa \vec{n}+\vec{u}}\vec{q} &= -f
+\label{eq:conic_zero_eigen_normal_fq}
+\end{align}
+\eqref{eq:conic_zero_eigen_normal} can be expressed as
+\begin{align}
+\label{eq:conic_zero_eigen_normal_vq}
+\vec{V} \vec{q} = \kappa \vec{n} - \vec{u}.
+\end{align}
+\eqref{eq:conic_zero_eigen_normal_fq} and \eqref{eq:conic_zero_eigen_normal_vq} clubbed together result in \eqref{eq:conic_tangent_q_eigen}.
+\item When \eqref{eq:conic_quad_form} is a hyperbola, its  {\em asymptotes}  are defined as the pair of intersecting straight lines 
+  \begin{align}
+  \label{eq:asymp_quad_form}
+  \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+\vec{u}^{\top}\vec{V}^{-1}\vec{u}=0, \quad \abs{\vec{V}} < 0
+  \end{align}
+  such that 
+  % \begin{align} 
+  % %\label{eq:quad_form_asymp_cond}
+  % %K =  \vec{u}^{\top}\vec{V}^{-1}\vec{u}
+  % %\\
+  
+  % \label{eq:quad_pair_det}
+  % \end{align} 
+\item \eqref{eq:asymp_quad_form} can be expressed as the lines 
+%
+\begin{align} 
+\label{eq:quad_form_pair}
+\myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^{\top}\brak{\vec{x}-\vec{c}} = 0
+\end{align} 
+\solution Reducing   \eqref{eq:asymp_quad_form} to standard form using the {\em affine transformation} yields
+  \begin{align} 
+    \lambda_1y_1^2 -\brak{-\lambda_2}y_1^2 = 0
+    \label{eq:quad_form_hyper}
+    \end{align}
+    From \eqref{eq:asymp_quad_form},
+    %
+    %\eqref{eq:quad_form_hyper} and \eqref{eq:quad_form_asymp_cond} 
+    the equation of the asymptotes for \eqref{eq:quad_form_hyper} is
+    \begin{align} 
+    \myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{y} = 0
+    \end{align} 
+  from which \eqref{eq:quad_form_pair} is obtained using \eqref{eq:conic_affine}.
+  % \begin{align} 
+  %   \label{eq:quad_form_pair}
+  %   \myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^T\brak{\vec{x}-\vec{c}} = 0
+  %   \end{align} 
+  \item The angle between the asymptotes is then given by using the inner product
+\begin{align} 
+\label{eq:quad_form_pair_ang}
+\cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
+{\abs{\lambda_1}+\abs{\lambda_2}}
+\end{align} 
+\item The normal vectors of the lines in \eqref{eq:quad_form_pair} are 
+  \begin{align} 
+  \label{eq:quad_form_pair_normvecs}
+  \begin{split}
+  \vec{n}_1 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}
+  \\
+  \vec{n}_2 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm] - \sqrt{\abs{\lambda_2}}}
+  \end{split}
+  \end{align} 
+  The angle between the asymptotes is given by 
+\begin{align} 
+\label{eq:quad_form_pair_ang_exp}
+\cos\theta=\frac{\vec{n_1}^{\top}\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}
+\end{align} 
+The orthogonal matrix $\vec{P}$ preserves the norm, i.e.
+\begin{align} 
+\norm{\vec{n_1}} = \norm{\vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+\\
+=\norm{\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+=\sqrt{\abs{\lambda_1}+\abs{\lambda_2}} = \norm{\vec{n_2}}
+\end{align} 
+It is easy to verify that 
+\begin{align} 
+\vec{n_1}^{\top}\vec{n_2} = \abs{\lambda_1}-\abs{\lambda_2}
+\end{align} 
+%
+Thus, the angle between the asymptotes is obtained from \eqref{eq:quad_form_pair_ang_exp} as \eqref{eq:quad_form_pair_ang}.
+% \begin{align} 
+% \label{eq:quad_form_pair_ang}
+% \cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
+% {\abs{\lambda_1}+\abs{\lambda_2}}
+% \end{align} 
+\item Another hyperbola with the same asymptotes as \eqref{eq:quad_form_pair} can be obtained from \eqref{eq:conic_quad_form} and \eqref{eq:asymp_quad_form} as
+\begin{align}
+\label{eq:hyper_conj_quad_form}
+\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+2\vec{u}^{\top}\vec{V}^{-1}\vec{u}-f=0
+\end{align}
 \end{enumerate}
 \section{Class 10}
 \renewcommand{\theequation}{\theenumi}
@@ -1493,29 +2204,6 @@ Forming the augmented matrix, and choosing the pivot,
  \mydet{2 & 4\\5 & 3} 
     \end{align}
     Thus the desired area is 14 units.
-\item  The corner points of the feasible region of an LPP are 
-\begin{align}
-	\myvec{0\\0},\myvec{0\\8},\myvec{2\\7},\myvec{5\\4} \text{ and } \myvec{6\\0}. 
-    \end{align}
-	Find the point at which the maximum profit $P=3x+2y$ occurs. 
-	\\
-	\solution The profit can be expressed as
-\begin{align}
-	P=\myvec{3  & 2} \vec{x}
-    \end{align}
-    and the respective values at each of the above points are given by 
-\begin{align}
-	\myvec{3  & 2}\myvec{0\\0} &= 0,
-	\\
-	\myvec{3  & 2}\myvec{0\\8} & = 16
-	\\
-	\myvec{3  & 2}\myvec{2\\7} &= 20
-	\\
-	\myvec{3  & 2}\myvec{5\\4} &= 23
-	\\
-	\myvec{3  & 2} \myvec{6\\0} &= 18 
-    \end{align}
-    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
 \item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table. 
 	\begin{table}[!ht]
 		\centering
@@ -1570,25 +2258,263 @@ with respective profit
 Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
 %    \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
     
+\item  The corner points of the feasible region of an LPP are 
+\begin{align}
+	\myvec{0\\0},\myvec{0\\8},\myvec{2\\7},\myvec{5\\4} \text{ and } \myvec{6\\0}. 
+    \end{align}
+	Find the point at which the maximum profit $P=3x+2y$ occurs. 
+	\\
+	\solution The profit can be expressed as
+\begin{align}
+	P=\myvec{3  & 2} \vec{x}
+    \end{align}
+    and the respective values at each of the above points are given by 
+\begin{align}
+	\myvec{3  & 2}\myvec{0\\0} &= 0,
+	\\
+	\myvec{3  & 2}\myvec{0\\8} & = 16
+	\\
+	\myvec{3  & 2}\myvec{2\\7} &= 20
+	\\
+	\myvec{3  & 2}\myvec{5\\4} &= 23
+	\\
+	\myvec{3  & 2} \myvec{6\\0} &= 18 
+    \end{align}
+    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
 \end{enumerate}
 \section{JEE}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Find the locus of $\vec{z}$ if 
-\begin{align}
-	\vec{e}_1^{\top}\brak{\frac{\vec{z}-\vec{e}_1}{2\vec{z}+\vec{e}_2}} = 1
-\end{align}
 \item Let $\alpha$ be a root of the equation
 \begin{align}
 	x^2+x+1 = 0
 \end{align}
 and the matrix 
 \begin{align}
-	\vec{A} = 	\frac{1}{\sqrt{3}}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha}^4 
+	\vec{A} = 	\frac{1}{\sqrt{3}}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} 
 \end{align}
-		Find $\vec{A}^31$
+		Find $\vec{A}^{31}$.
+		\\
+		\solution Since 
+\begin{align}
+	\vec{A}^2 &= 	\frac{1}{3}\myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}} \myvec{1 & 1 & 1\\ 1 & \alpha &  \alpha^2 \\ 1 & \alpha^2  & \alpha^{4}}
+	\\
+	&= 	\myvec{1 & 0 & 0\\ 0 & 0 & 1 \\ 0 & 1 & 0 } = \vec{E},
+	\label{eq:elementary}
+\end{align}
+		where $\vec{E}$ is an elementary matrix that interchanges the 2nd and 3rd row,
+\begin{align}
+	\vec{E}^2 = 	\vec{I}.
+	\label{eq:elementary_2}
+\end{align}
+Thus, from 
+	\eqref{eq:elementary} and
+	\eqref{eq:elementary_2},
+\begin{align}
+	\vec{A}^{31} &= 	\vec{A}\brak{\vec{A}^2}^{15} = \vec{A}\brak{\vec{E}^2}^{15}
+	\\
+	&=\vec{A}\brak{\vec{I}}^{15} = \vec{A}
+\end{align}
+	\item A vector 
+\begin{align}
+	\vec{a} = 	\myvec{\alpha \\  2 \\ \beta }
+	\label{eq:plane_bisect_given}
+\end{align}
+lies in the plane of the vectors 
+\begin{align}
+	\vec{b} = 	\myvec{1\\  1 \\ 0}, 
+	\vec{c} = 	\myvec{1\\  -1 \\ 4}
+\end{align}
+		If $\vec{a}$ bisects the angle between $\vec{b}, \vec{c}$, find $\vec{a}$.
+		\\
+		\solution From the given information, 
+\begin{align}
+	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{a}}\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{a}}\norm{\vec{c}}}
+	\\
+\implies	\frac{\vec{a}^{\top}\vec{b}}{\norm{\vec{b}}} &=	\frac{\vec{a}^{\top}\vec{c}}{\norm{\vec{c}}}
+	\label{eq:plane_bisect}
+\end{align}
+Since 
+\begin{align}
+	\norm{\vec{b}} = \sqrt{2},
+		\norm{\vec{c}} =3\sqrt{2}
+\end{align}
+from 	\eqref{eq:plane_bisect},
+\begin{align}
+3	{\vec{a}^{\top}\vec{b}} &=	{\vec{a}^{\top}\vec{c}}
+\\
+	\implies \vec{a}^{\top}\brak{3\vec{b}-\vec{c}} &= 0
+\\
+	\text{or, }\myvec{1 & 2 & -2}\vec{a} &= 0
+	\label{eq:plane_bisect_bc}
+\end{align}
+Also, since $\vec{a}, \vec{b}, \vec{c}$ lie on the same plane, 
+\begin{align}
+	\vec{a}^{\top}\brak{\vec{b}\times \vec{c}} &= 0
+	\\
+	\implies \myvec{2 & -2 & -1}\vec{a} &=0
+	\label{eq:plane_bisect_cross}
+\end{align}
+From 
+	\eqref{eq:plane_bisect_bc} and 
+	\eqref{eq:plane_bisect_cross}
+
+\begin{align}
+	\myvec{1 & 2 & -2 \\
+	2 & -2 & -1}\vec{a} &=0
+\end{align}
+Row reducing the above coefficient matrix, 
+\begin{align}
+	\myvec{1 & 2 & -2 \\ 2 & -2 & -1}
+	\\
+	\text{(pivoting) }	\myvec{\circled{1} & 2 & -2 \\ 0 & 2  & -1}
+	\\
+	\xleftrightarrow[]{R_1\leftarrow R_1 - R_2}	\myvec{1 & 0 & -1 \\ 0 & 2  & -1}
+\end{align}
+Thus, 
+\begin{align}
+	\vec{a} = k\myvec{2 \\ 1 \\ 2}
+\end{align}
+where $k$ is some constant.  Comparing the above with 
+	\eqref{eq:plane_bisect_given},
+\begin{align}
+	k = 2 \implies 
+	\vec{a} = \myvec{4 \\ 2 \\ 4}
+\end{align}
+	\item If the system of linear equations 
+\begin{align}
+	2x + 2ay + az & = 0
+	\\
+	2x + 3by + bz & = 0
+	\\
+	2x + 4cy + cz & = 0
+\end{align}
+where $a, b, c \in \mathbb{R}$ are nonzero and distinct; has a nonzero solution, find the relation between $a,b,c$.
+\\
+\solution The given system of equations can be expressed as the matrix equation
+\begin{align}
+	\myvec{2 & 2a & a 
+	\\
+	2 & 3b & b
+	\\
+	2 & 4c & c} \vec{x} = \vec{0}
+\end{align}
+\begin{figure*}[!hb]
+	\centering
+		\hrule
+\begin{align}
+	\label{eq:matrix_hp_begin}
+	\myvec{2 & 2a & a 
+	\\
+	2 & 3b & b
+	\\
+	2 & 4c & c} 
+\xleftrightarrow[R_2\leftarrow R_2 - R_1]{R_3\leftarrow R_3 - R_1}
+	\myvec{2 & 2a & a 
+	\\
+	0 & \circled{3b-2a} & b-a
+	\\
+	0 & 4c-2a & c-a} 
+	\\
+	\text{pivoting }
+	\myvec{2\brak{3b-2a} & 0 & a\brak{3b-2a}-2a\brak{b-a} 
+	\\
+	0 & \circled{3b-2a} & b-a
+	\\
+	0 & 0 & \brak{3b-2a}\brak{c-a}-\brak{b-a}{4c-2a} }
+	\\
+	= 
+	\myvec{2\brak{3b-2a} & 0 & ab
+	\\
+	0 & {3b-2a} & b-a
+	\\
+	0 & 0 & -bc - ab + 2ac }
+	\label{eq:matrix_hp_end}
+\end{align}
+\end{figure*}
+Row reducing the coefficient matrix in, 
+	\eqref{eq:matrix_hp_begin}
+	yields
+	\eqref{eq:matrix_hp_end}.
+For the given system to have a nontrivial solution,  the rank of the coefficient matrix should be 2.  Hence, from 
+	\eqref{eq:matrix_hp}
+\begin{align}
+	-bc - ab + 2ac  &= 0
+	\\
+	\implies ab + bc &= 2ac
+	\\
+	\text{or, }\frac{1}{a}+\frac{1}{c} = 
+\frac{2}{b}
+\end{align}
+Thus, $a,b,c$ are in H.P.
+\item Let $P$ be a plane passing through the points 
+\begin{align}
+	\myvec{2 \\  1 \\ 0 }, 	\myvec{4 \\  1 \\ 1 }, 	\myvec{5 \\  0 \\ 1 }
+\end{align}
+and 
+\begin{align}
+	\vec{R} = 	\myvec{2 \\  1 \\ 6 }
+\end{align}
+		be any point.  Find the image of $\vec{R}$ in the plane $\vec{P}$.
+		\\
+		\solution From 
+	\eqref{eq:plane_3pt}, the normal vector of the plane is given by 
+\begin{align}
+	\myvec{2 &  1 & 0 \\ 4 &  1 & 1 \\ 5 &  0 & 1 }\vec{n} = \myvec{1 \\ 1\\ 1}
+\end{align}
+which can be solved by row reducing the augmented matrix as follows
+\begin{align}
+	\myvec{\circled{2} &  1 & 0  & 1 \\ 4 &  1 & 1 & 1\\ 5 &  0 & 1 & 1}
+	\\
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{2 &  1 & 0  & 1 \\ 0 &  \circled{1} & -1 & 1\\ 0 &  -5 & 2 & -3}
+	\\
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{2 &  0 & 1  & 0 \\ 0 &  {1} & -1 & 1\\ 0 &  0 & \circled{3} & -2}
+	\xleftrightarrow[]{	\text{pivoting }}
+	\myvec{6 &  0 & 0  & 2 \\ 0 &  3 & 0 & 1\\ 0 &  0 & {3} & -2}
+\end{align}
+yielding
+\begin{align}
+	\vec{n} = \frac{1}{3}\myvec{1 \\ 1 \\ -2}
+\end{align}
+Thus, the equation of the desired plane can be expressed as 
+\begin{align}
+	\myvec{1 \\ 1 \\ -2} \vec{x} = 3
+\end{align}
+			From \eqref{eq:image_pt_plane}, the desired image is then obtained as 
+\begin{align}
+	\vec{Q} &=
+	\myvec{2 \\  1 \\ 6 }   + 2\frac{3 - \myvec{1 & 1 & -2}\myvec{2 \\  1 \\ 6 }}{6}\myvec{1 \\ 1 \\ -2}
+	\\
+	&=  \myvec{6 \\ 5 \\ -2}
+		\end{align}
+\item Let 
+\begin{align}
+	\vec{A} = 	\myvec{1\\   0}, 
+	\vec{B} = 	\myvec{6\\ 2 },
+	\vec{C} = 	\myvec{\frac{3}{2}\\[0.5em] 6}
+\end{align}
+be the vertices of a triangle.  If $\vec{P}$ is a point inside the triangle $ABC$ such that the triangles $APC,APB$ and $BPC$ have equal areas, then find the length of the line segment $PQ$, where  
+\begin{align}
+	\vec{Q} = 	\myvec{-\frac{7}{6}\\[0.5em] -\frac{1}{3} } 
+\end{align}
+\\
+\solution 
+The point $\vec{P}$ is the median of the given triangle.  Hence, 
+\begin{align}
+	\vec{P} &= 	\frac{\vec{A}+\vec{B}+\vec{C}}{3}
+	\\
+	&= \myvec{\frac{17}{6} \\[0.5em] \frac{8}{3}}
+\end{align}
+Thus, 
+\begin{align}
+	\vec{P}-\vec{Q} &= 	\myvec{4\\3}
+	\\
+	\implies PQ &= 5
+\end{align}
 	\item The line 
 \begin{align}
 	\myvec{m & -1}\vec{x} = -4
@@ -1613,44 +2539,6 @@ which is not common to the region bounded by the parabola
 and the straight line
 \begin{align}
 \myvec{1 & -1 }\vec{x}  = 0.
-\end{align}
-\item Let $P$ be a plane passing through the points 
-\begin{align}
-	\myvec{2 \\  1 \\ 0 }, 	\myvec{4 \\  1 \\ 1 }, 	\myvec{5 \\  0 \\ 1 }
-\end{align}
-and 
-\begin{align}
-	\vec{R} = 	\myvec{2 \\  1 \\ 6 }
-\end{align}
-		be any point.  Find the image of $\vec{R}$ in the plane $\vec{P}$.
-	\item A vector 
-\begin{align}
-	\vec{a} = 	\myvec{\alpha \\  2 \\ \beta }
-\end{align}
-lies in the plane of the vectors 
-\begin{align}
-	\vec{b} = 	\myvec{1\\  1 \\ 0}, 
-	\vec{b} = 	\myvec{1\\  -1 \\ 4}
-\end{align}
-		If $\vec{a}$ bisects the angle between $\vec{b}, \vec{c}$, find a condition on $\vec{a}$.
-	\item If the system of linear equations 
-\begin{align}
-	2x + 2ay + az & = 1
-	\\
-	2x + 3by + bz & = 1
-	\\
-	2x + 4cy + cz & = 1
-\end{align}
-where $a, b, c \in \mathbb{R}$ are nonzero and distinct; has a nonzero solution, find a condition on $a,b,c$.
-\item Let 
-\begin{align}
-	\vec{A} = 	\myvec{1\\   0}, 
-	\vec{B} = 	\myvec{6\\ 2 },
-	\vec{C} = 	\myvec{\frac{3}{2}\\[1em] 6}
-\end{align}
-be the vertices of a triangle.  If $\vec{P}$ is a point inside the triangle $ABC$ such that the triangles $APC,APB$ and $BPC$ have equal areas, then find the length of the line segment $PQ$, where  
-\begin{align}
-	\vec{P} = 	\myvec{-\frac{7}{6}\\[1em] -\frac{1}{3} } 
 \end{align}
 \end{enumerate}
 \section{JNTU}

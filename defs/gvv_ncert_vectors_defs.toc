@@ -5,10 +5,13 @@
 \contentsline {subsection}{\numberline {1.4}Determinants}{3}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Rank of a Matrix}{3}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Inverse of a Matrix}{3}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Geometry}{3}{section.2}%
+\contentsline {section}{\numberline {2}Linear Forms}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Two Dimensions}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Three Dimensions}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Class 10}{6}{section.3}%
-\contentsline {section}{\numberline {4}Class 12}{7}{section.4}%
-\contentsline {section}{\numberline {5}JEE}{12}{section.5}%
-\contentsline {section}{\numberline {6}JNTU}{13}{section.6}%
+\contentsline {section}{\numberline {3}Quadratic Forms}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Conic Sections}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Tangent and Normal}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Class 10}{11}{section.4}%
+\contentsline {section}{\numberline {5}Class 12}{12}{section.5}%
+\contentsline {section}{\numberline {6}JEE}{17}{section.6}%
+\contentsline {section}{\numberline {7}JNTU}{19}{section.7}%
