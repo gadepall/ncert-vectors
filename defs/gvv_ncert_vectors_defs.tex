@@ -1182,12 +1182,61 @@ Find the value of $b$.
 \\
 \solution The given equations can be expressed as
 \begin{align}
+	\label{eq:jee_tangent}
 	\myvec{m & -1}\vec{x} &= -4
 	\\
+	\label{eq:jee_tangent_parab1}
 	\vec{x}^{\top}\myvec{0 & 0 \\ 0 &  1}\vec{x} - 4 \myvec{1 & 0}\vec{x}&= 0
 	\\
+	\label{eq:jee_tangent_parab2}
 	\vec{x}^{\top}\myvec{1 & 0 \\ 0  & 0}\vec{x} - 2 \myvec{0 & b}\vec{x}&= 0
 \end{align}
+and the respective conic parameters for 
+	\eqref{eq:jee_tangent_parab1},
+	\eqref{eq:jee_tangent_parab2}
+	can be expressed as
+\begin{align}
+	\label{eq:jee_tangent_dir}
+	\vec{n} = 	\myvec{m \\ -1},
+	\vec{m} &= 	\myvec{1 \\ m}
+	\\
+	\label{eq:jee_tangent_parab1_param}
+	\vec{V}_1 =\myvec{0 & 0 \\ 0 &  1}, \vec{u}_1 = - 2 \myvec{1 \\ 0},\vec{p}_1 &=  \myvec{1 \\ 0}
+	\\
+	\label{eq:jee_tangent_parab2_param}
+	\vec{V}_2 =\myvec{1 & 0 \\ 0  & 0}, \vec{u}_2 = -  \myvec{0 \\ b}, \vec{p}_2 &=  \myvec{0 \\ 1}
+\end{align}
+where $\vec{p}_1, \vec{p}_2$ are the eigenvectors corresponding to the  0 eigenvalue for $\vec{V}_1, \vec{V}_2$ respectively.
+From 
+\eqref{eq:conic_tangent_q_eigen}
+and 
+\eqref{eq:conic_tangent_qk_eigen}
+the expression for the point of contact is given by
+\begin{align}
+	\myvec{
+	\vec{\vec{u}^{\top}+\kappa \vec{n}}^{\top} \\ \vec{V}
+}
+\vec{q} &= 
+	\myvec{
+-f
+\\
+\kappa\vec{n}-\vec{u}
+	}
+\\
+\text{where }  \kappa = \frac{\vec{p}^T\vec{u}}{\vec{p}^T\vec{n}}, \quad \vec{V}\vec{p} &= 0
+\end{align}
+\begin{enumerate}
+	\item Let $\vec{q}_1$ be the point of contact for
+	\eqref{eq:jee_tangent_parab1}.  Then, from 
+\eqref{eq:conic_tangent_qk_eigen},
+\begin{align}
+	\kappa_1 &= \frac{\vec{p}_1^T\vec{u}_1}{\vec{p}_1^T\vec{n}}
+	\\
+	&= -2\frac{\myvec{1 & 0} \myvec{1 \\ 0}}{\myvec{1 & 0}\myvec{m \\ -1}}
+	\\
+	&= -2
+\end{align}
+\end{enumerate}
 \item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
 	12, then find the length of its latus rectum.
 \item Find the area of the region, enclosed by the circle 
