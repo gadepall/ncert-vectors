@@ -1176,7 +1176,7 @@ is  tangent to both the parabolas
 \begin{align}
 	y^2&=4x
 	\\
-x^2=2by
+	x^2&=2by
 \end{align}
 Find the value of $b$.
 \\
@@ -1234,7 +1234,61 @@ the expression for the point of contact is given by
 	\\
 	&= -2\frac{\myvec{1 & 0} \myvec{1 \\ 0}}{\myvec{1 & 0}\myvec{m \\ -1}}
 	\\
-	&= -2
+	&= -\frac{2}{m}
+\end{align}
+Substituting the above in 
+\eqref{eq:conic_tangent_q_eigen},
+\begin{multline}
+	\myvec{
+		{-2\myvec{1 & 0}-\frac{2}{m} \myvec{m & -1}} \\ \myvec{0 & 0 \\ 0 &  1} 
+}
+\vec{q}_1 = 
+\\
+	\myvec{
+		0
+\\
+ -\frac{2}{m} \myvec{m \\ -1}+2\myvec{1 \\ 0}
+	}
+	\\
+\implies 
+\myvec{
+	-4 & \frac{2}{m}  \\ 0 & 0 \\ 0 &  1
+}
+\vec{q}_1 = 
+\\
+\myvec{
+	0
+\\
+0
+\\
+\frac{2}{m}
+}
+\end{multline}
+which can be expressed  as 
+\begin{align}
+\myvec{
+	-4 & \frac{2}{m}  \\  0 &  1
+}
+\vec{q}_1 &= 
+\myvec{
+	0
+\\
+\frac{2}{m}
+}
+\\
+\implies \vec{q}_1 &=\myvec{
+\frac{1}{m^2}	
+\\[1em]
+\frac{2}{m}
+}
+\end{align}
+\item Similarly, 
+\begin{align}
+	\kappa_2 &= \frac{\vec{p}_2^T\vec{u}_2}{\vec{p}_2^T\vec{n}}
+	\\
+	&= -\frac{\myvec{0 & 1} \myvec{0 \\ b}}{\myvec{0 & 1}\myvec{m \\ -1}}
+	\\
+	&= b
 \end{align}
 \end{enumerate}
 \item If the distance between the foci of an ellipse is 6 and the distance between its directrices is

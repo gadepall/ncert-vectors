@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  20 DEC 2021 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  20 DEC 2021 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,14 +791,7 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box72
 )
-(./gvv_ncert_vectors_defs.aux
-
-LaTeX Warning: Label `eq:jee_tangent_parab1' multiply defined.
-
-
-LaTeX Warning: Label `eq:jee_tangent_parab2' multiply defined.
-
-)
+(./gvv_ncert_vectors_defs.aux)
 \openout1 = `gvv_ncert_vectors_defs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -957,66 +950,65 @@ Underfull \vbox (badness 1728) has occurred while \output is active []
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1314.
+(hyperref)                removing `math shift' on input line 1368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1314.
+(hyperref)                removing `\times' on input line 1368.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1314.
+(hyperref)                removing `math shift' on input line 1368.
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1447.
+(hyperref)                removing `math shift' on input line 1501.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1447.
+(hyperref)                removing `\times' on input line 1501.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1447.
+(hyperref)                removing `math shift' on input line 1501.
 
 [12] [13]
-Underfull \hbox (badness 6893) in paragraph at lines 1774--1780
+Underfull \hbox (badness 6893) in paragraph at lines 1828--1834
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 1780--1784
+Underfull \hbox (badness 2913) in paragraph at lines 1834--1838
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
 [14] [15] [16] [17]
-Underfull \hbox (badness 5460) in paragraph at lines 2265--2291
+Underfull \hbox (badness 5460) in paragraph at lines 2319--2345
 []\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 2538--2543
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 2592--2597
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
-[19]
-Underfull \hbox (badness 7522) in paragraph at lines 2623--2629
+
+Underfull \hbox (badness 7522) in paragraph at lines 2677--2683
 \OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
-[20] (./gvv_ncert_vectors_defs.aux)
+[20] [21
 
-LaTeX Warning: There were multiply-defined labels.
-
+] (./gvv_ncert_vectors_defs.aux)
 Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
 (rerunfilecheck)             Checksum: 0154632470E284559A012761C08AAD7F;2026.
  ) 
 Here is how much of TeX's memory you used:
- 23608 strings out of 478994
- 415154 string characters out of 5864751
- 745904 words of memory out of 5000000
+ 23616 strings out of 478994
+ 415256 string characters out of 5864752
+ 745870 words of memory out of 5000000
  40059 multiletter control sequences out of 15000+600000
  450901 words of font info for 131 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1039,10 +1031,10 @@ exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist
 pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (20 pages, 302004 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (21 pages, 303989 bytes).
 PDF statistics:
- 1179 PDF objects out of 1200 (max. 8388607)
- 1103 compressed objects within 12 object streams
- 609 named destinations out of 1000 (max. 500000)
+ 1193 PDF objects out of 1200 (max. 8388607)
+ 1116 compressed objects within 12 object streams
+ 617 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
