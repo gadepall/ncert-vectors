@@ -1290,6 +1290,72 @@ which can be expressed  as
 	\\
 	&= b
 \end{align}
+Substituting the above in 
+\eqref{eq:conic_tangent_q_eigen},
+\begin{multline}
+	\myvec{
+		{-\myvec{0 & b}+b \myvec{m & -1}} \\ \myvec{1 & 0 \\ 0 &  0} 
+}
+\vec{q}_2 = 
+\\
+	\myvec{
+		0
+\\
+b \myvec{m \\ -1}+\myvec{0 \\ b}
+	}
+	\\
+\implies 
+\myvec{
+	bm & -2b \\ 1 & 0 \\ 0 &  0
+}
+\vec{q}_2 = 
+\\
+\myvec{
+	0
+\\
+bm
+\\
+0
+}
+\end{multline}
+which can be expressed  as 
+\begin{align}
+\myvec{
+	m & -2  \\  1 &  0
+}
+\vec{q}_1 &= 
+\myvec{
+	0
+\\
+bm
+}
+\\
+\implies \vec{q}_2 &=\myvec{
+	bm
+\\[1em]
+\frac{bm^2}{2}
+}
+\end{align}
+\item Since $\vec{q}_1, \vec{q}_2$ lie on 
+	\eqref{eq:jee_tangent}, 
+\begin{align}
+	\myvec{m & -1}\vec{q}_1&= -4
+	\\
+	\myvec{m & -1}\vec{q}_2&= -4
+\end{align}
+which can be expressed as 
+\begin{align}
+	\myvec{bm & \frac{bm^2}{2} 
+	\\
+\frac{1}{m^2}
+		  &
+\frac{2}{m}
+	}	\myvec{m \\ -1}&= -4\myvec{1 \\ 1}
+\end{align}
+yielding
+\begin{align}
+	m = \frac{1}{4}, b = -128 
+\end{align}
 \end{enumerate}
 \item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
 	12, then find the length of its latus rectum.
@@ -2111,6 +2177,12 @@ which can be expressed as \eqref{eq:conic_quad_form} after simplification.
 \end{align}
 %
 else, it represents a pair of straight lines.
+\end{enumerate}
+\subsection{Conic Parameters}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
 \item The conic in     \eqref{eq:conic_quad_form} can be expressed in standard form (centre/vertex at the origin, major axis - $x$ axis) as
   \begin{align}
     %\begin{aligned}

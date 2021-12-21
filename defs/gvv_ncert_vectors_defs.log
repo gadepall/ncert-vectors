@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  20 DEC 2021 14:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  21 DEC 2021 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,65 +950,71 @@ Underfull \vbox (badness 1728) has occurred while \output is active []
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1368.
+(hyperref)                removing `math shift' on input line 1434.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1368.
+(hyperref)                removing `\times' on input line 1434.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1368.
+(hyperref)                removing `math shift' on input line 1434.
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1501.
+(hyperref)                removing `math shift' on input line 1567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1501.
+(hyperref)                removing `\times' on input line 1567.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1501.
+(hyperref)                removing `math shift' on input line 1567.
 
-[12] [13]
-Underfull \hbox (badness 6893) in paragraph at lines 1828--1834
+[12] [13] [14]
+Underfull \hbox (badness 6893) in paragraph at lines 1894--1900
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 1834--1838
+Underfull \hbox (badness 2913) in paragraph at lines 1900--1904
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
-[14] [15] [16] [17]
-Underfull \hbox (badness 5460) in paragraph at lines 2319--2345
+[15] [16] [17]
+Underfull \hbox (badness 5460) in paragraph at lines 2391--2417
 []\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
  []
 
 [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 2592--2597
+Underfull \hbox (badness 10000) in paragraph at lines 2664--2669
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
-
-Underfull \hbox (badness 7522) in paragraph at lines 2677--2683
+[20]
+Underfull \hbox (badness 7522) in paragraph at lines 2749--2755
 \OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
-[20] [21
+[21] (./gvv_ncert_vectors_defs.aux)
 
-] (./gvv_ncert_vectors_defs.aux)
-Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-(rerunfilecheck)             Checksum: 0154632470E284559A012761C08AAD7F;2026.
+
+Package rerunfilecheck Warning: File `gvv_ncert_vectors_defs.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_defs.out':
+(rerunfilecheck)             Before: 0154632470E284559A012761C08AAD7F;2026
+(rerunfilecheck)             After:  B3077F14DD39E6EC9571F67EFFAE6219;2167.
  ) 
 Here is how much of TeX's memory you used:
- 23616 strings out of 478994
- 415256 string characters out of 5864752
- 745870 words of memory out of 5000000
+ 23625 strings out of 478994
+ 415379 string characters out of 5864752
+ 745871 words of memory out of 5000000
  40059 multiletter control sequences out of 15000+600000
  450901 words of font info for 131 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1031,10 +1037,10 @@ exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist
 pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (21 pages, 303989 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (21 pages, 305542 bytes).
 PDF statistics:
- 1193 PDF objects out of 1200 (max. 8388607)
- 1116 compressed objects within 12 object streams
- 617 named destinations out of 1000 (max. 500000)
+ 1206 PDF objects out of 1440 (max. 8388607)
+ 1129 compressed objects within 12 object streams
+ 626 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

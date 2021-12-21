@@ -5,13 +5,14 @@
 \contentsline {section}{\numberline {5}Definitions}{11}{section.5}%
 \contentsline {subsection}{\numberline {5.1}$2\times 1$ vectors}{11}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}$3\times 1$ vectors}{12}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Eigenvalues and Eigenvectors}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Eigenvalues and Eigenvectors}{13}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Determinants}{13}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Rank of a Matrix}{13}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Inverse of a Matrix}{13}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Linear Forms}{13}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Two Dimensions}{13}{subsection.6.1}%
+\contentsline {section}{\numberline {6}Linear Forms}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Two Dimensions}{14}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Three Dimensions}{14}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Quadratic Forms}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conic Sections}{16}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tangent and Normal}{19}{subsection.7.2}%
+\contentsline {section}{\numberline {7}Quadratic Forms}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conic Sections}{17}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Conic Parameters}{17}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Tangent and Normal}{19}{subsection.7.3}%
