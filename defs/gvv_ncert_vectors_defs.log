@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.25)  27 DEC 2021 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.25)  28 DEC 2021 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,99 +957,38 @@ Underfull \hbox (badness 10000) detected at line 1452
  []$[]  [] []$ []  
  []
 
-[11]
+[11] [12] [13]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1541.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1541.
+LaTeX Warning: Reference `eq:jntu_eig_vec' on page 14 undefined on input line 1
+803.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1541.
-
-[12]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1674.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1674.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1674.
-
-[13] [14]
-Underfull \hbox (badness 6893) in paragraph at lines 2001--2007
-\OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
+Underfull \hbox (badness 2150) in paragraph at lines 1800--1804
+\OT1/ptm/m/n/12 are the eigen-vec-tors cor-re-spond-ing to the
  []
 
+Runaway argument?
+ \vec {P} &= \frac {1}{\sqrt {2}} \myvec { 1 & 0 & 1 \\ 1 & 1 & 0 \\ \ETC.
+! Paragraph ended before \align was complete.
+<to be read again> 
+                   \par 
+l.1959 
+       
+? 
+! Emergency stop.
+<to be read again> 
+                   \par 
+l.1959 
+       
+End of file on the terminal!
 
-Underfull \hbox (badness 2913) in paragraph at lines 2007--2011
-[]\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
- []
-
-[15] [16] [17] [18]
-Underfull \hbox (badness 5460) in paragraph at lines 2498--2524
-[]\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
- []
-
-[19]
-Underfull \hbox (badness 10000) detected at line 2724
- []$[]  [] []$ []  
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 2817--2822
-\OT1/ptm/m/n/12 Substituting [] in [] yields
- []
-
-
-Underfull \hbox (badness 4492) in paragraph at lines 2902--2908
-\OT1/ptm/m/n/12 from which [] is ob-tained us-ing
- []
-
-[21] [22
-
-] (./gvv_ncert_vectors_defs.aux)
-Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
-
-(rerunfilecheck)             Checksum: B3077F14DD39E6EC9571F67EFFAE6219;2167.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 23662 strings out of 478994
- 415983 string characters out of 5864750
- 746256 words of memory out of 5000000
- 40067 multiletter control sequences out of 15000+600000
- 450901 words of font info for 131 fonts, out of 8000000 for 9000
+ 23411 strings out of 478994
+ 413104 string characters out of 5864750
+ 746264 words of memory out of 5000000
+ 40070 multiletter control sequences out of 15000+600000
+ 449765 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 113i,26n,116p,514b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (22 pages, 312105 bytes).
-PDF statistics:
- 1262 PDF objects out of 1440 (max. 8388607)
- 1184 compressed objects within 12 object streams
- 655 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 113i,23n,116p,514b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

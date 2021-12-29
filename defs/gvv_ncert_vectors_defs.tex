@@ -1495,16 +1495,58 @@ is 2.
 	\myvec{\circled{1} & 2 & 3\\2 & k & 7 \\ 3 & 6 & 10} 
 	\\
 	\text{(pivoting) }	
-	\myvec{\circled{1} & 2 & 3\\0 & k & 7 \\ 0 & 6 & 10} 
-	\\
-	\xleftrightarrow[]{R_1\leftarrow R_1 - R_2}	\myvec{1 & 0 & -1 \\ 0 & 2  & -1}
+	\myvec{\circled{1} & 2 & 3\\0 & k-4 & 1 \\ 0 & 0 & 1} 
 \end{align}
+Thus, the rank of the matrix will be 2 if $k = 4$.
 \item If a square matrix $\vec{A}$ has an eigenvalue $\lambda $, then what is the eigenvalue of the matrix $k\vec{A}$, where $k \ne 0$ is a scalar.
+	\\
+		\solution By definition of the eigenvalue, 
+\begin{align}
+	\vec{A}
+	\vec{x} &= \lambda
+	\vec{x}
+\\
+	\implies
+k	\brak{\vec{A}
+	\vec{x}} &= k\brak{\lambda
+	\vec{x}} 	\\
+	\text{or} 
+	\brak{k\vec{A}}
+	\vec{x} &= \brak{k\lambda}
+	\vec{x}
+\end{align}
+		Thus,$k\lambda$ is the eigenvalue of $k\vec{A}$.
 \item If a matrix 
 \begin{align}
 	\vec{A} = 	\myvec{-1 & 0 & 0\\2 & -3 & 0 \\ 1 & 4 & 2}
 \end{align}
 then what are the eigenvalues of $\vec{A}^2$?
+		\solution By definition of the eigenvalue, 
+\begin{align}
+	\vec{A}
+	\vec{x} &= \lambda
+	\vec{x}
+\\
+	\implies
+	\vec{A}
+	\brak{\vec{A}
+	\vec{x}} &= \vec{A}\brak{\lambda
+	\vec{x}} =\lambda \brak{\vec{A}
+	\vec{x}} 
+	\\
+	\text{or} 
+	\vec{A}^2
+	\vec{x} &= \lambda^2
+	\vec{x}
+\end{align}
+		Thus,$\lambda^2$ is the eigenvalue of $\vec{A}^2$.  Since $\vec{A}$ is
+a lower triangular matrix, its eigenvalues are the digonal elements.  Thus,
+\begin{align}
+	\lambda &= -1,-3,2
+	\\
+	\implies 
+	\lambda^2 &= 1,9,4
+\end{align}
 \item For what values of $\lambda$ and $\mu$ do the system of equations
 \begin{align}
 	x+y+z &= 6
@@ -1519,33 +1561,299 @@ have
 			\item unique solution
 			\item more than one solution
 				\end{enumerate}
+				\solution  The augmented matrix for the given system can be expressed as
+\begin{align}
+	\myvec{\circled{1} & 1 & 1 & \vrule &  6\\ 1 & 2 & 3 & \vrule &10\\ 1 & 2 & \lambda & \vrule &\mu} 
+	\\
+	\xleftrightarrow[]{}
+	\myvec{1 & 1 & 1 & \vrule &  6\\ 0 & \circled{1} & 2 & \vrule & 4\\ 0 &  1 &\lambda -1  & \vrule &\mu-6}
+	\\
+	\xleftrightarrow[]{R_3 \leftarrow R_3 - R_2}
+	\myvec{1 & 1 & 1 & \vrule &  6\\ 0 & \circled{1} & 2 & \vrule & 4\\ 0 &  0 &\lambda -3  & \vrule &\mu-10}
+  \end{align}
+  From the above, the system has 
+		\begin{enumerate}
+			\item  no solution if 
+\begin{align}
+	\lambda -3 = 0, \mu - 10 \ne 0
+	\\
+	\implies 
+	\lambda = 3, \mu \ne 10
+  \end{align}
+			\item  a unique solution if 
+\begin{align}
+	\lambda -3 \ne 0 \implies \lambda \ne -3 
+  \end{align}
+			\item more than one solution if 
+\begin{align}
+	\lambda -3 = 0, \mu - 10 = 0
+	\\
+ \implies 
+	\lambda =3, \mu = 10
+  \end{align}
+				\end{enumerate}
 			\item Find the value of $k$ for which the system of equations
 \begin{align}
-	\brak{k+1}x+y &= 4k
+	\brak{k+1}x+8y &= 4k
 	\\
-	kx+\brak{k-3}y &= 3k-1
+	kx+\brak{k+3}y &= 3k-1
 \end{align}
 has infinitely many solutions.
+\\
+\solution Forming the augmented matrix 
+\begin{align}
+	\myvec{\circled{k+1} & 8 & \vrule &  4k\\ k & k+3 & \vrule & 3k-1}
+  \end{align}
+  {\tiny
+\begin{align}
+	\\
+	\xleftrightarrow[]{}
+	\myvec{k+1 & 1 & \vrule &  4k\\ 0 & \brak{k+1}\brak{k+3}-8k & \vrule & \brak{k+1}\brak{3k-1}-4k^2}
+  \end{align}
+  }
+  Thus, for the given system to have infinite solutions, the above matrix should have a 0 row.  Hence, 
+\begin{align}
+	\brak{k+1}\brak{k+3}-8k & = 0
+	\\
+	\brak{k+1}\brak{3k-1}-4k^2 &=0
+  \end{align}
+  yielding 
+\begin{align}
+	k^2 -4k +3 &= 0
+	\\
+	k^2 -2k +1  &= 0
+  \end{align}
+  From the above, it is obvious that $k = 1$ is the only value for which the given system has infinite solutions.
 \item Verify Cayley-Hamilton Theorem for the matrix 
 \begin{align}
 	\vec{A} = 	\myvec{1 & 2 & 0\\-1 & -1 & 2 \\ 1 & 2 & 1}
 \end{align}
 		and obtain $\vec{A}^{-1}$ and $\vec{A}^{3}$.
-	\item Reduce the quadratic form 
+		\\
+		\solution The characteristic equation for the given matrix is obtained a
 \begin{align}
-	3x^2+3y^2+3z^2-2yz+2zx+2xy
+	\mydet{\lambda \vec{I} -	\vec{A}} = 	\mydet{\lambda-1 & 2 & 0\\-1 & \lambda+1 & 2 \\ 1 & 2 & \lambda -1} = 0
+	\end{align}
+	Doing row operations the above equation can be expressed as
+\begin{align}
+	\xleftrightarrow[]{R_2 \leftarrow R_2 + R_3}
+ 	\mydet{\lambda-1 & 2 & 0\\0 & \lambda+3 & \lambda + 1 \\ 1 & 2 & \lambda -1} = 0
+	\end{align}
+	Expanding the above determinant, 
+\begin{align}
+	\brak{\lambda-1 }	\mydet{\lambda+3 & \lambda + 1 \\  2 & \lambda -1} +
+ \mydet{2 & 0\\\lambda+3 & \lambda + 1 } = 0
+	\end{align}
+	yielding
+\begin{align}
+	\lambda^3 -5\lambda^2 + \lambda +7 = 0
 \end{align}
-to its canonical form.
-
-\item Find the LU decoomposition of 
+Thus, using the Cayley-Hamilton theorem, 
+\begin{align}
+	\vec{A}^3 -5\vec{A}^2 + \vec{A} +7\vec{I} = 0
+\end{align}
+from which, 
+\begin{align}
+	\vec{A}^3 &= 5\vec{A}^2 - \vec{A} -7\vec{I} 
+	\\
+	\vec{A}^{-1} &= \frac{-\vec{A}^ 2 + 5\vec{A} - \vec{I} }{7}
+\end{align}
+\item Find the LU decomposition of 
 \begin{align}
 	\vec{A} = 	\myvec{1 &  3\\ 4 & -1} 
+\end{align}
+\\
+\solution Performing row operations, 
+\begin{align}
+	\myvec{\circled{1} &  3\\ 4 & -1} 
+	\\
+	\xleftrightarrow[]{}
+	\myvec{1 &  3\\ 0 & \circled{-13}}  = \vec{U}
+\end{align}
+By organizing the pivot columns in the above matrices, 
+\begin{align}
+	\vec{L}=	\myvec{1 &  0\\ 4 & 1} 
+\end{align}
+It can be easily verified that 
+\begin{align}
+\vec{L}\vec{U}=	\vec{A} 
 \end{align}
 \item Factorize the matrix 
 \begin{align}
 		\myvec{2 & -3 & 1\\3 & 4 & 2 \\ 2 & -3 & 4}
 \end{align}
 by the LU decomposition method.
+\\
+\solution 
+Row reducing the given matrix, 
+\begin{align}
+		\myvec{\circled{2} & -3 & 1\\3 & 4 & 2 \\ 2 & -3 & 4}
+	\xleftrightarrow[]{}
+		\myvec{2 & -3 & 1\\ 0 & 17 & 1 \\ 0 & 0 & \circled{6}} = \vec{U}
+\end{align}
+Thus, 
+\begin{align}
+		\vec{L} = \frac{1}{2}\myvec{2 & 0 & 0 \\ 3 & 1 & 0 \\ 2 & 0 & 1} 
+\end{align}
+	\item Reduce the quadratic form 
+\begin{align}
+	3x^2+3y^2+3z^2-2yz+2zx+2xy
+\end{align}
+to its canonical form.
+\\
+\solution 
+The given quadratic form can be expressed as 
+
+\begin{align}
+\vec{x}^{\top}
+\vec{V}
+\vec{x}
+\end{align}
+where
+\begin{align}
+\vec{x}= \myvec{
+x
+\\
+y
+\\
+z
+}, 
+\vec{V} = \myvec{
+3 & 1 & 1 
+\\ 
+1 & 3 & -1
+\\
+1 & -1 & 3
+}
+\end{align}
+The eigenvalues of $\vec{V}$ can be obtained by solving  
+\begin{align}
+\mydet{\vec{A}-\lambda \vec{I}} = 0
+\end{align}
+which can be expressed as 
+\begin{align}
+\myvec{
+3-\lambda & 1 & 1 
+\\ 
+1 & 3-\lambda  & -1
+\\
+1 & -1 & 3-\lambda 
+} = 0
+\\
+\xleftrightarrow[]{R_3 \leftarrow R_3 -R_2}
+\brak{\lambda-4}
+\myvec{
+3-\lambda & 1 & 1 
+\\ 
+1 & 3-\lambda  & -1
+\\
+0 & 1  & -1
+} = 0
+\\
+\xleftrightarrow[]{C_2 \leftarrow C_2 +C_3}
+\brak{\lambda-4}
+\myvec{
+3-\lambda & 2 & 1 
+\\ 
+1 & 2-\lambda  & -1
+\\
+0 & 0  & -1
+} = 0
+\end{align}
+which can be simplified to obtain 
+\begin{align}
+\brak{\lambda -1}
+\brak{\lambda -4}^2 = 0
+\end{align}
+Thus, the eigenvalues of $\vec{V}$ are $1,4$.  The eigenvector corresponding to 4 is given by 
+\begin{align}
+	\label{eq:jntu_eig_vec}
+\brak{\vec{A}-\lambda \vec{I}}\vec{x} &= 0
+\\
+\implies 
+\myvec{
+-1 & 1 & 1 
+\\ 
+1 & -1 & -1
+\\
+1 & -1 & -1
+} \vec{x}= 0
+\end{align}
+Row reducing the above matrix, 
+\begin{align}
+\myvec{1 & -1 & -1
+} \vec{x}= 0
+\end{align}
+resulting in 
+\begin{align}
+ \vec{x}= y\myvec{1 \\ 1 \\ 0 
+} +
+ z\myvec{1 \\ 0 \\ 1
+ }
+\end{align}
+It is easy to verify that 
+\begin{align}
+\myvec{1 \\ 1 \\ 0 
+},  
+ \myvec{1 \\ 0 \\ 1
+ }
+\end{align}
+are the eigenvectors corresponding to  the eigenvalue 4.  The eigenvector corresponding to the eigenvalue 1
+can be obtained from 
+	\eqref{eq:jntu_eig_vec} by row reducing the matrix as 
+\begin{align}
+\myvec{
+2 & 1 & 1 
+\\ 
+1 & 2  & -1
+\\
+1 & -1 & 2 
+} 
+\\
+\xleftrightarrow[R_2 \leftarrow R_1 - 2R_2]{R_3 \leftarrow R_1 - 2R_3}
+\myvec{
+2 & 1 & 1 
+\\ 
+0 & -1  & 1
+} 
+\\
+	\xleftrightarrow[R_1 \leftarrow R_1 + R_2]{}
+\myvec{
+1 & 0 & 1 
+\\ 
+0 & 1  & -1
+} 
+\end{align}
+Thus, the desired eigenvector is 
+\begin{align}
+\myvec{
+1 \\ 0 \\ 1 
+} 
+\end{align}
+Taking unit vectors for the eigenvectors, 
+\begin{align}
+	\vec{P} &= \frac{1}{\sqrt{2}}
+\myvec{
+1 & 0 & 1 
+\\
+1 & 1 & 0 
+\\
+1 & 0 & 1
+	}
+	\vec{D} &= 
+\myvec{
+1 & 0 & 0 
+\\
+0 & 4 & 0 
+\\
+0 & 0 & 4
+\end{align}
+Thus, the desired canonical form is 
+\begin{align}
+	\vec{y}
+	\vec{D}
+	\vec{y}
+\end{align}
 \end{enumerate}
 \section{Definitions}
 \subsection{$2\times 1$ vectors}
