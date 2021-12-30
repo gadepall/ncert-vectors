@@ -1827,30 +1827,31 @@ can be obtained from
 Thus, the desired eigenvector is 
 \begin{align}
 \myvec{
-1 \\ 0 \\ 1 
+-1 \\ 1 \\ 1 
 } 
 \end{align}
-Taking unit vectors for the eigenvectors, 
+Stacking the the eigenvectors into a matrix
 \begin{align}
-	\vec{P} &= \frac{1}{\sqrt{2}}
+	\vec{P} &= 
 \myvec{
-1 & 0 & 1 
+-1 & 1 & 1 
 \\
 1 & 1 & 0 
 \\
 1 & 0 & 1
 	}
+	\\
 	\vec{D} &= 
 \myvec{
 1 & 0 & 0 
 \\
 0 & 4 & 0 
 \\
-0 & 0 & 4
+	0 & 0 & 4}
 \end{align}
 Thus, the desired canonical form is 
 \begin{align}
-	\vec{y}
+	\vec{y}^{\top}
 	\vec{D}
 	\vec{y}
 \end{align}
