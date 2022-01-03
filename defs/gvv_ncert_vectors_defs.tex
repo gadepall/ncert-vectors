@@ -1359,113 +1359,8 @@ yielding
 \end{enumerate}
 \item If the distance between the foci of an ellipse is 6 and the distance between its directrices is
 	12, then find the length of its latus rectum.
-\solution  For simplicity, we consider the standard ellipe given by 
-\begin{align}
-	\vec{x}^{\top}\vec{V}\vec{x} &= 1,
 	\\
-	\text{where }
-	\vec{V} = \myvec{\lambda_1 & 0 \\ 0 & \lambda_2}, \vec{u} = 0, f &= -1
-  \label{eq:conic_quad_form_std_ellipse}, 
-\end{align}
-From 
-  \eqref{eq:conic_quad_form_std_ellipse} and  
-  \eqref{eq:conic_quad_form_F}, 
-  the distance between the foci can be expressed as
-\begin{align}
-  \label{eq:conic_quad_form_std_ellipse_foci_dir}, 
-	\norm{\vec{F}_1 - \vec{F}_2}  &= e^2\abs{\frac{c_1-c_2}{\lambda_2}}\norm{\vec{n}}
-\end{align}
-%
-where $c_1,c_2$ are the scalar parameters of the directrices.  The distances between the directrices is given by 
-\begin{align}
-	\frac{\abs{c_1-c_2}}{\norm{\vec{n}}}
-\end{align}
-Thus, substituting the above in 
-  \eqref{eq:conic_quad_form_std_ellipse_foci_dir}, 
-\begin{align}
-  \label{eq:conic_quad_form_std_ellipse_foci_dir_ratio}, 
-	\frac{\norm{\vec{F}_1 - \vec{F}_2}}{\abs{c_1-c_2}} \norm{n} &= e^2\frac{\norm{\vec{n}}^2}{\abs{\lambda_2}}
-	\\
-	&=\frac{6}{12} = \frac{1}{2},
-\end{align}
-based on the given information.  For the standard ellipse, 
-\begin{align}
-	\vec{p}_1 &= \vec{e}_1 = \myvec{1 \\ 0}
-	\\
-	\implies \vec{n} &= \sqrt{\lambda_2}\vec{e}_1,  
-	\\
-	\text{or, }\vec{m} &=\sqrt{\lambda_2}\vec{e}_2,   
-\end{align}
-Hence, substituting in 
-  \eqref{eq:conic_quad_form_std_ellipse_foci_dir_ratio} and using  
-\eqref{eq:conic_quad_form_nc} 
-\begin{align}
-	e^2\frac{\norm{\vec{n}}^2}{\lambda_2} &= \frac{1}{2}
-	\\
-	\implies e^2 = \frac{1}{2}
-\end{align}
-Substituting $\vec{u} = 0$ in 
-\eqref{eq:conic_quad_form_nc} and 
-  \eqref{eq:conic_quad_form_F} 
-  and simplifying using
-  \eqref{eq:conic_quad_form_e},
-\begin{align}
-	c &= \pm \frac{1}{e}\sqrt{\frac{\lambda_1}{\lambda_2}}
-	\\
-	\vec{F} &= \pm \frac{e}{\sqrt{\lambda_1}}\vec{p}_1
-\end{align}
-For the standard ellipse, $\vec{m}$, orthogonal to $\vec{n}$ is also an eigenvector, such that 
-\begin{align}
-	\vec{V}\vec{m} &= {\lambda_1}\vec{m}  
-	\\
-	\implies\vec{m} &=  \sqrt{\lambda_1}\vec{e}_2
-\end{align}
-Thus, 
-\begin{align}
-	\vec{m}^{\top}\vec{V}\vec{m} &= {\lambda_1}^2
-	\\
-	\vec{m}^{\top}\vec{V}\vec{F} &= 0
-	\\
-	\vec{F}^{\top}\vec{V}\vec{F} &=e^2 
-\label{eq:tangent_roots_latus_quad},
-\end{align}
-From 
-\eqref{eq:tangent_roots_latus},
-the length of the latus rectum is given by 
-{\tiny
-\begin{multline}
- \frac{2\sqrt{
-\sbrak{
-\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
-}^2
--
-\brak
-{
-\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
-}
-\brak{\vec{m}^T\vec{V}\vec{m}}
-}
-}
-{
-\vec{m}^T\vec{V}\vec{m}
-}\norm{\vec{m}}
-\end{multline}
-}
-Substituting \eqref{eq:tangent_roots_latus_quad} in the above, the desired length can be expressed as,
-%\eqref{eq:conic_quad_form_nc}, 
-%{\tiny
-%\begin{multline}
-% \frac{2\sqrt{
-%1-e^2
-%	}}
-%\lambda_1^2
-%	}
-%}
-%{
-%\lambda_1^2
-%	}\sqrt{\lambda_1}
-%\end{multline}
-
+\solution  
 \item Find the area of the region, enclosed by the circle 
 \begin{align}
 	\vec{x}^{\top}\vec{x} = 2
@@ -3021,6 +2916,13 @@ where $\vec{F}$ is the focus and $\vec{m}$  is the normal to the directrix, i.e.
 \begin{align}
 	\vec{m}^{\top} \vec{n} = 0
 \end{align}
+\item The affine transform preserves the norm.  This implies that the length of any chord of a conic
+	is invariant to translation and/or rotation.
+	\solution 
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+\end{align}
 \item The length of the latus rectum is given by 
 {\tiny
 \begin{multline}
@@ -3053,7 +2955,116 @@ section can be obtained.  Thus, the distance between these points is given by
 \label{eq:conic_tangent_pts_dist}
 \end{align}
 which can be expressed as
-\eqref{eq:tangent_roots_latus}
+\eqref{eq:tangent_roots_latus}.
+\item The length of the latus rectum for an ellipse and hyperbola is given by
+	\solution For simplicity, we consider the standard ellipse given by 
+\begin{align}
+	\vec{x}^{\top}\vec{V}\vec{x} &= 1,
+	\\
+	\text{where }
+	\vec{V} = \myvec{\lambda_1 & 0 \\ 0 & \lambda_2}, \vec{u} = 0, f &= -1
+  \label{eq:conic_quad_form_std_ellipse}, 
+\end{align}
+From 
+  \eqref{eq:conic_quad_form_std_ellipse} and  
+  \eqref{eq:conic_quad_form_F}, 
+  the distance between the foci can be expressed as
+\begin{align}
+  \label{eq:conic_quad_form_std_ellipse_foci_dir}, 
+	\norm{\vec{F}_1 - \vec{F}_2}  &= e^2\abs{\frac{c_1-c_2}{\lambda_2}}\norm{\vec{n}}
+\end{align}
+%
+where $c_1,c_2$ are the scalar parameters of the directrices.  The distances between the directrices is given by 
+\begin{align}
+	\frac{\abs{c_1-c_2}}{\norm{\vec{n}}}
+\end{align}
+Thus, substituting the above in 
+  \eqref{eq:conic_quad_form_std_ellipse_foci_dir}, 
+\begin{align}
+  \label{eq:conic_quad_form_std_ellipse_foci_dir_ratio}, 
+	\frac{\norm{\vec{F}_1 - \vec{F}_2}}{\abs{c_1-c_2}} \norm{n} &= e^2\frac{\norm{\vec{n}}^2}{\abs{\lambda_2}}
+	\\
+	&=\frac{6}{12} = \frac{1}{2},
+\end{align}
+based on the given information.  For the standard ellipse, 
+\begin{align}
+	\vec{p}_1 &= \vec{e}_1 = \myvec{1 \\ 0}
+	\\
+	\implies \vec{n} &= \sqrt{\lambda_2}\vec{e}_1,  
+	\\
+	\text{or, }\vec{m} &=\sqrt{\lambda_2}\vec{e}_2,   
+\end{align}
+Hence, substituting in 
+  \eqref{eq:conic_quad_form_std_ellipse_foci_dir_ratio} and using  
+\eqref{eq:conic_quad_form_nc} 
+\begin{align}
+	e^2\frac{\norm{\vec{n}}^2}{\lambda_2} &= \frac{1}{2}
+	\\
+	\implies e^2 = \frac{1}{2}
+\end{align}
+Substituting $\vec{u} = 0$ in 
+\eqref{eq:conic_quad_form_nc} and 
+  \eqref{eq:conic_quad_form_F} 
+  and simplifying using
+  \eqref{eq:conic_quad_form_e},
+\begin{align}
+	c &= \pm \frac{1}{e}\sqrt{\frac{\lambda_1}{\lambda_2}}
+	\\
+	\vec{F} &= \pm \frac{e}{\sqrt{\lambda_1}}\vec{p}_1
+\end{align}
+For the standard ellipse, $\vec{m}$, orthogonal to $\vec{n}$ is also an eigenvector, such that 
+\begin{align}
+	\vec{V}\vec{m} &= {\lambda_1}\vec{m}  
+	\\
+	\implies\vec{m} &=  \sqrt{\lambda_1}\vec{e}_2
+\end{align}
+Thus, 
+\begin{align}
+	\vec{m}^{\top}\vec{V}\vec{m} &= {\lambda_1}^2
+	\\
+	\vec{m}^{\top}\vec{V}\vec{F} &= 0
+	\\
+	\vec{F}^{\top}\vec{V}\vec{F} &=e^2 
+\label{eq:tangent_roots_latus_quad},
+\end{align}
+From 
+\eqref{eq:tangent_roots_latus},
+the length of the latus rectum is given by 
+{\tiny
+\begin{multline}
+ \frac{2\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+{
+\vec{m}^T\vec{V}\vec{m}
+}\norm{\vec{m}}
+\end{multline}
+}
+Substituting \eqref{eq:tangent_roots_latus_quad} in the above, the desired length can be expressed as,
+%\eqref{eq:conic_quad_form_nc}, 
+%{\tiny
+%\begin{multline}
+% \frac{2\sqrt{
+%1-e^2
+%	}}
+%\lambda_1^2
+%	}
+%}
+%{
+%\lambda_1^2
+%	}\sqrt{\lambda_1}
+%\end{multline}
+
+
 \item  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
   \begin{align}
   \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} = 0
