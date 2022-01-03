@@ -2918,10 +2918,24 @@ where $\vec{F}$ is the focus and $\vec{m}$  is the normal to the directrix, i.e.
 \end{align}
 \item The affine transform preserves the norm.  This implies that the length of any chord of a conic
 	is invariant to translation and/or rotation.
-	\solution 
+	\solution Let 
+From \eqref{eq:conic_affine}, 
 \begin{align}
-\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
-\label{eq:conic_affine}
+\vec{x}_i = \vec{P}\vec{y}_i+\vec{c} 
+\label{eq:conic_affine_pts}
+\end{align}
+be any two points on the conic.  Then the distance between the points is given by 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2 } &= \norm{\vec{P}	\vec{y}_1 -\vec{y}_2 }
+	\\
+	\implies \norm{\vec{x}_1-\vec{x}_2 }^2 &= 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\vec{P}^{\top}\vec{P}\brak{\vec{y}_1 -\vec{y}_2 }
+	\\
+	&= 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\brak{\vec{y}_1 -\vec{y}_2 }
+%\label{eq:conic_affine_pts}
+\end{align}
+since 
+\begin{align}
+	\vec{P}^{\top}\vec{P} = \vec{I}
 \end{align}
 \item The length of the latus rectum is given by 
 {\tiny

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  31 DEC 2021 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  3 JAN 2022 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,7 +746,11 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box72
 )
-(./gvv_ncert_vectors_defs.aux)
+(./gvv_ncert_vectors_defs.aux
+
+LaTeX Warning: Label `eq:conic_affine' multiply defined.
+
+)
 \openout1 = `gvv_ncert_vectors_defs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
@@ -945,93 +949,80 @@ Underfull \hbox (badness 5460) in paragraph at lines 2712--2738
  []
 
 [20] [21]
-Overfull \hbox (8.8159pt too wide) detected at line 2938
+Overfull \hbox (3.88875pt too wide) detected at line 2935
+[]
+ []
+
+
+Overfull \hbox (8.8159pt too wide) detected at line 2959
  []$[]  [] []$ [][][]  
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 2989--2993
+Underfull \hbox (badness 1817) in paragraph at lines 3010--3014
 \OT1/ptm/m/n/12 Hence, sub-sti-tut-ing in [] and us-ing
  []
 
-
-Underfull \hbox (badness 10000) detected at line 3043
+[22]
+Underfull \hbox (badness 10000) detected at line 3064
  []$[]  [] []$ []  
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 3140--3145
+
+Underfull \hbox (badness 2547) in paragraph at lines 3161--3166
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
-
-Overfull \hbox (4.24303pt too wide) detected at line 3188
+[23]
+Overfull \hbox (4.24303pt too wide) detected at line 3209
 []
  []
 
-[23]
-Underfull \hbox (badness 4492) in paragraph at lines 3225--3231
+
+Underfull \hbox (badness 4492) in paragraph at lines 3246--3252
 \OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
 [24] (./gvv_ncert_vectors_defs.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
 (rerunfilecheck)             Checksum: B3077F14DD39E6EC9571F67EFFAE6219;2167.
  ) 
 Here is how much of TeX's memory you used:
- 23765 strings out of 478994
- 417361 string characters out of 5864750
- 746983 words of memory out of 5000000
- 40101 multiletter control sequences out of 15000+600000
+ 23766 strings out of 478994
+ 417373 string characters out of 5864750
+ 747033 words of memory out of 5000000
+ 40102 multiletter control sequences out of 15000+600000
  452702 words of font info for 139 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  113i,26n,116p,514b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.138.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.136.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.134.11} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.134.10} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.133.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.131.21} has been referenced but does not e
-xist, replaced by a fixed one
-
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (24 pages, 338061 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a
+.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on gvv_ncert_vectors_defs.pdf (24 pages, 339180 bytes).
 PDF statistics:
- 1360 PDF objects out of 1440 (max. 8388607)
- 1277 compressed objects within 13 object streams
+ 1361 PDF objects out of 1440 (max. 8388607)
+ 1278 compressed objects within 13 object streams
  724 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
