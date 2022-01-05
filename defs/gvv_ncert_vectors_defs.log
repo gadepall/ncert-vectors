@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  4 JAN 2022 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  5 JAN 2022 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,10 +867,7 @@ Overfull \hbox (57.68001pt too wide) detected at line 475
 []
  []
 
-[3] [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
+[3] [4] [5]
 Underfull \hbox (badness 4036) in paragraph at lines 860--879
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
@@ -889,26 +886,6 @@ Overfull \hbox (31.52667pt too wide) detected at line 1131
 Underfull \vbox (badness 1533) has occurred while \output is active []
 
  [9]
-
-LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 10 undefined on inp
-ut line 1211.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 10 undefined on in
-put line 1213.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 10 undefined on in
-put line 1231.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 10 undefined on inp
-ut line 1240.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 10 undefined on inp
-ut line 1294.
-
 [10]
 Underfull \vbox (badness 1418) has occurred while \output is active []
 
@@ -970,11 +947,6 @@ Underfull \hbox (badness 5460) in paragraph at lines 2712--2738
  []
 
 [20] [21]
-
-LaTeX Warning: Reference `eq:conic_intercept' on page 22 undefined on input lin
-e 2905.
-
-
 Overfull \hbox (3.88875pt too wide) detected at line 2935
 []
  []
@@ -984,194 +956,24 @@ Overfull \hbox (8.8159pt too wide) detected at line 2971
  []$[]  [] []$ [][][]  
  []
 
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 3224--3229
+\OT1/ptm/m/n/12 Substituting [] in [] yields
+ []
 
-LaTeX Warning: Reference `eq:conic_affine_norm_preserve' on page 22 undefined o
-n input line 2975.
 
-
-Overfull \hbox (126.42918pt too wide) detected at line 2982
+Overfull \hbox (4.24303pt too wide) detected at line 3272
 []
  []
 
 
-LaTeX Warning: Reference `eq:tangent_roots_latus' on page 22 undefined on input
- line 2984.
-
-
-LaTeX Warning: Reference `eq:latus_rectum_ellipse_param' on page 22 undefined o
-n input line 2985.
-
-
-LaTeX Warning: Reference `eq:tangent_roots_latus' on page 22 undefined on input
- line 3006.
-
-
-LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse' on page 22 undefined 
-on input line 3016.
-
-
-LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse_foci_dir' on page 22 u
-ndefined on input line 3029.
-
-[22]
-
-LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse_foci_dir_ratio' on pag
-e 23 undefined on input line 3045.
-
-
-Underfull \hbox (badness 4779) in paragraph at lines 3043--3047
-\OT1/ptm/m/n/12 Hence, sub-sti-tut-ing in [] and us-ing
+Underfull \hbox (badness 4492) in paragraph at lines 3309--3315
+\OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
+[24] [25
 
-LaTeX Warning: Reference `eq:tangent_roots_latus' on page 23 undefined on input
- line 3078.
-
-
-LaTeX Warning: Reference `eq:tangent_roots_latus_quad' on page 23 undefined on 
-input line 3099.
-
-
-LaTeX Warning: Reference `eq:conic_intercept' on page 23 undefined on input lin
-e 3122.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 23 undefined on input
- line 3141.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_disc' on page 23 undefined on input 
-line 3141.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_mq' on page 23 undefined on input li
-ne 3141.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_mq' on page 23 undefined on input li
-ne 3147.
-
-
-LaTeX Warning: Reference `eq:conic_normal_vec' on page 23 undefined on input li
-ne 3155.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 23 undefined on input
- line 3160.
-
-
-LaTeX Warning: Reference `eq:conic_normal_vec' on page 23 undefined on input li
-ne 3177.
-
-
-LaTeX Warning: Reference `eq:conic_normal_vec_q' on page 23 undefined on input 
-line 3182.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 23 undefined on input
- line 3183.
-
-
-LaTeX Warning: Reference `eq:conic_normal_k' on page 23 undefined on input line
- 3197.
-
-
-LaTeX Warning: Reference `eq:conic_normal_vec_q' on page 23 undefined on input 
-line 3197.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qk' on page 23 undefined on input li
-ne 3198.
-
-[23]
-
-LaTeX Warning: Reference `eq:conic_normal_vec' on page 24 undefined on input li
-ne 3221.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen' on page 24 undefined on input li
-ne 3233.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen' on page 24 undefined on input li
-ne 3233.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 24 undefined on in
-put line 3234.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen_normal' on page 24 undefined on i
-nput line 3234.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 24 undefined on input
- line 3242.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 24 undefined on input
- line 3242.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen_normal' on page 24 undefined on i
-nput line 3243.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen_normal_fq' on page 24 undefined o
-n input line 3248.
-
-
-LaTeX Warning: Reference `eq:conic_zero_eigen_normal_vq' on page 24 undefined o
-n input line 3248.
-
-
-LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 24 undefined on inp
-ut line 3248.
-
-
-LaTeX Warning: Reference `eq:asymp_quad_form' on page 24 undefined on input lin
-e 3262.
-
-
-LaTeX Warning: Reference `eq:asymp_quad_form' on page 24 undefined on input lin
-e 3268.
-
-
-LaTeX Warning: Reference `eq:asymp_quad_form' on page 24 undefined on input lin
-e 3273.
-
-
-LaTeX Warning: Reference `eq:quad_form_hyper' on page 24 undefined on input lin
-e 3276.
-
-
-LaTeX Warning: Reference `eq:quad_form_pair' on page 24 undefined on input line
- 3280.
-
-
-LaTeX Warning: Reference `eq:quad_form_pair' on page 24 undefined on input line
- 3291.
-
-
-LaTeX Warning: Reference `eq:quad_form_pair_ang_exp' on page 24 undefined on in
-put line 3317.
-
-
-LaTeX Warning: Reference `eq:quad_form_pair_ang' on page 24 undefined on input 
-line 3317.
-
-
-LaTeX Warning: Reference `eq:quad_form_pair' on page 24 undefined on input line
- 3323.
-
-
-LaTeX Warning: Reference `eq:asymp_quad_form' on page 24 undefined on input lin
-e 3323.
-
-[24] (./gvv_ncert_vectors_defs.aux)
-
-LaTeX Warning: There were undefined references.
-
+] (./gvv_ncert_vectors_defs.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1180,9 +982,9 @@ Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 (rerunfilecheck)             Checksum: B3077F14DD39E6EC9571F67EFFAE6219;2167.
  ) 
 Here is how much of TeX's memory you used:
- 24600 strings out of 478353
- 445270 string characters out of 5854636
- 759320 words of memory out of 5000000
+ 24603 strings out of 478353
+ 445307 string characters out of 5854636
+ 762206 words of memory out of 5000000
  41573 multiletter control sequences out of 15000+600000
  452702 words of font info for 139 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1207,10 +1009,10 @@ amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (24 pages, 355263 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (25 pages, 359961 bytes).
 PDF statistics:
- 1316 PDF objects out of 1440 (max. 8388607)
- 1224 compressed objects within 13 object streams
- 729 named destinations out of 1000 (max. 500000)
+ 1406 PDF objects out of 1440 (max. 8388607)
+ 1299 compressed objects within 13 object streams
+ 732 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
