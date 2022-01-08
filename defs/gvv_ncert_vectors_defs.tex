@@ -298,7 +298,9 @@ This manual provides an introduction to vectors and their properties,  based on 
 \numberwithin{equation}{enumi}
 \item  Find the distance between the points $\myvec{m \\ -n}$ and $\myvec{-m \\ n}$
 	\\
-		\solution Letting 
+		\solution 
+%\begin{enumerate}
+		Letting 
 		\begin{align}
 			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
 			\\
@@ -310,9 +312,14 @@ This manual provides an introduction to vectors and their properties,  based on 
 \\
 			&			= 2 \sqrt{m^2+n^2}
 		\end{align}
+		\item 
 	\item Find a point on the $x-$axis which is equidistant from $\myvec{ -4 \\ 0}$ and $\myvec{10 \\ 0}$
 \\
-\solution Letting the given points be $\vec{A},\vec{B}$. 
+\solution 
+
+\begin{enumerate}
+
+	\item Letting the given points be $\vec{A},\vec{B}$. 
 		\begin{align}
 	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
 	  \\
@@ -332,6 +339,45 @@ This manual provides an introduction to vectors and their properties,  based on 
 	  \text{or, } x =3 
   \end{align}
   Hence, the desired point is $\myvec{ 3 \\ 0}$.
+\item In general, if $\vec{x}$ be the desired point, 
+  \begin{align}
+	  \norm{\vec{x}-\vec{A}}
+	  &=
+	  \norm{\vec{x}-\vec{B}}
+	  \\
+	  \implies \norm{\vec{x}-\vec{A}}^2
+	  &=
+	  \norm{\vec{x}-\vec{B}}^2
+  \end{align}
+  which can be expressed as 
+  \end{enumerate}
+  \begin{multline}
+	  \norm{\vec{x}}^2+\norm{\vec{A}}^2 - 2 \vec{A}^{\top }\vec{x}
+	  \\
+	  =
+	  \norm{\vec{x}}^2+\norm{\vec{B}}^2 - 2 \vec{B}^{\top }\vec{x}
+  \end{multline}
+  and simplified to obtain 
+  \begin{align}
+	  \label{eq:cbse_10_x}
+	   \brak{\vec{A}-\vec{B}}^{\top }\vec{x}
+	  =
+	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
+  \end{align}
+  Since $\vec{x}$ lies on the $x$-axis, 
+  \begin{align}
+	  \vec{x} &=
+	   x\vec{e}_1
+	  \\
+	  \implies 
+	   x\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+		  &=
+	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
+	  \\
+	  \text{or, } x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+  \end{align}
+	  upon substituting from \eqref{eq:cbse_10_x}.
   \item Find the centre of a circle whose end points of a diameter are $\myvec{ -6 \\ 3}$ and $\myvec{6 \\ 4}$.
 	  \\
 		\solution 
@@ -345,6 +391,14 @@ Using section formula,
 	  \\
 	  &=\frac{1}{2}\myvec{0 \\ 7}
   \end{align}
+  See Fig. 
+	  \ref{fig:cbse-10-4.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/cbse-10-4.pdf}
+	  \caption{}
+	  \label{fig:cbse-10-4.pdf}
+	  \end{figure}
   \item $AOBC$  is a rectangle whose three vertices are $A = \myvec{0\\-3}, O = \myvec{0\\0}, B = \myvec{4\\0}$.  Find the length of its diagonal. 
 	  \\
 		\solution The fourth point is given by 

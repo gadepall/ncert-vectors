@@ -1,18 +1,18 @@
 \contentsline {section}{\numberline {1}Class 10}{1}{section.1}%
-\contentsline {section}{\numberline {2}Class 12}{2}{section.2}%
-\contentsline {section}{\numberline {3}JEE}{7}{section.3}%
+\contentsline {section}{\numberline {2}Class 12}{3}{section.2}%
+\contentsline {section}{\numberline {3}JEE}{8}{section.3}%
 \contentsline {section}{\numberline {4}JNTU}{11}{section.4}%
 \contentsline {section}{\numberline {5}Definitions}{14}{section.5}%
 \contentsline {subsection}{\numberline {5.1}$2\times 1$ vectors}{14}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}$3\times 1$ vectors}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Eigenvalues and Eigenvectors}{15}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Determinants}{15}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Rank of a Matrix}{15}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.3}Eigenvalues and Eigenvectors}{16}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Determinants}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Rank of a Matrix}{16}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Inverse of a Matrix}{16}{subsection.5.6}%
 \contentsline {section}{\numberline {6}Linear Forms}{16}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Two Dimensions}{16}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Three Dimensions}{16}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Three Dimensions}{17}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Quadratic Forms}{19}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Conic Sections}{19}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Conic Parameters}{19}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Tangent and Normal}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.2}Conic Parameters}{20}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Tangent and Normal}{22}{subsection.7.3}%
