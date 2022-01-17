@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  5 JAN 2022 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  15 JAN 2022 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,142 +850,1007 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `gvv_ncert_vectors_defs.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--341
-\OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing sec-tion for-mula, from
- []
+
+LaTeX Warning: Reference `eq:norm2d_equidist' on page 1 undefined on input line
+ 327.
+
+
+LaTeX Warning: Reference `eq:norm2d_equidist' on page 1 undefined on input line
+ 386.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 3965) in paragraph at lines 406--410
-\OT1/ptm/m/n/12 From the above equa-tions, [] and
- []
 
-[2]
-Overfull \hbox (57.68001pt too wide) detected at line 475
+LaTeX Warning: Reference `eq:section_formula' on page 2 undefined on input line
+ 403.
+
+<figs/cbse-10-3.pdf, id=55, 462.52798pt x 346.89601pt>
+File: figs/cbse-10-3.pdf Graphic file (type pdf)
+<use figs/cbse-10-3.pdf>
+Package pdftex.def Info: figs/cbse-10-3.pdf  used on input line 416.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+
+LaTeX Warning: Reference `eq:section_formula' on page 2 undefined on input line
+ 453.
+
+
+LaTeX Warning: Reference `eq:cbse-10-5-section' on page 2 undefined on input li
+ne 480.
+
+[2 <./figs/cbse-10-3.pdf>]
+
+LaTeX Warning: Reference `eq:angle2d' on page 3 undefined on input line 512.
+
+
+LaTeX Warning: Reference `eq:angle2d_orth' on page 3 undefined on input line 51
+3.
+
+
+Overfull \hbox (26.2158pt too wide) detected at line 530
 []
  []
 
-[3] [4] [5]
-Underfull \hbox (badness 4036) in paragraph at lines 860--879
+
+LaTeX Warning: Reference `eq:cross3d' on page 3 undefined on input line 557.
+
+
+LaTeX Warning: Reference `eq:area3d' on page 3 undefined on input line 558.
+
+[3]
+
+LaTeX Warning: Reference `eq:plane_line_foot_ans' on page 4 undefined on input 
+line 576.
+
+
+Overfull \hbox (57.68001pt too wide) detected at line 591
+[]
+ []
+
+
+LaTeX Warning: Reference `eq:angle2d' on page 4 undefined on input line 593.
+
+
+LaTeX Warning: Reference `eq:det_kord' on page 4 undefined on input line 613.
+
+
+LaTeX Warning: Reference `eq:norm2d_const' on page 4 undefined on input line 62
+3.
+
+
+LaTeX Warning: Reference `eq:parallel_lines' on page 4 undefined on input line 
+661.
+
+
+LaTeX Warning: Reference `eq:cbse_12_foot' on page 4 undefined on input line 68
+8.
+
+[4]
+
+LaTeX Warning: Reference `eq:dir_line_plane_isect' on page 5 undefined on input
+ line 715.
+
+
+LaTeX Warning: Reference `eq:angle2d' on page 5 undefined on input line 730.
+
+
+LaTeX Warning: Reference `eq:equal_incline_unit' on page 5 undefined on input l
+ine 755.
+
+
+LaTeX Warning: Reference `eq:equal_incline_unit_cos' on page 5 undefined on inp
+ut line 763.
+
+
+LaTeX Warning: Reference `eq:equal_incline_unit_cos' on page 5 undefined on inp
+ut line 764.
+
+[5]
+
+LaTeX Warning: Reference `eq:trace' on page 6 undefined on input line 806.
+
+
+LaTeX Warning: Reference `eq:line_plain_contain' on page 6 undefined on input l
+ine 826.
+
+
+LaTeX Warning: Reference `eq:plane_pt_perp' on page 6 undefined on input line 8
+54.
+
+
+Underfull \vbox (badness 3514) has occurred while \output is active []
+
+ [6]
+
+LaTeX Warning: Reference `eq:det_xyz' on page 7 undefined on input line 930.
+
+
+LaTeX Warning: Reference `eq:det_xyz_given' on page 7 undefined on input line 9
+49.
+
+
+LaTeX Warning: Reference `eq:det_xyz_onefac' on page 7 undefined on input line 
+950.
+
+
+Underfull \hbox (badness 4036) in paragraph at lines 976--995
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
 
-[6]
-Underfull \hbox (badness 2096) in paragraph at lines 910--913
+[7]
+Underfull \hbox (badness 2096) in paragraph at lines 1026--1029
 \OT1/ptm/m/n/12 Thus, the man-u-fac-turer should pro-duce 4
  []
 
-[7]
-Overfull \hbox (31.52667pt too wide) detected at line 1131
+
+LaTeX Warning: Reference `eq:elementary' on page 8 undefined on input line 1082
+.
+
+
+LaTeX Warning: Reference `eq:elementary_2' on page 8 undefined on input line 10
+83.
+
+[8]
+
+LaTeX Warning: Reference `eq:plane_bisect' on page 9 undefined on input line 11
+13.
+
+
+LaTeX Warning: Reference `eq:plane_bisect_bc' on page 9 undefined on input line
+ 1130.
+
+
+LaTeX Warning: Reference `eq:plane_bisect_cross' on page 9 undefined on input l
+ine 1131.
+
+
+LaTeX Warning: Reference `eq:plane_bisect_given' on page 9 undefined on input l
+ine 1150.
+
+
+LaTeX Warning: Reference `eq:matrix_hp_begin' on page 9 undefined on input line
+ 1207.
+
+
+LaTeX Warning: Reference `eq:matrix_hp_end' on page 9 undefined on input line 1
+209.
+
+
+LaTeX Warning: Reference `eq:matrix_hp_end' on page 9 undefined on input line 1
+211.
+
+
+LaTeX Warning: Reference `eq:plane_3pt' on page 9 undefined on input line 1232.
+
+
+
+Overfull \hbox (31.52667pt too wide) detected at line 1247
 []
  []
 
-[8]
+[9]
+
+LaTeX Warning: Reference `eq:image_pt_plane' on page 10 undefined on input line
+ 1256.
+
+
 Underfull \vbox (badness 1533) has occurred while \output is active []
 
- [9]
-[10]
+ [10]
+
+LaTeX Warning: Reference `eq:jee_tangent_parab1' on page 11 undefined on input 
+line 1311.
+
+
+LaTeX Warning: Reference `eq:jee_tangent_parab2' on page 11 undefined on input 
+line 1312.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 11 undefined on inp
+ut line 1327.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 11 undefined on in
+put line 1329.
+
+
+LaTeX Warning: Reference `eq:jee_tangent_parab1' on page 11 undefined on input 
+line 1346.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 11 undefined on in
+put line 1347.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 11 undefined on inp
+ut line 1356.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 11 undefined on inp
+ut line 1410.
+
+[11]
+
+LaTeX Warning: Reference `eq:jee_tangent' on page 12 undefined on input line 14
+56.
+
+
 Underfull \vbox (badness 1418) has occurred while \output is active []
 
- [11]
-[12]
-Underfull \hbox (badness 2150) in paragraph at lines 1695--1699
-\OT1/ptm/m/n/12 are the eigen-vec-tors cor-re-spond-ing to the
- []
-
+ [12]
 [13]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1755.
+LaTeX Warning: Reference `eq:jntu_eig_vec' on page 14 undefined on input line 1
+814.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1755.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1755.
+Underfull \hbox (badness 2150) in paragraph at lines 1811--1815
+\OT1/ptm/m/n/12 are the eigen-vec-tors cor-re-spond-ing to the
+ []
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1888.
+(hyperref)                removing `math shift' on input line 1871.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 1888.
+(hyperref)                removing `\times' on input line 1871.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1888.
-
-[15] [16]
-Underfull \hbox (badness 6893) in paragraph at lines 2215--2221
-\OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
- []
+(hyperref)                removing `math shift' on input line 1871.
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 2221--2225
-[]\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
- []
+LaTeX Warning: Reference `eq:det2d' on page 15 undefined on input line 1898.
 
-[17] [18]
-Overfull \hbox (0.54396pt too wide) detected at line 2468
-[]
- []
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2004.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 2004.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2004.
+
+[16]
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 21
+49.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 17 undefined on input line 2156.
+
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 21
+57.
+
+
+LaTeX Warning: Reference `eq:dir_line_normal_dist' on page 17 undefined on inpu
+t line 2167.
+
+
+LaTeX Warning: Reference `eq:dir_line_normal_dist_pa' on page 17 undefined on i
+nput line 2174.
+
+
+LaTeX Warning: Reference `eq:dir_line_normal_dist_pa_d' on page 17 undefined on
+ input line 2182.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 21
+87.
+
+
+LaTeX Warning: Reference `eq:line_dist_2d' on page 17 undefined on input line 2
+188.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 21
+91.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 22
+12.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 22
+18.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 22
+26.
+
+
+LaTeX Warning: Reference `eq:normal_line_pt' on page 17 undefined on input line
+ 2227.
+
+
+LaTeX Warning: Reference `eq:normal_line_foot' on page 17 undefined on input li
+ne 2235.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 17 undefined on input line 2261.
+
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 17 undefined on input line 22
+63.
+
+[17]
+
+LaTeX Warning: Reference `eq:normal_line' on page 18 undefined on input line 22
+65.
+
+
+LaTeX Warning: Reference `eq:dist_line_2d_orig' on page 18 undefined on input l
+ine 2267.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 18 undefined on input line 2269.
+
+
+
+LaTeX Warning: Reference `dist_3d_def_quad_abc' on page 18 undefined on input l
+ine 2316.
+
+
+LaTeX Warning: Reference `dist_3d_def_final' on page 18 undefined on input line
+ 2333.
+
+
+LaTeX Warning: Reference `dist_3d_def_quad_abc' on page 18 undefined on input l
+ine 2334.
+
+
+LaTeX Warning: Reference `eq:parallel_lines' on page 18 undefined on input line
+ 2338.
+
+
+LaTeX Warning: Reference `eq:dist_lines_2d' on page 18 undefined on input line 
+2340.
+
+
+LaTeX Warning: Reference `eq:line_contain' on page 18 undefined on input line 2
+358.
+
+
+LaTeX Warning: Reference `eq:plain_contain' on page 18 undefined on input line 
+2360.
+
+
+LaTeX Warning: Reference `eq:line_plain_contain' on page 18 undefined on input 
+line 2365.
+
+
+LaTeX Warning: Reference `eq:dir_line_plane_isect' on page 18 undefined on inpu
+t line 2377.
+
+
+LaTeX Warning: Reference `eq:foot_perp_pt_plane' on page 18 undefined on input 
+line 2394.
+
+[18]
+
+LaTeX Warning: Reference `eq:plane_3d_2pt_perp_system' on page 19 undefined on 
+input line 2424.
+
+
+LaTeX Warning: Reference `eq:plane_3d_2pt_perp_norm' on page 19 undefined on in
+put line 2431.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 19 undefined on input line 2434.
+
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 19 undefined on input line 24
+36.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 19 undefined on input line 2444.
+
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 19 undefined on input line 24
+46.
+
+
+LaTeX Warning: Reference `eq:dir_line_plane_inter' on page 19 undefined on inpu
+t line 2463.
+
+
+LaTeX Warning: Reference `eq:dir_line_plane_isect' on page 19 undefined on inpu
+t line 2465.
+
+
+LaTeX Warning: Reference `eq:dir_line' on page 19 undefined on input line 2467.
+
+
+
+LaTeX Warning: Reference `eq:dir_line_foot' on page 19 undefined on input line 
+2487.
+
+
+LaTeX Warning: Reference `eq:plane_line_foot' on page 19 undefined on input lin
+e 2488.
+
+
+LaTeX Warning: Reference `eq:dir_line_plane_isect' on page 19 undefined on inpu
+t line 2490.
+
+
+LaTeX Warning: Reference `eq:plane_line_foot_ans' on page 19 undefined on input
+ line 2492.
+
+
+LaTeX Warning: Reference `eq:plane_foot_perp' on page 19 undefined on input lin
+e 2503.
+
+
+LaTeX Warning: Reference `eq:plane_3pt' on page 19 undefined on input line 2522
+.
 
 [19]
-Overfull \hbox (15.7821pt too wide) detected at line 2700
+
+LaTeX Warning: Reference `conics/30/def' on page 20 undefined on input line 258
+0.
+
+
+LaTeX Warning: Reference `eq:line_dist_2d' on page 20 undefined on input line 2
+580.
+
+
+Overfull \hbox (0.54396pt too wide) detected at line 2584
 []
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 2712--2738
-[]\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
- []
+LaTeX Warning: Reference `eq:conic_quad_form' on page 20 undefined on input lin
+e 2597.
 
-[20] [21]
-Overfull \hbox (3.88875pt too wide) detected at line 2935
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 20 undefined on input lin
+e 2598.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 20 undefined on input lin
+e 2605.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 20 undefined on input lin
+e 2623.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 20 undefined on input lin
+e 2656.
+
+
+LaTeX Warning: Reference `eq:conic_simp_one' on page 20 undefined on input line
+ 2673.
+
+
+LaTeX Warning: Reference `eq:conic_parmas_eig_def' on page 20 undefined on inpu
+t line 2673.
+
+
+LaTeX Warning: Reference `eq:conic_parmas_c_def' on page 20 undefined on input 
+line 2689.
+
+
+LaTeX Warning: Reference `eq:conic_simp' on page 20 undefined on input line 269
+0.
+
+
+LaTeX Warning: Reference `eq:conic_simp_temp_nonparab' on page 20 undefined on 
+input line 2691.
+
+
+LaTeX Warning: Reference `eq:conic_parmas_eig_def' on page 20 undefined on inpu
+t line 2699.
+
+[20]
+
+LaTeX Warning: Reference `eq:eig_matrix' on page 21 undefined on input line 270
+5.
+
+
+LaTeX Warning: Reference `eq:conic_simp' on page 21 undefined on input line 270
+6.
+
+
+LaTeX Warning: Reference `eq:conic_parab_eig_prop' on page 21 undefined on inpu
+t line 2729.
+
+
+LaTeX Warning: Reference `eq:conic_parab_eig_prop' on page 21 undefined on inpu
+t line 2729.
+
+
+LaTeX Warning: Reference `eq:conic_parab_foc_len_temp' on page 21 undefined on 
+input line 2731.
+
+
+LaTeX Warning: Reference `eq:conic_simp_temp_parab' on page 21 undefined on inp
+ut line 2732.
+
+
+LaTeX Warning: Reference `eq:conic_simp' on page 21 undefined on input line 275
+0.
+
+
+LaTeX Warning: Reference `eq:conic_parab_one' on page 21 undefined on input lin
+e 2759.
+
+
+LaTeX Warning: Reference `eq:conic_parab_two' on page 21 undefined on input lin
+e 2764.
+
+
+LaTeX Warning: Reference `eq:conic_parab_one_eig' on page 21 undefined on input
+ line 2770.
+
+
+LaTeX Warning: Reference `eq:conic_parab_two_eig' on page 21 undefined on input
+ line 2770.
+
+
+LaTeX Warning: Reference `eq:conic_parab_c' on page 21 undefined on input line 
+2770.
+
+
+LaTeX Warning: Reference `eq:conic_affine' on page 21 undefined on input line 2
+783.
+
+
+LaTeX Warning: Reference `eq:conic_affine_inv' on page 21 undefined on input li
+ne 2788.
+
+
+LaTeX Warning: Reference `eq:conic_simp_temp_parab' on page 21 undefined on inp
+ut line 2793.
+
+
+LaTeX Warning: Reference `eq:eta' on page 21 undefined on input line 2799.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 21 undefined on input lin
+e 2803.
+
+
+Overfull \hbox (15.7821pt too wide) detected at line 2816
 []
  []
 
 
-Overfull \hbox (8.8159pt too wide) detected at line 2971
+LaTeX Warning: Reference `eq:conic_simp_temp_nonparab' on page 21 undefined on 
+input line 2818.
+
+
+LaTeX Warning: Reference `eq:ellipse_axes' on page 21 undefined on input line 2
+819.
+
+
+LaTeX Warning: Reference `eq:hyper_axes' on page 21 undefined on input line 281
+9.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 21 undefined on input lin
+e 2828.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_e' on page 21 undefined on input l
+ine 2829.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_F' on page 21 undefined on input l
+ine 2830.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_v' on page 21 undefined on input l
+ine 2853.
+
+[21]
+
+LaTeX Warning: Reference `eq:conic_quad_form_e_cayley' on page 22 undefined on 
+input line 2877.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_lam_cayley' on page 22 undefined o
+n input line 2893.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 22 undefined on input lin
+e 2893.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_e' on page 22 undefined on input l
+ine 2894.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_v' on page 22 undefined on input l
+ine 2902.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_lam_cayley' on page 22 undefined o
+n input line 2921.
+
+
+LaTeX Warning: Reference `eq:eigevecP' on page 22 undefined on input line 2922.
+
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_lam_cayley' on page 22 undefined o
+n input line 2922.
+
+
+LaTeX Warning: Reference `eq:eigevecn' on page 22 undefined on input line 2922.
+
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_u' on page 22 undefined on input l
+ine 2926.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_lam_cayley' on page 22 undefined o
+n input line 2926.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_f' on page 22 undefined on input l
+ine 2941.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_u_temp' on page 22 undefined on in
+put line 2946.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_f_temp' on page 22 undefined on in
+put line 2946.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_F' on page 22 undefined on input l
+ine 2956.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 22 undefined on input lin
+e 2976.
+
+
+LaTeX Warning: Reference `eq:conic_tangent' on page 22 undefined on input line 
+3009.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 22 undefined on input lin
+e 3010.
+
+
+LaTeX Warning: Reference `eq:conic_intercept' on page 22 undefined on input lin
+e 3021.
+
+
+LaTeX Warning: Reference `eq:tangent_roots' on page 22 undefined on input line 
+3022.
+
+[22]
+
+LaTeX Warning: Reference `eq:conic_affine' on page 23 undefined on input line 3
+038.
+
+
+Overfull \hbox (3.88875pt too wide) detected at line 3051
+[]
+ []
+
+
+LaTeX Warning: Reference `eq:conic_tangent_pts' on page 23 undefined on input l
+ine 3060.
+
+
+LaTeX Warning: Reference `eq:tangent_roots' on page 23 undefined on input line 
+3062.
+
+
+Overfull \hbox (8.8159pt too wide) detected at line 3087
  []$[]  [] []$ [][][]  
  []
 
-[22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 3224--3229
-\OT1/ptm/m/n/12 Substituting [] in [] yields
- []
+
+LaTeX Warning: Reference `eq:conic_affine_norm_preserve' on page 23 undefined o
+n input line 3091.
 
 
-Overfull \hbox (4.24303pt too wide) detected at line 3272
-[]
- []
+LaTeX Warning: Reference `eq:conic_simp_temp_nonparab' on page 23 undefined on 
+input line 3092.
 
 
-Underfull \hbox (badness 4492) in paragraph at lines 3309--3315
-\OT1/ptm/m/n/12 from which [] is ob-tained us-ing
- []
+LaTeX Warning: Reference `eq:tangent_roots_latus' on page 23 undefined on input
+ line 3101.
 
-[24] [25
 
-] (./gvv_ncert_vectors_defs.aux)
+LaTeX Warning: Reference `eq:latus_rectum_ellipse_param' on page 23 undefined o
+n input line 3102.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_nc' on page 23 undefined on input 
+line 3103.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_nc_latus' on page 23 undefined on 
+input line 3120.
+
+
+LaTeX Warning: Reference `eq:tangent_roots_latus' on page 23 undefined on input
+ line 3125.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_e_latus' on page 23 undefined on i
+nput line 3126.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_F_latus' on page 23 undefined on i
+nput line 3127.
+
+
+LaTeX Warning: Reference `eq:tangent_roots_latus' on page 23 undefined on input
+ line 3131.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse' on page 23 undefined 
+on input line 3162.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_F' on page 23 undefined on input l
+ine 3163.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse_foci_dir' on page 23 u
+ndefined on input line 3175.
+
+[23]
+
+LaTeX Warning: Reference `eq:conic_quad_form_std_ellipse_foci_dir_ratio' on pag
+e 24 undefined on input line 3191.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_nc' on page 24 undefined on input 
+line 3192.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_nc' on page 24 undefined on input 
+line 3199.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_F' on page 24 undefined on input l
+ine 3200.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form_e' on page 24 undefined on input l
+ine 3202.
+
+
+LaTeX Warning: Reference `eq:tangent_roots_latus' on page 24 undefined on input
+ line 3224.
+
+
+LaTeX Warning: Reference `eq:tangent_roots_latus_quad' on page 24 undefined on 
+input line 3245.
+
+
+LaTeX Warning: Reference `eq:conic_tangent' on page 24 undefined on input line 
+3261.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 24 undefined on input lin
+e 3261.
+
+
+LaTeX Warning: Reference `eq:conic_intercept' on page 24 undefined on input lin
+e 3268.
+
+
+LaTeX Warning: Reference `eq:tangent_roots' on page 24 undefined on input line 
+3269.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 24 undefined on input lin
+e 3281.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 24 undefined on input
+ line 3287.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_disc' on page 24 undefined on input 
+line 3287.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_mq' on page 24 undefined on input li
+ne 3287.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 24 undefined on input lin
+e 3288.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_mq' on page 24 undefined on input li
+ne 3293.
+
+
+LaTeX Warning: Reference `eq:normal_line' on page 24 undefined on input line 32
+94.
+
+
+LaTeX Warning: Reference `eq:conic_normal_vec' on page 24 undefined on input li
+ne 3301.
+
+
+LaTeX Warning: Reference `eq:normal_line_pt' on page 24 undefined on input line
+ 3301.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 24 undefined on input
+ line 3306.
+
+
+LaTeX Warning: Reference `eq:conic_tangent' on page 24 undefined on input line 
+3306.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 24 undefined on input lin
+e 3307.
+
+
+LaTeX Warning: Reference `eq:conic_normal_vec' on page 24 undefined on input li
+ne 3323.
+
+
+LaTeX Warning: Reference `eq:conic_normal_vec_q' on page 24 undefined on input 
+line 3328.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 24 undefined on input
+ line 3329.
+
+
+LaTeX Warning: Reference `eq:conic_normal_k' on page 24 undefined on input line
+ 3343.
+
+
+LaTeX Warning: Reference `eq:conic_normal_vec_q' on page 24 undefined on input 
+line 3343.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qk' on page 24 undefined on input li
+ne 3344.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 24 undefined on input lin
+e 3345.
+
+[24]
+
+LaTeX Warning: Reference `eq:conic_normal_vec' on page 25 undefined on input li
+ne 3367.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen' on page 25 undefined on input li
+ne 3379.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen' on page 25 undefined on input li
+ne 3379.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qk_eigen' on page 25 undefined on in
+put line 3380.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen_normal' on page 25 undefined on i
+nput line 3380.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 25 undefined on input
+ line 3388.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_qquad' on page 25 undefined on input
+ line 3388.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen_normal' on page 25 undefined on i
+nput line 3389.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen_normal_fq' on page 25 undefined o
+n input line 3394.
+
+
+LaTeX Warning: Reference `eq:conic_zero_eigen_normal_vq' on page 25 undefined o
+n input line 3394.
+
+
+LaTeX Warning: Reference `eq:conic_tangent_q_eigen' on page 25 undefined on inp
+ut line 3394.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 25 undefined on input lin
+e 3395.
+
+
+LaTeX Warning: Reference `eq:asymp_quad_form' on page 25 undefined on input lin
+e 3408.
+
+
+LaTeX Warning: Reference `eq:asymp_quad_form' on page 25 undefined on input lin
+e 3414.
+
+
+LaTeX Warning: Reference `eq:asymp_quad_form' on page 25 undefined on input lin
+e 3419.
+
+
+LaTeX Warning: Reference `eq:quad_form_hyper' on page 25 undefined on input lin
+e 3422.
+
+
+LaTeX Warning: Reference `eq:quad_form_pair' on page 25 undefined on input line
+ 3426.
+
+
+LaTeX Warning: Reference `eq:conic_affine' on page 25 undefined on input line 3
+426.
+
+
+LaTeX Warning: Reference `eq:quad_form_pair' on page 25 undefined on input line
+ 3437.
+
+
+LaTeX Warning: Reference `eq:quad_form_pair_ang_exp' on page 25 undefined on in
+put line 3463.
+
+
+LaTeX Warning: Reference `eq:quad_form_pair_ang' on page 25 undefined on input 
+line 3463.
+
+
+LaTeX Warning: Reference `eq:quad_form_pair' on page 25 undefined on input line
+ 3469.
+
+
+LaTeX Warning: Reference `eq:conic_quad_form' on page 25 undefined on input lin
+e 3469.
+
+
+LaTeX Warning: Reference `eq:asymp_quad_form' on page 25 undefined on input lin
+e 3469.
+
+[25] (./gvv_ncert_vectors_defs.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `gvv_ncert_vectors_defs.out' has not changed.
 
-(rerunfilecheck)             Checksum: B3077F14DD39E6EC9571F67EFFAE6219;2167.
+Package rerunfilecheck Warning: File `gvv_ncert_vectors_defs.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_ncert_vectors_defs.out':
+(rerunfilecheck)             Before: 28013D89720A70A8423A578EF0B8D26C;86
+(rerunfilecheck)             After:  B3077F14DD39E6EC9571F67EFFAE6219;2167.
  ) 
 Here is how much of TeX's memory you used:
- 24603 strings out of 478353
- 445307 string characters out of 5854636
- 762206 words of memory out of 5000000
- 41573 multiletter control sequences out of 15000+600000
+ 24629 strings out of 478353
+ 445709 string characters out of 5854636
+ 753655 words of memory out of 5000000
+ 41565 multiletter control sequences out of 15000+600000
  452702 words of font info for 139 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  100i,26n,104p,514b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1009,10 +1874,10 @@ amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on gvv_ncert_vectors_defs.pdf (25 pages, 359961 bytes).
+Output written on gvv_ncert_vectors_defs.pdf (25 pages, 363285 bytes).
 PDF statistics:
- 1406 PDF objects out of 1440 (max. 8388607)
- 1299 compressed objects within 13 object streams
- 732 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1174 PDF objects out of 1200 (max. 8388607)
+ 1066 compressed objects within 11 object streams
+ 764 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
