@@ -570,7 +570,9 @@ $\because $
 		\end{enumerate}
 	\item  Find the coordinates of the foot of the perpendicular drawn from the point $ \myvec{2 \\-3 \\4 } $ on the y-axis.
 		\\
-\solution By definition of $y$-axis, the desired coordinates are 
+\solution 
+		\begin{enumerate}
+			\item 		By definition of $y$-axis, the desired coordinates are 
 		\begin{align}
 			\myvec{0 \\ -3 \\ 0} 
 		\end{align}
@@ -590,6 +592,37 @@ $\because $
 	&=
  \myvec{0 \\ -3 \\ 0} 
 		\end{align}
+	\item In general, let $\vec{P}$ be any point and the line be
+\begin{align}
+	\label{cbse_12_foot_perp_line}
+	L: \quad	\vec{x} &=  \vec{A} + \lambda \vec{m}
+		\end{align}
+				Then the plane perpendicular to $L$ and passing through $\vec{P}$ has the equation 
+\begin{align}
+	\label{cbse_12_foot_perp_plane}
+	N: \quad	\vec{m}^{\top}\brak{\vec{x} -  \vec{P}} = 0 
+		\end{align}
+		The intersection of $N$ and $P$ is the desired foot of the perpendicular.  Thus, substituting
+	\eqref{cbse_12_foot_perp_line} in 
+	\eqref{cbse_12_foot_perp_plane}, 
+\begin{align}
+%	\label{cbse_12_foot_perp_plane}
+\vec{m}^{\top}\brak{\vec{A} + \lambda \vec{m} -  \vec{P}} = 0 
+		\end{align}
+		which can be simplified to obtain 
+\begin{align}
+	\label{cbse_12_foot_perp_lam}
+	\lambda = \frac{	\vec{m}^{\top}\brak{\vec{P}  -  \vec{A}}}{\norm{\vec{m}}^2}
+		\end{align}
+		Substituting 
+	\eqref{cbse_12_foot_perp_lam}
+	in 
+	\eqref{cbse_12_foot_perp_line}
+\begin{align}
+	\label{cbse_12_foot_perp_pt}
+\vec{x} &=  \vec{A} + \frac{	\vec{m}^{\top}\brak{\vec{P}  -  \vec{A}}}{\norm{\vec{m}}^2}\vec{m}
+		\end{align}
+		\end{enumerate}
 	\item  Find the angle between the vectors $ \myvec{1 \\ -1 \\ 0} $ and $ \myvec{0 \\ 1 \\ -1} $ 
 \\
 \solution $\because$
