@@ -303,8 +303,10 @@ This manual provides an introduction to vectors and their properties,  based on 
 			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
 			\\
 			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
-			\\
-			\implies \norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
+		\end{align}
+Using the definition   of the norm in \eqref{eq:norm2d},
+		\begin{align}
+\norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
 			\\
 			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
 \\
@@ -313,10 +315,6 @@ This manual provides an introduction to vectors and their properties,  based on 
 	\item Find a point on the $x-$axis which is equidistant from $\myvec{ -4 \\ 0}$ and $\myvec{10 \\ 0}$
 \\
 \solution Letting the given points be $\vec{A},\vec{B}$. 
-
-\begin{enumerate}
-
-	\item 
 		\begin{align}
 	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
 	  \\
@@ -336,66 +334,6 @@ This manual provides an introduction to vectors and their properties,  based on 
 	  \text{or, } x =3 
   \end{align}
   Hence, the desired point is $\myvec{ 3 \\ 0}$.
-\item In general, if $\vec{x}$ be the desired point, 
-  \begin{align}
-	  \norm{\vec{x}-\vec{A}}
-	  &=
-	  \norm{\vec{x}-\vec{B}}
-	  \\
-	  \implies \norm{\vec{x}-\vec{A}}^2
-	  &=
-	  \norm{\vec{x}-\vec{B}}^2
-  \end{align}
-  which can be expressed as 
-  \begin{multline}
-	  \norm{\vec{x}}^2+\norm{\vec{A}}^2 - 2 \vec{A}^{\top }\vec{x}
-	  \\
-	  =
-	  \norm{\vec{x}}^2+\norm{\vec{B}}^2 - 2 \vec{B}^{\top }\vec{x}
-  \end{multline}
-  and simplified to obtain 
-  \begin{align}
-	  \label{eq:cbse_10_x}
-	   \brak{\vec{A}-\vec{B}}^{\top }\vec{x}
-	  =
-	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
-  \end{align}
-  Since $\vec{x}$ lies on the $x$-axis, 
-  \begin{align}
-	  \vec{x} &=
-	   x\vec{e}_1
-	  \\
-	  \implies 
-	   x\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
-		  &=
-	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
-	  \\
-	  \text{or, } x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
-}
-  \end{align}
-	  upon substituting from \eqref{eq:cbse_10_x}.
-
-
-		\begin{align}
-	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
-	  \\
-	  &= \myvec{ -14 \\ 0},
-	  \\
-			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -42,
-  \end{align}
-  \eqref{eq:norm2d_equidist}, can be expressed as 
-  \begin{align}
-	  \myvec{ -14 & 0}\vec{x} 
-	  &=  42
-	  \\
-	  \implies 
-	  \myvec{ -14 & 0}\myvec{x \\ 0} 
-	  &=  -42
-	  \\
-	  \text{or, } x =3 
-  \end{align}
-  Hence, the desired point is $\myvec{ 3 \\ 0}$.
-  \end{enumerate}
   \item Find the centre of a circle whose end points of a diameter are $\myvec{ -6 \\ 3}$ and $\myvec{6 \\ 4}$.
 	  \\
 		\solution 
@@ -1985,6 +1923,12 @@ Thus,
 \norm{\vec{A}-\vec{B}} 
 \end{align}
 \item Let $\vec{x}$ be equidistant from the points $\vec{A}$ and $\vec{B}$.  Then 
+  \begin{align}
+	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
+	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
+  \label{eq:norm2d_equidist}
+  \end{align}
+  \solution 
 \begin{align}
 	\norm{\vec{x}-\vec{A}} &=
 \norm{\vec{A}-\vec{B}} 
@@ -2003,11 +1947,26 @@ which can be expressed as
 	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
 \end{multline}
 which can be simplified to obtain
+  \eqref{eq:norm2d_equidist}.
+\item If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
   \begin{align}
-	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
-	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
-  \label{eq:norm2d_equidist}
+	  \vec{x} &=
+	   x\vec{e}_1
   \end{align}
+  where 
+  \begin{align}
+	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+	  \label{eq:cbse_10_x}
+  \end{align}
+  \solution 
+  From \eqref{eq:norm2d_equidist}.
+  \begin{align}
+	   x\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+		  &=
+	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
+   \end{align}
+	  yielding \eqref{eq:cbse_10_x}.
   \item The angle between two vectors is given by 
   \begin{align}
     \label{eq:angle2d}
@@ -2078,7 +2037,10 @@ and
 \begin{align}
   \vec{A} \times \vec{B} = -  \vec{B} \times \vec{A} 
 \end{align}
-
+\item The area of a triangle is given by 
+\begin{align}
+	\frac{1}{2} \norm{  \vec{A} \times \vec{B}}
+\end{align}
 \end{enumerate}
 \subsection{Eigenvalues and Eigenvectors}
 \renewcommand{\theequation}{\theenumi}
